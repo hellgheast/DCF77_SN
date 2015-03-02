@@ -23,7 +23,7 @@ BEGIN
 IF reset_n = '0' THEN
   dcf_77_s <= '0';
 ELSIF  (clk = '1' AND clk'event) THEN
-  dcf_77_s <= dcf_77_in;
+  dcf_77_s <= dcf_77_in;        -- Synchronisation du signal
 END IF;
 END PROCESS P1;
 

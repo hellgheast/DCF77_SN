@@ -16,8 +16,8 @@
       <key type="bool" value="false" name="StartBrowser"/>
     </section>
     <section name="Markers">
-      <key type="string" value="design:Toplevel:&lt;Internal>/comp914a64200d5f1e450a81d74d1c149e90" name="CurrentPath"/>
-      <key type="string" value="diag914a64200d5f1e450a81d74d0c149e90" name="CurrentDiagram"/>
+      <key type="string" value="design:Toplevel:&lt;Internal>/comp914a64200d5f1e450a81d74d1c149e90/comp914a6420b1102e450a81d74d04249e90" name="CurrentPath"/>
+      <key type="string" value="diag914a6420b1102e450a81d74de3249e90" name="CurrentDiagram"/>
     </section>
     <section name="Browser">
       <key type="string" value="design.DCF_77_IP" name="DetailView"/>
@@ -32,6 +32,10 @@
       <key type="int" value="0" name="diag914a64200d5f1e450a81d74d0c149e90"/>
       <key type="int" value="0" name="diag914a6420b1102e450a81d74de3249e90"/>
       <key type="int" value="0" name="diag914a64208903be450572d74d06d7bdc1"/>
+    </section>
+    <section name="DiagramView">
+      <key type="geometry" value="0,0,13746,6400" name="diag914a64200d5f1e450a81d74d0c149e90"/>
+      <key type="geometry" value="0,0,9286,4264" name="diag914a6420b1102e450a81d74de3249e90"/>
     </section>
   </sections>
 </CONFIGURATION>
