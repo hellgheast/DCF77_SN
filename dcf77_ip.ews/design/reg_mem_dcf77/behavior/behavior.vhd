@@ -53,7 +53,7 @@ signal reg_dmonth		: std_logic_vector(5 downto 0)  :="000000";
 signal reg_dweek		: std_logic_vector(2 downto 0)  :="000";
 signal reg_month		: std_logic_vector(5 downto 0) 	:="000000";
 signal reg_year			: std_logic_vector(7 downto 0):=;
-
+        
 signal wr_acc : std_logic;
 signal rd_acc: std_logic;
 
@@ -63,17 +63,41 @@ begin
 P1:PROCESS (clk,reset_n)
 BEGIN
   IF(reset_n = '0') THEN
-  ELSIF
+    reg_recbits   	<= (OTHERS => '0');
+    reg_status    	<= (OTHERS => '0');
+    reg_prescaler 	<= (OTHERS => '0');
+    reg_flags 		<= (OTHERS => '0');
+    reg_hours 		<= (OTHERS => '0');
+    reg_minutes		<= (OTHERS => '0');
+    reg_dmonth		<= (OTHERS => '0');
+    reg_dweek		<= (OTHERS => '0');
+    reg_month		<= (OTHERS => '0');
+    reg_year		<= (OTHERS => '0');
+  ELSIF (clk'event and clk = '1')THEN
+    IF (wr_acc = '1') THEN
+      CASE Adress IS
+      	WHEN c_prescaler_l => 
+      	  	 reg_prescaler(7 downto 0) <= data_in;
+      	WHEN c_prescaler_h =>
+      		 reg_prescaler(15 downto 8) <= data_in;
+      	WHEN OTHERS => null;
+    END IF;
+  END IF;
 END PROCESS;
+
+--Assignation des sorties
+prescaler <= reg_prescaler;
    
 --lecture  
-P2:PROCESS (clk,reset_n)
+P2:PROCESS (Adress,)
 BEGIN
 END PROCESS;
 
 --Signaux combinatoire
 wr_acc <= '1' WHEN write = '1' and chip_select = '1' ELSE '0';
 rd_acc <= '1' WHEN read = '1' and chip_select = '1' ELSE '0';
+
+--Ecriture registre en combinatoire venant du buffer
 
 end architecture behavior ; -- of reg_mem_dcf77
 

@@ -25,7 +25,7 @@ P1:process (clk, reset_n)
 	elsif(clk'EVENT and clk = '1') then
 		if ms_pulse = '1' then
 			if start = '1' then 
-				counter <= (OTHERS => '0');;
+				counter <= (OTHERS => '0');
 			else
 				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);
 			end if;      
