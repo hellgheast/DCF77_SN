@@ -8,7 +8,7 @@
 -- 
 --   port (
 --     clk      : in     std_logic;
---     freq     : in     std_logic;    -- Fréquence de freq = 10kHz -> 0.1ms
+--     freq     : in     std_logic;
 --     ms_pulse : out    std_logic;
 --     reset_n  : in     std_logic);
 -- 
@@ -23,7 +23,7 @@ P1:process (clk, reset_n)
 		ms_pulse <= '0';
 		counter  <= (OTHERS => '0');
 	elsif(clk'EVENT and clk = '1') then
-		if UNSIGNED(counter) = '9' then -- Pour avoir 1ms, il faut multiplier 0.1ms par 10 (0 -> 9 = 10)
+		if UNSIGNED(counter) = 9 then -- Pour avoir 1ms, il faut multiplier 0.1ms par 10 (0 -> 9 = 10)
 			counter <= (OTHERS => '0');
 			ms_pulse <= '1';
 		else
