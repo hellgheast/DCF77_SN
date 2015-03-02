@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Feb 23 14:08:05 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 02 13:43:22 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1424097479 "Mon Feb 16 15:37:59 2015")
-      (MODIFIED 1424696885 "Mon Feb 23 14:08:05 2015")
+      (MODIFIED 1425300201 "Mon Mar 02 13:43:21 2015")
     )
     (PORT
       (OBID "eprt914a64201d002e450a81d74dd2249e90")
@@ -150,8 +150,25 @@
                ""
                "architecture behavior of div_freq is"
                ""
+               "signal counter : std_logic_vector(15 downto 0); "
+               ""
                "begin"
                ""
+               "P1:process (clk, reset_n)"
+               "	begin"
+               "	if(reset_n) = '0' then -- reset asynchrone"
+               "		freq <= '0';"
+               "		counter <= (OTHERS => '0');"
+               "	elsif(clk'EVENT and clk = '1') then"
+               "		if UNSIGNED(counter) = 0 then"
+               "			counter <= div;"
+               "			freq <= '1';"
+               "		else"
+               "			counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) - 1);"
+               "			freq <= '0';"
+               "		end if;"
+               "	end if;		"
+               "end process;"
                "end architecture behavior ; -- of div_freq"
                ""
                "")

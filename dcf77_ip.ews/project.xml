@@ -34,8 +34,9 @@
       <key type="int" value="0" name="diag914a64208903be450572d74d06d7bdc1"/>
     </section>
     <section name="DiagramView">
-      <key type="geometry" value="0,0,13746,6400" name="diag914a64200d5f1e450a81d74d0c149e90"/>
-      <key type="geometry" value="0,0,9286,4264" name="diag914a6420b1102e450a81d74de3249e90"/>
+      <key type="geometry" value="0,0,14752,6397" name="diag914a64200d5f1e450a81d74d0c149e90"/>
+      <key type="geometry" value="0,0,9831,4264" name="diag914a6420b1102e450a81d74de3249e90"/>
+      <key type="geometry" value="0,0,9836,4266" name="diag914a64202a5f1e450a81d74d6b149e90"/>
     </section>
   </sections>
 </CONFIGURATION>

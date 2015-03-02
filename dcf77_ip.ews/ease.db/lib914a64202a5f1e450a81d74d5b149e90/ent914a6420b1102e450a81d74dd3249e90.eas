@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Feb 23 15:31:10 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 02 13:43:38 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1424097563 "Mon Feb 16 15:39:23 2015")
-      (MODIFIED 1424701869 "Mon Feb 23 15:31:09 2015")
+      (MODIFIED 1425300215 "Mon Mar 02 13:43:35 2015")
     )
     (PORT
       (OBID "eprt914a642043102e450a81d74d34249e90")
@@ -1473,12 +1473,18 @@
           (WIRE 1024 1216 1024 1536)
           (WIRE 704 1216 1024 1216)
           (WIRE 1024 1536 1344 1536)
+          (WIRE 1024 1216 1024 960)
+          (WIRE 1024 960 1344 960)
           (PORT
             (OBID "aprt914a6420b3102e450a81d74d25249e90")
             (NAME "freq")
           )
           (PORT
             (OBID "cprt914a64209472be450572d74d87c7bdc1")
+            (NAME "freq")
+          )
+          (PORT
+            (OBID "cprt914a64203472be450572d74d47c7bdc1")
             (NAME "freq")
           )
         )
@@ -1503,7 +1509,7 @@
             (FORMAT 4099)
           )
           (WIRE 2176 1664 2496 1664)
-          (WIRE 2496 1664 2496 1216)
+          (WIRE 2496 1216 2496 1664)
           (WIRE 2496 1216 3520 1216)
           (PORT
             (OBID "cprt914a64208c03be450572d74d13e7bdc1")

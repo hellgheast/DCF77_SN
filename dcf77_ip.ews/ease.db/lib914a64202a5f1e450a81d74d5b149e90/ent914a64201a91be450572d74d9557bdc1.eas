@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 02 13:29:55 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 02 13:43:22 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1424693665 "Mon Feb 23 13:14:25 2015")
-      (MODIFIED 1425299395 "Mon Mar 02 13:29:55 2015")
+      (MODIFIED 1425300201 "Mon Mar 02 13:43:21 2015")
     )
     (PORT
       (OBID "eprt914a64203c91be450572d74d0657bdc1")
@@ -156,7 +156,7 @@
                "IF reset_n = '0' THEN"
                "  dcf_77_s <= '0';"
                "ELSIF  (clk = '1' AND clk'event) THEN"
-               "  dcf_77_s <= dcf_77_in;"
+               "  dcf_77_s <= dcf_77_in;        -- Synchronisation du signal"
                "END IF;"
                "END PROCESS P1;"
                ""
