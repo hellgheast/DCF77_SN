@@ -26,7 +26,7 @@ P1:process (clk, reset_n)
 		freq <= '0';
 		counter <= (OTHERS => '0');
 	elsif(clk'EVENT and clk = '1') then
-		if UNSIGNED(counter) = 0 then
+		if UNSIGNED(counter) = 1 then
 			counter <= div;
 			freq <= '1';
 		else
