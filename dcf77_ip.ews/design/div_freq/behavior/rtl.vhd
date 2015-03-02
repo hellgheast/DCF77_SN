@@ -14,7 +14,7 @@
 -- 
 -- EASE/HDL end ----------------------------------------------------------------
 
-architecture behavior of div_freq is
+architecture behavior of div_freq is    -- Commentaire bidon2
 
 begin
 
