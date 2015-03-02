@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 02 13:43:38 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 02 13:47:45 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "vincent.meier")
+      (DESIGNER "mohammed.bensalah")
       (CREATED 1424097563 "Mon Feb 16 15:39:23 2015")
-      (MODIFIED 1425300215 "Mon Mar 02 13:43:35 2015")
+      (MODIFIED 1425300454 "Mon Mar 02 13:47:34 2015")
     )
     (PORT
       (OBID "eprt914a642043102e450a81d74d34249e90")
@@ -1452,44 +1452,6 @@
         )
       )
       (NET
-        (OBID "net914a64203e83be450572d74d25f7bdc1")
-        (HDL_IDENT
-          (NAME "freq")
-        )
-        (PART
-          (OBID "nprt914a64203e83be450572d74d75f7bdc1")
-          (CBN 1)
-        )
-        (PART
-          (OBID "nprt914a64203e83be450572d74d35f7bdc1")
-          (LABEL
-            (POSITION 1184 1328)
-            (SCALE 96)
-            (COLOR_LINE 52)
-            (SIDE 3)
-            (ALIGNMENT 7)
-            (FORMAT 4099)
-          )
-          (WIRE 1024 1216 1024 1536)
-          (WIRE 704 1216 1024 1216)
-          (WIRE 1024 1536 1344 1536)
-          (WIRE 1024 1216 1024 960)
-          (WIRE 1024 960 1344 960)
-          (PORT
-            (OBID "aprt914a6420b3102e450a81d74d25249e90")
-            (NAME "freq")
-          )
-          (PORT
-            (OBID "cprt914a64209472be450572d74d87c7bdc1")
-            (NAME "freq")
-          )
-          (PORT
-            (OBID "cprt914a64203472be450572d74d47c7bdc1")
-            (NAME "freq")
-          )
-        )
-      )
-      (NET
         (OBID "net914a64208593be450572d74d8108bdc1")
         (HDL_IDENT
           (NAME "s_pulse")
@@ -1738,6 +1700,44 @@
           (PORT
             (OBID "cprt914a64200b03be450572d74d6ed7bdc1")
             (NAME "start")
+          )
+        )
+      )
+      (NET
+        (OBID "net914a64206eb54f450770d74d184150f4")
+        (HDL_IDENT
+          (NAME "freq")
+        )
+        (PART
+          (OBID "nprt914a64206eb54f450770d74d284150f4")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt914a64206eb54f450770d74d384150f4")
+          (LABEL
+            (POSITION 1184 944)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 1344 960 1024 960)
+          (WIRE 1024 960 1024 1216)
+          (WIRE 1024 1216 1024 1536)
+          (WIRE 1024 1536 1344 1536)
+          (WIRE 704 1216 1024 1216)
+          (PORT
+            (OBID "cprt914a64203472be450572d74d47c7bdc1")
+            (NAME "freq")
+          )
+          (PORT
+            (OBID "cprt914a64209472be450572d74d87c7bdc1")
+            (NAME "freq")
+          )
+          (PORT
+            (OBID "aprt914a6420b3102e450a81d74d25249e90")
+            (NAME "freq")
           )
         )
       )

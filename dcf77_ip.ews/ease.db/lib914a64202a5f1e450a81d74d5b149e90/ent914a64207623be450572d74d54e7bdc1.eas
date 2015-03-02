@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Feb 23 15:33:12 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 02 15:22:27 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1424700007 "Mon Feb 23 15:00:07 2015")
-      (MODIFIED 1424701881 "Mon Feb 23 15:31:21 2015")
+      (MODIFIED 1425306147 "Mon Mar 02 15:22:27 2015")
     )
     (PORT
       (OBID "eprt914a6420c533be450572d74d26e7bdc1")
@@ -136,12 +136,34 @@
                "-- "
                "-- Copy of the interface declaration:"
                "-- "
+               "--   port ("
+               "--     clk          : in     std_logic;"
+               "--     ms_100_pulse : out    std_logic;"
+               "--     ms_pulse     : in     std_logic;"
+               "--     reset_n      : in     std_logic);"
+               "-- "
                "-- EASE/HDL end ----------------------------------------------------------------"
                ""
+               "signal counter : std_logic_vector(6 downto 0); -- Signal pour compteur (doit compter jusqu'à 100 -> 7 bits -> 2^7 = 128)"
+               ""
                "architecture behavior of counter_100_ms is"
-               ""
-               "begin"
-               ""
+               "P1:process (clk, reset_n)"
+               "	begin"
+               "	if(reset_n) = '0' then -- reset asynchrone"
+               "		ms_100_pulse <= '0';"
+               "		counter  <= (OTHERS => '0');"
+               "	elsif(clk'EVENT and clk = '1') then"
+               "		if ms_pulse = '1' then"
+               "			if UNSIGNED(counter) = 99 then -- Pour avoir 100ms, il faut multiplier 1ms par 100 (0 -> 99 = 100)"
+               "				counter <= (OTHERS => '0');"
+               "				ms_100_pulse <= '1';"
+               "			else"
+               "				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);"
+               "				ms_100_pulse <= '0';"
+               "			end if;      "
+               "		end if;		"
+               "	end if;		"
+               "end process;"
                "end architecture behavior ; -- of counter_100_ms"
                ""
                "")

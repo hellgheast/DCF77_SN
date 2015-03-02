@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Feb 23 15:33:12 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 02 15:22:27 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1424699544 "Mon Feb 23 14:52:24 2015")
-      (MODIFIED 1424701990 "Mon Feb 23 15:33:10 2015")
+      (MODIFIED 1425306146 "Mon Mar 02 15:22:26 2015")
     )
     (PORT
       (OBID "eprt914a64200b03be450572d74d3ed7bdc1")
@@ -811,10 +811,10 @@
           (NAME "u1")
           (USERNAME 1)
         )
-        (GEOMETRY 4032 1472 5248 1984)
+        (GEOMETRY 4032 1344 5248 1984)
         (SIDE 0)
         (LABEL
-          (POSITION 4032 1408)
+          (POSITION 4032 1280)
           (SCALE 128)
           (COLOR_LINE 0)
           (SIDE 3)
@@ -1001,6 +1001,41 @@
               (COLOR_LINE 0)
               (SIDE 1)
               (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt914a6420b1274f450fb2d74de42172e5")
+          (HDL_IDENT
+            (NAME "start")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 3992 1432 4072 1512)
+          (SIDE 3)
+          (LABEL
+            (POSITION 4096 1472)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "start")
+          )
+          (PORT "eprt914a6420b1274f450fb2d74dd42172e5")
+          (CONNECTION
+            (OBID "ncon914a6420b1274f450fb2d74df42172e5")
+            (GEOMETRY 3968 1472 3968 1472)
+            (SIDE 0)
+            (LABEL
+              (POSITION 3968 1440)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
               (FORMAT 128)
             )
           )
@@ -1424,7 +1459,7 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 2496 1472 704 1472)
+          (WIRE 704 1472 2496 1472)
           (PORT
             (OBID "cprt914a64209443be450572d74da9e7bdc1")
             (NAME "dcf_77_s")
@@ -1490,7 +1525,7 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 2496 1664 704 1664)
+          (WIRE 704 1664 2496 1664)
           (PORT
             (OBID "cprt914a6420ff33be450572d74da7e7bdc1")
             (NAME "clk")
@@ -1520,7 +1555,7 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 2496 1792 704 1792)
+          (WIRE 704 1792 2496 1792)
           (PORT
             (OBID "cprt914a64202043be450572d74de7e7bdc1")
             (NAME "reset_n")
@@ -1580,7 +1615,7 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 3968 1600 3712 1600)
+          (WIRE 3712 1600 3968 1600)
           (PORT
             (OBID "cprt914a6420ff23be450572d74db5e7bdc1")
             (NAME "nbbit_pulse")
@@ -1676,7 +1711,7 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 5696 1024 3712 1024)
+          (WIRE 3712 1024 5696 1024)
           (PORT
             (OBID "aprt914a64206b03be450572d74d1fd7bdc1")
             (NAME "stop")
@@ -1684,36 +1719,6 @@
           (PORT
             (OBID "cprt914a6420e343be450572d74d29e7bdc1")
             (NAME "stop")
-          )
-        )
-      )
-      (NET
-        (OBID "net914a6420ff53be450572d74d5de7bdc1")
-        (HDL_IDENT
-          (NAME "start")
-        )
-        (PART
-          (OBID "nprt914a6420ff53be450572d74d8de7bdc1")
-          (CBN 1)
-        )
-        (PART
-          (OBID "nprt914a6420ff53be450572d74d6de7bdc1")
-          (LABEL
-            (POSITION 4704 880)
-            (SCALE 96)
-            (COLOR_LINE 52)
-            (SIDE 3)
-            (ALIGNMENT 7)
-            (FORMAT 4099)
-          )
-          (WIRE 5696 896 3712 896)
-          (PORT
-            (OBID "aprt914a64200b03be450572d74d4ed7bdc1")
-            (NAME "start")
-          )
-          (PORT
-            (OBID "cprt914a6420b343be450572d74de8e7bdc1")
-            (NAME "start")
           )
         )
       )
@@ -1766,7 +1771,7 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 2496 512 704 512)
+          (WIRE 704 512 2496 512)
           (PORT
             (OBID "aprt914a64200593be450572d74d3108bdc1")
             (NAME "chip_select")
@@ -1774,6 +1779,43 @@
           (PORT
             (OBID "cprt914a6420f1a3be450572d74d3508bdc1")
             (NAME "chip_select")
+          )
+        )
+      )
+      (NET
+        (OBID "net914a642022274f450fb2d74d152172e5")
+        (HDL_IDENT
+          (NAME "start_net")
+        )
+        (PART
+          (OBID "nprt914a642022274f450fb2d74d252172e5")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt914a642022274f450fb2d74d352172e5")
+          (LABEL
+            (POSITION 4768 880)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 3968 1472 3840 1472)
+          (WIRE 3840 1472 3840 896)
+          (WIRE 3712 896 3840 896)
+          (WIRE 3840 896 5696 896)
+          (PORT
+            (OBID "cprt914a6420b1274f450fb2d74de42172e5")
+            (NAME "start")
+          )
+          (PORT
+            (OBID "cprt914a6420b343be450572d74de8e7bdc1")
+            (NAME "start")
+          )
+          (PORT
+            (OBID "aprt914a64200b03be450572d74d4ed7bdc1")
+            (NAME "start")
           )
         )
       )

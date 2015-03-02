@@ -10,7 +10,8 @@
 --     bit_count   : out    std_logic_vector(5 downto 0);
 --     clk         : in     std_logic;
 --     nbbit_pulse : in     std_logic;
---     reset_n     : in     std_logic);
+--     reset_n     : in     std_logic;
+--     start       : in     std_logic);
 -- 
 -- EASE/HDL end ----------------------------------------------------------------
 

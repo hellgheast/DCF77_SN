@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Feb 23 15:15:38 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 02 15:22:27 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -13,14 +13,14 @@
       (NAME "counter_nbbits")
       (USERNAME 1)
     )
-    (GEOMETRY 0 0 1216 512)
+    (GEOMETRY 0 0 1216 640)
     (SIDE 0)
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1424700030 "Mon Feb 23 15:00:30 2015")
-      (MODIFIED 1424700211 "Mon Feb 23 15:03:31 2015")
+      (MODIFIED 1425306147 "Mon Mar 02 15:22:27 2015")
     )
     (PORT
       (OBID "eprt914a64205e23be450572d74d25e7bdc1")
@@ -34,10 +34,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 216 40 296)
+      (GEOMETRY -40 344 40 424)
       (SIDE 3)
       (LABEL
-        (POSITION 64 256)
+        (POSITION 64 384)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -58,10 +58,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 344 40 424)
+      (GEOMETRY -40 472 40 552)
       (SIDE 3)
       (LABEL
-        (POSITION 64 384)
+        (POSITION 64 512)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -82,10 +82,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 88 40 168)
+      (GEOMETRY -40 216 40 296)
       (SIDE 3)
       (LABEL
-        (POSITION 64 128)
+        (POSITION 64 256)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -107,16 +107,40 @@
           )
         )
       )
-      (GEOMETRY 1176 88 1256 168)
+      (GEOMETRY 1176 216 1256 296)
       (SIDE 1)
       (LABEL
-        (POSITION 1152 128)
+        (POSITION 1152 256)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 1)
         (ALIGNMENT 5)
         (FORMAT 35)
         (TEXT "bit_count(5:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420b1274f450fb2d74dd42172e5")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "start")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "start")
       )
     )
     (ARCH_DECLARATION 2 "arch914a6420e723be450572d74df4e7bdc1" "behavior")
@@ -140,12 +164,34 @@
                "-- "
                "-- Copy of the interface declaration:"
                "-- "
+               "--   port ("
+               "--     bit_count   : out    std_logic_vector(5 downto 0);"
+               "--     clk         : in     std_logic;"
+               "--     nbbit_pulse : in     std_logic;"
+               "--     reset_n     : in     std_logic;"
+               "--     start       : in     std_logic);"
+               "-- "
                "-- EASE/HDL end ----------------------------------------------------------------"
                ""
+               ""
                "architecture behavior of counter_nbbits is"
-               ""
-               "begin"
-               ""
+               "P1:process (clk, reset_n)"
+               "	begin"
+               "	if(reset_n) = '0' then -- reset asynchrone"
+               "		ms_100_pulse <= '0';"
+               "		counter  <= (OTHERS => '0');"
+               "	elsif(clk'EVENT and clk = '1') then"
+               "		if ms_pulse = '1' then"
+               "			if UNSIGNED(counter) = 99 then -- Pour avoir 100ms, il faut multiplier 1ms par 100 (0 -> 99 = 100)"
+               "				counter <= (OTHERS => '0');"
+               "				ms_100_pulse <= '1';"
+               "			else"
+               "				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);"
+               "				ms_100_pulse <= '0';"
+               "			end if;      "
+               "		end if;		"
+               "	end if;		"
+               "end process;"
                "end architecture behavior ; -- of counter_nbbits"
                ""
                "")
