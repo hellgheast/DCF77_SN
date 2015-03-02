@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 02 15:22:27 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 02 16:01:17 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1424700030 "Mon Feb 23 15:00:30 2015")
-      (MODIFIED 1425306147 "Mon Mar 02 15:22:27 2015")
+      (MODIFIED 1425308477 "Mon Mar 02 16:01:17 2015")
     )
     (PORT
       (OBID "eprt914a64205e23be450572d74d25e7bdc1")
@@ -175,23 +175,24 @@
                ""
                ""
                "architecture behavior of counter_nbbits is"
+               ""
                "P1:process (clk, reset_n)"
                "	begin"
                "	if(reset_n) = '0' then -- reset asynchrone"
-               "		ms_100_pulse <= '0';"
                "		counter  <= (OTHERS => '0');"
                "	elsif(clk'EVENT and clk = '1') then"
                "		if ms_pulse = '1' then"
-               "			if UNSIGNED(counter) = 99 then -- Pour avoir 100ms, il faut multiplier 1ms par 100 (0 -> 99 = 100)"
-               "				counter <= (OTHERS => '0');"
-               "				ms_100_pulse <= '1';"
+               "			if start = '1' then "
+               "				counter <= (OTHERS => '0');;"
                "			else"
                "				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);"
-               "				ms_100_pulse <= '0';"
                "			end if;      "
                "		end if;		"
                "	end if;		"
-               "end process;"
+               "end process;         "
+               ""
+               "bit_count <= counter;"
+               ""
                "end architecture behavior ; -- of counter_nbbits"
                ""
                "")

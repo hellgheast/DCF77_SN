@@ -33,8 +33,5 @@
       <key type="int" value="0" name="diag914a6420b1102e450a81d74de3249e90"/>
       <key type="int" value="0" name="diag914a64208903be450572d74d06d7bdc1"/>
     </section>
-    <section name="DiagramView">
-      <key type="geometry" value="0,0,9284,4264" name="diag914a64208903be450572d74d06d7bdc1"/>
-    </section>
   </sections>
 </CONFIGURATION>
