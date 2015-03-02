@@ -1,0 +1,16 @@
+-- EASE/HDL begin --------------------------------------------------------------
+-- 
+-- Architecture 'behavior' of entity 'reg_mem_dcf77'.
+-- 
+--------------------------------------------------------------------------------
+-- 
+-- Copy of the interface declaration:
+-- 
+-- EASE/HDL end ----------------------------------------------------------------
+
+architecture behavior of reg_mem_dcf77 is
+
+begin
+
+end architecture behavior ; -- of reg_mem_dcf77
+

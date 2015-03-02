@@ -1,0 +1,37 @@
+<CONFIGURATION>
+  <sections>
+    <section name="FileEncoding">
+      <key type="string" value="ISO-Latin1" name="InternalEncoding"/>
+      <key type="string" value="ISO-Latin1" name="ExternalEncoding"/>
+    </section>
+    <section name="ObjectSearch">
+      <key type="bool" value="false" name="CaseSensitive"/>
+      <key type="bool" value="false" name="WholeWord"/>
+    </section>
+    <section name="TextSearch">
+      <key type="bool" value="false" name="CaseSensitive"/>
+      <key type="bool" value="false" name="WholeWord"/>
+    </section>
+    <section name="HTML">
+      <key type="bool" value="false" name="StartBrowser"/>
+    </section>
+    <section name="Markers">
+      <key type="string" value="design:Toplevel:&lt;Internal>/comp914a64200d5f1e450a81d74d1c149e90" name="CurrentPath"/>
+      <key type="string" value="diag914a64200d5f1e450a81d74d0c149e90" name="CurrentDiagram"/>
+    </section>
+    <section name="Browser">
+      <key type="string" value="design.DCF_77_IP" name="DetailView"/>
+    </section>
+    <section name="DiagramGridVisible">
+      <key type="bool" value="false" name="diag914a64202a5f1e450a81d74d6b149e90"/>
+      <key type="bool" value="true" name="diag914a64200d5f1e450a81d74d0c149e90"/>
+      <key type="bool" value="true" name="diag914a6420b1102e450a81d74de3249e90"/>
+      <key type="bool" value="true" name="diag914a64208903be450572d74d06d7bdc1"/>
+    </section>
+    <section name="DiagramGridFactor">
+      <key type="int" value="0" name="diag914a64200d5f1e450a81d74d0c149e90"/>
+      <key type="int" value="0" name="diag914a6420b1102e450a81d74de3249e90"/>
+      <key type="int" value="0" name="diag914a64208903be450572d74d06d7bdc1"/>
+    </section>
+  </sections>
+</CONFIGURATION>
