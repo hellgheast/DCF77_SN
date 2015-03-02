@@ -17,22 +17,23 @@
 
 
 architecture behavior of counter_nbbits is
+
 P1:process (clk, reset_n)
 	begin
 	if(reset_n) = '0' then -- reset asynchrone
-		ms_100_pulse <= '0';
 		counter  <= (OTHERS => '0');
 	elsif(clk'EVENT and clk = '1') then
 		if ms_pulse = '1' then
-			if UNSIGNED(counter) = 99 then -- Pour avoir 100ms, il faut multiplier 1ms par 100 (0 -> 99 = 100)
-				counter <= (OTHERS => '0');
-				ms_100_pulse <= '1';
+			if start = '1' then 
+				counter <= (OTHERS => '0');;
 			else
 				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);
-				ms_100_pulse <= '0';
 			end if;      
 		end if;		
 	end if;		
-end process;
+end process;         
+
+bit_count <= counter;
+
 end architecture behavior ; -- of counter_nbbits
 
