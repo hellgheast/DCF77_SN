@@ -7,10 +7,12 @@
 -- Copy of the interface declaration:
 -- 
 --   port (
---     clk      : in     std_logic;
---     freq     : in     std_logic;
---     ms_pulse : out    std_logic;
---     reset_n  : in     std_logic);
+--     clk                : in     std_logic;
+--     dcf_77_s           : in     std_logic;
+--     freq               : in     std_logic;
+--     high_ms_count      : out    std_logic_vector(7 downto 0);
+--     reset_n            : in     std_logic;
+--     rising_edge_dcf_77 : in     std_logic);
 -- 
 -- EASE/HDL end ----------------------------------------------------------------
   

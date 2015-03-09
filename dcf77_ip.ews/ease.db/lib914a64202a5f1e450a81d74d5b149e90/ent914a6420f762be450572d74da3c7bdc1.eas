@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 02 15:16:28 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 09 14:57:21 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -13,14 +13,14 @@
       (NAME "coutner_ms")
       (USERNAME 1)
     )
-    (GEOMETRY 0 0 704 448)
+    (GEOMETRY 0 0 1408 768)
     (SIDE 0)
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1424696959 "Mon Feb 23 14:09:19 2015")
-      (MODIFIED 1425305788 "Mon Mar 02 15:16:28 2015")
+      (MODIFIED 1425909441 "Mon Mar 09 14:57:21 2015")
     )
     (PORT
       (OBID "eprt914a6420c172be450572d74d36c7bdc1")
@@ -34,10 +34,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 216 40 296)
+      (GEOMETRY -40 472 40 552)
       (SIDE 3)
       (LABEL
-        (POSITION 64 256)
+        (POSITION 64 512)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -58,10 +58,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 344 40 424)
+      (GEOMETRY -40 600 40 680)
       (SIDE 3)
       (LABEL
-        (POSITION 64 384)
+        (POSITION 64 640)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -82,10 +82,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 88 40 168)
+      (GEOMETRY -40 344 40 424)
       (SIDE 3)
       (LABEL
-        (POSITION 64 128)
+        (POSITION 64 384)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -97,22 +97,71 @@
     (PORT
       (OBID "eprt914a64200672be450572d74d59c7bdc1")
       (HDL_IDENT
-        (NAME "ms_pulse")
+        (NAME "high_ms_count")
         (USERNAME 1)
         (ATTRIBUTES
           (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
         )
       )
-      (GEOMETRY 664 216 744 296)
+      (GEOMETRY 1368 344 1448 424)
       (SIDE 1)
       (LABEL
-        (POSITION 633 263)
+        (POSITION 1337 391)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 1)
         (ALIGNMENT 5)
         (FORMAT 35)
-        (TEXT "ms_pulse")
+        (TEXT "high_ms_count(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420223adf458472d74da986b0b7")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "dcf_77_s")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "dcf_77_s")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420443adf458472d74d1a86b0b7")
+      (HDL_IDENT
+        (NAME "rising_edge_dcf_77")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "rising_edge_dcf_77")
       )
     )
     (ARCH_DECLARATION 2 "arch914a6420f762be450572d74dd3c7bdc1" "behavior")
@@ -137,10 +186,12 @@
                "-- Copy of the interface declaration:"
                "-- "
                "--   port ("
-               "--     clk      : in     std_logic;"
-               "--     freq     : in     std_logic;"
-               "--     ms_pulse : out    std_logic;"
-               "--     reset_n  : in     std_logic);"
+               "--     clk                : in     std_logic;"
+               "--     dcf_77_s           : in     std_logic;"
+               "--     freq               : in     std_logic;"
+               "--     high_ms_count      : out    std_logic_vector(7 downto 0);"
+               "--     reset_n            : in     std_logic;"
+               "--     rising_edge_dcf_77 : in     std_logic);"
                "-- "
                "-- EASE/HDL end ----------------------------------------------------------------"
                "  "

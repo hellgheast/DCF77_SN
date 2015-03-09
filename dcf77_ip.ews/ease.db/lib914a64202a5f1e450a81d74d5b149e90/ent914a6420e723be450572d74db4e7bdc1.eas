@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 02 16:01:17 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 02 18:59:52 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "vincent.meier")
+      (DESIGNER "mohammed.bensalah")
       (CREATED 1424700030 "Mon Feb 23 15:00:30 2015")
-      (MODIFIED 1425308477 "Mon Mar 02 16:01:17 2015")
+      (MODIFIED 1425319192 "Mon Mar 02 18:59:52 2015")
     )
     (PORT
       (OBID "eprt914a64205e23be450572d74d25e7bdc1")
@@ -183,7 +183,7 @@
                "	elsif(clk'EVENT and clk = '1') then"
                "		if ms_pulse = '1' then"
                "			if start = '1' then "
-               "				counter <= (OTHERS => '0');;"
+               "				counter <= (OTHERS => '0');"
                "			else"
                "				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);"
                "			end if;      "

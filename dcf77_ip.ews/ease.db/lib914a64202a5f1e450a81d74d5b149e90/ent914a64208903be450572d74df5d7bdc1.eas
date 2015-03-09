@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 02 15:22:27 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 09 14:57:33 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -13,14 +13,14 @@
       (NAME "decode_block")
       (USERNAME 1)
     )
-    (GEOMETRY 0 0 1088 960)
+    (GEOMETRY 0 0 1472 960)
     (SIDE 0)
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1424699544 "Mon Feb 23 14:52:24 2015")
-      (MODIFIED 1425306146 "Mon Mar 02 15:22:26 2015")
+      (MODIFIED 1425909449 "Mon Mar 09 14:57:29 2015")
     )
     (PORT
       (OBID "eprt914a64200b03be450572d74d3ed7bdc1")
@@ -31,10 +31,10 @@
           (MODE 2)
         )
       )
-      (GEOMETRY 1048 88 1128 168)
+      (GEOMETRY 1432 88 1512 168)
       (SIDE 1)
       (LABEL
-        (POSITION 1024 128)
+        (POSITION 1408 128)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 1)
@@ -52,10 +52,10 @@
           (MODE 2)
         )
       )
-      (GEOMETRY 1048 216 1128 296)
+      (GEOMETRY 1432 216 1512 296)
       (SIDE 1)
       (LABEL
-        (POSITION 1024 256)
+        (POSITION 1408 256)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 1)
@@ -73,10 +73,10 @@
           (MODE 2)
         )
       )
-      (GEOMETRY 1048 344 1128 424)
+      (GEOMETRY 1432 344 1512 424)
       (SIDE 1)
       (LABEL
-        (POSITION 1024 384)
+        (POSITION 1408 384)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 1)
@@ -98,10 +98,10 @@
           )
         )
       )
-      (GEOMETRY 1048 472 1128 552)
+      (GEOMETRY 1432 472 1512 552)
       (SIDE 1)
       (LABEL
-        (POSITION 1024 512)
+        (POSITION 1408 512)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 1)
@@ -134,10 +134,14 @@
     (PORT
       (OBID "eprt914a64208c03be450572d74dc1e7bdc1")
       (HDL_IDENT
-        (NAME "ms_pulse")
+        (NAME "high_ms_count")
         (USERNAME 1)
         (ATTRIBUTES
           (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
         )
       )
       (GEOMETRY -40 344 40 424)
@@ -149,28 +153,7 @@
         (SIDE 3)
         (ALIGNMENT 3)
         (FORMAT 35)
-        (TEXT "ms_pulse")
-      )
-    )
-    (PORT
-      (OBID "eprt914a64208c03be450572d74de1e7bdc1")
-      (HDL_IDENT
-        (NAME "s_pulse")
-        (USERNAME 1)
-        (ATTRIBUTES
-          (MODE 1)
-        )
-      )
-      (GEOMETRY -40 472 40 552)
-      (SIDE 3)
-      (LABEL
-        (POSITION 64 512)
-        (SCALE 96)
-        (COLOR_LINE 0)
-        (SIDE 3)
-        (ALIGNMENT 3)
-        (FORMAT 35)
-        (TEXT "s_pulse")
+        (TEXT "high_ms_count(7:0)")
       )
     )
     (PORT
@@ -237,6 +220,30 @@
         (ALIGNMENT 3)
         (FORMAT 35)
         (TEXT "chip_select")
+      )
+    )
+    (PORT
+      (OBID "eprt914a642019f9df458472d74db786b0b7")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "sec_overflow")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "sec_overflow")
       )
     )
     (ARCH_DECLARATION 1 "arch914a64208903be450572d74d16d7bdc1" "structure")
@@ -436,65 +443,34 @@
       (PORT
         (OBID "aprt914a64208c03be450572d74d52e7bdc1")
         (HDL_IDENT
-          (NAME "ms_pulse")
+          (NAME "high_ms_count")
           (USERNAME 1)
           (ATTRIBUTES
             (MODE 1)
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "7" "0")
+            )
           )
         )
-        (GEOMETRY 600 856 680 936)
+        (GEOMETRY 1304 984 1384 1064)
         (SIDE 1)
         (LABEL
-          (POSITION 576 896)
+          (POSITION 1280 1024)
           (SCALE 96)
           (COLOR_LINE 0)
           (SIDE 3)
           (ALIGNMENT 5)
           (FORMAT 35)
-          (TEXT "ms_pulse")
+          (TEXT "high_ms_count(7:0)")
         )
         (PORT "eprt914a64208c03be450572d74dc1e7bdc1")
         (CONNECTION
           (OBID "ncon914a64208c03be450572d74d62e7bdc1")
-          (GEOMETRY 704 896 704 896)
+          (GEOMETRY 1408 1024 1408 1024)
           (SIDE 2)
           (LABEL
-            (POSITION 704 928)
-            (SCALE 96)
-            (COLOR_LINE 0)
-            (SIDE 1)
-            (ALIGNMENT 0)
-            (FORMAT 128)
-          )
-        )
-      )
-      (PORT
-        (OBID "aprt914a64208c03be450572d74d72e7bdc1")
-        (HDL_IDENT
-          (NAME "s_pulse")
-          (USERNAME 1)
-          (ATTRIBUTES
-            (MODE 1)
-          )
-        )
-        (GEOMETRY 600 1304 680 1384)
-        (SIDE 1)
-        (LABEL
-          (POSITION 576 1344)
-          (SCALE 96)
-          (COLOR_LINE 0)
-          (SIDE 3)
-          (ALIGNMENT 5)
-          (FORMAT 35)
-          (TEXT "s_pulse")
-        )
-        (PORT "eprt914a64208c03be450572d74de1e7bdc1")
-        (CONNECTION
-          (OBID "ncon914a64208c03be450572d74d82e7bdc1")
-          (GEOMETRY 704 1344 704 1344)
-          (SIDE 2)
-          (LABEL
-            (POSITION 704 1376)
+            (POSITION 1408 1056)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
@@ -608,200 +584,38 @@
           )
         )
       )
-      (COMPONENT
-        (OBID "comp914a64207623be450572d74d74e7bdc1")
+      (PORT
+        (OBID "aprt914a642019f9df458472d74dc786b0b7")
         (HDL_IDENT
-          (NAME "u0")
+          (NAME "sec_overflow")
           (USERNAME 1)
+          (ATTRIBUTES
+            (MODE 1)
+          )
         )
-        (GEOMETRY 1216 768 2176 1216)
-        (SIDE 0)
+        (GEOMETRY 600 664 680 744)
+        (SIDE 1)
         (LABEL
-          (POSITION 661 770)
-          (SCALE 128)
+          (POSITION 576 704)
+          (SCALE 96)
           (COLOR_LINE 0)
           (SIDE 3)
-          (ALIGNMENT 6)
-          (FORMAT 13)
-          (TEXT "u0:counter_100_ms:behavior(V)")
+          (ALIGNMENT 5)
+          (FORMAT 35)
+          (TEXT "sec_overflow")
         )
-        (ENTITY "lib914a64202a5f1e450a81d74d5b149e90" "ent914a64207623be450572d74d54e7bdc1")
-        (PORT
-          (OBID "cprt914a6420c533be450572d74d36e7bdc1")
-          (HDL_IDENT
-            (NAME "ms_pulse")
-            (USERNAME 1)
-            (ATTRIBUTES
-              (MODE 1)
-            )
-          )
-          (GEOMETRY 1176 856 1256 936)
-          (SIDE 3)
+        (PORT "eprt914a642019f9df458472d74db786b0b7")
+        (CONNECTION
+          (OBID "ncon914a642019f9df458472d74dd786b0b7")
+          (GEOMETRY 704 704 704 704)
+          (SIDE 2)
           (LABEL
-            (POSITION 1280 896)
-            (SCALE 96)
-            (COLOR_LINE 0)
-            (SIDE 3)
-            (ALIGNMENT 3)
-            (FORMAT 35)
-            (TEXT "ms_pulse")
-          )
-          (PORT "eprt914a6420c533be450572d74d26e7bdc1")
-          (CONNECTION
-            (OBID "ncon914a6420c533be450572d74d46e7bdc1")
-            (GEOMETRY 1152 896 1152 896)
-            (SIDE 0)
-            (LABEL
-              (POSITION 1152 864)
-              (SCALE 96)
-              (COLOR_LINE 0)
-              (SIDE 3)
-              (ALIGNMENT 8)
-              (FORMAT 128)
-            )
-          )
-        )
-        (PORT
-          (OBID "cprt914a64204633be450572d74d76e7bdc1")
-          (HDL_IDENT
-            (NAME "clk")
-            (USERNAME 1)
-            (ATTRIBUTES
-              (MODE 1)
-            )
-          )
-          (GEOMETRY 1176 984 1256 1064)
-          (SIDE 3)
-          (LABEL
-            (POSITION 1280 1024)
-            (SCALE 96)
-            (COLOR_LINE 0)
-            (SIDE 3)
-            (ALIGNMENT 3)
-            (FORMAT 35)
-            (TEXT "clk")
-          )
-          (PORT "eprt914a64204633be450572d74d66e7bdc1")
-          (CBN
-            (OBID "cbn914a64201553be450572d74d1be7bdc1")
-            (HDL_IDENT
-              (NAME "u1_clk")
-              (USERNAME 1)
-            )
-            (GEOMETRY 1016 984 1160 1064)
-            (SIDE 0)
-            (LABEL
-              (POSITION 960 1024)
-              (SCALE 96)
-              (COLOR_LINE 0)
-              (SIDE 3)
-              (ALIGNMENT 5)
-              (FORMAT 1)
-              (TEXT "u1_clk")
-            )
-            (TYPE 0)
-          )
-          (CONNECTION
-            (OBID "ncon914a64204633be450572d74d86e7bdc1")
-            (GEOMETRY 1152 1024 1152 1024)
-            (SIDE 0)
-            (LABEL
-              (POSITION 960 1024)
-              (SCALE 96)
-              (COLOR_LINE 0)
-              (SIDE 3)
-              (ALIGNMENT 5)
-              (FORMAT 128)
-            )
-          )
-        )
-        (PORT
-          (OBID "cprt914a6420c633be450572d74db6e7bdc1")
-          (HDL_IDENT
-            (NAME "reset_n")
-            (USERNAME 1)
-            (ATTRIBUTES
-              (MODE 1)
-            )
-          )
-          (GEOMETRY 1176 1112 1256 1192)
-          (SIDE 3)
-          (LABEL
-            (POSITION 1280 1152)
-            (SCALE 96)
-            (COLOR_LINE 0)
-            (SIDE 3)
-            (ALIGNMENT 3)
-            (FORMAT 35)
-            (TEXT "reset_n")
-          )
-          (PORT "eprt914a6420c633be450572d74da6e7bdc1")
-          (CBN
-            (OBID "cbn914a64202553be450572d74d2be7bdc1")
-            (HDL_IDENT
-              (NAME "u1_reset_n")
-              (USERNAME 1)
-            )
-            (GEOMETRY 1016 1112 1160 1192)
-            (SIDE 0)
-            (LABEL
-              (POSITION 960 1152)
-              (SCALE 96)
-              (COLOR_LINE 0)
-              (SIDE 3)
-              (ALIGNMENT 5)
-              (FORMAT 1)
-              (TEXT "u1_reset_n")
-            )
-            (TYPE 0)
-          )
-          (CONNECTION
-            (OBID "ncon914a6420c633be450572d74dc6e7bdc1")
-            (GEOMETRY 1152 1152 1152 1152)
-            (SIDE 0)
-            (LABEL
-              (POSITION 960 1152)
-              (SCALE 96)
-              (COLOR_LINE 0)
-              (SIDE 3)
-              (ALIGNMENT 5)
-              (FORMAT 128)
-            )
-          )
-        )
-        (PORT
-          (OBID "cprt914a64207a33be450572d74df6e7bdc1")
-          (HDL_IDENT
-            (NAME "ms_100_pulse")
-            (USERNAME 1)
-            (ATTRIBUTES
-              (MODE 2)
-            )
-          )
-          (GEOMETRY 2136 984 2216 1064)
-          (SIDE 1)
-          (LABEL
-            (POSITION 2127 1002)
+            (POSITION 704 736)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
-            (ALIGNMENT 5)
-            (FORMAT 35)
-            (TEXT "ms_100_pulse")
-          )
-          (PORT "eprt914a64207a33be450572d74de6e7bdc1")
-          (CONNECTION
-            (OBID "ncon914a64207a33be450572d74d07e7bdc1")
-            (GEOMETRY 2240 1024 2240 1024)
-            (SIDE 2)
-            (LABEL
-              (POSITION 2240 1056)
-              (SCALE 96)
-              (COLOR_LINE 0)
-              (SIDE 1)
-              (ALIGNMENT 0)
-              (FORMAT 128)
-            )
+            (ALIGNMENT 0)
+            (FORMAT 128)
           )
         )
       )
@@ -1130,47 +944,16 @@
           )
         )
         (PORT
-          (OBID "cprt914a6420a043be450572d74d28e7bdc1")
-          (HDL_IDENT
-            (NAME "s_pulse")
-            (USERNAME 1)
-            (ATTRIBUTES
-              (MODE 1)
-            )
-          )
-          (GEOMETRY 2520 1304 2600 1384)
-          (SIDE 3)
-          (LABEL
-            (POSITION 2624 1344)
-            (SCALE 96)
-            (COLOR_LINE 0)
-            (SIDE 3)
-            (ALIGNMENT 3)
-            (FORMAT 35)
-            (TEXT "s_pulse")
-          )
-          (PORT "eprt914a6420a043be450572d74d18e7bdc1")
-          (CONNECTION
-            (OBID "ncon914a6420a043be450572d74d38e7bdc1")
-            (GEOMETRY 2496 1344 2496 1344)
-            (SIDE 0)
-            (LABEL
-              (POSITION 2496 1312)
-              (SCALE 96)
-              (COLOR_LINE 0)
-              (SIDE 3)
-              (ALIGNMENT 8)
-              (FORMAT 128)
-            )
-          )
-        )
-        (PORT
           (OBID "cprt914a64206143be450572d74d68e7bdc1")
           (HDL_IDENT
-            (NAME "ms_100_pulse")
+            (NAME "high_ms_count")
             (USERNAME 1)
             (ATTRIBUTES
               (MODE 1)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "7" "0")
+              )
             )
           )
           (GEOMETRY 2520 984 2600 1064)
@@ -1182,7 +965,7 @@
             (SIDE 3)
             (ALIGNMENT 3)
             (FORMAT 35)
-            (TEXT "ms_100_pulse")
+            (TEXT "high_ms_count(7:0)")
           )
           (PORT "eprt914a64206143be450572d74d58e7bdc1")
           (CONNECTION
@@ -1409,34 +1192,39 @@
             )
           )
         )
-      )
-      (NET
-        (OBID "net914a6420b053be450572d74dd9e7bdc1")
-        (HDL_IDENT
-          (NAME "ms_100_pulse")
-        )
-        (PART
-          (OBID "nprt914a6420b053be450572d74d0ae7bdc1")
-          (CBN 1)
-        )
-        (PART
-          (OBID "nprt914a6420b053be450572d74de9e7bdc1")
+        (PORT
+          (OBID "cprt914a64208b6adf458472d74deb96b0b7")
+          (HDL_IDENT
+            (NAME "sec_overflow")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 2520 664 2600 744)
+          (SIDE 3)
           (LABEL
-            (POSITION 2368 1008)
+            (POSITION 2624 704)
             (SCALE 96)
-            (COLOR_LINE 52)
-            (SIDE 3)
-            (ALIGNMENT 7)
-            (FORMAT 4099)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "sec_overflow")
           )
-          (WIRE 2240 1024 2496 1024)
-          (PORT
-            (OBID "cprt914a64207a33be450572d74df6e7bdc1")
-            (NAME "ms_100_pulse")
-          )
-          (PORT
-            (OBID "cprt914a64206143be450572d74d68e7bdc1")
-            (NAME "ms_100_pulse")
+          (PORT "eprt914a64208b6adf458472d74ddb96b0b7")
+          (CONNECTION
+            (OBID "ncon914a64208b6adf458472d74dfb96b0b7")
+            (GEOMETRY 2496 704 2496 704)
+            (SIDE 0)
+            (LABEL
+              (POSITION 2496 672)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
           )
         )
       )
@@ -1479,10 +1267,6 @@
           (OBID "nprt914a6420c453be450572d74dcae7bdc1")
           (CBN 1)
           (PORT
-            (OBID "cprt914a6420c633be450572d74db6e7bdc1")
-            (NAME "reset_n")
-          )
-          (PORT
             (OBID "cprt914a6420de23be450572d74d75e7bdc1")
             (NAME "reset_n")
           )
@@ -1496,10 +1280,6 @@
         (PART
           (OBID "nprt914a6420f453be450572d74d0be7bdc1")
           (CBN 1)
-          (PORT
-            (OBID "cprt914a64204633be450572d74d76e7bdc1")
-            (NAME "clk")
-          )
           (PORT
             (OBID "cprt914a64205e23be450572d74d35e7bdc1")
             (NAME "clk")
@@ -1563,36 +1343,6 @@
           (PORT
             (OBID "aprt914a64208c03be450572d74db2e7bdc1")
             (NAME "reset_n")
-          )
-        )
-      )
-      (NET
-        (OBID "net914a64204853be450572d74d1ce7bdc1")
-        (HDL_IDENT
-          (NAME "ms_pulse")
-        )
-        (PART
-          (OBID "nprt914a64204853be450572d74d4ce7bdc1")
-          (CBN 1)
-        )
-        (PART
-          (OBID "nprt914a64204853be450572d74d2ce7bdc1")
-          (LABEL
-            (POSITION 928 880)
-            (SCALE 96)
-            (COLOR_LINE 52)
-            (SIDE 3)
-            (ALIGNMENT 7)
-            (FORMAT 4099)
-          )
-          (WIRE 704 896 1152 896)
-          (PORT
-            (OBID "cprt914a6420c533be450572d74d36e7bdc1")
-            (NAME "ms_pulse")
-          )
-          (PORT
-            (OBID "aprt914a64208c03be450572d74d52e7bdc1")
-            (NAME "ms_pulse")
           )
         )
       )
@@ -1723,36 +1473,6 @@
         )
       )
       (NET
-        (OBID "net914a6420b0a3be450572d74de408bdc1")
-        (HDL_IDENT
-          (NAME "s_pulse")
-        )
-        (PART
-          (OBID "nprt914a6420b0a3be450572d74d1508bdc1")
-          (CBN 1)
-        )
-        (PART
-          (OBID "nprt914a6420b0a3be450572d74df408bdc1")
-          (LABEL
-            (POSITION 1600 1328)
-            (SCALE 96)
-            (COLOR_LINE 52)
-            (SIDE 3)
-            (ALIGNMENT 7)
-            (FORMAT 4099)
-          )
-          (WIRE 704 1344 2496 1344)
-          (PORT
-            (OBID "cprt914a6420a043be450572d74d28e7bdc1")
-            (NAME "s_pulse")
-          )
-          (PORT
-            (OBID "aprt914a64208c03be450572d74d72e7bdc1")
-            (NAME "s_pulse")
-          )
-        )
-      )
-      (NET
         (OBID "net914a642052a3be450572d74d6508bdc1")
         (HDL_IDENT
           (NAME "chip_select")
@@ -1801,8 +1521,8 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 3968 1472 3840 1472)
-          (WIRE 3840 1472 3840 896)
+          (WIRE 3840 1472 3968 1472)
+          (WIRE 3840 896 3840 1472)
           (WIRE 3712 896 3840 896)
           (WIRE 3840 896 5696 896)
           (PORT
@@ -1816,6 +1536,72 @@
           (PORT
             (OBID "aprt914a64200b03be450572d74d4ed7bdc1")
             (NAME "start")
+          )
+        )
+      )
+      (NET
+        (OBID "net914a6420a4b9df458472d74d2186b0b7")
+        (HDL_IDENT
+          (NAME "high_ms_count")
+          (ATTRIBUTES
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "7" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprt914a6420a4b9df458472d74d7186b0b7")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt914a6420a4b9df458472d74d3186b0b7")
+          (LABEL
+            (POSITION 1952 1008)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 2496 1024 1408 1024)
+          (PORT
+            (OBID "cprt914a64206143be450572d74d68e7bdc1")
+            (NAME "high_ms_count")
+          )
+          (PORT
+            (OBID "aprt914a64208c03be450572d74d52e7bdc1")
+            (NAME "high_ms_count")
+          )
+        )
+      )
+      (NET
+        (OBID "net914a6420fb6adf458472d74d1c96b0b7")
+        (HDL_IDENT
+          (NAME "sec_overflow")
+        )
+        (PART
+          (OBID "nprt914a6420fb6adf458472d74d4c96b0b7")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt914a6420fb6adf458472d74d2c96b0b7")
+          (LABEL
+            (POSITION 1600 688)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 2496 704 704 704)
+          (PORT
+            (OBID "aprt914a642019f9df458472d74dc786b0b7")
+            (NAME "sec_overflow")
+          )
+          (PORT
+            (OBID "cprt914a64208b6adf458472d74deb96b0b7")
+            (NAME "sec_overflow")
           )
         )
       )
