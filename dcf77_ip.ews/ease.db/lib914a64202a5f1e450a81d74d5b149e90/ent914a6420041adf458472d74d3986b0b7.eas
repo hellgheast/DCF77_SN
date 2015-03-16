@@ -1,0 +1,59 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent914a6420041adf458472d74d3986b0b7")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Mon Mar 09 14:57:21 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "falling_edge_detection")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 832 512)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "mohammed.bensalah")
+      (CREATED 1425908032 "Mon Mar 09 14:33:52 2015")
+      (MODIFIED 1425908032 "Mon Mar 09 14:33:52 2015")
+    )
+    (ARCH_DECLARATION 2 "arch914a6420041adf458472d74d7986b0b7" "behavioral")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch914a6420041adf458472d74d7986b0b7")
+    (HDL_IDENT
+      (NAME "behavioral")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file914a6420041adf458472d74d8986b0b7")
+        (NAME "behavioral.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'behavioral' of entity 'falling_edge_detection'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture behavioral of falling_edge_detection is"
+               ""
+               "begin"
+               ""
+               "end architecture behavioral ; -- of falling_edge_detection"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

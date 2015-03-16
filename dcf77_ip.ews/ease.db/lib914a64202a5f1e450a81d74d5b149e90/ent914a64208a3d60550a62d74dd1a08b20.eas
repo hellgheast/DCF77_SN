@@ -1,0 +1,237 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent914a64208a3d60550a62d74dd1a08b20")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Mon Mar 16 15:49:24 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "counter_1_ms")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1280 768)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "mohammed.bensalah")
+      (CREATED 1426510760 "Mon Mar 16 13:59:20 2015")
+      (MODIFIED 1426517336 "Mon Mar 16 15:48:56 2015")
+    )
+    (PORT
+      (OBID "eprt914a6420054d60550a62d74d32a08b20")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "rising_edge_dcf_77")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "rising_edge_dcf_77")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420854d60550a62d74d72a08b20")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "freq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "freq")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420b35d60550a62d74db2a08b20")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "dcf_77_s")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "dcf_77_s")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420045d60550a62d74df2a08b20")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420445d60550a62d74d33a08b20")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "reset_n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reset_n")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420b16d60550a62d74d93a08b20")
+      (HDL_IDENT
+        (NAME "ms_passed")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1240 216 1320 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1194 242)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ms_passed")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch914a64208a3d60550a62d74d02a08b20" "behavioral")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch914a64208a3d60550a62d74d02a08b20")
+    (HDL_IDENT
+      (NAME "behavioral")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file914a64208a3d60550a62d74d12a08b20")
+        (NAME "behavioral.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'behavioral' of entity 'counter_1_ms'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     clk                : in     std_logic;"
+               "--     dcf_77_s           : in     std_logic;"
+               "--     freq               : in     std_logic;"
+               "--     ms_passed          : out    std_logic;"
+               "--     reset_n            : in     std_logic;"
+               "--     rising_edge_dcf_77 : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture behavioral of counter_1_ms is"
+               ""
+               "signal counter : std_logic_vector(3 downto 0); "
+               "signal enabled : std_logic:=0;"
+               ""
+               "begin"
+               ""
+               "P1:process(clk,reset_n)"
+               "begin    "
+               "	IF (reset_n) = '0' THEN -- reset asynchrone "
+               "		enabled <= '0';"
+               "		counter  <= (OTHERS => '0');"
+               "	ELSIF(clk'EVENT and clk = '1') THEN  -- Partie synchrone"
+               "	"
+               "	IF (rising_edge_dcf_77 = '1') THEN"
+               "		enabled <= '1';"
+               "		counter <= (OTHERS => '0');"
+               "    ELSIF (enabled = '1' AND dcf_77_s = '1') THEN"
+               "	  IF (freq = '1') THEN"
+               "	    IF UNSIGNED(counter) = 9 then -- Pour avoir 1ms, il faut multiplier 0.1ms par 10 (0 -> 9 = 10)"
+               "	        counter <= (OTHERS => '0');"
+               "	        ms_passed <= '1';"
+               "	    ELSE"
+               "	  	    counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);"
+               "	  	    ms_passed <= '0';"
+               "	  	END IF;	"
+               "	ELSIF (dcf_77_s = '0') THEN "
+               "	  enabled <= '0';"
+               "	END IF;"
+               "	"
+               ""
+               "end process;"
+               ""
+               "end architecture behavioral ; -- of counter_1_ms"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)
