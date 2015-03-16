@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 09 15:36:49 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 16 14:03:29 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1424097563 "Mon Feb 16 15:39:23 2015")
-      (MODIFIED 1425911805 "Mon Mar 09 15:36:45 2015")
+      (MODIFIED 1426510995 "Mon Mar 16 14:03:15 2015")
     )
     (PORT
       (OBID "eprt914a642043102e450a81d74d34249e90")
@@ -163,7 +163,7 @@
     (PORT
       (OBID "eprt914a642079402e450a81d74d76249e90")
       (HDL_IDENT
-        (NAME "state")
+        (NAME "state_bit")
         (USERNAME 1)
         (ATTRIBUTES
           (MODE 2)
@@ -178,7 +178,7 @@
         (SIDE 1)
         (ALIGNMENT 5)
         (FORMAT 35)
-        (TEXT "state")
+        (TEXT "state_bit")
       )
     )
     (PORT
@@ -494,7 +494,7 @@
       (PORT
         (OBID "aprt914a642079402e450a81d74da6249e90")
         (HDL_IDENT
-          (NAME "state")
+          (NAME "state_bit")
           (USERNAME 1)
           (ATTRIBUTES
             (MODE 2)
@@ -509,7 +509,7 @@
           (SIDE 1)
           (ALIGNMENT 3)
           (FORMAT 35)
-          (TEXT "state")
+          (TEXT "state_bit")
         )
         (PORT "eprt914a642079402e450a81d74d76249e90")
         (CONNECTION
@@ -980,7 +980,7 @@
         (PORT
           (OBID "cprtd9a1c66f5adadf45474009c3e21466f6")
           (HDL_IDENT
-            (NAME "state")
+            (NAME "state_bit")
             (USERNAME 1)
             (ATTRIBUTES
               (MODE 2)
@@ -995,7 +995,7 @@
             (SIDE 1)
             (ALIGNMENT 5)
             (FORMAT 35)
-            (TEXT "state")
+            (TEXT "state_bit")
           )
           (PORT "eprtd9a1c66f5adadf45474009c3a21466f6")
           (CONNECTION
@@ -1786,7 +1786,7 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 3840 832 3840 576)
+          (WIRE 3840 576 3840 832)
           (WIRE 3840 832 4032 832)
           (WIRE 704 576 3840 576)
           (PORT
@@ -1824,7 +1824,7 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 5696 1216 5632 1216)
+          (WIRE 5632 1216 5696 1216)
           (PORT
             (OBID "aprt914a64201a402e450a81d74d07249e90")
             (NAME "bit_count")
@@ -1854,7 +1854,7 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 5696 960 5632 960)
+          (WIRE 5632 960 5696 960)
           (PORT
             (OBID "aprt914a642096102e450a81d74d46249e90")
             (NAME "stop")
@@ -1884,7 +1884,7 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 5696 832 5632 832)
+          (WIRE 5632 832 5696 832)
           (PORT
             (OBID "aprt914a6420e5102e450a81d74de5249e90")
             (NAME "start")
@@ -1914,12 +1914,12 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 2368 2304 2368 2048)
-          (WIRE 2752 2304 2368 2304)
+          (WIRE 2368 2048 2368 2304)
+          (WIRE 2368 2304 2752 2304)
           (WIRE 2240 2304 2368 2304)
           (WIRE 1408 2048 2368 2048)
           (WIRE 1408 1152 1408 2048)
-          (WIRE 1728 1152 1408 1152)
+          (WIRE 1408 1152 1728 1152)
           (PORT
             (OBID "cprt914a6420c55adf458472d74d0196b0b7")
             (NAME "rising_edge_dcf_77")
@@ -1959,9 +1959,9 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 4032 1088 3392 1088)
-          (WIRE 3392 1408 3392 1088)
-          (WIRE 3392 1408 3264 1408)
+          (WIRE 3392 1088 4032 1088)
+          (WIRE 3392 1088 3392 1408)
+          (WIRE 3264 1408 3392 1408)
           (PORT
             (OBID "cprt914a64208c03be450572d74df2e7bdc1")
             (NAME "high_ms_count")
@@ -1975,7 +1975,7 @@
       (NET
         (OBID "netd9a1c66facdadf45474009c3d61466f6")
         (HDL_IDENT
-          (NAME "state")
+          (NAME "state_bit")
         )
         (PART
           (OBID "nprtd9a1c66facdadf45474009c3e61466f6")
@@ -1994,11 +1994,11 @@
           (WIRE 5632 1088 5696 1088)
           (PORT
             (OBID "cprtd9a1c66f5adadf45474009c3e21466f6")
-            (NAME "state")
+            (NAME "state_bit")
           )
           (PORT
             (OBID "aprt914a642079402e450a81d74da6249e90")
-            (NAME "state")
+            (NAME "state_bit")
           )
         )
       )
@@ -2021,11 +2021,11 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 768 2304 768 1280)
-          (WIRE 1728 1280 768 1280)
+          (WIRE 768 1280 768 2304)
+          (WIRE 768 1280 1728 1280)
           (WIRE 768 704 768 1280)
           (WIRE 704 704 768 704)
-          (WIRE 3712 704 768 704)
+          (WIRE 768 704 3712 704)
           (WIRE 3712 704 3712 960)
           (WIRE 3712 960 4032 960)
           (PORT
@@ -2065,12 +2065,12 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 1024 1920 1024 1408)
-          (WIRE 1024 1408 1024 832)
-          (WIRE 1728 1408 1024 1408)
+          (WIRE 1024 1408 1024 1920)
+          (WIRE 1024 832 1024 1408)
+          (WIRE 1024 1408 1728 1408)
           (WIRE 704 832 1024 832)
           (WIRE 1024 1920 2496 1920)
-          (WIRE 2496 2176 2496 1920)
+          (WIRE 2496 1920 2496 2176)
           (WIRE 2496 2176 2752 2176)
           (PORT
             (OBID "cprt914a6420754adf458472d74d4f86b0b7")
@@ -2106,7 +2106,7 @@
             (FORMAT 4099)
           )
           (WIRE 3776 1216 3776 1792)
-          (WIRE 4032 1216 3776 1216)
+          (WIRE 3776 1216 4032 1216)
           (WIRE 4288 1792 4288 2176)
           (WIRE 3776 1792 4288 1792)
           (WIRE 3904 2176 4288 2176)

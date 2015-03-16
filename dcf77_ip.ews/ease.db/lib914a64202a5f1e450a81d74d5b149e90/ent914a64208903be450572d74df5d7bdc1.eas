@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 16 12:56:42 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 16 14:03:29 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1424699544 "Mon Feb 23 14:52:24 2015")
-      (MODIFIED 1426506996 "Mon Mar 16 12:56:36 2015")
+      (MODIFIED 1426510984 "Mon Mar 16 14:03:04 2015")
     )
     (PORT
       (OBID "eprt914a64200b03be450572d74d3ed7bdc1")
@@ -228,7 +228,7 @@
     (PORT
       (OBID "eprtd9a1c66f5adadf45474009c3a21466f6")
       (HDL_IDENT
-        (NAME "state")
+        (NAME "state_bit")
         (USERNAME 1)
         (ATTRIBUTES
           (MODE 2)
@@ -243,7 +243,7 @@
         (SIDE 1)
         (ALIGNMENT 5)
         (FORMAT 35)
-        (TEXT "state")
+        (TEXT "state_bit")
       )
     )
     (ARCH_DECLARATION 1 "arch914a64208903be450572d74d16d7bdc1" "structure")
@@ -587,7 +587,7 @@
       (PORT
         (OBID "aprtd9a1c66f5adadf45474009c3c21466f6")
         (HDL_IDENT
-          (NAME "state")
+          (NAME "state_bit")
           (USERNAME 1)
           (ATTRIBUTES
             (MODE 2)
@@ -602,7 +602,7 @@
           (SIDE 3)
           (ALIGNMENT 3)
           (FORMAT 35)
-          (TEXT "state")
+          (TEXT "state_bit")
         )
         (PORT "eprtd9a1c66f5adadf45474009c3a21466f6")
         (CONNECTION
@@ -1052,7 +1052,7 @@
         (PORT
           (OBID "cprt914a64202443be450572d74d69e7bdc1")
           (HDL_IDENT
-            (NAME "state")
+            (NAME "state_bit")
             (USERNAME 1)
             (ATTRIBUTES
               (MODE 2)
@@ -1067,7 +1067,7 @@
             (SIDE 1)
             (ALIGNMENT 5)
             (FORMAT 35)
-            (TEXT "state")
+            (TEXT "state_bit")
           )
           (PORT "eprt914a64202443be450572d74d59e7bdc1")
           (CONNECTION
@@ -1367,7 +1367,7 @@
       (NET
         (OBID "net914a64207f53be450572d74ddce7bdc1")
         (HDL_IDENT
-          (NAME "state")
+          (NAME "state_bit")
         )
         (PART
           (OBID "nprt914a64207f53be450572d74d0de7bdc1")
@@ -1386,11 +1386,11 @@
           (WIRE 3264 1152 5696 1152)
           (PORT
             (OBID "cprt914a64202443be450572d74d69e7bdc1")
-            (NAME "state")
+            (NAME "state_bit")
           )
           (PORT
             (OBID "aprtd9a1c66f5adadf45474009c3c21466f6")
-            (NAME "state")
+            (NAME "state_bit")
           )
         )
       )

@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 16 11:56:09 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 16 14:03:29 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1424696959 "Mon Feb 23 14:09:19 2015")
-      (MODIFIED 1426503369 "Mon Mar 16 11:56:09 2015")
+      (MODIFIED 1426507013 "Mon Mar 16 12:56:53 2015")
     )
     (PORT
       (OBID "eprt914a6420c172be450572d74d36c7bdc1")
@@ -197,7 +197,8 @@
                "  "
                "signal counter : std_logic_vector(7 DOWNTO 0); --Signal interne pour compteur"
                ""
-               "architecture behavior of coutner_ms is "
+               "architecture behavior of coutner_ms is"
+               " "
                ""
                "P1:process (clk, reset_n)           "
                ""

@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 09 14:57:21 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 16 14:03:29 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1424094672 "Mon Feb 16 14:51:12 2015")
-      (MODIFIED 1425909407 "Mon Mar 09 14:56:47 2015")
+      (MODIFIED 1426510995 "Mon Mar 16 14:03:15 2015")
     )
     (PORT
       (OBID "eprt914a64208e5f1e450a81d74d4c149e90")
@@ -1275,7 +1275,7 @@
         (PORT
           (OBID "cprt914a642079402e450a81d74d86249e90")
           (HDL_IDENT
-            (NAME "state")
+            (NAME "state_bit")
             (USERNAME 1)
             (ATTRIBUTES
               (MODE 2)
@@ -1290,7 +1290,7 @@
             (SIDE 1)
             (ALIGNMENT 5)
             (FORMAT 35)
-            (TEXT "state")
+            (TEXT "state_bit")
           )
           (PORT "eprt914a642079402e450a81d74d76249e90")
           (CONNECTION
@@ -3049,7 +3049,7 @@
           )
           (PORT
             (OBID "cprt914a642079402e450a81d74d86249e90")
-            (NAME "state")
+            (NAME "state_bit")
           )
         )
       )
