@@ -16,23 +16,33 @@
 -- 
 -- EASE/HDL end ----------------------------------------------------------------
   
-signal counter : std_logic_vector(3 DOWNTO 0); --Signal interne pour compteur
+signal counter : std_logic_vector(7 DOWNTO 0); --Signal interne pour compteur
 
-architecture behavior of coutner_ms is
-P1:process (clk, reset_n)
-	begin
+architecture behavior of coutner_ms is 
+
+P1:process (clk, reset_n)           
+
+	begin                  
+	
 	if(reset_n) = '0' then -- reset asynchrone
-		ms_pulse <= '0';
-		counter  <= (OTHERS => '0');
-	elsif(clk'EVENT and clk = '1') then
-		if UNSIGNED(counter) = 9 then -- Pour avoir 1ms, il faut multiplier 0.1ms par 10 (0 -> 9 = 10)
-			counter <= (OTHERS => '0');
-			ms_pulse <= '1';
-		else
-			counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);
-			ms_pulse <= '0';
-		end if;
-	end if;		
-end process;
+		high_ms_count <= '0';
+		counter  <= (OTHERS => '0'); 
+		
+	elsif(clk'EVENT and clk = '1') then 
+	
+		if rising_edge_dcf_77 = '1' then
+		  counter  <= (OTHERS => '0');      
+		  
+	    else if freq and dcf_77_s = '1' and then
+			counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1); 
+		
+		end if; 
+		
+	end if;	  
+		
+end process;    
+        
+high_ms_count <= counter;
+
 end architecture behavior ; -- of coutner_ms
 

@@ -15,9 +15,26 @@
 -- 
 -- EASE/HDL end ----------------------------------------------------------------
 
+signal counter : std_logic_vector(5 DOWNTO 0); --Signal interne pour compteur, BitCount va jusqu'à 60
+
 architecture behavioral of counter_ms_oveflow is
 
-begin
+P1:process (clk, reset_n)
+	begin
+	if(reset_n) = '0' then -- reset asynchrone
+		counter  <= (OTHERS => '0');
+	elsif(clk'EVENT and clk = '1') then
+		if rising_edge_dcf_77 = '1' then 
+			if counter > '999' then        
+				sec_overflow = '1';
+				counter <= (OTHERS => '0');
+			else if freq = '1' then      	-- Vérifier !!!
+				sec_overflow = '0';
+				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);
+			end if;      
+		end if;		
+	end if;		
+end process;          
 
 end architecture behavioral ; -- of counter_ms_oveflow
 

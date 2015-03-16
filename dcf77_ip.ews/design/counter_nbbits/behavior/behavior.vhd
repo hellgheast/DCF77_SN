@@ -11,7 +11,7 @@
 --     clk         : in     std_logic;
 --     nbbit_pulse : in     std_logic;
 --     reset_n     : in     std_logic;
---     stop       : in     std_logic);
+--     start       : in     std_logic);
 -- 
 -- EASE/HDL end ----------------------------------------------------------------
    
