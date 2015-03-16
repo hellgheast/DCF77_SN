@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 09 15:36:49 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 16 12:56:42 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1424699544 "Mon Feb 23 14:52:24 2015")
-      (MODIFIED 1425911478 "Mon Mar 09 15:31:18 2015")
+      (MODIFIED 1426506996 "Mon Mar 16 12:56:36 2015")
     )
     (PORT
       (OBID "eprt914a64200b03be450572d74d3ed7bdc1")
@@ -658,35 +658,16 @@
             (TEXT "clk")
           )
           (PORT "eprt914a64205e23be450572d74d25e7bdc1")
-          (CBN
-            (OBID "cbn914a64203553be450572d74d3be7bdc1")
-            (HDL_IDENT
-              (NAME "u1_clk")
-              (USERNAME 1)
-            )
-            (GEOMETRY 3832 1688 3976 1768)
-            (SIDE 0)
-            (LABEL
-              (POSITION 3776 1728)
-              (SCALE 96)
-              (COLOR_LINE 0)
-              (SIDE 3)
-              (ALIGNMENT 5)
-              (FORMAT 1)
-              (TEXT "u1_clk")
-            )
-            (TYPE 0)
-          )
           (CONNECTION
             (OBID "ncon914a64205e23be450572d74d45e7bdc1")
             (GEOMETRY 3968 1728 3968 1728)
             (SIDE 0)
             (LABEL
-              (POSITION 3776 1728)
+              (POSITION 3968 1696)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
-              (ALIGNMENT 5)
+              (ALIGNMENT 8)
               (FORMAT 128)
             )
           )
@@ -712,35 +693,16 @@
             (TEXT "reset_n")
           )
           (PORT "eprt914a6420de23be450572d74d65e7bdc1")
-          (CBN
-            (OBID "cbn914a64203553be450572d74d4be7bdc1")
-            (HDL_IDENT
-              (NAME "u1_reset_n")
-              (USERNAME 1)
-            )
-            (GEOMETRY 3832 1816 3976 1896)
-            (SIDE 0)
-            (LABEL
-              (POSITION 3776 1856)
-              (SCALE 96)
-              (COLOR_LINE 0)
-              (SIDE 3)
-              (ALIGNMENT 5)
-              (FORMAT 1)
-              (TEXT "u1_reset_n")
-            )
-            (TYPE 0)
-          )
           (CONNECTION
             (OBID "ncon914a6420de23be450572d74d85e7bdc1")
             (GEOMETRY 3968 1856 3968 1856)
             (SIDE 0)
             (LABEL
-              (POSITION 3776 1856)
+              (POSITION 3968 1824)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
-              (ALIGNMENT 5)
+              (ALIGNMENT 8)
               (FORMAT 128)
             )
           )
@@ -1247,7 +1209,7 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 2048 960 832 960)
+          (WIRE 832 960 2048 960)
           (PORT
             (OBID "cprt914a64209443be450572d74da9e7bdc1")
             (NAME "dcf_77_s")
@@ -1255,34 +1217,6 @@
           (PORT
             (OBID "aprt914a64208c03be450572d74d92e7bdc1")
             (NAME "dcf_77_s")
-          )
-        )
-      )
-      (NET
-        (OBID "net914a6420c453be450572d74d9ae7bdc1")
-        (HDL_IDENT
-          (NAME "u1_reset_n")
-        )
-        (PART
-          (OBID "nprt914a6420c453be450572d74dcae7bdc1")
-          (CBN 1)
-          (PORT
-            (OBID "cprt914a6420de23be450572d74d75e7bdc1")
-            (NAME "reset_n")
-          )
-        )
-      )
-      (NET
-        (OBID "net914a6420f453be450572d74ddae7bdc1")
-        (HDL_IDENT
-          (NAME "u1_clk")
-        )
-        (PART
-          (OBID "nprt914a6420f453be450572d74d0be7bdc1")
-          (CBN 1)
-          (PORT
-            (OBID "cprt914a64205e23be450572d74d35e7bdc1")
-            (NAME "clk")
           )
         )
       )
@@ -1305,13 +1239,22 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 2048 1664 832 1664)
+          (WIRE 1536 1664 2048 1664)
+          (WIRE 832 1664 1536 1664)
+          (WIRE 1536 1664 1536 2112)
+          (WIRE 1536 2112 3648 2112)
+          (WIRE 3648 2112 3648 1728)
+          (WIRE 3648 1728 3968 1728)
           (PORT
             (OBID "cprt914a6420ff33be450572d74da7e7bdc1")
             (NAME "clk")
           )
           (PORT
             (OBID "aprt914a64208c03be450572d74d32e7bdc1")
+            (NAME "clk")
+          )
+          (PORT
+            (OBID "cprt914a64205e23be450572d74d35e7bdc1")
             (NAME "clk")
           )
         )
@@ -1335,13 +1278,22 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 2048 1792 832 1792)
+          (WIRE 1664 1792 2048 1792)
+          (WIRE 832 1792 1664 1792)
+          (WIRE 1664 1792 1664 2240)
+          (WIRE 1664 2240 3776 2240)
+          (WIRE 3776 2240 3776 1856)
+          (WIRE 3776 1856 3968 1856)
           (PORT
             (OBID "cprt914a64202043be450572d74de7e7bdc1")
             (NAME "reset_n")
           )
           (PORT
             (OBID "aprt914a64208c03be450572d74db2e7bdc1")
+            (NAME "reset_n")
+          )
+          (PORT
+            (OBID "cprt914a6420de23be450572d74d75e7bdc1")
             (NAME "reset_n")
           )
         )
@@ -1365,7 +1317,7 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 3968 1600 3264 1600)
+          (WIRE 3264 1600 3968 1600)
           (PORT
             (OBID "cprt914a6420ff23be450572d74db5e7bdc1")
             (NAME "nbbit_pulse")
@@ -1461,7 +1413,7 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 5696 1024 3264 1024)
+          (WIRE 3264 1024 5696 1024)
           (PORT
             (OBID "aprt914a64206b03be450572d74d1fd7bdc1")
             (NAME "stop")
@@ -1564,7 +1516,7 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 2048 832 1088 832)
+          (WIRE 1088 832 2048 832)
           (PORT
             (OBID "cprt914a64206143be450572d74d68e7bdc1")
             (NAME "high_ms_count")

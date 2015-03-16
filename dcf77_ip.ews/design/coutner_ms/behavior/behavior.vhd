@@ -18,7 +18,8 @@
   
 signal counter : std_logic_vector(7 DOWNTO 0); --Signal interne pour compteur
 
-architecture behavior of coutner_ms is 
+architecture behavior of coutner_ms is
+ 
 
 P1:process (clk, reset_n)           
 

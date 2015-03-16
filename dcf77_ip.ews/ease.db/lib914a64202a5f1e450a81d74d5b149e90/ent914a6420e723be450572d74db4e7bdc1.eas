@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 02 18:59:52 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 16 11:56:09 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1424700030 "Mon Feb 23 15:00:30 2015")
-      (MODIFIED 1425319192 "Mon Mar 02 18:59:52 2015")
+      (MODIFIED 1426503369 "Mon Mar 16 11:56:09 2015")
     )
     (PORT
       (OBID "eprt914a64205e23be450572d74d25e7bdc1")
@@ -172,18 +172,21 @@
                "--     start       : in     std_logic);"
                "-- "
                "-- EASE/HDL end ----------------------------------------------------------------"
-               ""
+               "   "
+               "signal counter : std_logic_vector(5 DOWNTO 0); --Signal interne pour compteur, BitCount va jusqu'à 60"
                ""
                "architecture behavior of counter_nbbits is"
                ""
                "P1:process (clk, reset_n)"
                "	begin"
-               "	if(reset_n) = '0' then -- reset asynchrone"
+               "	if(reset_n) = '0' then -- reset asynchrone             /!\\ mauvaise entrée reset !"
                "		counter  <= (OTHERS => '0');"
                "	elsif(clk'EVENT and clk = '1') then"
-               "		if ms_pulse = '1' then"
-               "			if start = '1' then "
+               "		if nbbit_pulse = '1' then "
+               "			if counter >= 59 then"
                "				counter <= (OTHERS => '0');"
+               "			else if stop = '1' then "
+               "				counter <= 59;"
                "			else"
                "				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);"
                "			end if;      "
