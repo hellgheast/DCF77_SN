@@ -1,0 +1,16 @@
+-- EASE/HDL begin --------------------------------------------------------------
+-- 
+-- Architecture 'behavioral' of entity 'counter_ms_oveflow'.
+-- 
+--------------------------------------------------------------------------------
+-- 
+-- Copy of the interface declaration:
+-- 
+-- EASE/HDL end ----------------------------------------------------------------
+
+architecture behavioral of counter_ms_oveflow is
+
+begin
+
+end architecture behavioral ; -- of counter_ms_oveflow
+
