@@ -15,7 +15,7 @@
 --     reset_n       : in     std_logic;
 --     sec_overflow  : in     std_logic;
 --     start         : out    std_logic;
---     state_bit     : out    std_logic;
+--     state         : out    std_logic;
 --     stop          : out    std_logic);
 -- 
 -- EASE/HDL end ----------------------------------------------------------------

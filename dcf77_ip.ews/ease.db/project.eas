@@ -15,7 +15,7 @@
     (PROPERTY "PackageFileFormatSpec" "%p.%x")
     (PROPERTY "STAMP_PLATFORM" "PC")
     (PROPERTY "STAMP_REVISION" "Revision 2")
-    (PROPERTY "STAMP_TIME" "Mon Feb 16 14:55:49 2015")
+    (PROPERTY "STAMP_TIME" "Mon Mar 16 16:34:06 2015")
     (PROPERTY "STAMP_TOOL" "Ease")
     (PROPERTY "STAMP_VERSION" "8.0")
     (PROPERTY "VERILOG_VERSION" "Verilog 95")
@@ -34,7 +34,18 @@
     (LIBRARY "ieee")
     (NAME "std_logic_1164")
   )
+  (PACKAGE
+    (OBID "pack914a6420e97f60550a62d74d5bc08b20")
+    (LIBRARY "ieee")
+    (NAME "numeric_std")
+  )
   (PACKAGE_USE
+    (PACKAGE_USE
+      (PACKAGE "pack914a6420e97f60550a62d74d5bc08b20")
+      (LIBRARY "ieee")
+      (NAME "numeric_std")
+      (SUFFIX "all")
+    )
     (PACKAGE_USE
       (PACKAGE "pack914a64202a5f1e450a81d74dab149e90")
       (LIBRARY "ieee")

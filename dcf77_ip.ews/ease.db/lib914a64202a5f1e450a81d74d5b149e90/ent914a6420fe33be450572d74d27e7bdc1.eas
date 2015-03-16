@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 16 15:53:18 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 16 18:50:43 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1424700399 "Mon Feb 23 15:06:39 2015")
-      (MODIFIED 1426517598 "Mon Mar 16 15:53:18 2015")
+      (MODIFIED 1426528242 "Mon Mar 16 18:50:42 2015")
     )
     (PORT
       (OBID "eprt914a6420ff33be450572d74d97e7bdc1")
@@ -278,7 +278,7 @@
                "--     reset_n       : in     std_logic;"
                "--     sec_overflow  : in     std_logic;"
                "--     start         : out    std_logic;"
-               "--     state_bit     : out    std_logic;"
+               "--     state         : out    std_logic;"
                "--     stop          : out    std_logic);"
                "-- "
                "-- EASE/HDL end ----------------------------------------------------------------"

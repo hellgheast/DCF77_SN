@@ -34,12 +34,6 @@
       <key type="int" value="0" name="diag914a6420b1102e450a81d74de3249e90"/>
       <key type="int" value="0" name="diag914a64208903be450572d74d06d7bdc1"/>
     </section>
-    <section name="DiagramView">
-      <key type="geometry" value="0,0,8675,4039" name="diag914a64200d5f1e450a81d74d0c149e90"/>
-      <key type="geometry" value="0,0,7691,3581" name="diag914a6420b1102e450a81d74de3249e90"/>
-      <key type="geometry" value="0,0,10139,4721" name="diag914a64208903be450572d74d06d7bdc1"/>
-      <key type="geometry" value="0,0,9161,4265" name="diag914a64202a5f1e450a81d74d6b149e90"/>
-    </section>
     <section name="DatabaseView">
       <key type="bool" value="true" name="arch914a6420b1102e450a81d74d14249e90"/>
     </section>

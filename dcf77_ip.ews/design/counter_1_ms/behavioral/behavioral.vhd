@@ -19,7 +19,7 @@
 architecture behavioral of counter_1_ms is
 
 signal counter : std_logic_vector(3 downto 0); 
-signal enabled : std_logic:=0;
+signal enabled : std_logic:='0';
 
 begin
 
@@ -30,22 +30,22 @@ begin
 		counter  <= (OTHERS => '0');
 	ELSIF(clk'EVENT and clk = '1') THEN  -- Partie synchrone
 	
-	IF (rising_edge_dcf_77 = '1') THEN
+	  IF (rising_edge_dcf_77 = '1') THEN
 		enabled <= '1';
 		counter <= (OTHERS => '0');
-    ELSIF (enabled = '1' AND dcf_77_s = '1') THEN
-	  IF (freq = '1') THEN
-	    IF UNSIGNED(counter) = 9 then -- Pour avoir 1ms, il faut multiplier 0.1ms par 10 (0 -> 9 = 10)
+      ELSIF (enabled = '1' AND dcf_77_s = '1') THEN
+	    IF (freq = '1') THEN
+	      IF UNSIGNED(counter) = 9 then -- Pour avoir 1ms, il faut multiplier 0.1ms par 10 (0 -> 9 = 10)
 	        counter <= (OTHERS => '0');
 	        ms_passed <= '1';
-	    ELSE
+	      ELSE
 	  	    counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);
 	  	    ms_passed <= '0';
-	  	END IF;	
-	ELSIF (dcf_77_s = '0') THEN 
-	  enabled <= '0';
+	  	  END IF;	
+	   ELSIF (dcf_77_s = '0') THEN 
+	     enabled <= '0';
+	  END IF;
 	END IF;
-	
 
 end process;
 
