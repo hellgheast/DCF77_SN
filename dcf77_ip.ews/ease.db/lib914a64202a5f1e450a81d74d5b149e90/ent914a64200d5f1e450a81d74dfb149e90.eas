@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 16 14:03:29 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 23 13:03:55 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "vincent.meier")
+      (DESIGNER "mohammed.bensalah")
       (CREATED 1424094672 "Mon Feb 16 14:51:12 2015")
-      (MODIFIED 1426510995 "Mon Mar 16 14:03:15 2015")
+      (MODIFIED 1427112228 "Mon Mar 23 13:03:48 2015")
     )
     (PORT
       (OBID "eprt914a64208e5f1e450a81d74d4c149e90")
@@ -1342,59 +1342,6 @@
               (COLOR_LINE 0)
               (SIDE 1)
               (ALIGNMENT 0)
-              (FORMAT 128)
-            )
-          )
-        )
-        (PORT
-          (OBID "cprt914a64203fb1be450572d74d1867bdc1")
-          (HDL_IDENT
-            (NAME "chip_select")
-            (USERNAME 1)
-            (ATTRIBUTES
-              (MODE 1)
-            )
-          )
-          (GEOMETRY 1176 1368 1256 1448)
-          (SIDE 3)
-          (LABEL
-            (POSITION 1280 1408)
-            (SCALE 96)
-            (COLOR_LINE 0)
-            (SIDE 3)
-            (ALIGNMENT 3)
-            (FORMAT 35)
-            (TEXT "chip_select")
-          )
-          (PORT "eprt914a64203fb1be450572d74d0867bdc1")
-          (CBN
-            (OBID "cbn914a64201a12be450572d74db3a7bdc1")
-            (HDL_IDENT
-              (NAME "chip_select")
-              (USERNAME 1)
-            )
-            (GEOMETRY 1016 1368 1160 1448)
-            (SIDE 0)
-            (LABEL
-              (POSITION 960 1408)
-              (SCALE 96)
-              (COLOR_LINE 0)
-              (SIDE 3)
-              (ALIGNMENT 5)
-              (FORMAT 1)
-            )
-            (TYPE 0)
-          )
-          (CONNECTION
-            (OBID "ncon914a64203fb1be450572d74d2867bdc1")
-            (GEOMETRY 1152 1408 1152 1408)
-            (SIDE 0)
-            (LABEL
-              (POSITION 960 1408)
-              (SCALE 96)
-              (COLOR_LINE 0)
-              (SIDE 3)
-              (ALIGNMENT 5)
               (FORMAT 128)
             )
           )
@@ -3165,10 +3112,6 @@
         (PART
           (OBID "nprt914a64201a12be450572d74dc3a7bdc1")
           (CBN 1)
-          (PORT
-            (OBID "cprt914a64203fb1be450572d74d1867bdc1")
-            (NAME "chip_select")
-          )
           (PORT
             (OBID "cprt914a6420afb1be450572d74d7867bdc1")
             (NAME "chip_select")

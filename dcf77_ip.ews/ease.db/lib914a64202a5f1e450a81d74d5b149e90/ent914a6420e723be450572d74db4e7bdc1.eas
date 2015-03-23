@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 16 11:56:09 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 23 13:14:21 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -13,14 +13,14 @@
       (NAME "counter_nbbits")
       (USERNAME 1)
     )
-    (GEOMETRY 0 0 1216 640)
+    (GEOMETRY 0 0 1216 768)
     (SIDE 0)
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "vincent.meier")
+      (DESIGNER "mohammed.bensalah")
       (CREATED 1424700030 "Mon Feb 23 15:00:30 2015")
-      (MODIFIED 1426503369 "Mon Mar 16 11:56:09 2015")
+      (MODIFIED 1427112861 "Mon Mar 23 13:14:21 2015")
     )
     (PORT
       (OBID "eprt914a64205e23be450572d74d25e7bdc1")
@@ -34,10 +34,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 344 40 424)
+      (GEOMETRY -40 536 40 616)
       (SIDE 3)
       (LABEL
-        (POSITION 64 384)
+        (POSITION 64 576)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -58,10 +58,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 472 40 552)
+      (GEOMETRY -40 664 40 744)
       (SIDE 3)
       (LABEL
-        (POSITION 64 512)
+        (POSITION 64 704)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -143,6 +143,30 @@
         (TEXT "start")
       )
     )
+    (PORT
+      (OBID "eprt914a642034300155c0e1d74d40243765")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "rising_edge_dcf_77")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 408 40 488)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 448)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "rising_edge_dcf_77")
+      )
+    )
     (ARCH_DECLARATION 2 "arch914a6420e723be450572d74df4e7bdc1" "behavior")
   )
   (ARCH_DEFINITION
@@ -165,11 +189,12 @@
                "-- Copy of the interface declaration:"
                "-- "
                "--   port ("
-               "--     bit_count   : out    std_logic_vector(5 downto 0);"
-               "--     clk         : in     std_logic;"
-               "--     nbbit_pulse : in     std_logic;"
-               "--     reset_n     : in     std_logic;"
-               "--     start       : in     std_logic);"
+               "--     bit_count          : out    std_logic_vector(5 downto 0);"
+               "--     clk                : in     std_logic;"
+               "--     nbbit_pulse        : in     std_logic;"
+               "--     reset_n            : in     std_logic;"
+               "--     rising_edge_dcf_77 : in     std_logic;"
+               "--     start              : in     std_logic);"
                "-- "
                "-- EASE/HDL end ----------------------------------------------------------------"
                "   "

@@ -7,7 +7,6 @@
 -- Copy of the interface declaration:
 -- 
 --   port (
---     chip_select   : in     std_logic;
 --     clk           : in     std_logic;
 --     dcf_77_s      : in     std_logic;
 --     high_ms_count : in     std_logic_vector(7 downto 0);

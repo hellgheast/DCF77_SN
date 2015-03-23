@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 16 18:50:43 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 23 13:03:34 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1424700399 "Mon Feb 23 15:06:39 2015")
-      (MODIFIED 1426528242 "Mon Mar 16 18:50:42 2015")
+      (MODIFIED 1427112214 "Mon Mar 23 13:03:34 2015")
     )
     (PORT
       (OBID "eprt914a6420ff33be450572d74d97e7bdc1")
@@ -204,30 +204,6 @@
       )
     )
     (PORT
-      (OBID "eprt914a6420f1a3be450572d74d2508bdc1")
-      (PROPERTIES
-        (PROPERTY "SensitivityList" "Yes")
-      )
-      (HDL_IDENT
-        (NAME "chip_select")
-        (USERNAME 1)
-        (ATTRIBUTES
-          (MODE 1)
-        )
-      )
-      (GEOMETRY -40 88 40 168)
-      (SIDE 3)
-      (LABEL
-        (POSITION 64 128)
-        (SCALE 96)
-        (COLOR_LINE 0)
-        (SIDE 3)
-        (ALIGNMENT 3)
-        (FORMAT 35)
-        (TEXT "chip_select")
-      )
-    )
-    (PORT
       (OBID "eprt914a64208b6adf458472d74ddb96b0b7")
       (HDL_IDENT
         (NAME "sec_overflow")
@@ -270,7 +246,6 @@
                "-- Copy of the interface declaration:"
                "-- "
                "--   port ("
-               "--     chip_select   : in     std_logic;"
                "--     clk           : in     std_logic;"
                "--     dcf_77_s      : in     std_logic;"
                "--     high_ms_count : in     std_logic_vector(7 downto 0);"
