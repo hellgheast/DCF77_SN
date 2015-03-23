@@ -66,7 +66,7 @@ P1:process (clk, reset_n)
    			    	
    			    	if dcf_77_s = '1' then
    						state <= c_DCF_DETECT; 	
-   					else if dcf_77_s = '0' then
+   					elsif dcf_77_s = '0' then
    						state <= c_BIT_DECODE;    	
    					end if; 
    					           
@@ -89,7 +89,7 @@ P1:process (clk, reset_n)
    				if high_ms_count = 99 then
    					state_bit = '1';
    					state <= c_DCF_DETECT;		
-   				else if high_ms_count = 199 then  
+   				elsif high_ms_count = 199 then  
    					state_bit = '0';
    					state <= c_DCF_DETECT;   		
    				else   
