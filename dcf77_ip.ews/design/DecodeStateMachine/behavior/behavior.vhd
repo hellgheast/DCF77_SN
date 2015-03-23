@@ -10,7 +10,6 @@
 --     clk           : in     std_logic;
 --     dcf_77_s      : in     std_logic;
 --     high_ms_count : in     std_logic_vector(7 downto 0);
---     nbbit_pulse   : out    std_logic;
 --     reset_n       : in     std_logic;
 --     sec_overflow  : in     std_logic;
 --     start         : out    std_logic;
@@ -34,7 +33,9 @@ architecture behavior of DecodeStateMachine is
   
 -- Declare signals  
   signal StateMachine : t_state;
-    
+  signal stop_temp 	  : std_logic; 
+  
+  
 begin
        
 P1:process (clk, reset_n)
@@ -52,13 +53,17 @@ P1:process (clk, reset_n)
    			
    			when c_DCF_DETECT =>  -- Détection d'un '0' de la trame DCF77  
    			     
-   			    nbbit_pulse <= '0';
+   			    stop <= '0';
    			    
-   			    if stop = '1' and dcf_77_s = '0' then 
+   			    if stop_temp = '1' and dcf_77_s = '0' then 
    			    	state <= c_DCF_DETECT; 
    			    	
-   			    else    
-   			    	stop  <= '0';
+   			    else  
+   			    	if stop_temp = '1' then
+   			    		start = '1';
+   			    		stop_temp  <= '0';
+   			    	end if;
+   			    	
    			    	if dcf_77_s = '1' then
    						state <= c_DCF_DETECT; 	
    					else if dcf_77_s = '0' then
@@ -68,20 +73,18 @@ P1:process (clk, reset_n)
    				end if;
    				
    			when c_BIT_DECODE =>  -- Décodage du numéro de bit (59e ou autre)
-   			
+   			    
+   		   		start = '0'; -- Start passe à '0', ce qui en fait une pulse.
+   		   		
    				if sec_overflow = '1' then   -- 59e bit -> stop
-   					state <= c_STOP;  	
+   					stop_temp  <= '1';  
+   					stop  <= '1';  
+   					state <= c_DCF_DETECT;  	
   				else
    					state <= c_STATE_DECODE; 
-   				end if;
-   			
-   			when c_STOP => -- Stop
-   					
-   				stop  <= '1';  
-   				nbbit_pulse <= '1'; -- Bitcount ++ 
-   				state <= c_DCF_DETECT;			
+   				end if;		
    											
-   			when c_STATE_DECODE =>      -- Décodage de l'état du bit actuel de la trame
+   			when c_STATE_DECODE => -- Décodage de l'état du bit actuel de la trame
    			
    				if high_ms_count = 99 then
    					state_bit = '1';

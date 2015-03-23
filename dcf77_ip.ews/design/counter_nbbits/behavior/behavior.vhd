@@ -9,10 +9,10 @@
 --   port (
 --     bit_count          : out    std_logic_vector(5 downto 0);
 --     clk                : in     std_logic;
---     nbbit_pulse        : in     std_logic;
 --     reset_n            : in     std_logic;
 --     rising_edge_dcf_77 : in     std_logic;
---     start              : in     std_logic);
+--     start              : in     std_logic;
+--     stop               : in     std_logic);
 -- 
 -- EASE/HDL end ----------------------------------------------------------------
    
@@ -25,18 +25,14 @@ P1:process (clk, reset_n)
 	if(reset_n) = '0' then -- reset asynchrone   
 		counter  <= (OTHERS => '0');
 	elsif(clk'EVENT and clk = '1') then 
-	    if rising_edge_dcf_77 = '1' then
-	       counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);
-	    	
-	
-	
-		if nbbit_pulse = '1' then 
-			if counter >= 59 then
+			
+		if (rising_edge_dcf_77 = '1') or (stop = '1') then  
+			    
+		   	if start = '1' then
 				counter <= (OTHERS => '0');
-			else if stop = '1' then 
-				counter <= 59;
-			else
-				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);
+			else 
+	       		counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);
+
 			end if;      
 		end if;		
 	end if;		

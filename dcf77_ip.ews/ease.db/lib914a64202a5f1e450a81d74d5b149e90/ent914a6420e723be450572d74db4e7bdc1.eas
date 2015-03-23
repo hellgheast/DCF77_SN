@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 23 13:14:21 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 23 15:38:52 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1424700030 "Mon Feb 23 15:00:30 2015")
-      (MODIFIED 1427112861 "Mon Mar 23 13:14:21 2015")
+      (MODIFIED 1427121532 "Mon Mar 23 15:38:52 2015")
     )
     (PORT
       (OBID "eprt914a64205e23be450572d74d25e7bdc1")
@@ -76,7 +76,7 @@
         (PROPERTY "SensitivityList" "Yes")
       )
       (HDL_IDENT
-        (NAME "nbbit_pulse")
+        (NAME "stop")
         (USERNAME 1)
         (ATTRIBUTES
           (MODE 1)
@@ -91,7 +91,7 @@
         (SIDE 3)
         (ALIGNMENT 3)
         (FORMAT 35)
-        (TEXT "nbbit_pulse")
+        (TEXT "stop")
       )
     )
     (PORT
@@ -191,10 +191,10 @@
                "--   port ("
                "--     bit_count          : out    std_logic_vector(5 downto 0);"
                "--     clk                : in     std_logic;"
-               "--     nbbit_pulse        : in     std_logic;"
                "--     reset_n            : in     std_logic;"
                "--     rising_edge_dcf_77 : in     std_logic;"
-               "--     start              : in     std_logic);"
+               "--     start              : in     std_logic;"
+               "--     stop               : in     std_logic);"
                "-- "
                "-- EASE/HDL end ----------------------------------------------------------------"
                "   "
@@ -204,16 +204,17 @@
                ""
                "P1:process (clk, reset_n)"
                "	begin"
-               "	if(reset_n) = '0' then -- reset asynchrone             /!\\ mauvaise entrée reset !"
+               "	if(reset_n) = '0' then -- reset asynchrone   "
                "		counter  <= (OTHERS => '0');"
-               "	elsif(clk'EVENT and clk = '1') then"
-               "		if nbbit_pulse = '1' then "
-               "			if counter >= 59 then"
+               "	elsif(clk'EVENT and clk = '1') then "
+               "			"
+               "		if (rising_edge_dcf_77 = '1') or (nbbit_pulse = '1') then  "
+               "			    "
+               "		   	if start = '1' then"
                "				counter <= (OTHERS => '0');"
-               "			else if stop = '1' then "
-               "				counter <= 59;"
-               "			else"
-               "				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);"
+               "			else "
+               "	       		counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);"
+               ""
                "			end if;      "
                "		end if;		"
                "	end if;		"
