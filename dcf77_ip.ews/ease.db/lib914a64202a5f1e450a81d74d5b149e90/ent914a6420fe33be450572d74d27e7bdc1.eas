@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 23 15:38:52 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 23 17:06:13 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1424700399 "Mon Feb 23 15:06:39 2015")
-      (MODIFIED 1427121532 "Mon Mar 23 15:38:52 2015")
+      (MODIFIED 1427126773 "Mon Mar 23 17:06:13 2015")
     )
     (PORT
       (OBID "eprt914a6420ff33be450572d74d97e7bdc1")
@@ -284,7 +284,7 @@
                "   			    	"
                "   			    	if dcf_77_s = '1' then"
                "   						state <= c_DCF_DETECT; 	"
-               "   					else if dcf_77_s = '0' then"
+               "   					elsif dcf_77_s = '0' then"
                "   						state <= c_BIT_DECODE;    	"
                "   					end if; "
                "   					           "
@@ -307,7 +307,7 @@
                "   				if high_ms_count = 99 then"
                "   					state_bit = '1';"
                "   					state <= c_DCF_DETECT;		"
-               "   				else if high_ms_count = 199 then  "
+               "   				elsif high_ms_count = 199 then  "
                "   					state_bit = '0';"
                "   					state <= c_DCF_DETECT;   		"
                "   				else   "

@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 23 15:38:52 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 23 17:06:13 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1424700030 "Mon Feb 23 15:00:30 2015")
-      (MODIFIED 1427121532 "Mon Mar 23 15:38:52 2015")
+      (MODIFIED 1427126773 "Mon Mar 23 17:06:13 2015")
     )
     (PORT
       (OBID "eprt914a64205e23be450572d74d25e7bdc1")
@@ -207,15 +207,11 @@
                "	if(reset_n) = '0' then -- reset asynchrone   "
                "		counter  <= (OTHERS => '0');"
                "	elsif(clk'EVENT and clk = '1') then "
-               "			"
-               "		if (rising_edge_dcf_77 = '1') or (nbbit_pulse = '1') then  "
-               "			    "
-               "		   	if start = '1' then"
-               "				counter <= (OTHERS => '0');"
-               "			else "
-               "	       		counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);"
-               ""
-               "			end if;      "
+               "		 "
+               "		if start = '1' then"
+               "				counter <= (OTHERS => '0');	"
+               "		elsif (rising_edge_dcf_77 = '1') or (stop = '1') then  "
+               "				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);"
                "		end if;		"
                "	end if;		"
                "end process;         "

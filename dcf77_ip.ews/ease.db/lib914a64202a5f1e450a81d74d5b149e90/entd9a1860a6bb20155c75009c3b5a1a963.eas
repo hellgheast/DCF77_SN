@@ -1,0 +1,159 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "entd9a1860a6bb20155c75009c3b5a1a963")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Mon Mar 23 17:10:52 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "decode_RBG")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 832 576)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "vincent.meier")
+      (CREATED 1427123126 "Mon Mar 23 16:05:26 2015")
+      (MODIFIED 1427127052 "Mon Mar 23 17:10:52 2015")
+    )
+    (PORT
+      (OBID "eprtd9a1860ad0c20155c75009c37de1a963")
+      (HDL_IDENT
+        (NAME "start")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "start")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1860a21c20155c75009c3ede1a963")
+      (HDL_IDENT
+        (NAME "stop")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "stop")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1860ae1c20155c75009c35ee1a963")
+      (HDL_IDENT
+        (NAME "bit_count")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "5" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "bit_count(5:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1860a9b730155c75009c39ee1a963")
+      (HDL_IDENT
+        (NAME "RBG")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "2" "0")
+          )
+        )
+      )
+      (GEOMETRY 792 152 872 232)
+      (SIDE 1)
+      (LABEL
+        (POSITION 768 192)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "RBG(2:0)")
+      )
+    )
+    (ARCH_DECLARATION 2 "archd9a1860a6bb20155c75009c3e5a1a963" "behavior")
+  )
+  (ARCH_DEFINITION
+    (OBID "archd9a1860a6bb20155c75009c3e5a1a963")
+    (HDL_IDENT
+      (NAME "behavior")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "filed9a1860a6bb20155c75009c3f5a1a963")
+        (NAME "behavior.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'behavior' of entity 'decode_RBG'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     RBG       : out    std_logic_vector(2 downto 0);"
+               "--     bit_count : in     std_logic_vector(5 downto 0);"
+               "--     start     : in     std_logic;"
+               "--     stop      : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture behavior of decode_RBG is"
+               ""
+               "begin     "
+               ""
+               "if bit_count "
+               ""
+               "end architecture behavior ; -- of decode_RBG"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

@@ -7,6 +7,7 @@
 -- Copy of the interface declaration:
 -- 
 --   port (
+--     RBG         : in     std_logic_vector(2 downto 0);
 --     bit         : in     std_logic;
 --     bit_count   : in     std_logic_vector(5 downto 0);
 --     clk         : in     std_logic;

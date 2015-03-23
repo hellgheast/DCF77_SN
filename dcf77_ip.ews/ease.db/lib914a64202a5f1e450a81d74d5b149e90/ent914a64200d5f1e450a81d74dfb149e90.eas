@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 23 13:03:55 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 23 17:10:52 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1424094672 "Mon Feb 16 14:51:12 2015")
-      (MODIFIED 1427112228 "Mon Mar 23 13:03:48 2015")
+      (MODIFIED 1427127045 "Mon Mar 23 17:10:45 2015")
     )
     (PORT
       (OBID "eprt914a64208e5f1e450a81d74d4c149e90")
@@ -313,10 +313,10 @@
             (MODE 1)
           )
         )
-        (GEOMETRY 600 792 680 872)
+        (GEOMETRY 600 728 680 808)
         (SIDE 1)
         (LABEL
-          (POSITION 576 832)
+          (POSITION 576 768)
           (SCALE 96)
           (COLOR_LINE 0)
           (SIDE 3)
@@ -327,10 +327,10 @@
         (PORT "eprt914a64208e5f1e450a81d74d4c149e90")
         (CONNECTION
           (OBID "ncon914a64208e5f1e450a81d74d8c149e90")
-          (GEOMETRY 704 832 704 832)
+          (GEOMETRY 704 768 704 768)
           (SIDE 2)
           (LABEL
-            (POSITION 704 864)
+            (POSITION 704 800)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
@@ -348,10 +348,10 @@
             (MODE 1)
           )
         )
-        (GEOMETRY 600 920 680 1000)
+        (GEOMETRY 600 856 680 936)
         (SIDE 1)
         (LABEL
-          (POSITION 576 960)
+          (POSITION 576 896)
           (SCALE 96)
           (COLOR_LINE 0)
           (SIDE 3)
@@ -362,10 +362,10 @@
         (PORT "eprt914a6420be5f1e450a81d74dac149e90")
         (CONNECTION
           (OBID "ncon914a6420be5f1e450a81d74dec149e90")
-          (GEOMETRY 704 960 704 960)
+          (GEOMETRY 704 896 704 896)
           (SIDE 2)
           (LABEL
-            (POSITION 704 992)
+            (POSITION 704 928)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
@@ -383,10 +383,10 @@
             (MODE 1)
           )
         )
-        (GEOMETRY 600 1368 680 1448)
+        (GEOMETRY 600 1304 680 1384)
         (SIDE 1)
         (LABEL
-          (POSITION 576 1408)
+          (POSITION 576 1344)
           (SCALE 96)
           (COLOR_LINE 0)
           (SIDE 3)
@@ -401,10 +401,10 @@
             (NAME "chip_select")
             (USERNAME 1)
           )
-          (GEOMETRY 696 1368 840 1448)
+          (GEOMETRY 696 1304 840 1384)
           (SIDE 0)
           (LABEL
-            (POSITION 896 1408)
+            (POSITION 896 1344)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
@@ -415,10 +415,10 @@
         )
         (CONNECTION
           (OBID "ncon914a6420716f1e450a81d74d4d149e90")
-          (GEOMETRY 704 1408 704 1408)
+          (GEOMETRY 704 1344 704 1344)
           (SIDE 2)
           (LABEL
-            (POSITION 896 1408)
+            (POSITION 896 1344)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
@@ -440,10 +440,10 @@
             )
           )
         )
-        (GEOMETRY 600 1176 680 1256)
+        (GEOMETRY 600 1112 680 1192)
         (SIDE 1)
         (LABEL
-          (POSITION 576 1216)
+          (POSITION 576 1152)
           (SCALE 96)
           (COLOR_LINE 0)
           (SIDE 3)
@@ -454,10 +454,10 @@
         (PORT "eprt914a6420426f1e450a81d74d6d149e90")
         (CONNECTION
           (OBID "ncon914a6420426f1e450a81d74dad149e90")
-          (GEOMETRY 704 1216 704 1216)
+          (GEOMETRY 704 1152 704 1152)
           (SIDE 2)
           (LABEL
-            (POSITION 704 1248)
+            (POSITION 704 1184)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
@@ -479,10 +479,10 @@
             )
           )
         )
-        (GEOMETRY 600 1048 680 1128)
+        (GEOMETRY 600 984 680 1064)
         (SIDE 1)
         (LABEL
-          (POSITION 576 1088)
+          (POSITION 576 1024)
           (SCALE 96)
           (COLOR_LINE 0)
           (SIDE 3)
@@ -493,10 +493,10 @@
         (PORT "eprt914a6420926f1e450a81d74dcd149e90")
         (CONNECTION
           (OBID "ncon914a6420926f1e450a81d74d0e149e90")
-          (GEOMETRY 704 1088 704 1088)
+          (GEOMETRY 704 1024 704 1024)
           (SIDE 2)
           (LABEL
-            (POSITION 704 1120)
+            (POSITION 704 1056)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
@@ -514,10 +514,10 @@
             (MODE 1)
           )
         )
-        (GEOMETRY 536 1816 616 1896)
+        (GEOMETRY 472 3800 552 3880)
         (SIDE 1)
         (LABEL
-          (POSITION 512 1856)
+          (POSITION 448 3840)
           (SCALE 96)
           (COLOR_LINE 0)
           (SIDE 3)
@@ -532,10 +532,10 @@
             (NAME "clk")
             (USERNAME 1)
           )
-          (GEOMETRY 632 1816 776 1896)
+          (GEOMETRY 568 3800 712 3880)
           (SIDE 0)
           (LABEL
-            (POSITION 832 1856)
+            (POSITION 768 3840)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
@@ -546,10 +546,10 @@
         )
         (CONNECTION
           (OBID "ncon914a6420336f1e450a81d74d6e149e90")
-          (GEOMETRY 640 1856 640 1856)
+          (GEOMETRY 576 3840 576 3840)
           (SIDE 2)
           (LABEL
-            (POSITION 832 1856)
+            (POSITION 768 3840)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
@@ -567,10 +567,10 @@
             (MODE 1)
           )
         )
-        (GEOMETRY 536 1944 616 2024)
+        (GEOMETRY 472 3928 552 4008)
         (SIDE 1)
         (LABEL
-          (POSITION 512 1984)
+          (POSITION 448 3968)
           (SCALE 96)
           (COLOR_LINE 0)
           (SIDE 3)
@@ -585,10 +585,10 @@
             (NAME "reset_n")
             (USERNAME 1)
           )
-          (GEOMETRY 632 1944 776 2024)
+          (GEOMETRY 568 3928 712 4008)
           (SIDE 0)
           (LABEL
-            (POSITION 832 1984)
+            (POSITION 768 3968)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
@@ -599,10 +599,10 @@
         )
         (CONNECTION
           (OBID "ncon914a6420346f1e450a81d74dce149e90")
-          (GEOMETRY 640 1984 640 1984)
+          (GEOMETRY 576 3968 576 3968)
           (SIDE 2)
           (LABEL
-            (POSITION 832 1984)
+            (POSITION 768 3968)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
@@ -620,10 +620,10 @@
             (MODE 1)
           )
         )
-        (GEOMETRY 536 2136 616 2216)
+        (GEOMETRY 536 3160 616 3240)
         (SIDE 1)
         (LABEL
-          (POSITION 512 2176)
+          (POSITION 512 3200)
           (SCALE 96)
           (COLOR_LINE 0)
           (SIDE 3)
@@ -634,10 +634,10 @@
         (PORT "eprt914a6420d46f1e450a81d74dee149e90")
         (CONNECTION
           (OBID "ncon914a6420d46f1e450a81d74d2f149e90")
-          (GEOMETRY 640 2176 640 2176)
+          (GEOMETRY 640 3200 640 3200)
           (SIDE 2)
           (LABEL
-            (POSITION 640 2208)
+            (POSITION 640 3232)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
@@ -655,10 +655,10 @@
             (MODE 2)
           )
         )
-        (GEOMETRY 6104 920 6184 1000)
+        (GEOMETRY 8728 4952 8808 5032)
         (SIDE 3)
         (LABEL
-          (POSITION 6208 960)
+          (POSITION 8832 4992)
           (SCALE 96)
           (COLOR_LINE 0)
           (SIDE 1)
@@ -669,10 +669,10 @@
         (PORT "eprt914a6420ff6f1e450a81d74d21249e90")
         (CONNECTION
           (OBID "ncon914a6420ff6f1e450a81d74d61249e90")
-          (GEOMETRY 6080 960 6080 960)
+          (GEOMETRY 8704 4992 8704 4992)
           (SIDE 0)
           (LABEL
-            (POSITION 6080 928)
+            (POSITION 8704 4960)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -690,10 +690,10 @@
             (MODE 2)
           )
         )
-        (GEOMETRY 6104 1048 6184 1128)
+        (GEOMETRY 8728 5080 8808 5160)
         (SIDE 3)
         (LABEL
-          (POSITION 6208 1088)
+          (POSITION 8832 5120)
           (SCALE 96)
           (COLOR_LINE 0)
           (SIDE 1)
@@ -704,10 +704,10 @@
         (PORT "eprt914a6420a07f1e450a81d74d81249e90")
         (CONNECTION
           (OBID "ncon914a6420a07f1e450a81d74dc1249e90")
-          (GEOMETRY 6080 1088 6080 1088)
+          (GEOMETRY 8704 5120 8704 5120)
           (SIDE 0)
           (LABEL
-            (POSITION 6080 1056)
+            (POSITION 8704 5088)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -729,10 +729,10 @@
             )
           )
         )
-        (GEOMETRY 6104 1176 6184 1256)
+        (GEOMETRY 8792 1176 8872 1256)
         (SIDE 3)
         (LABEL
-          (POSITION 6208 1216)
+          (POSITION 8902 1216)
           (SCALE 96)
           (COLOR_LINE 0)
           (SIDE 1)
@@ -743,10 +743,10 @@
         (PORT "eprt914a6420617f1e450a81d74de1249e90")
         (CONNECTION
           (OBID "ncon914a6420617f1e450a81d74d22249e90")
-          (GEOMETRY 6080 1216 6080 1216)
+          (GEOMETRY 8768 1216 8768 1216)
           (SIDE 0)
           (LABEL
-            (POSITION 6080 1184)
+            (POSITION 8768 1184)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -1353,10 +1353,10 @@
           (NAME "u2")
           (USERNAME 1)
         )
-        (GEOMETRY 2752 1344 4224 2752)
+        (GEOMETRY 3392 1344 4864 2752)
         (SIDE 0)
         (LABEL
-          (POSITION 2437 2962)
+          (POSITION 3077 2962)
           (SCALE 128)
           (COLOR_LINE 0)
           (SIDE 3)
@@ -1374,10 +1374,10 @@
               (MODE 1)
             )
           )
-          (GEOMETRY 2712 1432 2792 1512)
+          (GEOMETRY 3352 1432 3432 1512)
           (SIDE 3)
           (LABEL
-            (POSITION 2816 1472)
+            (POSITION 3456 1472)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -1388,10 +1388,10 @@
           (PORT "eprt914a6420d151be450572d74d9257bdc1")
           (CONNECTION
             (OBID "ncon914a6420d151be450572d74db257bdc1")
-            (GEOMETRY 2688 1472 2688 1472)
+            (GEOMETRY 3328 1472 3328 1472)
             (SIDE 0)
             (LABEL
-              (POSITION 2688 1440)
+              (POSITION 3328 1440)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -1413,10 +1413,10 @@
               )
             )
           )
-          (GEOMETRY 2712 1560 2792 1640)
+          (GEOMETRY 3352 1560 3432 1640)
           (SIDE 3)
           (LABEL
-            (POSITION 2816 1600)
+            (POSITION 3456 1600)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -1427,10 +1427,10 @@
           (PORT "eprt914a6420a751be450572d74dd257bdc1")
           (CONNECTION
             (OBID "ncon914a6420a751be450572d74df257bdc1")
-            (GEOMETRY 2688 1600 2688 1600)
+            (GEOMETRY 3328 1600 3328 1600)
             (SIDE 0)
             (LABEL
-              (POSITION 2688 1568)
+              (POSITION 3328 1568)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -1448,10 +1448,10 @@
               (MODE 1)
             )
           )
-          (GEOMETRY 2712 2456 2792 2536)
+          (GEOMETRY 3352 2456 3432 2536)
           (SIDE 3)
           (LABEL
-            (POSITION 2816 2496)
+            (POSITION 3456 2496)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -1466,10 +1466,10 @@
               (NAME "clk")
               (USERNAME 1)
             )
-            (GEOMETRY 2552 2456 2696 2536)
+            (GEOMETRY 3192 2456 3336 2536)
             (SIDE 0)
             (LABEL
-              (POSITION 2496 2496)
+              (POSITION 3136 2496)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -1480,10 +1480,10 @@
           )
           (CONNECTION
             (OBID "ncon914a64208951be450572d74d3357bdc1")
-            (GEOMETRY 2688 2496 2688 2496)
+            (GEOMETRY 3328 2496 3328 2496)
             (SIDE 0)
             (LABEL
-              (POSITION 2496 2496)
+              (POSITION 3136 2496)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -1501,10 +1501,10 @@
               (MODE 1)
             )
           )
-          (GEOMETRY 2712 2584 2792 2664)
+          (GEOMETRY 3352 2584 3432 2664)
           (SIDE 3)
           (LABEL
-            (POSITION 2816 2624)
+            (POSITION 3456 2624)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -1519,10 +1519,10 @@
               (NAME "reset_n")
               (USERNAME 1)
             )
-            (GEOMETRY 2552 2584 2696 2664)
+            (GEOMETRY 3192 2584 3336 2664)
             (SIDE 0)
             (LABEL
-              (POSITION 2496 2624)
+              (POSITION 3136 2624)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -1533,10 +1533,10 @@
           )
           (CONNECTION
             (OBID "ncon914a64205461be450572d74d7357bdc1")
-            (GEOMETRY 2688 2624 2688 2624)
+            (GEOMETRY 3328 2624 3328 2624)
             (SIDE 0)
             (LABEL
-              (POSITION 2496 2624)
+              (POSITION 3136 2624)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -1558,10 +1558,10 @@
               )
             )
           )
-          (GEOMETRY 4184 1496 4264 1576)
+          (GEOMETRY 4824 1496 4904 1576)
           (SIDE 1)
           (LABEL
-            (POSITION 4160 1536)
+            (POSITION 4800 1536)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
@@ -1572,10 +1572,10 @@
           (PORT "eprt914a6420dd61be450572d74d9357bdc1")
           (CONNECTION
             (OBID "ncon914a6420dd61be450572d74db357bdc1")
-            (GEOMETRY 4288 1536 4288 1536)
+            (GEOMETRY 4928 1536 4928 1536)
             (SIDE 2)
             (LABEL
-              (POSITION 4288 1568)
+              (POSITION 4928 1568)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 1)
@@ -1597,10 +1597,10 @@
               )
             )
           )
-          (GEOMETRY 4184 1624 4264 1704)
+          (GEOMETRY 4824 1624 4904 1704)
           (SIDE 1)
           (LABEL
-            (POSITION 4160 1664)
+            (POSITION 4800 1664)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
@@ -1611,10 +1611,10 @@
           (PORT "eprt914a64202171be450572d74dd357bdc1")
           (CONNECTION
             (OBID "ncon914a64202171be450572d74df357bdc1")
-            (GEOMETRY 4288 1664 4288 1664)
+            (GEOMETRY 4928 1664 4928 1664)
             (SIDE 2)
             (LABEL
-              (POSITION 4288 1696)
+              (POSITION 4928 1696)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 1)
@@ -1636,10 +1636,10 @@
               )
             )
           )
-          (GEOMETRY 4184 1752 4264 1832)
+          (GEOMETRY 4824 1752 4904 1832)
           (SIDE 1)
           (LABEL
-            (POSITION 4160 1792)
+            (POSITION 4800 1792)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
@@ -1650,10 +1650,10 @@
           (PORT "eprt914a6420e971be450572d74d1457bdc1")
           (CONNECTION
             (OBID "ncon914a6420e971be450572d74d3457bdc1")
-            (GEOMETRY 4288 1792 4288 1792)
+            (GEOMETRY 4928 1792 4928 1792)
             (SIDE 2)
             (LABEL
-              (POSITION 4288 1824)
+              (POSITION 4928 1824)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 1)
@@ -1675,10 +1675,10 @@
               )
             )
           )
-          (GEOMETRY 4184 1880 4264 1960)
+          (GEOMETRY 4824 1880 4904 1960)
           (SIDE 1)
           (LABEL
-            (POSITION 4160 1920)
+            (POSITION 4800 1920)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
@@ -1689,10 +1689,10 @@
           (PORT "eprt914a64201381be450572d74d5457bdc1")
           (CONNECTION
             (OBID "ncon914a64201381be450572d74d7457bdc1")
-            (GEOMETRY 4288 1920 4288 1920)
+            (GEOMETRY 4928 1920 4928 1920)
             (SIDE 2)
             (LABEL
-              (POSITION 4288 1952)
+              (POSITION 4928 1952)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 1)
@@ -1714,10 +1714,10 @@
               )
             )
           )
-          (GEOMETRY 4184 2072 4264 2152)
+          (GEOMETRY 4824 2072 4904 2152)
           (SIDE 1)
           (LABEL
-            (POSITION 4160 2112)
+            (POSITION 4800 2112)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
@@ -1728,10 +1728,10 @@
           (PORT "eprt914a64204581be450572d74d9457bdc1")
           (CONNECTION
             (OBID "ncon914a64204581be450572d74db457bdc1")
-            (GEOMETRY 4288 2112 4288 2112)
+            (GEOMETRY 4928 2112 4928 2112)
             (SIDE 2)
             (LABEL
-              (POSITION 4288 2144)
+              (POSITION 4928 2144)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 1)
@@ -1753,10 +1753,10 @@
               )
             )
           )
-          (GEOMETRY 4184 2200 4264 2280)
+          (GEOMETRY 4824 2200 4904 2280)
           (SIDE 1)
           (LABEL
-            (POSITION 4160 2240)
+            (POSITION 4800 2240)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
@@ -1767,10 +1767,10 @@
           (PORT "eprt914a6420a681be450572d74dd457bdc1")
           (CONNECTION
             (OBID "ncon914a6420a681be450572d74df457bdc1")
-            (GEOMETRY 4288 2240 4288 2240)
+            (GEOMETRY 4928 2240 4928 2240)
             (SIDE 2)
             (LABEL
-              (POSITION 4288 2272)
+              (POSITION 4928 2272)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 1)
@@ -1792,10 +1792,10 @@
               )
             )
           )
-          (GEOMETRY 4184 2392 4264 2472)
+          (GEOMETRY 4824 2392 4904 2472)
           (SIDE 1)
           (LABEL
-            (POSITION 4160 2432)
+            (POSITION 4800 2432)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
@@ -1806,10 +1806,10 @@
           (PORT "eprt914a64205b81be450572d74d1557bdc1")
           (CONNECTION
             (OBID "ncon914a64205b81be450572d74d3557bdc1")
-            (GEOMETRY 4288 2432 4288 2432)
+            (GEOMETRY 4928 2432 4928 2432)
             (SIDE 2)
             (LABEL
-              (POSITION 4288 2464)
+              (POSITION 4928 2464)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 1)
@@ -1831,10 +1831,10 @@
               )
             )
           )
-          (GEOMETRY 4184 2520 4264 2600)
+          (GEOMETRY 4824 2520 4904 2600)
           (SIDE 1)
           (LABEL
-            (POSITION 4160 2560)
+            (POSITION 4800 2560)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
@@ -1845,10 +1845,10 @@
           (PORT "eprt914a64206e81be450572d74d5557bdc1")
           (CONNECTION
             (OBID "ncon914a64206e81be450572d74d7557bdc1")
-            (GEOMETRY 4288 2560 4288 2560)
+            (GEOMETRY 4928 2560 4928 2560)
             (SIDE 2)
             (LABEL
-              (POSITION 4288 2592)
+              (POSITION 4928 2592)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 1)
@@ -1866,10 +1866,10 @@
               (MODE 1)
             )
           )
-          (GEOMETRY 2712 1752 2792 1832)
+          (GEOMETRY 3352 1752 3432 1832)
           (SIDE 3)
           (LABEL
-            (POSITION 2816 1792)
+            (POSITION 3456 1792)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -1880,10 +1880,10 @@
           (PORT "eprt914a642028a1be450572d74d0757bdc1")
           (CONNECTION
             (OBID "ncon914a642028a1be450572d74d2757bdc1")
-            (GEOMETRY 2688 1792 2688 1792)
+            (GEOMETRY 3328 1792 3328 1792)
             (SIDE 0)
             (LABEL
-              (POSITION 2688 1760)
+              (POSITION 3328 1760)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -1901,10 +1901,10 @@
               (MODE 1)
             )
           )
-          (GEOMETRY 2712 1880 2792 1960)
+          (GEOMETRY 3352 1880 3432 1960)
           (SIDE 3)
           (LABEL
-            (POSITION 2816 1920)
+            (POSITION 3456 1920)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -1915,10 +1915,49 @@
           (PORT "eprt914a642058a1be450572d74d4757bdc1")
           (CONNECTION
             (OBID "ncon914a642058a1be450572d74d6757bdc1")
-            (GEOMETRY 2688 1920 2688 1920)
+            (GEOMETRY 3328 1920 3328 1920)
             (SIDE 0)
             (LABEL
-              (POSITION 2688 1888)
+              (POSITION 3328 1888)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprtd9a1860afea30155c75009c32422a963")
+          (HDL_IDENT
+            (NAME "RBG")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "2" "0")
+              )
+            )
+          )
+          (GEOMETRY 3352 2008 3432 2088)
+          (SIDE 3)
+          (LABEL
+            (POSITION 3456 2048)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "RBG(2:0)")
+          )
+          (PORT "eprtd9a1860afea30155c75009c31422a963")
+          (CONNECTION
+            (OBID "ncond9a1860afea30155c75009c33422a963")
+            (GEOMETRY 3328 2048 3328 2048)
+            (SIDE 0)
+            (LABEL
+              (POSITION 3328 2016)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -1934,10 +1973,10 @@
           (NAME "u3")
           (USERNAME 1)
         )
-        (GEOMETRY 896 2944 1792 3456)
+        (GEOMETRY 896 3072 1792 3584)
         (SIDE 0)
         (LABEL
-          (POSITION 498 2893)
+          (POSITION 498 3021)
           (SCALE 128)
           (COLOR_LINE 0)
           (SIDE 3)
@@ -1955,10 +1994,10 @@
               (MODE 1)
             )
           )
-          (GEOMETRY 856 3032 936 3112)
+          (GEOMETRY 856 3160 936 3240)
           (SIDE 3)
           (LABEL
-            (POSITION 953 3072)
+            (POSITION 953 3200)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -1969,10 +2008,10 @@
           (PORT "eprt914a64203c91be450572d74d0657bdc1")
           (CONNECTION
             (OBID "ncon914a64203c91be450572d74d2657bdc1")
-            (GEOMETRY 832 3072 832 3072)
+            (GEOMETRY 832 3200 832 3200)
             (SIDE 0)
             (LABEL
-              (POSITION 832 3040)
+              (POSITION 832 3168)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -1990,10 +2029,10 @@
               (MODE 1)
             )
           )
-          (GEOMETRY 856 3160 936 3240)
+          (GEOMETRY 856 3288 936 3368)
           (SIDE 3)
           (LABEL
-            (POSITION 960 3200)
+            (POSITION 960 3328)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -2008,10 +2047,10 @@
               (NAME "clk")
               (USERNAME 1)
             )
-            (GEOMETRY 696 3160 840 3240)
+            (GEOMETRY 696 3288 840 3368)
             (SIDE 0)
             (LABEL
-              (POSITION 640 3200)
+              (POSITION 640 3328)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2022,10 +2061,10 @@
           )
           (CONNECTION
             (OBID "ncon914a64208c91be450572d74d6657bdc1")
-            (GEOMETRY 832 3200 832 3200)
+            (GEOMETRY 832 3328 832 3328)
             (SIDE 0)
             (LABEL
-              (POSITION 640 3200)
+              (POSITION 640 3328)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2043,10 +2082,10 @@
               (MODE 1)
             )
           )
-          (GEOMETRY 856 3288 936 3368)
+          (GEOMETRY 856 3416 936 3496)
           (SIDE 3)
           (LABEL
-            (POSITION 960 3328)
+            (POSITION 960 3456)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -2061,10 +2100,10 @@
               (NAME "reset_n")
               (USERNAME 1)
             )
-            (GEOMETRY 696 3288 840 3368)
+            (GEOMETRY 696 3416 840 3496)
             (SIDE 0)
             (LABEL
-              (POSITION 640 3328)
+              (POSITION 640 3456)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2075,10 +2114,10 @@
           )
           (CONNECTION
             (OBID "ncon914a64206d91be450572d74da657bdc1")
-            (GEOMETRY 832 3328 832 3328)
+            (GEOMETRY 832 3456 832 3456)
             (SIDE 0)
             (LABEL
-              (POSITION 640 3328)
+              (POSITION 640 3456)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2096,10 +2135,10 @@
               (MODE 2)
             )
           )
-          (GEOMETRY 1752 3160 1832 3240)
+          (GEOMETRY 1752 3288 1832 3368)
           (SIDE 1)
           (LABEL
-            (POSITION 1692 3200)
+            (POSITION 1692 3328)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
@@ -2114,10 +2153,10 @@
               (NAME "dcf_77_s")
               (USERNAME 1)
             )
-            (GEOMETRY 1848 3160 1992 3240)
+            (GEOMETRY 1848 3288 1992 3368)
             (SIDE 0)
             (LABEL
-              (POSITION 2048 3200)
+              (POSITION 2048 3328)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 1)
@@ -2128,10 +2167,10 @@
           )
           (CONNECTION
             (OBID "ncon914a64202f91be450572d74de657bdc1")
-            (GEOMETRY 1856 3200 1856 3200)
+            (GEOMETRY 1856 3328 1856 3328)
             (SIDE 2)
             (LABEL
-              (POSITION 2048 3200)
+              (POSITION 2048 3328)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 1)
@@ -2147,10 +2186,10 @@
           (NAME "u4")
           (USERNAME 1)
         )
-        (GEOMETRY 4416 384 5888 3072)
+        (GEOMETRY 7104 384 8576 3392)
         (SIDE 0)
         (LABEL
-          (POSITION 4283 357)
+          (POSITION 6971 357)
           (SCALE 128)
           (COLOR_LINE 0)
           (SIDE 3)
@@ -2168,10 +2207,10 @@
               (MODE 1)
             )
           )
-          (GEOMETRY 4376 2840 4456 2920)
+          (GEOMETRY 7064 3096 7144 3176)
           (SIDE 3)
           (LABEL
-            (POSITION 4480 2880)
+            (POSITION 7168 3136)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -2186,10 +2225,10 @@
               (NAME "clk")
               (USERNAME 1)
             )
-            (GEOMETRY 4216 2840 4360 2920)
+            (GEOMETRY 6904 3096 7048 3176)
             (SIDE 0)
             (LABEL
-              (POSITION 4160 2880)
+              (POSITION 6848 3136)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2200,10 +2239,10 @@
           )
           (CONNECTION
             (OBID "ncon914a6420b4b1be450572d74d3b57bdc1")
-            (GEOMETRY 4352 2880 4352 2880)
+            (GEOMETRY 7040 3136 7040 3136)
             (SIDE 0)
             (LABEL
-              (POSITION 4160 2880)
+              (POSITION 6848 3136)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2221,10 +2260,10 @@
               (MODE 1)
             )
           )
-          (GEOMETRY 4376 2968 4456 3048)
+          (GEOMETRY 7064 3224 7144 3304)
           (SIDE 3)
           (LABEL
-            (POSITION 4480 3008)
+            (POSITION 7168 3264)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -2239,10 +2278,10 @@
               (NAME "reset_n")
               (USERNAME 1)
             )
-            (GEOMETRY 4216 2968 4360 3048)
+            (GEOMETRY 6904 3224 7048 3304)
             (SIDE 0)
             (LABEL
-              (POSITION 4160 3008)
+              (POSITION 6848 3264)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2253,10 +2292,10 @@
           )
           (CONNECTION
             (OBID "ncon914a6420f4b1be450572d74d7b57bdc1")
-            (GEOMETRY 4352 3008 4352 3008)
+            (GEOMETRY 7040 3264 7040 3264)
             (SIDE 0)
             (LABEL
-              (POSITION 4160 3008)
+              (POSITION 6848 3264)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2278,10 +2317,10 @@
               )
             )
           )
-          (GEOMETRY 4376 2520 4456 2600)
+          (GEOMETRY 7064 2520 7144 2600)
           (SIDE 3)
           (LABEL
-            (POSITION 4480 2560)
+            (POSITION 7168 2560)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -2292,10 +2331,10 @@
           (PORT "eprt914a642007b1be450572d74d9b57bdc1")
           (CONNECTION
             (OBID "ncon914a642007b1be450572d74dbb57bdc1")
-            (GEOMETRY 4352 2560 4352 2560)
+            (GEOMETRY 7040 2560 7040 2560)
             (SIDE 0)
             (LABEL
-              (POSITION 4352 2528)
+              (POSITION 7040 2528)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2317,10 +2356,10 @@
               )
             )
           )
-          (GEOMETRY 4376 2392 4456 2472)
+          (GEOMETRY 7064 2392 7144 2472)
           (SIDE 3)
           (LABEL
-            (POSITION 4480 2432)
+            (POSITION 7168 2432)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -2331,10 +2370,10 @@
           (PORT "eprt914a6420f7b1be450572d74d0c57bdc1")
           (CONNECTION
             (OBID "ncon914a6420f7b1be450572d74d3c57bdc1")
-            (GEOMETRY 4352 2432 4352 2432)
+            (GEOMETRY 7040 2432 7040 2432)
             (SIDE 0)
             (LABEL
-              (POSITION 4352 2400)
+              (POSITION 7040 2400)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2356,10 +2395,10 @@
               )
             )
           )
-          (GEOMETRY 4376 1496 4456 1576)
+          (GEOMETRY 7064 1496 7144 1576)
           (SIDE 3)
           (LABEL
-            (POSITION 4480 1536)
+            (POSITION 7168 1536)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -2370,10 +2409,10 @@
           (PORT "eprt914a6420d9b1be450572d74d3667bdc1")
           (CONNECTION
             (OBID "ncon914a6420d9b1be450572d74df667bdc1")
-            (GEOMETRY 4352 1536 4352 1536)
+            (GEOMETRY 7040 1536 7040 1536)
             (SIDE 0)
             (LABEL
-              (POSITION 4352 1504)
+              (POSITION 7040 1504)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2395,10 +2434,10 @@
               )
             )
           )
-          (GEOMETRY 4376 1624 4456 1704)
+          (GEOMETRY 7064 1624 7144 1704)
           (SIDE 3)
           (LABEL
-            (POSITION 4480 1664)
+            (POSITION 7168 1664)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -2409,10 +2448,10 @@
           (PORT "eprt914a6420d9b1be450572d74d5667bdc1")
           (CONNECTION
             (OBID "ncon914a6420d9b1be450572d74d1767bdc1")
-            (GEOMETRY 4352 1664 4352 1664)
+            (GEOMETRY 7040 1664 7040 1664)
             (SIDE 0)
             (LABEL
-              (POSITION 4352 1632)
+              (POSITION 7040 1632)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2434,10 +2473,10 @@
               )
             )
           )
-          (GEOMETRY 4376 1752 4456 1832)
+          (GEOMETRY 7064 1752 7144 1832)
           (SIDE 3)
           (LABEL
-            (POSITION 4480 1792)
+            (POSITION 7168 1792)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -2448,10 +2487,10 @@
           (PORT "eprt914a6420d9b1be450572d74d7667bdc1")
           (CONNECTION
             (OBID "ncon914a6420d9b1be450572d74d3767bdc1")
-            (GEOMETRY 4352 1792 4352 1792)
+            (GEOMETRY 7040 1792 7040 1792)
             (SIDE 0)
             (LABEL
-              (POSITION 4352 1760)
+              (POSITION 7040 1760)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2473,10 +2512,10 @@
               )
             )
           )
-          (GEOMETRY 4376 1880 4456 1960)
+          (GEOMETRY 7064 1880 7144 1960)
           (SIDE 3)
           (LABEL
-            (POSITION 4480 1920)
+            (POSITION 7168 1920)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -2487,10 +2526,10 @@
           (PORT "eprt914a6420d9b1be450572d74d9667bdc1")
           (CONNECTION
             (OBID "ncon914a6420d9b1be450572d74d5767bdc1")
-            (GEOMETRY 4352 1920 4352 1920)
+            (GEOMETRY 7040 1920 7040 1920)
             (SIDE 0)
             (LABEL
-              (POSITION 4352 1888)
+              (POSITION 7040 1888)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2512,10 +2551,10 @@
               )
             )
           )
-          (GEOMETRY 4376 2072 4456 2152)
+          (GEOMETRY 7064 2072 7144 2152)
           (SIDE 3)
           (LABEL
-            (POSITION 4480 2112)
+            (POSITION 7168 2112)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -2526,10 +2565,10 @@
           (PORT "eprt914a6420d9b1be450572d74db667bdc1")
           (CONNECTION
             (OBID "ncon914a6420d9b1be450572d74d7767bdc1")
-            (GEOMETRY 4352 2112 4352 2112)
+            (GEOMETRY 7040 2112 7040 2112)
             (SIDE 0)
             (LABEL
-              (POSITION 4352 2080)
+              (POSITION 7040 2080)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2551,10 +2590,10 @@
               )
             )
           )
-          (GEOMETRY 4376 2200 4456 2280)
+          (GEOMETRY 7064 2200 7144 2280)
           (SIDE 3)
           (LABEL
-            (POSITION 4480 2240)
+            (POSITION 7168 2240)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -2565,10 +2604,10 @@
           (PORT "eprt914a6420d9b1be450572d74dd667bdc1")
           (CONNECTION
             (OBID "ncon914a6420d9b1be450572d74d9767bdc1")
-            (GEOMETRY 4352 2240 4352 2240)
+            (GEOMETRY 7040 2240 7040 2240)
             (SIDE 0)
             (LABEL
-              (POSITION 4352 2208)
+              (POSITION 7040 2208)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2586,10 +2625,10 @@
               (MODE 1)
             )
           )
-          (GEOMETRY 4376 600 4456 680)
+          (GEOMETRY 7064 600 7144 680)
           (SIDE 3)
           (LABEL
-            (POSITION 4480 640)
+            (POSITION 7168 640)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -2604,10 +2643,10 @@
               (NAME "chip_select")
               (USERNAME 1)
             )
-            (GEOMETRY 4216 600 4360 680)
+            (GEOMETRY 6904 600 7048 680)
             (SIDE 0)
             (LABEL
-              (POSITION 4160 640)
+              (POSITION 6848 640)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2618,10 +2657,10 @@
           )
           (CONNECTION
             (OBID "ncon914a6420afb1be450572d74d8867bdc1")
-            (GEOMETRY 4352 640 4352 640)
+            (GEOMETRY 7040 640 7040 640)
             (SIDE 0)
             (LABEL
-              (POSITION 4160 640)
+              (POSITION 6848 640)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2643,10 +2682,10 @@
               )
             )
           )
-          (GEOMETRY 5848 1176 5928 1256)
+          (GEOMETRY 8536 1176 8616 1256)
           (SIDE 1)
           (LABEL
-            (POSITION 5824 1216)
+            (POSITION 8512 1216)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 1)
@@ -2657,10 +2696,10 @@
           (PORT "eprt914a642085c1be450572d74da867bdc1")
           (CONNECTION
             (OBID "ncon914a642085c1be450572d74dc867bdc1")
-            (GEOMETRY 5952 1216 5952 1216)
+            (GEOMETRY 8640 1216 8640 1216)
             (SIDE 2)
             (LABEL
-              (POSITION 5952 1248)
+              (POSITION 8640 1248)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 1)
@@ -2678,10 +2717,10 @@
               (MODE 1)
             )
           )
-          (GEOMETRY 4376 728 4456 808)
+          (GEOMETRY 7064 728 7144 808)
           (SIDE 3)
           (LABEL
-            (POSITION 4480 768)
+            (POSITION 7168 768)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -2692,10 +2731,10 @@
           (PORT "eprt914a64200ac1be450572d74de867bdc1")
           (CONNECTION
             (OBID "ncon914a64200ac1be450572d74d0967bdc1")
-            (GEOMETRY 4352 768 4352 768)
+            (GEOMETRY 7040 768 7040 768)
             (SIDE 0)
             (LABEL
-              (POSITION 4352 736)
+              (POSITION 7040 736)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2713,10 +2752,10 @@
               (MODE 1)
             )
           )
-          (GEOMETRY 4376 856 4456 936)
+          (GEOMETRY 7064 856 7144 936)
           (SIDE 3)
           (LABEL
-            (POSITION 4480 896)
+            (POSITION 7168 896)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -2727,10 +2766,10 @@
           (PORT "eprt914a6420ecc1be450572d74d2967bdc1")
           (CONNECTION
             (OBID "ncon914a6420ecc1be450572d74d4967bdc1")
-            (GEOMETRY 4352 896 4352 896)
+            (GEOMETRY 7040 896 7040 896)
             (SIDE 0)
             (LABEL
-              (POSITION 4352 864)
+              (POSITION 7040 864)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2752,10 +2791,10 @@
               )
             )
           )
-          (GEOMETRY 4376 984 4456 1064)
+          (GEOMETRY 7064 984 7144 1064)
           (SIDE 3)
           (LABEL
-            (POSITION 4480 1024)
+            (POSITION 7168 1024)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -2766,10 +2805,10 @@
           (PORT "eprt914a6420a6d1be450572d74d6967bdc1")
           (CONNECTION
             (OBID "ncon914a6420a6d1be450572d74d8967bdc1")
-            (GEOMETRY 4352 1024 4352 1024)
+            (GEOMETRY 7040 1024 7040 1024)
             (SIDE 0)
             (LABEL
-              (POSITION 4352 992)
+              (POSITION 7040 992)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2791,10 +2830,10 @@
               )
             )
           )
-          (GEOMETRY 4376 408 4456 488)
+          (GEOMETRY 7064 408 7144 488)
           (SIDE 3)
           (LABEL
-            (POSITION 4480 448)
+            (POSITION 7168 448)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -2805,10 +2844,10 @@
           (PORT "eprt914a64200dd1be450572d74da967bdc1")
           (CONNECTION
             (OBID "ncon914a64200dd1be450572d74dc967bdc1")
-            (GEOMETRY 4352 448 4352 448)
+            (GEOMETRY 7040 448 7040 448)
             (SIDE 0)
             (LABEL
-              (POSITION 4352 416)
+              (POSITION 7040 416)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2830,10 +2869,10 @@
               )
             )
           )
-          (GEOMETRY 4376 1112 4456 1192)
+          (GEOMETRY 7064 1112 7144 1192)
           (SIDE 3)
           (LABEL
-            (POSITION 4480 1152)
+            (POSITION 7168 1152)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -2844,10 +2883,115 @@
           (PORT "eprt914a64204342be450572d74d3ea7bdc1")
           (CONNECTION
             (OBID "ncon914a64204342be450572d74d5ea7bdc1")
-            (GEOMETRY 4352 1152 4352 1152)
+            (GEOMETRY 7040 1152 7040 1152)
             (SIDE 0)
             (LABEL
-              (POSITION 4352 1120)
+              (POSITION 7040 1120)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprtd9a1860a06930155c75009c32112a963")
+          (HDL_IDENT
+            (NAME "ParityD")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 7064 2968 7144 3048)
+          (SIDE 3)
+          (LABEL
+            (POSITION 7168 3008)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "ParityD")
+          )
+          (PORT "eprtd9a1860a06930155c75009c3d012a963")
+          (CONNECTION
+            (OBID "ncond9a1860a06930155c75009c33112a963")
+            (GEOMETRY 7040 3008 7040 3008)
+            (SIDE 0)
+            (LABEL
+              (POSITION 7040 2976)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprtd9a1860a06930155c75009c34112a963")
+          (HDL_IDENT
+            (NAME "ParityM")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 7064 2840 7144 2920)
+          (SIDE 3)
+          (LABEL
+            (POSITION 7168 2880)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "ParityM")
+          )
+          (PORT "eprtd9a1860a06930155c75009c3f012a963")
+          (CONNECTION
+            (OBID "ncond9a1860a06930155c75009c35112a963")
+            (GEOMETRY 7040 2880 7040 2880)
+            (SIDE 0)
+            (LABEL
+              (POSITION 7040 2848)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprtd9a1860a06930155c75009c36112a963")
+          (HDL_IDENT
+            (NAME "ParityH")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 7064 2712 7144 2792)
+          (SIDE 3)
+          (LABEL
+            (POSITION 7168 2752)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "ParityH")
+          )
+          (PORT "eprtd9a1860a06930155c75009c31112a963")
+          (CONNECTION
+            (OBID "ncond9a1860a06930155c75009c37112a963")
+            (GEOMETRY 7040 2752 7040 2752)
+            (SIDE 0)
+            (LABEL
+              (POSITION 7040 2720)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -2857,41 +3001,528 @@
           )
         )
       )
-      (NET
-        (OBID "net914a64200a02be450572d74d6687bdc1")
+      (COMPONENT
+        (OBID "compd9a1860a6bb20155c75009c3c5a1a963")
         (HDL_IDENT
-          (NAME "signal_int_net")
+          (NAME "u5")
+          (USERNAME 1)
         )
-        (PART
-          (OBID "nprt914a64200a02be450572d74d9687bdc1")
-          (CBN 1)
+        (GEOMETRY 2944 3584 3776 4160)
+        (SIDE 0)
+        (LABEL
+          (POSITION 2944 3520)
+          (SCALE 128)
+          (COLOR_LINE 0)
+          (SIDE 3)
+          (ALIGNMENT 6)
+          (FORMAT 13)
+          (TEXT "u5:decode_RBG:behavior(V)")
         )
-        (PART
-          (OBID "nprt914a64200a02be450572d74d7687bdc1")
+        (ENTITY "lib914a64202a5f1e450a81d74d5b149e90" "entd9a1860a6bb20155c75009c3b5a1a963")
+        (PORT
+          (OBID "cprtd9a1860ad0c20155c75009c38de1a963")
+          (HDL_IDENT
+            (NAME "start")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 2904 3672 2984 3752)
+          (SIDE 3)
           (LABEL
-            (POSITION 2560 1904)
+            (POSITION 3008 3712)
             (SCALE 96)
-            (COLOR_LINE 52)
+            (COLOR_LINE 0)
             (SIDE 3)
-            (ALIGNMENT 7)
-            (FORMAT 4099)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "start")
           )
-          (WIRE 2560 1920 2688 1920)
-          (WIRE 2432 1920 2560 1920)
-          (WIRE 2560 1920 2560 3328)
-          (WIRE 6080 1088 6080 3328)
-          (WIRE 2560 3328 6080 3328)
-          (PORT
-            (OBID "cprt914a642058a1be450572d74d5757bdc1")
+          (PORT "eprtd9a1860ad0c20155c75009c37de1a963")
+          (CONNECTION
+            (OBID "ncond9a1860ad0c20155c75009c39de1a963")
+            (GEOMETRY 2880 3712 2880 3712)
+            (SIDE 0)
+            (LABEL
+              (POSITION 2880 3680)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprtd9a1860a21c20155c75009c3fde1a963")
+          (HDL_IDENT
             (NAME "stop")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+            )
           )
-          (PORT
-            (OBID "cprt914a642096102e450a81d74d26249e90")
-            (NAME "stop")
+          (GEOMETRY 2904 3800 2984 3880)
+          (SIDE 3)
+          (LABEL
+            (POSITION 3008 3840)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "stop")
           )
-          (PORT
-            (OBID "aprt914a6420a07f1e450a81d74db1249e90")
-            (NAME "signal_int")
+          (PORT "eprtd9a1860a21c20155c75009c3ede1a963")
+          (CONNECTION
+            (OBID "ncond9a1860a21c20155c75009c30ee1a963")
+            (GEOMETRY 2880 3840 2880 3840)
+            (SIDE 0)
+            (LABEL
+              (POSITION 2880 3808)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprtd9a1860af1c20155c75009c36ee1a963")
+          (HDL_IDENT
+            (NAME "bit_count")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "5" "0")
+              )
+            )
+          )
+          (GEOMETRY 2904 3928 2984 4008)
+          (SIDE 3)
+          (LABEL
+            (POSITION 3008 3968)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "bit_count(5:0)")
+          )
+          (PORT "eprtd9a1860ae1c20155c75009c35ee1a963")
+          (CONNECTION
+            (OBID "ncond9a1860af1c20155c75009c37ee1a963")
+            (GEOMETRY 2880 3968 2880 3968)
+            (SIDE 0)
+            (LABEL
+              (POSITION 2880 3936)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprtd9a1860a9b730155c75009c3aee1a963")
+          (HDL_IDENT
+            (NAME "RBG")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 2)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "2" "0")
+              )
+            )
+          )
+          (GEOMETRY 3736 3736 3816 3816)
+          (SIDE 1)
+          (LABEL
+            (POSITION 3712 3776)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "RBG(2:0)")
+          )
+          (PORT "eprtd9a1860a9b730155c75009c39ee1a963")
+          (CONNECTION
+            (OBID "ncond9a1860a9b730155c75009c3bee1a963")
+            (GEOMETRY 3840 3776 3840 3776)
+            (SIDE 2)
+            (LABEL
+              (POSITION 3840 3808)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+      )
+      (COMPONENT
+        (OBID "compd9a1860a11830155c75009c3bfe1a963")
+        (HDL_IDENT
+          (NAME "u6")
+          (USERNAME 1)
+        )
+        (GEOMETRY 5696 3840 6720 4864)
+        (SIDE 0)
+        (LABEL
+          (POSITION 5696 3776)
+          (SCALE 128)
+          (COLOR_LINE 0)
+          (SIDE 3)
+          (ALIGNMENT 6)
+          (FORMAT 13)
+          (TEXT "u6:CheckParity:behavior(V)")
+        )
+        (ENTITY "lib914a64202a5f1e450a81d74d5b149e90" "entd9a1860a11830155c75009c39fe1a963")
+        (PORT
+          (OBID "cprtd9a1860af3830155c75009c360f1a963")
+          (HDL_IDENT
+            (NAME "hours")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "5" "0")
+              )
+            )
+          )
+          (GEOMETRY 5656 3864 5736 3944)
+          (SIDE 3)
+          (LABEL
+            (POSITION 5760 3904)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "hours(5:0)")
+          )
+          (PORT "eprtd9a1860af3830155c75009c340f1a963")
+          (CONNECTION
+            (OBID "ncond9a1860af3830155c75009c370f1a963")
+            (GEOMETRY 5632 3904 5632 3904)
+            (SIDE 0)
+            (LABEL
+              (POSITION 5632 3872)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprtd9a1860a24830155c75009c3d0f1a963")
+          (HDL_IDENT
+            (NAME "minutes")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "6" "0")
+              )
+            )
+          )
+          (GEOMETRY 5656 3992 5736 4072)
+          (SIDE 3)
+          (LABEL
+            (POSITION 5760 4032)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "minutes(6:0)")
+          )
+          (PORT "eprtd9a1860a24830155c75009c3c0f1a963")
+          (CONNECTION
+            (OBID "ncond9a1860a24830155c75009c3e0f1a963")
+            (GEOMETRY 5632 4032 5632 4032)
+            (SIDE 0)
+            (LABEL
+              (POSITION 5632 4000)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprtd9a1860a58830155c75009c329f1a963")
+          (HDL_IDENT
+            (NAME "dmonth")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "6" "0")
+              )
+            )
+          )
+          (GEOMETRY 5656 4120 5736 4200)
+          (SIDE 3)
+          (LABEL
+            (POSITION 5760 4160)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "dmonth(6:0)")
+          )
+          (PORT "eprtd9a1860a58830155c75009c319f1a963")
+          (CONNECTION
+            (OBID "ncond9a1860a58830155c75009c339f1a963")
+            (GEOMETRY 5632 4160 5632 4160)
+            (SIDE 0)
+            (LABEL
+              (POSITION 5632 4128)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprtd9a1860ab8830155c75009c399f1a963")
+          (HDL_IDENT
+            (NAME "dweek")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "2" "0")
+              )
+            )
+          )
+          (GEOMETRY 5656 4248 5736 4328)
+          (SIDE 3)
+          (LABEL
+            (POSITION 5760 4288)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "dweek(2:0)")
+          )
+          (PORT "eprtd9a1860ab8830155c75009c389f1a963")
+          (CONNECTION
+            (OBID "ncond9a1860ab8830155c75009c3a9f1a963")
+            (GEOMETRY 5632 4288 5632 4288)
+            (SIDE 0)
+            (LABEL
+              (POSITION 5632 4256)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprtd9a1860ae8830155c75009c30af1a963")
+          (HDL_IDENT
+            (NAME "month")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "5" "0")
+              )
+            )
+          )
+          (GEOMETRY 5656 4376 5736 4456)
+          (SIDE 3)
+          (LABEL
+            (POSITION 5760 4416)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "month(5:0)")
+          )
+          (PORT "eprtd9a1860ae8830155c75009c3f9f1a963")
+          (CONNECTION
+            (OBID "ncond9a1860ae8830155c75009c31af1a963")
+            (GEOMETRY 5632 4416 5632 4416)
+            (SIDE 0)
+            (LABEL
+              (POSITION 5632 4384)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprtd9a1860a49830155c75009c37af1a963")
+          (HDL_IDENT
+            (NAME "year")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "7" "0")
+              )
+            )
+          )
+          (GEOMETRY 5656 4504 5736 4584)
+          (SIDE 3)
+          (LABEL
+            (POSITION 5760 4544)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "year(7:0)")
+          )
+          (PORT "eprtd9a1860a49830155c75009c36af1a963")
+          (CONNECTION
+            (OBID "ncond9a1860a49830155c75009c38af1a963")
+            (GEOMETRY 5632 4544 5632 4544)
+            (SIDE 0)
+            (LABEL
+              (POSITION 5632 4512)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprtd9a1860abd830155c75009c3baf1a963")
+          (HDL_IDENT
+            (NAME "ParityD")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 2)
+            )
+          )
+          (GEOMETRY 6680 4120 6760 4200)
+          (SIDE 1)
+          (LABEL
+            (POSITION 6656 4160)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "ParityD")
+          )
+          (PORT "eprtd9a1860abd830155c75009c3aaf1a963")
+          (CONNECTION
+            (OBID "ncond9a1860abd830155c75009c3caf1a963")
+            (GEOMETRY 6784 4160 6784 4160)
+            (SIDE 2)
+            (LABEL
+              (POSITION 6784 4192)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprtd9a1860a0e830155c75009c32bf1a963")
+          (HDL_IDENT
+            (NAME "ParityM")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 2)
+            )
+          )
+          (GEOMETRY 6680 3992 6760 4072)
+          (SIDE 1)
+          (LABEL
+            (POSITION 6656 4032)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "ParityM")
+          )
+          (PORT "eprtd9a1860a0e830155c75009c31bf1a963")
+          (CONNECTION
+            (OBID "ncond9a1860a0e830155c75009c33bf1a963")
+            (GEOMETRY 6784 4032 6784 4032)
+            (SIDE 2)
+            (LABEL
+              (POSITION 6784 4064)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprtd9a1860a1e830155c75009c37bf1a963")
+          (HDL_IDENT
+            (NAME "ParityH")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 2)
+            )
+          )
+          (GEOMETRY 6680 3864 6760 3944)
+          (SIDE 1)
+          (LABEL
+            (POSITION 6656 3904)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "ParityH")
+          )
+          (PORT "eprtd9a1860a1e830155c75009c36bf1a963")
+          (CONNECTION
+            (OBID "ncond9a1860a1e830155c75009c38bf1a963")
+            (GEOMETRY 6784 3904 6784 3904)
+            (SIDE 2)
+            (LABEL
+              (POSITION 6784 3936)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
           )
         )
       )
@@ -2914,59 +3545,27 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 2624 1792 2688 1792)
-          (WIRE 2432 1792 2624 1792)
-          (WIRE 2624 1792 2624 3200)
-          (WIRE 2624 3200 6016 3200)
-          (WIRE 6016 960 6016 3200)
-          (WIRE 6016 960 6080 960)
-          (PORT
-            (OBID "cprt914a642028a1be450572d74d1757bdc1")
-            (NAME "start")
-          )
+          (WIRE 2752 4992 8704 4992)
+          (WIRE 2752 1792 2752 3712)
+          (WIRE 2432 1792 2752 1792)
+          (WIRE 2752 3712 2880 3712)
+          (WIRE 2752 3712 2752 4992)
+          (WIRE 2752 1792 3328 1792)
           (PORT
             (OBID "cprt914a6420e5102e450a81d74dc5249e90")
             (NAME "start")
           )
           (PORT
+            (OBID "cprt914a642028a1be450572d74d1757bdc1")
+            (NAME "start")
+          )
+          (PORT
+            (OBID "cprtd9a1860ad0c20155c75009c38de1a963")
+            (NAME "start")
+          )
+          (PORT
             (OBID "aprt914a6420ff6f1e450a81d74d51249e90")
             (NAME "start_acq")
-          )
-        )
-      )
-      (NET
-        (OBID "net914a64204a02be450572d74de687bdc1")
-        (HDL_IDENT
-          (NAME "bit_count")
-          (ATTRIBUTES
-            (CONSTRAINT
-              (DIRECTION 1)
-              (RANGE "5" "0")
-            )
-          )
-        )
-        (PART
-          (OBID "nprt914a64204a02be450572d74d1787bdc1")
-          (CBN 1)
-        )
-        (PART
-          (OBID "nprt914a64204a02be450572d74df687bdc1")
-          (LABEL
-            (POSITION 2560 1584)
-            (SCALE 96)
-            (COLOR_LINE 52)
-            (SIDE 3)
-            (ALIGNMENT 7)
-            (FORMAT 4099)
-          )
-          (WIRE 2432 1600 2688 1600)
-          (PORT
-            (OBID "cprt914a6420a751be450572d74de257bdc1")
-            (NAME "bit_count")
-          )
-          (PORT
-            (OBID "cprt914a64201a402e450a81d74de6249e90")
-            (NAME "bit_count")
           )
         )
       )
@@ -2982,14 +3581,14 @@
         (PART
           (OBID "nprt914a64206a02be450572d74d3787bdc1")
           (LABEL
-            (POSITION 2560 1456)
+            (POSITION 2880 1456)
             (SCALE 96)
             (COLOR_LINE 52)
             (SIDE 3)
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 2432 1472 2688 1472)
+          (WIRE 2432 1472 3328 1472)
           (PORT
             (OBID "cprt914a6420d151be450572d74da257bdc1")
             (NAME "bit")
@@ -3069,42 +3668,6 @@
         )
       )
       (NET
-        (OBID "net914a64204712be450572d74db2a7bdc1")
-        (HDL_IDENT
-          (NAME "prescaler")
-          (ATTRIBUTES
-            (CONSTRAINT
-              (DIRECTION 1)
-              (RANGE "15" "0")
-            )
-          )
-        )
-        (PART
-          (OBID "nprt914a64204712be450572d74d03a7bdc1")
-          (CBN 1)
-        )
-        (PART
-          (OBID "nprt914a64204712be450572d74dc2a7bdc1")
-          (LABEL
-            (POSITION 3328 432)
-            (SCALE 96)
-            (COLOR_LINE 52)
-            (SIDE 3)
-            (ALIGNMENT 7)
-            (FORMAT 4099)
-          )
-          (WIRE 2304 448 4352 448)
-          (PORT
-            (OBID "cprt914a64200dd1be450572d74db967bdc1")
-            (NAME "prescaler")
-          )
-          (PORT
-            (OBID "cprt914a6420de002e450a81d74da3249e90")
-            (NAME "div")
-          )
-        )
-      )
-      (NET
         (OBID "net914a64201a12be450572d74da3a7bdc1")
         (HDL_IDENT
           (NAME "chip_select")
@@ -3138,180 +3701,6 @@
           (PORT
             (OBID "cprt914a6420b3102e450a81d74d05249e90")
             (NAME "freq")
-          )
-        )
-      )
-      (NET
-        (OBID "net914a64206942be450572d74df7b7bdc1")
-        (HDL_IDENT
-          (NAME "data_in")
-          (ATTRIBUTES
-            (CONSTRAINT
-              (DIRECTION 1)
-              (RANGE "7" "0")
-            )
-          )
-        )
-        (PART
-          (OBID "nprt914a64206942be450572d74d48b7bdc1")
-          (CBN 1)
-        )
-        (PART
-          (OBID "nprt914a64206942be450572d74d08b7bdc1")
-          (LABEL
-            (POSITION 2592 1136)
-            (SCALE 96)
-            (COLOR_LINE 52)
-            (SIDE 3)
-            (ALIGNMENT 7)
-            (FORMAT 4099)
-          )
-          (WIRE 704 1216 832 1216)
-          (WIRE 832 1152 832 1216)
-          (WIRE 832 1152 4352 1152)
-          (PORT
-            (OBID "cprt914a64204342be450572d74d4ea7bdc1")
-            (NAME "data_in")
-          )
-          (PORT
-            (OBID "aprt914a6420426f1e450a81d74d9d149e90")
-            (NAME "data_in")
-          )
-        )
-      )
-      (NET
-        (OBID "net914a64209942be450572d74d58b7bdc1")
-        (HDL_IDENT
-          (NAME "Adress")
-          (ATTRIBUTES
-            (CONSTRAINT
-              (DIRECTION 1)
-              (RANGE "3" "0")
-            )
-          )
-        )
-        (PART
-          (OBID "nprt914a64209942be450572d74da8b7bdc1")
-          (CBN 1)
-        )
-        (PART
-          (OBID "nprt914a64209942be450572d74d68b7bdc1")
-          (LABEL
-            (POSITION 2592 1008)
-            (SCALE 96)
-            (COLOR_LINE 52)
-            (SIDE 3)
-            (ALIGNMENT 7)
-            (FORMAT 4099)
-          )
-          (WIRE 704 1088 832 1088)
-          (WIRE 832 1024 832 1088)
-          (WIRE 832 1024 4352 1024)
-          (PORT
-            (OBID "cprt914a6420a6d1be450572d74d7967bdc1")
-            (NAME "Adress")
-          )
-          (PORT
-            (OBID "aprt914a6420926f1e450a81d74dfd149e90")
-            (NAME "Adress")
-          )
-        )
-      )
-      (NET
-        (OBID "net914a6420d942be450572d74db8b7bdc1")
-        (HDL_IDENT
-          (NAME "write")
-        )
-        (PART
-          (OBID "nprt914a6420d942be450572d74d09b7bdc1")
-          (CBN 1)
-        )
-        (PART
-          (OBID "nprt914a6420d942be450572d74dc8b7bdc1")
-          (LABEL
-            (POSITION 1664 944)
-            (SCALE 96)
-            (COLOR_LINE 52)
-            (SIDE 3)
-            (ALIGNMENT 7)
-            (FORMAT 4099)
-          )
-          (WIRE 704 960 2624 960)
-          (WIRE 2624 896 2624 960)
-          (WIRE 2624 896 4352 896)
-          (PORT
-            (OBID "cprt914a6420ecc1be450572d74d3967bdc1")
-            (NAME "write")
-          )
-          (PORT
-            (OBID "aprt914a6420be5f1e450a81d74ddc149e90")
-            (NAME "write")
-          )
-        )
-      )
-      (NET
-        (OBID "net914a64201a42be450572d74d19b7bdc1")
-        (HDL_IDENT
-          (NAME "read")
-        )
-        (PART
-          (OBID "nprt914a64201a42be450572d74d69b7bdc1")
-          (CBN 1)
-        )
-        (PART
-          (OBID "nprt914a64201a42be450572d74d29b7bdc1")
-          (LABEL
-            (POSITION 1664 816)
-            (SCALE 96)
-            (COLOR_LINE 52)
-            (SIDE 3)
-            (ALIGNMENT 7)
-            (FORMAT 4099)
-          )
-          (WIRE 704 832 2624 832)
-          (WIRE 2624 768 2624 832)
-          (WIRE 2624 768 4352 768)
-          (PORT
-            (OBID "cprt914a64200ac1be450572d74df867bdc1")
-            (NAME "read")
-          )
-          (PORT
-            (OBID "aprt914a64208e5f1e450a81d74d7c149e90")
-            (NAME "read")
-          )
-        )
-      )
-      (NET
-        (OBID "net914a6420ac42be450572d74d79b7bdc1")
-        (HDL_IDENT
-          (NAME "dcf_77_in")
-        )
-        (PART
-          (OBID "nprt914a6420ac42be450572d74dc9b7bdc1")
-          (CBN 1)
-        )
-        (PART
-          (OBID "nprt914a6420ac42be450572d74d89b7bdc1")
-          (LABEL
-            (POSITION 768 2432)
-            (SCALE 96)
-            (COLOR_LINE 52)
-            (SIDE 3)
-            (ALIGNMENT 7)
-            (FORMAT 4099)
-          )
-          (WIRE 640 2176 704 2176)
-          (WIRE 704 2176 704 2624)
-          (WIRE 576 2624 704 2624)
-          (WIRE 576 2624 576 3072)
-          (WIRE 576 3072 832 3072)
-          (PORT
-            (OBID "aprt914a6420d46f1e450a81d74d1f149e90")
-            (NAME "dcf_77_in")
-          )
-          (PORT
-            (OBID "cprt914a64203c91be450572d74d1657bdc1")
-            (NAME "dcf_77_in")
           )
         )
       )
@@ -3352,14 +3741,14 @@
         (PART
           (OBID "nprt914a64205162be450572d74de0c7bdc1")
           (LABEL
-            (POSITION 6016 1200)
+            (POSITION 8704 1200)
             (SCALE 96)
             (COLOR_LINE 52)
             (SIDE 3)
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 5952 1216 6080 1216)
+          (WIRE 8640 1216 8768 1216)
           (PORT
             (OBID "aprt914a6420617f1e450a81d74d12249e90")
             (NAME "data_out")
@@ -3388,14 +3777,14 @@
         (PART
           (OBID "nprt914a64204262be450572d74d21c7bdc1")
           (LABEL
-            (POSITION 4320 1520)
+            (POSITION 5984 1520)
             (SCALE 96)
             (COLOR_LINE 52)
             (SIDE 3)
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 4288 1536 4352 1536)
+          (WIRE 4928 1536 7040 1536)
           (PORT
             (OBID "cprt914a6420d9b1be450572d74de667bdc1")
             (NAME "reg_status")
@@ -3424,14 +3813,14 @@
         (PART
           (OBID "nprt914a64206262be450572d74d61c7bdc1")
           (LABEL
-            (POSITION 4320 1648)
+            (POSITION 5984 1648)
             (SCALE 96)
             (COLOR_LINE 52)
             (SIDE 3)
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 4288 1664 4352 1664)
+          (WIRE 4928 1664 7040 1664)
           (PORT
             (OBID "cprt914a6420d9b1be450572d74d0767bdc1")
             (NAME "reg_flags")
@@ -3439,114 +3828,6 @@
           (PORT
             (OBID "cprt914a64202171be450572d74de357bdc1")
             (NAME "reg_flags")
-          )
-        )
-      )
-      (NET
-        (OBID "net914a64207262be450572d74d91c7bdc1")
-        (HDL_IDENT
-          (NAME "reg_hours")
-          (ATTRIBUTES
-            (CONSTRAINT
-              (DIRECTION 1)
-              (RANGE "5" "0")
-            )
-          )
-        )
-        (PART
-          (OBID "nprt914a64207262be450572d74dc1c7bdc1")
-          (CBN 1)
-        )
-        (PART
-          (OBID "nprt914a64207262be450572d74da1c7bdc1")
-          (LABEL
-            (POSITION 4320 1776)
-            (SCALE 96)
-            (COLOR_LINE 52)
-            (SIDE 3)
-            (ALIGNMENT 7)
-            (FORMAT 4099)
-          )
-          (WIRE 4288 1792 4352 1792)
-          (PORT
-            (OBID "cprt914a6420d9b1be450572d74d2767bdc1")
-            (NAME "reg_hours")
-          )
-          (PORT
-            (OBID "cprt914a6420e971be450572d74d2457bdc1")
-            (NAME "reg_hours")
-          )
-        )
-      )
-      (NET
-        (OBID "net914a64209262be450572d74dd1c7bdc1")
-        (HDL_IDENT
-          (NAME "reg_minutes")
-          (ATTRIBUTES
-            (CONSTRAINT
-              (DIRECTION 1)
-              (RANGE "6" "0")
-            )
-          )
-        )
-        (PART
-          (OBID "nprt914a64209262be450572d74d02c7bdc1")
-          (CBN 1)
-        )
-        (PART
-          (OBID "nprt914a64209262be450572d74de1c7bdc1")
-          (LABEL
-            (POSITION 4320 1904)
-            (SCALE 96)
-            (COLOR_LINE 52)
-            (SIDE 3)
-            (ALIGNMENT 7)
-            (FORMAT 4099)
-          )
-          (WIRE 4288 1920 4352 1920)
-          (PORT
-            (OBID "cprt914a6420d9b1be450572d74d4767bdc1")
-            (NAME "reg_minutes")
-          )
-          (PORT
-            (OBID "cprt914a64201381be450572d74d6457bdc1")
-            (NAME "reg_minutes")
-          )
-        )
-      )
-      (NET
-        (OBID "net914a6420c262be450572d74d12c7bdc1")
-        (HDL_IDENT
-          (NAME "reg_dmonth")
-          (ATTRIBUTES
-            (CONSTRAINT
-              (DIRECTION 1)
-              (RANGE "6" "0")
-            )
-          )
-        )
-        (PART
-          (OBID "nprt914a6420c262be450572d74d42c7bdc1")
-          (CBN 1)
-        )
-        (PART
-          (OBID "nprt914a6420c262be450572d74d22c7bdc1")
-          (LABEL
-            (POSITION 4320 2096)
-            (SCALE 96)
-            (COLOR_LINE 52)
-            (SIDE 3)
-            (ALIGNMENT 7)
-            (FORMAT 4099)
-          )
-          (WIRE 4288 2112 4352 2112)
-          (PORT
-            (OBID "cprt914a6420d9b1be450572d74d6767bdc1")
-            (NAME "reg_dmonth")
-          )
-          (PORT
-            (OBID "cprt914a64204581be450572d74da457bdc1")
-            (NAME "reg_dmonth")
           )
         )
       )
@@ -3568,21 +3849,28 @@
         (PART
           (OBID "nprt914a6420d262be450572d74d62c7bdc1")
           (LABEL
-            (POSITION 4320 2224)
+            (POSITION 6240 2224)
             (SCALE 96)
             (COLOR_LINE 52)
             (SIDE 3)
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 4288 2240 4352 2240)
+          (WIRE 5248 2240 5248 4288)
+          (WIRE 5248 2240 7040 2240)
+          (WIRE 4928 2240 5248 2240)
+          (WIRE 5248 4288 5632 4288)
+          (PORT
+            (OBID "cprt914a6420a681be450572d74de457bdc1")
+            (NAME "reg_dweek")
+          )
           (PORT
             (OBID "cprt914a6420d9b1be450572d74d8767bdc1")
             (NAME "reg_dweek")
           )
           (PORT
-            (OBID "cprt914a6420a681be450572d74de457bdc1")
-            (NAME "reg_dweek")
+            (OBID "cprtd9a1860ab8830155c75009c399f1a963")
+            (NAME "dweek")
           )
         )
       )
@@ -3604,21 +3892,28 @@
         (PART
           (OBID "nprt914a64200362be450572d74da2c7bdc1")
           (LABEL
-            (POSITION 4320 2416)
+            (POSITION 6240 2416)
             (SCALE 96)
             (COLOR_LINE 52)
             (SIDE 3)
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 4288 2432 4352 2432)
+          (WIRE 5120 2432 5120 4416)
+          (WIRE 5120 2432 7040 2432)
+          (WIRE 4928 2432 5120 2432)
+          (WIRE 5120 4416 5632 4416)
+          (PORT
+            (OBID "cprt914a64205b81be450572d74d2557bdc1")
+            (NAME "reg_month")
+          )
           (PORT
             (OBID "cprt914a6420f7b1be450572d74d2c57bdc1")
             (NAME "reg_month")
           )
           (PORT
-            (OBID "cprt914a64205b81be450572d74d2557bdc1")
-            (NAME "reg_month")
+            (OBID "cprtd9a1860ae8830155c75009c30af1a963")
+            (NAME "month")
           )
         )
       )
@@ -3640,21 +3935,637 @@
         (PART
           (OBID "nprt914a64202362be450572d74de2c7bdc1")
           (LABEL
-            (POSITION 4320 2544)
+            (POSITION 6240 2544)
             (SCALE 96)
             (COLOR_LINE 52)
             (SIDE 3)
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 4288 2560 4352 2560)
+          (WIRE 4992 2560 4992 4544)
+          (WIRE 4992 2560 7040 2560)
+          (WIRE 4928 2560 4992 2560)
+          (WIRE 4992 4544 5632 4544)
+          (PORT
+            (OBID "cprt914a64206e81be450572d74d6557bdc1")
+            (NAME "reg_year")
+          )
           (PORT
             (OBID "cprt914a642007b1be450572d74dab57bdc1")
             (NAME "reg_year")
           )
           (PORT
-            (OBID "cprt914a64206e81be450572d74d6557bdc1")
-            (NAME "reg_year")
+            (OBID "cprtd9a1860a49830155c75009c37af1a963")
+            (NAME "year")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a1860acca20155c75009c372a1a963")
+        (HDL_IDENT
+          (NAME "signal_int_net")
+        )
+        (PART
+          (OBID "nprtd9a1860acca20155c75009c382a1a963")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a1860acca20155c75009c392a1a963")
+          (LABEL
+            (POSITION 5664 3312)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 2432 1920 2624 1920)
+          (WIRE 2624 1920 2624 3840)
+          (WIRE 2624 3840 2880 3840)
+          (WIRE 2624 3840 2624 5120)
+          (WIRE 2624 1920 3328 1920)
+          (WIRE 2624 5120 8704 5120)
+          (PORT
+            (OBID "cprt914a642096102e450a81d74d26249e90")
+            (NAME "stop")
+          )
+          (PORT
+            (OBID "cprt914a642058a1be450572d74d5757bdc1")
+            (NAME "stop")
+          )
+          (PORT
+            (OBID "cprtd9a1860a21c20155c75009c3fde1a963")
+            (NAME "stop")
+          )
+          (PORT
+            (OBID "aprt914a6420a07f1e450a81d74db1249e90")
+            (NAME "signal_int")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a1860abea20155c75009c3f3a1a963")
+        (HDL_IDENT
+          (NAME "prescaler")
+          (ATTRIBUTES
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "15" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprtd9a1860abea20155c75009c304a1a963")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a1860abea20155c75009c314a1a963")
+          (LABEL
+            (POSITION 4672 432)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 2304 448 7040 448)
+          (PORT
+            (OBID "cprt914a64200dd1be450572d74db967bdc1")
+            (NAME "prescaler")
+          )
+          (PORT
+            (OBID "cprt914a6420de002e450a81d74da3249e90")
+            (NAME "div")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a1860afea20155c75009c374a1a963")
+        (HDL_IDENT
+          (NAME "u4_Adress")
+          (ATTRIBUTES
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "3" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprtd9a1860afea20155c75009c384a1a963")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a1860afea20155c75009c394a1a963")
+          (LABEL
+            (POSITION 4864 1008)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 896 -64 2688 -64)
+        )
+      )
+      (NET
+        (OBID "netd9a1860a2fa20155c75009c3b4a1a963")
+        (HDL_IDENT
+          (NAME "Net_0")
+          (ATTRIBUTES
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "7" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprtd9a1860a2fa20155c75009c3c4a1a963")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a1860a2fa20155c75009c3d4a1a963")
+          (LABEL
+            (POSITION 3264 -144)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 832 -128 5696 -128)
+        )
+      )
+      (NET
+        (OBID "netd9a1860a5c730155c75009c3dee1a963")
+        (HDL_IDENT
+          (NAME "bit_count")
+          (ATTRIBUTES
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "5" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprtd9a1860a5c730155c75009c3eee1a963")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a1860a5c730155c75009c3fee1a963")
+          (LABEL
+            (POSITION 2496 2784)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 2496 1600 2496 3968)
+          (WIRE 2496 3968 2880 3968)
+          (WIRE 2432 1600 2496 1600)
+          (WIRE 2496 1600 3328 1600)
+          (PORT
+            (OBID "cprtd9a1860af1c20155c75009c36ee1a963")
+            (NAME "bit_count")
+          )
+          (PORT
+            (OBID "cprt914a64201a402e450a81d74de6249e90")
+            (NAME "bit_count")
+          )
+          (PORT
+            (OBID "cprt914a6420a751be450572d74de257bdc1")
+            (NAME "bit_count")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a1860a50930155c75009c3abf1a963")
+        (HDL_IDENT
+          (NAME "reg_hours")
+          (ATTRIBUTES
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "5" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprtd9a1860a50930155c75009c3bbf1a963")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a1860a50930155c75009c3cbf1a963")
+          (LABEL
+            (POSITION 6080 2784)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 5632 1792 5632 3904)
+          (WIRE 5632 1792 7040 1792)
+          (WIRE 4928 1792 5632 1792)
+          (PORT
+            (OBID "cprtd9a1860af3830155c75009c360f1a963")
+            (NAME "hours")
+          )
+          (PORT
+            (OBID "cprt914a6420d9b1be450572d74d2767bdc1")
+            (NAME "reg_hours")
+          )
+          (PORT
+            (OBID "cprt914a6420e971be450572d74d2457bdc1")
+            (NAME "reg_hours")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a1860ac0930155c75009c3fbf1a963")
+        (HDL_IDENT
+          (NAME "reg_minutes")
+          (ATTRIBUTES
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "6" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprtd9a1860ac0930155c75009c30cf1a963")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a1860ac0930155c75009c31cf1a963")
+          (LABEL
+            (POSITION 5952 2912)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 5504 1920 5504 4032)
+          (WIRE 5504 4032 5632 4032)
+          (WIRE 5504 1920 7040 1920)
+          (WIRE 4928 1920 5504 1920)
+          (PORT
+            (OBID "cprtd9a1860a24830155c75009c3d0f1a963")
+            (NAME "minutes")
+          )
+          (PORT
+            (OBID "cprt914a6420d9b1be450572d74d4767bdc1")
+            (NAME "reg_minutes")
+          )
+          (PORT
+            (OBID "cprt914a64201381be450572d74d6457bdc1")
+            (NAME "reg_minutes")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a1860a41930155c75009c35cf1a963")
+        (HDL_IDENT
+          (NAME "reg_dmonth")
+          (ATTRIBUTES
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "6" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprtd9a1860a41930155c75009c36cf1a963")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a1860a41930155c75009c37cf1a963")
+          (LABEL
+            (POSITION 5824 3072)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 5376 2112 7040 2112)
+          (WIRE 5376 2112 5376 4160)
+          (WIRE 4928 2112 5376 2112)
+          (WIRE 5376 4160 5632 4160)
+          (PORT
+            (OBID "cprt914a64204581be450572d74da457bdc1")
+            (NAME "reg_dmonth")
+          )
+          (PORT
+            (OBID "cprt914a6420d9b1be450572d74d6767bdc1")
+            (NAME "reg_dmonth")
+          )
+          (PORT
+            (OBID "cprtd9a1860a58830155c75009c329f1a963")
+            (NAME "dmonth")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a1860aec930155c75009c33412a963")
+        (HDL_IDENT
+          (NAME "ParityH")
+        )
+        (PART
+          (OBID "nprtd9a1860a1d930155c75009c37412a963")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a1860aec930155c75009c34412a963")
+          (LABEL
+            (POSITION 6336 3232)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 6272 2752 7040 2752)
+          (WIRE 6272 2752 6272 3712)
+          (WIRE 6272 3712 6784 3712)
+          (WIRE 6784 3712 6784 3904)
+          (PORT
+            (OBID "cprtd9a1860a06930155c75009c36112a963")
+            (NAME "ParityH")
+          )
+          (PORT
+            (OBID "cprtd9a1860a1e830155c75009c37bf1a963")
+            (NAME "ParityH")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a1860a3d930155c75009c3a412a963")
+        (HDL_IDENT
+          (NAME "ParityM")
+        )
+        (PART
+          (OBID "nprtd9a1860a9d930155c75009c3f412a963")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a1860a3d930155c75009c3b412a963")
+          (LABEL
+            (POSITION 6464 3232)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 6784 4032 6912 4032)
+          (WIRE 6912 3584 6912 4032)
+          (WIRE 6400 3584 6912 3584)
+          (WIRE 6400 2880 6400 3584)
+          (WIRE 6400 2880 7040 2880)
+          (PORT
+            (OBID "cprtd9a1860a0e830155c75009c32bf1a963")
+            (NAME "ParityM")
+          )
+          (PORT
+            (OBID "cprtd9a1860a06930155c75009c34112a963")
+            (NAME "ParityM")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a1860abd930155c75009c32512a963")
+        (HDL_IDENT
+          (NAME "ParityD")
+        )
+        (PART
+          (OBID "nprtd9a1860a1e930155c75009c37512a963")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a1860abd930155c75009c33512a963")
+          (LABEL
+            (POSITION 7104 3840)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 6528 3008 7040 3008)
+          (WIRE 6528 3456 7040 3456)
+          (WIRE 6528 3008 6528 3456)
+          (WIRE 7040 3456 7040 4160)
+          (WIRE 6784 4160 7040 4160)
+          (PORT
+            (OBID "cprtd9a1860a06930155c75009c32112a963")
+            (NAME "ParityD")
+          )
+          (PORT
+            (OBID "cprtd9a1860abd830155c75009c3baf1a963")
+            (NAME "ParityD")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a1860a72a30155c75009c3d512a963")
+        (HDL_IDENT
+          (NAME "dcf_77_in")
+        )
+        (PART
+          (OBID "nprtd9a1860a72a30155c75009c3e512a963")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a1860a72a30155c75009c3f512a963")
+          (LABEL
+            (POSITION 736 3184)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 640 3200 832 3200)
+          (PORT
+            (OBID "aprt914a6420d46f1e450a81d74d1f149e90")
+            (NAME "dcf_77_in")
+          )
+          (PORT
+            (OBID "cprt914a64203c91be450572d74d1657bdc1")
+            (NAME "dcf_77_in")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a1860a84a30155c75009c35712a963")
+        (HDL_IDENT
+          (NAME "read")
+        )
+        (PART
+          (OBID "nprtd9a1860a84a30155c75009c36712a963")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a1860a84a30155c75009c37712a963")
+          (LABEL
+            (POSITION 3872 752)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 704 768 7040 768)
+          (PORT
+            (OBID "aprt914a64208e5f1e450a81d74d7c149e90")
+            (NAME "read")
+          )
+          (PORT
+            (OBID "cprt914a64200ac1be450572d74df867bdc1")
+            (NAME "read")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a1860ab4a30155c75009c39712a963")
+        (HDL_IDENT
+          (NAME "write")
+        )
+        (PART
+          (OBID "nprtd9a1860ab4a30155c75009c3a712a963")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a1860ab4a30155c75009c3b712a963")
+          (LABEL
+            (POSITION 3872 880)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 704 896 7040 896)
+          (PORT
+            (OBID "cprt914a6420ecc1be450572d74d3967bdc1")
+            (NAME "write")
+          )
+          (PORT
+            (OBID "aprt914a6420be5f1e450a81d74ddc149e90")
+            (NAME "write")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a1860ae4a30155c75009c3d712a963")
+        (HDL_IDENT
+          (NAME "Adress")
+          (ATTRIBUTES
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "3" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprtd9a1860ae4a30155c75009c3e712a963")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a1860ae4a30155c75009c3f712a963")
+          (LABEL
+            (POSITION 3872 1008)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 704 1024 7040 1024)
+          (PORT
+            (OBID "aprt914a6420926f1e450a81d74dfd149e90")
+            (NAME "Adress")
+          )
+          (PORT
+            (OBID "cprt914a6420a6d1be450572d74d7967bdc1")
+            (NAME "Adress")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a1860a15a30155c75009c31812a963")
+        (HDL_IDENT
+          (NAME "data_in")
+          (ATTRIBUTES
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "7" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprtd9a1860a15a30155c75009c32812a963")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a1860a15a30155c75009c33812a963")
+          (LABEL
+            (POSITION 3872 1136)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 704 1152 7040 1152)
+          (PORT
+            (OBID "cprt914a64204342be450572d74d4ea7bdc1")
+            (NAME "data_in")
+          )
+          (PORT
+            (OBID "aprt914a6420426f1e450a81d74d9d149e90")
+            (NAME "data_in")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a1860affa30155c75009c35422a963")
+        (HDL_IDENT
+          (NAME "RBG")
+          (ATTRIBUTES
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "2" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprtd9a1860a50b30155c75009c3a422a963")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a1860affa30155c75009c36422a963")
+          (LABEL
+            (POSITION 3744 3312)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 3328 2048 2880 2048)
+          (WIRE 2880 2048 2880 3328)
+          (WIRE 2880 3328 4608 3328)
+          (WIRE 4608 3328 4608 3776)
+          (WIRE 4608 3776 3840 3776)
+          (PORT
+            (OBID "cprtd9a1860afea30155c75009c32422a963")
+            (NAME "RBG")
+          )
+          (PORT
+            (OBID "cprtd9a1860a9b730155c75009c3aee1a963")
+            (NAME "RBG")
           )
         )
       )

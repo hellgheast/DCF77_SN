@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Feb 23 14:08:05 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 23 17:06:13 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1424094626 "Mon Feb 16 14:50:26 2015")
-      (MODIFIED 1424695614 "Mon Feb 23 13:46:54 2015")
+      (MODIFIED 1427126401 "Mon Mar 23 17:00:01 2015")
     )
     (ARCH_DECLARATION 1 "arch914a64202a5f1e450a81d74d8b149e90" "structure")
   )

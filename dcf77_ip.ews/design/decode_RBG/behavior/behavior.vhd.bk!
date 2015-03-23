@@ -1,0 +1,16 @@
+-- EASE/HDL begin --------------------------------------------------------------
+-- 
+-- Architecture 'behavior' of entity 'decode_RBG'.
+-- 
+--------------------------------------------------------------------------------
+-- 
+-- Copy of the interface declaration:
+-- 
+-- EASE/HDL end ----------------------------------------------------------------
+
+architecture behavior of decode_RBG is
+
+begin
+
+end architecture behavior ; -- of decode_RBG
+

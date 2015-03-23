@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 23 15:32:52 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 23 17:06:13 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -13,14 +13,14 @@
       (NAME "reg_mem_dcf77")
       (USERNAME 1)
     )
-    (GEOMETRY 0 0 1472 2688)
+    (GEOMETRY 0 0 1472 3008)
     (SIDE 0)
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1424694079 "Mon Feb 23 13:21:19 2015")
-      (MODIFIED 1427121172 "Mon Mar 23 15:32:52 2015")
+      (MODIFIED 1427126773 "Mon Mar 23 17:06:13 2015")
     )
     (PORT
       (OBID "eprt914a6420b4b1be450572d74d1b57bdc1")
@@ -34,10 +34,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 2456 40 2536)
+      (GEOMETRY -40 2712 40 2792)
       (SIDE 3)
       (LABEL
-        (POSITION 64 2496)
+        (POSITION 64 2752)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -58,10 +58,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 2584 40 2664)
+      (GEOMETRY -40 2840 40 2920)
       (SIDE 3)
       (LABEL
-        (POSITION 64 2624)
+        (POSITION 64 2880)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -451,6 +451,69 @@
         (TEXT "data_in(7:0)")
       )
     )
+    (PORT
+      (OBID "eprtd9a1860a06930155c75009c3d012a963")
+      (HDL_IDENT
+        (NAME "ParityD")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 2584 40 2664)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2624)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ParityD")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1860a06930155c75009c3f012a963")
+      (HDL_IDENT
+        (NAME "ParityM")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 2456 40 2536)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2496)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ParityM")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1860a06930155c75009c31112a963")
+      (HDL_IDENT
+        (NAME "ParityH")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 2328 40 2408)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2368)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ParityH")
+      )
+    )
     (ARCH_DECLARATION 2 "arch914a6420f3b1be450572d74dea57bdc1" "behavior")
   )
   (ARCH_DEFINITION
@@ -474,6 +537,9 @@
                "-- "
                "--   port ("
                "--     Adress      : in     std_logic_vector(3 downto 0);"
+               "--     ParityD     : in     std_logic;"
+               "--     ParityH     : in     std_logic;"
+               "--     ParityM     : in     std_logic;"
                "--     chip_select : in     std_logic;"
                "--     clk         : in     std_logic;"
                "--     data_in     : in     std_logic_vector(7 downto 0);"
@@ -509,16 +575,7 @@
                "CONSTANT c_year			: std_logic_vector(3 DOWNTO 0) := \"1011\";"
                ""
                "--Déclarations des registres"
-               "signal reg_recbits 		: std_logic_vector(5 downto 0)	:=\"00000\";"
-               "signal reg_status  		: std_logic_vector(7 downto 0)	:=x\"00\"; "
                "signal reg_prescaler 	: std_logic_vector(15 downto 0)	:=x\"0000\";"
-               "signal reg_flags		: std_logic_vector(3 downto 0)	:=\"0000\";"
-               "signal reg_hours		: std_logic_vector(5 downto 0) 	:=\"00000\";"
-               "signal reg_minutes		: std_logic_vector(6 downto 0) 	:=\"0000000\";"
-               "signal reg_dmonth		: std_logic_vector(5 downto 0)  :=\"000000\";"
-               "signal reg_dweek		: std_logic_vector(2 downto 0)  :=\"000\";"
-               "signal reg_month		: std_logic_vector(5 downto 0) 	:=\"000000\";"
-               "signal reg_year			: std_logic_vector(7 downto 0):=;"
                "        "
                "signal wr_acc : std_logic;"
                "signal rd_acc: std_logic;"
@@ -529,17 +586,8 @@
                "P1:PROCESS (clk,reset_n)"
                "BEGIN"
                "  IF(reset_n = '0') THEN"
-               "    reg_recbits   	<= (OTHERS => '0');"
-               "    reg_status    	<= (OTHERS => '0');"
                "    reg_prescaler 	<= (OTHERS => '0');"
-               "    reg_flags 		<= (OTHERS => '0');"
-               "    reg_hours 		<= (OTHERS => '0');"
-               "    reg_minutes		<= (OTHERS => '0');"
-               "    reg_dmonth		<= (OTHERS => '0');"
-               "    reg_dweek		<= (OTHERS => '0');"
-               "    reg_month		<= (OTHERS => '0');"
-               "    reg_year		<= (OTHERS => '0');"
-               "  ELSIF (clk'event and clk = '1')THEN"
+               "      ELSIF (clk'event and clk = '1')THEN"
                "    IF (wr_acc = '1') THEN"
                "      CASE Adress IS"
                "      	WHEN c_prescaler_l => "
@@ -587,8 +635,6 @@
                "--Signaux combinatoire"
                "wr_acc <= '1' WHEN write = '1' and chip_select = '1' ELSE '0';"
                "rd_acc <= '1' WHEN read = '1' and chip_select = '1' ELSE '0';"
-               ""
-               "--Ecriture registre en combinatoire venant du buffer"
                ""
                "end architecture behavior ; -- of reg_mem_dcf77"
                ""

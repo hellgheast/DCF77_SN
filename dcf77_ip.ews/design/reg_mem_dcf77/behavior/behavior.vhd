@@ -8,6 +8,9 @@
 -- 
 --   port (
 --     Adress      : in     std_logic_vector(3 downto 0);
+--     ParityD     : in     std_logic;
+--     ParityH     : in     std_logic;
+--     ParityM     : in     std_logic;
 --     chip_select : in     std_logic;
 --     clk         : in     std_logic;
 --     data_in     : in     std_logic_vector(7 downto 0);
