@@ -43,16 +43,7 @@ CONSTANT c_month		: std_logic_vector(3 DOWNTO 0) := "1010"; --Adresse A
 CONSTANT c_year			: std_logic_vector(3 DOWNTO 0) := "1011";
 
 --Déclarations des registres
-signal reg_recbits 		: std_logic_vector(5 downto 0)	:="00000";
-signal reg_status  		: std_logic_vector(7 downto 0)	:=x"00"; 
 signal reg_prescaler 	: std_logic_vector(15 downto 0)	:=x"0000";
-signal reg_flags		: std_logic_vector(3 downto 0)	:="0000";
-signal reg_hours		: std_logic_vector(5 downto 0) 	:="00000";
-signal reg_minutes		: std_logic_vector(6 downto 0) 	:="0000000";
-signal reg_dmonth		: std_logic_vector(5 downto 0)  :="000000";
-signal reg_dweek		: std_logic_vector(2 downto 0)  :="000";
-signal reg_month		: std_logic_vector(5 downto 0) 	:="000000";
-signal reg_year			: std_logic_vector(7 downto 0):=;
         
 signal wr_acc : std_logic;
 signal rd_acc: std_logic;
@@ -63,17 +54,8 @@ begin
 P1:PROCESS (clk,reset_n)
 BEGIN
   IF(reset_n = '0') THEN
-    reg_recbits   	<= (OTHERS => '0');
-    reg_status    	<= (OTHERS => '0');
     reg_prescaler 	<= (OTHERS => '0');
-    reg_flags 		<= (OTHERS => '0');
-    reg_hours 		<= (OTHERS => '0');
-    reg_minutes		<= (OTHERS => '0');
-    reg_dmonth		<= (OTHERS => '0');
-    reg_dweek		<= (OTHERS => '0');
-    reg_month		<= (OTHERS => '0');
-    reg_year		<= (OTHERS => '0');
-  ELSIF (clk'event and clk = '1')THEN
+      ELSIF (clk'event and clk = '1')THEN
     IF (wr_acc = '1') THEN
       CASE Adress IS
       	WHEN c_prescaler_l => 
@@ -121,8 +103,6 @@ END PROCESS;
 --Signaux combinatoire
 wr_acc <= '1' WHEN write = '1' and chip_select = '1' ELSE '0';
 rd_acc <= '1' WHEN read = '1' and chip_select = '1' ELSE '0';
-
---Ecriture registre en combinatoire venant du buffer
 
 end architecture behavior ; -- of reg_mem_dcf77
 
