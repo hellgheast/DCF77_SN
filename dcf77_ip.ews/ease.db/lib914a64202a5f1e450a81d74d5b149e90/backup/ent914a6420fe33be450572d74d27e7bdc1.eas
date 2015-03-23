@@ -1,0 +1,337 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent914a6420fe33be450572d74d27e7bdc1")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Mon Mar 23 15:02:03 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "DecodeStateMachine")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1088 1472)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "vincent.meier")
+      (CREATED 1424700399 "Mon Feb 23 15:06:39 2015")
+      (MODIFIED 1427118278 "Mon Mar 23 14:44:38 2015")
+    )
+    (PORT
+      (OBID "eprt914a6420ff33be450572d74d97e7bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1176 40 1256)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1216)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64202043be450572d74dd7e7bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "reset_n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1304 40 1384)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1344)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reset_n")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64206143be450572d74d58e7bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "high_ms_count")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "high_ms_count(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64206343be450572d74d98e7bdc1")
+      (HDL_IDENT
+        (NAME "nbbit_pulse")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1048 1112 1128 1192)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1024 1152)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "nbbit_pulse")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420b343be450572d74dd8e7bdc1")
+      (HDL_IDENT
+        (NAME "start")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1048 408 1128 488)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1024 448)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "start")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420e343be450572d74d19e7bdc1")
+      (HDL_IDENT
+        (NAME "stop")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1048 536 1128 616)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1024 576)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "stop")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64202443be450572d74d59e7bdc1")
+      (HDL_IDENT
+        (NAME "state_bit")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1048 664 1128 744)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1024 704)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "state_bit")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64209443be450572d74d99e7bdc1")
+      (HDL_IDENT
+        (NAME "dcf_77_s")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "dcf_77_s")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64208b6adf458472d74ddb96b0b7")
+      (HDL_IDENT
+        (NAME "sec_overflow")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "sec_overflow")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch914a6420fe33be450572d74d67e7bdc1" "behavior")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch914a6420fe33be450572d74d67e7bdc1")
+    (HDL_IDENT
+      (NAME "behavior")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file914a6420fe33be450572d74d77e7bdc1")
+        (NAME "behavior.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'behavior' of entity 'DecodeStateMachine'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     clk           : in     std_logic;"
+               "--     dcf_77_s      : in     std_logic;"
+               "--     high_ms_count : in     std_logic_vector(7 downto 0);"
+               "--     nbbit_pulse   : out    std_logic;"
+               "--     reset_n       : in     std_logic;"
+               "--     sec_overflow  : in     std_logic;"
+               "--     start         : out    std_logic;"
+               "--     state_bit     : out    std_logic;"
+               "--     stop          : out    std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               "  "
+               "architecture behavior of DecodeStateMachine is"
+               "     "
+               "-- Declare type, subtype"
+               ""
+               "  subtype t_state is std_logic_vector(1 DOWNTO 0);"
+               "        "
+               "-- Declare constants"
+               ""
+               "  constant c_DCF_DETECT	: t_state := \"00\";"
+               "  constant c_DECODE		: t_state := \"01\";"
+               "  constant c_STOP    	: t_state := \"10\";"
+               "  constant c_STATE		: t_state := \"11\";"
+               "  "
+               "-- Declare signals  "
+               "  signal StateMachine : t_state;"
+               "    "
+               "begin"
+               "       "
+               "P1:process (clk, reset_n)"
+               "	begin"
+               "	if(reset_n) = '0' then -- reset asynchrone   "
+               "		state 		<= c_DCF_DETECT;"
+               "		start 		<= '0';"
+               "		stop  		<= '0';"
+               "		state_bit 	<= '0';"
+               "		nbbit_pulse <= '0';  "
+               "	"
+               "   	elsif(clk'EVENT and clk = '1') then"
+               "   		case state is "
+               "   			"
+               "   			when c_DCF_DECODE =>  -- Décodage de la trame DCF77  "
+               "   			    "
+               "   				stop  <= '0';   "
+               "   				nbbit_pulse <= '0';"
+               "   				if dcf_77_s = '1' then"
+               "   					state <= c_DCF_DECODE; 	"
+               "   				else "
+               "   					state <= c_DECODE;    	"
+               "   				end if;"
+               "   				"
+               "   			when c_DECODE =>     -- Décodage du bit actuel de la trame"
+               "   			"
+               "   				if sec_overflow = '1' then   -- 59e bit -> stop"
+               "   					stop  <= '1';  "
+               "   					nbbit_pulse <= '1'; -- Bitcount ++"
+               "   					state <= c_DCF_DECODE;  	"
+               "  				else"
+               "   					state <= c_STATE; "
+               "   				end if;"
+               "   				"
+               "   			when c_STATE =>  "
+               "   			"
+               "   				if high_ms_count = 99 then"
+               "   					statebit = '1';"
+               "   					state <= c_DCF_DECODE;		"
+               "   				else if high_ms_count = 199 then  "
+               "   					statebit = '0';"
+               "   					state <= c_DCF_DECODE;   		"
+               "   				else   "
+               "   					state <= c_DCF_DECODE;"
+               "   				"
+               "   			when others =>"
+               "   			    state <= c_DCF_DECODE;"
+               "	"
+               "		"
+               "	"
+               "end architecture behavior ; -- of DecodeStateMachine"
+               "                     "
+               ""
+               ""
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

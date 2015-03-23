@@ -22,9 +22,14 @@ architecture behavior of counter_nbbits is
 
 P1:process (clk, reset_n)
 	begin
-	if(reset_n) = '0' then -- reset asynchrone             /!\ mauvaise entrée reset !
+	if(reset_n) = '0' then -- reset asynchrone   
 		counter  <= (OTHERS => '0');
-	elsif(clk'EVENT and clk = '1') then
+	elsif(clk'EVENT and clk = '1') then 
+	    if rising_edge_dcf_77 = '1' then
+	       counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);
+	    	
+	
+	
 		if nbbit_pulse = '1' then 
 			if counter >= 59 then
 				counter <= (OTHERS => '0');
