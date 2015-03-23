@@ -38,9 +38,7 @@
       <key type="bool" value="true" name="arch914a6420b1102e450a81d74d14249e90"/>
     </section>
     <section name="DiagramView">
-      <key type="geometry" value="0,0,10280,4264" name="diag914a6420b1102e450a81d74de3249e90"/>
-      <key type="geometry" value="0,1878,10264,5681" name="diag914a64200d5f1e450a81d74d0c149e90"/>
-      <key type="geometry" value="0,0,10278,4264" name="diag914a64208903be450572d74d06d7bdc1"/>
+      <key type="geometry" value="0,0,13935,6400" name="diag914a64200d5f1e450a81d74d0c149e90"/>
     </section>
   </sections>
 </CONFIGURATION>
