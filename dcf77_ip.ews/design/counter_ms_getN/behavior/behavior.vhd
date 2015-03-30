@@ -30,16 +30,20 @@ P1:process (clk, reset_n)
 		counter  <= (OTHERS => '0'); 
 		
 	elsif(clk'EVENT and clk = '1') then        
-	     if stop_temp  = '1' then
+	     if stop_temp  = '0' then
+	     	getNothing <= '0';  
+	     	counter  <= (OTHERS => '0');
+	     	      	
+	     elsif stop_temp = '1' then	 
+	         	
 	     	if counter <= 1000 then
-	     		counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);
-	     	else
+	     		counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);   
+	     		    	
+	     	elsif counter > 1000 then
 	     		counter  <= (OTHERS => '0');
 	     		getNothing <= '1';
-	     	end if;
+	     	end if;      
 	     	
-	     else
-	     	getNothing <= '0'; 
          end if;   
          	
 	end if;	  
