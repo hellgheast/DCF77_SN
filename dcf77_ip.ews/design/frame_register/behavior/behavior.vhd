@@ -7,9 +7,9 @@
 -- Copy of the interface declaration:
 -- 
 --   port (
---     RBG         : in     std_logic_vector(2 downto 0);
---     bit         : in     std_logic;
+--     RBG         : in     std_logic_vector(1 downto 0);
 --     bit_count   : in     std_logic_vector(5 downto 0);
+--     bit_input   : in     std_logic;
 --     clk         : in     std_logic;
 --     reg_dmonth  : out    std_logic_vector(6 downto 0);
 --     reg_dweek   : out    std_logic_vector(2 downto 0);
@@ -46,70 +46,70 @@ begin
   IF (reset_n = '0') THEN
   ELSIF(clk'event AND clk = '1') THEN
     CASE UNSIGNED(bit_count) IS
-			WHEN 16
+			WHEN 16 =>
 			   	reg_status_l(2) <= bit_input; --A1
-			WHEN 17
+			WHEN 17 =>
 				reg_status_l(0) <= bit_input; --Z1
-			WHEN 18
+			WHEN 18 =>
 				reg_status_l(1) <= bit_input; --Z2
 			WHEN 19
 				reg_status_l(3) <= bit_input; --A2
-			WHEN 20
-			WHEN 21
+			--WHEN 21
+			WHEN 21 =>
 				reg_minutes_l(0) <= bit_input;
-			WHEN 22
+			WHEN 22 =>
 				reg_minutes_l(1) <= bit_input;
-			WHEN 23
+			WHEN 23 =>
 				reg_minutes_l(2) <= bit_input;
-			WHEN 24
+			WHEN 24 =>
 				reg_minutes_l(3) <= bit_input;
-			WHEN 25
+			WHEN 25 =>
 				reg_minutes_l(4) <= bit_input;
-			WHEN 26
+			WHEN 26 =>
 				reg_minutes_l(5) <= bit_input;
-			WHEN 27
+			WHEN 27 =>
 				reg_minutes_l(6) <= bit_input;
-			WHEN 28
+			WHEN 28 =>
 				reg_status_l(2) <= bit_input;
-			WHEN 29
+			WHEN 29 =>
 				reg_hours_l(0) <= bit_input;
-			WHEN 30
+			WHEN 30 =>
 				reg_hours_l(1) <= bit_input;
-			WHEN 31
+			WHEN 31 =>
 				reg_hours_l(2) <= bit_input;
-			WHEN 32
+			WHEN 32 =>
 				reg_hours_l(3) <= bit_input;
-			WHEN 33
+			WHEN 33 =>
 				reg_hours_l(4) <= bit_input;
-			WHEN 34
+			WHEN 34 =>
 				reg_hours_l(5) <= bit_input;
-			WHEN 35
+			WHEN 35 =>
 				reg_status_l(3) <= bit_input;
-			WHEN 36 
+			WHEN 36 =>
 				reg_dmonth_l(0) <= bit_input;
-			WHEN 37
+			WHEN 37 =>
 				reg_dmonth_l(1) <= bit_input;
-			WHEN 38
+			WHEN 38 =>
 				reg_dmonth_l(2) <= bit_input;
-			WHEN 39
+			WHEN 39 =>
 				reg_dmonth_l(3) <= bit_input;
-			WHEN 40
+			WHEN 40 =>
 				reg_dmonth_l(4) <= bit_input;
-			WHEN 41
+			WHEN 41 =>
 				reg_dmonth_l(5) <= bit_input;
-			WHEN 42
+			WHEN 42 =>
 				reg_dweek_l(0)	<= bit_input;
-			WHEN 43
+			WHEN 43 =>
 				reg_dweek_l(1)	<= bit_input;
-			WHEN 44
+			WHEN 44 =>
 				reg_dweek_l(2)	<= bit_input;
-			WHEN 45
+			WHEN 45 =>
 				reg_month_l(0)	<= bit_input;
-			WHEN 46
+			WHEN 46 =>
 				reg_month_l(1)	<= bit_input;
-			WHEN 47
+			WHEN 47 =>
 				reg_month_l(2)	<= bit_input;
-			WHEN 48
+			WHEN 48 =>
 				reg_month_l(3)	<= bit_input;
 			WHEN 49
 				reg_month_l(4)	<= bit_input;
