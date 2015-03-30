@@ -8,8 +8,8 @@
 -- 
 --   port (
 --     RBG         : in     std_logic_vector(2 downto 0);
+--     bit         : in     std_logic;
 --     bit_count   : in     std_logic_vector(5 downto 0);
---     bit_input   : in     std_logic;
 --     clk         : in     std_logic;
 --     reg_dmonth  : out    std_logic_vector(6 downto 0);
 --     reg_dweek   : out    std_logic_vector(2 downto 0);

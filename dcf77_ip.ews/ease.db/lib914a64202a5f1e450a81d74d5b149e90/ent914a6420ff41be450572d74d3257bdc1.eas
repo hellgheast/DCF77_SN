@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 23 19:43:02 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 30 14:43:13 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1424692479 "Mon Feb 23 12:54:39 2015")
-      (MODIFIED 1427136182 "Mon Mar 23 19:43:02 2015")
+      (MODIFIED 1427719393 "Mon Mar 30 14:43:13 2015")
     )
     (PORT
       (OBID "eprt914a6420d151be450572d74d9257bdc1")
@@ -418,8 +418,8 @@
                "-- "
                "--   port ("
                "--     RBG         : in     std_logic_vector(2 downto 0);"
+               "--     bit         : in     std_logic;"
                "--     bit_count   : in     std_logic_vector(5 downto 0);"
-               "--     bit_input   : in     std_logic;"
                "--     clk         : in     std_logic;"
                "--     reg_dmonth  : out    std_logic_vector(6 downto 0);"
                "--     reg_dweek   : out    std_logic_vector(2 downto 0);"

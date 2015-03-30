@@ -18,6 +18,8 @@
 signal counter : std_logic_vector(5 DOWNTO 0); --Signal interne pour compteur, BitCount va jusqu'à 60
 
 architecture behavioral of counter_ms_oveflow is
+  
+begin
 
 P1:process (clk, reset_n)
 	begin

@@ -14,7 +14,8 @@
 --     sec_overflow  : in     std_logic;
 --     start         : out    std_logic;
 --     state_bit     : out    std_logic;
---     stop          : out    std_logic);
+--     stop          : out    std_logic;
+--     stop_temp     : out    std_logic);
 -- 
 -- EASE/HDL end ----------------------------------------------------------------
   
@@ -28,13 +29,11 @@ architecture behavior of DecodeStateMachine is
 
   constant c_DCF_DETECT		: t_state := "00";
   constant c_BIT_DECODE		: t_state := "01";
-  constant c_STOP    		: t_state := "10";
-  constant c_STATE_DECODE	: t_state := "11";
+  constant c_STATE_DECODE	: t_state := "10";
   
 -- Declare signals  
   signal StateMachine : t_state;
   signal stop_temp 	  : std_logic; 
-  
   
 begin
        

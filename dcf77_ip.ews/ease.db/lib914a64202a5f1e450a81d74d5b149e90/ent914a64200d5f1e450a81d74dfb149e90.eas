@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 23 18:18:21 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 30 14:43:50 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1424094672 "Mon Feb 16 14:51:12 2015")
-      (MODIFIED 1427131101 "Mon Mar 23 18:18:21 2015")
+      (MODIFIED 1427719423 "Mon Mar 30 14:43:43 2015")
     )
     (PORT
       (OBID "eprt914a64208e5f1e450a81d74d4c149e90")
@@ -1338,6 +1338,41 @@
             (SIDE 2)
             (LABEL
               (POSITION 2432 1632)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprtd9a1e65b04449155829109c31c175c80")
+          (HDL_IDENT
+            (NAME "getNothing")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 2)
+            )
+          )
+          (GEOMETRY 2328 2008 2408 2088)
+          (SIDE 1)
+          (LABEL
+            (POSITION 2304 2048)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "getNothing")
+          )
+          (PORT "eprtd9a1e65b04449155829109c3eb175c80")
+          (CONNECTION
+            (OBID "ncond9a1e65b04449155829109c32c175c80")
+            (GEOMETRY 2432 2048 2432 2048)
+            (SIDE 2)
+            (LABEL
+              (POSITION 2432 2080)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 1)
@@ -3167,6 +3202,41 @@
             )
           )
         )
+        (PORT
+          (OBID "cprtd9a1e65bee449155829109c38a475c80")
+          (HDL_IDENT
+            (NAME "getNothing")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 2904 4056 2984 4136)
+          (SIDE 3)
+          (LABEL
+            (POSITION 3008 4096)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "getNothing")
+          )
+          (PORT "eprtd9a1e65bee449155829109c37a475c80")
+          (CONNECTION
+            (OBID "ncond9a1e65bee449155829109c39a475c80")
+            (GEOMETRY 2880 4096 2880 4096)
+            (SIDE 0)
+            (LABEL
+              (POSITION 2880 4064)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
       )
       (COMPONENT
         (OBID "compd9a1860a11830155c75009c3bfe1a963")
@@ -4566,6 +4636,37 @@
           (PORT
             (OBID "cprtd9a1860a9b730155c75009c3aee1a963")
             (NAME "RBG")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a1e65bff449155829109c3ba475c80")
+        (HDL_IDENT
+          (NAME "getNothing")
+        )
+        (PART
+          (OBID "nprtd9a1e65bff449155829109c3ca475c80")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a1e65bff449155829109c3da475c80")
+          (LABEL
+            (POSITION 2496 3072)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 2432 2048 2432 4096)
+          (WIRE 2432 4096 2880 4096)
+          (PORT
+            (OBID "cprtd9a1e65b04449155829109c31c175c80")
+            (NAME "getNothing")
+          )
+          (PORT
+            (OBID "cprtd9a1e65bee449155829109c38a475c80")
+            (NAME "getNothing")
           )
         )
       )

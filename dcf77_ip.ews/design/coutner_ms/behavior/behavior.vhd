@@ -19,7 +19,8 @@
 signal counter : std_logic_vector(7 DOWNTO 0); --Signal interne pour compteur
 
 architecture behavior of coutner_ms is
- 
+
+begin 
 
 P1:process (clk, reset_n)           
 
@@ -34,7 +35,7 @@ P1:process (clk, reset_n)
 		if rising_edge_dcf_77 = '1' then
 		  counter  <= (OTHERS => '0');      
 		  
-	    else if freq and dcf_77_s = '1' and then
+	    else if freq and dcf_77_s = '1' then
 			counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1); 
 		
 		end if; 

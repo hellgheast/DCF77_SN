@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 23 13:07:23 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 30 14:38:59 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1424696959 "Mon Feb 23 14:09:19 2015")
-      (MODIFIED 1427112406 "Mon Mar 23 13:06:46 2015")
+      (MODIFIED 1427719139 "Mon Mar 30 14:38:59 2015")
     )
     (PORT
       (OBID "eprt914a6420c172be450572d74d36c7bdc1")
@@ -198,7 +198,8 @@
                "signal counter : std_logic_vector(7 DOWNTO 0); --Signal interne pour compteur"
                ""
                "architecture behavior of coutner_ms is"
-               " "
+               ""
+               "begin "
                ""
                "P1:process (clk, reset_n)           "
                ""
@@ -213,7 +214,7 @@
                "		if rising_edge_dcf_77 = '1' then"
                "		  counter  <= (OTHERS => '0');      "
                "		  "
-               "	    else if freq and dcf_77_s = '1' and then"
+               "	    else if freq and dcf_77_s = '1' then"
                "			counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1); "
                "		"
                "		end if; "

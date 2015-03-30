@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 23 17:10:52 2015")
+      (PROPERTY "STAMP_TIME" "Mon Mar 30 14:43:50 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1427123126 "Mon Mar 23 16:05:26 2015")
-      (MODIFIED 1427127052 "Mon Mar 23 17:10:52 2015")
+      (MODIFIED 1427719430 "Mon Mar 30 14:43:50 2015")
     )
     (PORT
       (OBID "eprtd9a1860ad0c20155c75009c37de1a963")
@@ -114,6 +114,27 @@
         (TEXT "RBG(2:0)")
       )
     )
+    (PORT
+      (OBID "eprtd9a1e65bee449155829109c37a475c80")
+      (HDL_IDENT
+        (NAME "getNothing")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "getNothing")
+      )
+    )
     (ARCH_DECLARATION 2 "archd9a1860a6bb20155c75009c3e5a1a963" "behavior")
   )
   (ARCH_DEFINITION
@@ -136,18 +157,57 @@
                "-- Copy of the interface declaration:"
                "-- "
                "--   port ("
-               "--     RBG       : out    std_logic_vector(2 downto 0);"
-               "--     bit_count : in     std_logic_vector(5 downto 0);"
-               "--     start     : in     std_logic;"
-               "--     stop      : in     std_logic);"
+               "--     RBG        : out    std_logic_vector(2 downto 0);"
+               "--     bit_count  : in     std_logic_vector(5 downto 0);"
+               "--     getNothing : in     std_logic;"
+               "--     start      : in     std_logic;"
+               "--     stop       : in     std_logic);"
                "-- "
                "-- EASE/HDL end ----------------------------------------------------------------"
                ""
                "architecture behavior of decode_RBG is"
+               "       "
+               "signal fisrtCountTemp : std_logic_vector(5 downto 0); "
+               "signal secondCountTemp: std_logic_vector(1 downto 0);"
+               "signal busyTemp  : std_logic;"
+               "signal readyTemp : std_logic;"
                ""
                "begin     "
                ""
-               "if bit_count "
+               "P1 : process(clk,reset_n) IS"
+               "begin"
+               "	if reset_n = '0' then"
+               " 		RBG => (others <= '0');"
+               " 		busyTemp <= '0';"
+               " 		readyTemp <= '0';"
+               " 		countTemp <= '0';"
+               " 		"
+               "	elsif  (clk = '1' AND clk'event) THEN  "
+               "		 "
+               "		countTemp <= bit_count;"
+               "		"
+               "		-- BUSY      "
+               "		if stop = '1' then"
+               "			busyTemp <= '0'; "
+               "  	   	elsif start = '1' then   "
+               "  	   		busyTemp <= '1';"
+               "  	   	end if;"
+               "  	   	"
+               "  	   	-- READY"
+               "  	   	if stop = '1' and bit_count >= 59 then"
+               "  	   		readyTemp <= '1';"
+               "  	   	else"
+               "  	   		readyTemp <= '0';"
+               "  	   	end if;"
+               "  	   	"
+               "  	   	-- GETNOTHING"
+               "  	   	if bit_count = fisrtCountTemp then"
+               "  	   		secondCountTemp++;"
+               "  	   	 "
+               "  	   		"
+               "  	   		       "
+               "	end if;"
+               "end process;"
                ""
                "end architecture behavior ; -- of decode_RBG"
                ""
