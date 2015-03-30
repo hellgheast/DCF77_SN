@@ -37,8 +37,5 @@
     <section name="DatabaseView">
       <key type="bool" value="true" name="arch914a6420b1102e450a81d74d14249e90"/>
     </section>
-    <section name="DiagramView">
-      <key type="geometry" value="0,0,13935,6400" name="diag914a64200d5f1e450a81d74d0c149e90"/>
-    </section>
   </sections>
 </CONFIGURATION>
