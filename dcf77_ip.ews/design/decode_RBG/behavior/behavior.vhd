@@ -17,8 +17,7 @@
 
 architecture behavior of decode_RBG is
        
-signal fisrtCountTemp : std_logic_vector(5 downto 0); 
-signal secondCountTemp: std_logic_vector(1 downto 0);
+signal getNot    : std_logic;
 signal busyTemp  : std_logic;
 signal readyTemp : std_logic;
 
@@ -29,35 +28,44 @@ begin
 	if reset_n = '0' then
  		RBG => (others <= '0');
  		busyTemp <= '0';
- 		readyTemp <= '0';
- 		countTemp <= '0';
+ 		readyTemp <= '0'; 
+ 		getNot = '0';
  		
 	elsif  (clk = '1' AND clk'event) THEN  
 		 
-		countTemp <= bit_count;
-		
-		-- BUSY      
-		if stop = '1' then
-			busyTemp <= '0'; 
-  	   	elsif start = '1' then   
-  	   		busyTemp <= '1';
-  	   	end if;
-  	   	
-  	   	-- READY
-  	   	if stop = '1' and bit_count >= 59 then
-  	   		readyTemp <= '1';
-  	   	else
-  	   		readyTemp <= '0';
-  	   	end if;
-  	   	
-  	   	-- GETNOTHING
-  	   	if bit_count = fisrtCountTemp then
-  	   		secondCountTemp++;
-  	   	 
+		-- GETNOTHING --> première priorité 
+  	   	if getNothing = '0' then
+  	   		getNot = '0';
   	   		
-  	   		       
+	   		-- BUSY --> deuxième priorité 
+  	   		if stop = '1' then   -- Priorité sur le stop
+  	   			busyTemp <= '0';
+  	   			
+    	   		-- READY --> troisième priorité 
+  	   			if stop = '1' and bit_count >= 59 then
+  	   				readyTemp <= '1';
+  	   			else
+  	   				readyTemp <= '0';
+  	   			end if;	   			
+  	   				
+		    elsif start = '1' then   
+  	   			busyTemp <= '1';
+  	   			readyTemp <= '0';
+  	   		end if;
+   	
+  	   	else
+  	   		getNot <= '1'; 
+  	   		busyTemp <= '0';
+ 			readyTemp <= '0'; 
+  	   	end if;
+  	   	  		       
 	end if;
-end process;
+end process; 
+
+RBG <= "00" when getNot = '1' and  busyTemp = '0' and readyTemp '0' else
+	   "01" when getNot = '0' and  busyTemp = '0' and readyTemp '1' else 
+	   "10" when getNot = '0' and  busyTemp = '1' and readyTemp '0' else 
+	   "11";
 
 end architecture behavior ; -- of decode_RBG
 
