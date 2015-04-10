@@ -7,7 +7,7 @@
 -- Copy of the interface declaration:
 -- 
 --   port (
---     RBG        : out    std_logic_vector(2 downto 0);
+--     RBG        : out    std_logic_vector(1 downto 0);
 --     bit_count  : in     std_logic_vector(5 downto 0);
 --     clk        : in     std_logic;
 --     getNothing : in     std_logic;
@@ -64,9 +64,9 @@ begin
 	end if;
 end process; 
 
-RBG <= "00" when (getNot = '1' and  busyTemp = '0' and readyTemp '0') else
-	   "01" when (getNot = '0' and  busyTemp = '0' and readyTemp '1') else 
-	   "10" when (getNot = '0' and  busyTemp = '1' and readyTemp '0') else 
+RBG <= "00" when getNot = '1' and  busyTemp = '0' and readyTemp '0' else
+	   "01" when getNot = '0' and  busyTemp = '0' and readyTemp '1' else 
+	   "10" when getNot = '0' and  busyTemp = '1' and readyTemp '0' else 
 	   "11";
 
 end architecture behavior ; -- of decode_RBG

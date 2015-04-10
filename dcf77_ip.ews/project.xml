@@ -43,8 +43,8 @@
     <section name="DiagramView">
       <key type="geometry" value="0,0,9158,4264" name="diagd9a12467da9f3255087209c371312af5"/>
       <key type="geometry" value="0,0,9158,4264" name="diag914a64208903be450572d74d06d7bdc1"/>
-      <key type="geometry" value="0,0,9162,4265" name="diag914a6420b1102e450a81d74de3249e90"/>
-      <key type="geometry" value="0,0,13196,6144" name="diag914a64200d5f1e450a81d74d0c149e90"/>
+      <key type="geometry" value="0,0,11385,4264" name="diag914a6420b1102e450a81d74de3249e90"/>
+      <key type="geometry" value="0,0,16583,6144" name="diag914a64200d5f1e450a81d74d0c149e90"/>
     </section>
   </sections>
 </CONFIGURATION>

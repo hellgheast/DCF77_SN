@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Fri Apr 10 16:25:12 2015")
+      (PROPERTY "STAMP_TIME" "Fri Apr 10 17:21:39 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1424094672 "Mon Feb 16 14:51:12 2015")
-      (MODIFIED 1428673538 "Fri Apr 10 15:45:38 2015")
+      (MODIFIED 1428679296 "Fri Apr 10 17:21:36 2015")
     )
     (PORT
       (OBID "eprt914a64208e5f1e450a81d74d4c149e90")
@@ -1971,7 +1971,7 @@
               (MODE 1)
               (CONSTRAINT
                 (DIRECTION 1)
-                (RANGE "2" "0")
+                (RANGE "1" "0")
               )
             )
           )
@@ -1984,7 +1984,7 @@
             (SIDE 3)
             (ALIGNMENT 3)
             (FORMAT 35)
-            (TEXT "RBG(2:0)")
+            (TEXT "RBG(1:0)")
           )
           (PORT "eprtd9a1860afea30155c75009c31422a963")
           (CONNECTION
@@ -3172,7 +3172,7 @@
               (MODE 2)
               (CONSTRAINT
                 (DIRECTION 1)
-                (RANGE "2" "0")
+                (RANGE "1" "0")
               )
             )
           )
@@ -3185,7 +3185,7 @@
             (SIDE 1)
             (ALIGNMENT 5)
             (FORMAT 35)
-            (TEXT "RBG(2:0)")
+            (TEXT "RBG(1:0)")
           )
           (PORT "eprtd9a1860a9b730155c75009c39ee1a963")
           (CONNECTION

@@ -7,7 +7,7 @@
 -- Copy of the interface declaration:
 -- 
 --   port (
---     RBG         : in     std_logic_vector(2 downto 0);
+--     RBG         : in     std_logic_vector(1 downto 0);
 --     bit_count   : in     std_logic_vector(5 downto 0);
 --     bit_input   : in     std_logic;
 --     clk         : in     std_logic;
@@ -45,96 +45,144 @@ process(clk,reset_n)
 begin
   IF (reset_n = '0') THEN
   ELSIF(clk'event AND clk = '1') THEN
-    CASE UNSIGNED(bit_count) IS
-			WHEN 16 =>
-			   	reg_status_l(2) <= bit_input; --A1
-			WHEN 17 =>
-				reg_status_l(0) <= bit_input; --Z1
-			WHEN 18 =>
-				reg_status_l(1) <= bit_input; --Z2
-			WHEN 19 =>
-				reg_status_l(3) <= bit_input; --A2
-			WHEN 20 =>
-			WHEN 21 =>
-				reg_minutes_l(0) <= bit_input;
-			WHEN 22 =>
-				reg_minutes_l(1) <= bit_input;
-			WHEN 23 =>
-				reg_minutes_l(2) <= bit_input;
-			WHEN 24 =>
-				reg_minutes_l(3) <= bit_input;
-			WHEN 25 =>
-				reg_minutes_l(4) <= bit_input;
-			WHEN 26 =>
-				reg_minutes_l(5) <= bit_input;
-			WHEN 27 =>
-				reg_minutes_l(6) <= bit_input;
-			WHEN 28 =>
-				reg_status_l(2) <= bit_input;
-			WHEN 29 =>
-				reg_hours_l(0) <= bit_input;
-			WHEN 30 =>
-				reg_hours_l(1) <= bit_input;
-			WHEN 31 =>
-				reg_hours_l(2) <= bit_input;
-			WHEN 32 =>
-				reg_hours_l(3) <= bit_input;
-			WHEN 33 =>
+    CASE unsigned(bit_count) IS 
+    
+			WHEN "10000" =>    -- 16
+			   	reg_status_l(2) <= bit_input; --A1     
+			   	
+			WHEN "10001" =>
+				reg_status_l(0) <= bit_input; --Z1  
+				
+			WHEN "10010" =>
+				reg_status_l(1) <= bit_input; --Z2  				
+				
+			WHEN "10011" =>                        		
+				reg_status_l(3) <= bit_input; --A2    
+				
+			--WHEN "10100" =>;      -- 20               
+			
+			WHEN "10101" =>
+				reg_minutes_l(0) <= bit_input; 				  
+				
+			WHEN "10110" =>
+				reg_minutes_l(1) <= bit_input;  				
+				
+			WHEN "10111" =>
+				reg_minutes_l(2) <= bit_input;  			 
+				
+			WHEN "11000" =>
+				reg_minutes_l(3) <= bit_input; 
+				 			
+			WHEN "11001" =>
+				reg_minutes_l(4) <= bit_input; 				  
+				
+			WHEN "11010" =>
+				reg_minutes_l(5) <= bit_input;   
+								
+			WHEN "11011" =>
+				reg_minutes_l(6) <= bit_input;  
+				
+			WHEN "11100" =>
+				reg_status_l(2) <= bit_input;  
+				
+			WHEN "11101" =>
+				reg_hours_l(0) <= bit_input; 
+				
+			WHEN "11110" =>
+				reg_hours_l(1) <= bit_input; 
+				
+			WHEN "11111" =>
+				reg_hours_l(2) <= bit_input;  
+				
+			WHEN "100000" =>
+				reg_hours_l(3) <= bit_input; 
+				
+			WHEN "100001" =>
 				reg_hours_l(4) <= bit_input;
-			WHEN 34 =>
+				
+			WHEN "100010" =>
 				reg_hours_l(5) <= bit_input;
-			WHEN 35 =>
+				
+			WHEN "100011" =>
 				reg_status_l(3) <= bit_input;
-			WHEN 36 =>
+				
+			WHEN "100100" =>
 				reg_dmonth_l(0) <= bit_input;
-			WHEN 37 =>
+				
+			WHEN "100101" =>
 				reg_dmonth_l(1) <= bit_input;
-			WHEN 38 =>
+				
+			WHEN "100110" =>
 				reg_dmonth_l(2) <= bit_input;
-			WHEN 39 =>
+				
+			WHEN "100111" =>
 				reg_dmonth_l(3) <= bit_input;
-			WHEN 40 =>
+				
+			WHEN "101000" =>
 				reg_dmonth_l(4) <= bit_input;
-			WHEN 41 =>
+				
+			WHEN "101001" =>
 				reg_dmonth_l(5) <= bit_input;
-			WHEN 42 =>
+				
+			WHEN "101010" =>
 				reg_dweek_l(0)	<= bit_input;
-			WHEN 43 =>
-				reg_dweek_l(1)	<= bit_input;
-			WHEN 44 =>
+				
+			WHEN "101011" =>
+				reg_dweek_l(1)	<= bit_input; 
+				
+			WHEN "101100" =>
 				reg_dweek_l(2)	<= bit_input;
-			WHEN 45 =>
+				
+			WHEN "101101" =>
 				reg_month_l(0)	<= bit_input;
-			WHEN 46 =>
-				reg_month_l(1)	<= bit_input;
-			WHEN 47 =>
+				
+			WHEN "101110" =>
+				reg_month_l(1)	<= bit_input; 
+				
+			WHEN "101111" =>
 				reg_month_l(2)	<= bit_input;
-			WHEN 48 =>
-				reg_month_l(3)	<= bit_input;
-			WHEN 49 =>
+				
+			WHEN "110000" =>
+				reg_month_l(3)	<= bit_input; 
+				
+			WHEN "110001" =>
 				reg_month_l(4)	<= bit_input;
-			WHEN 50 =>
+				
+			WHEN "110010" =>
 				reg_year_l(0) 	<= bit_input;
-			WHEN 51 =>
+				
+			WHEN "110011" =>
 				reg_year_l(0) 	<= bit_input;
-			WHEN 52 =>
+				
+			WHEN "110100" =>
 				reg_year_l(0) 	<= bit_input;
-			WHEN 53 =>
+				
+			WHEN "110101" =>
 				reg_year_l(0) 	<= bit_input;
-			WHEN 54 =>
+				
+			WHEN "110110" =>
+				reg_year_l(0) 	<= bit_input; 
+				
+			WHEN "110111" =>
 				reg_year_l(0) 	<= bit_input;
-			WHEN 55 =>
-				reg_year_l(0) 	<= bit_input;
-			WHEN 56 =>
-				reg_year_l(0) 	<= bit_input;
-			WHEN 57 =>
-				reg_year_l(0) 	<= bit_input;
-			WHEN 58 =>
+				
+			WHEN "111000" =>
+				reg_year_l(0) 	<= bit_input; 
+				
+			WHEN "111001" =>
+				reg_year_l(0) 	<= bit_input; 
+				
+			WHEN "111010" =>
 				reg_status_l(4) <= bit_input;  --Date
-			WHEN 59 =>
+				
+			--WHEN "110011" =>;        -- 59
 			
+			WHEN OTHERS =>
+				reg_status_l(1 downto 0) <= RBG;   -- Envoie les informations externes à la trame dans les autres cas.
 			
-	END CASE;		 
+		
+		END CASE;  
+	END IF;		 
 
 end process;
 

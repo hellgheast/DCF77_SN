@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Fri Apr 10 16:27:47 2015")
+      (PROPERTY "STAMP_TIME" "Fri Apr 10 17:21:27 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1427123126 "Mon Mar 23 16:05:26 2015")
-      (MODIFIED 1428676067 "Fri Apr 10 16:27:47 2015")
+      (MODIFIED 1428679287 "Fri Apr 10 17:21:27 2015")
     )
     (PORT
       (OBID "eprtd9a1860ad0c20155c75009c37de1a963")
@@ -98,7 +98,7 @@
           (MODE 2)
           (CONSTRAINT
             (DIRECTION 1)
-            (RANGE "2" "0")
+            (RANGE "1" "0")
           )
         )
       )
@@ -111,7 +111,7 @@
         (SIDE 1)
         (ALIGNMENT 5)
         (FORMAT 35)
-        (TEXT "RBG(2:0)")
+        (TEXT "RBG(1:0)")
       )
     )
     (PORT
@@ -205,7 +205,7 @@
                "-- Copy of the interface declaration:"
                "-- "
                "--   port ("
-               "--     RBG        : out    std_logic_vector(2 downto 0);"
+               "--     RBG        : out    std_logic_vector(1 downto 0);"
                "--     bit_count  : in     std_logic_vector(5 downto 0);"
                "--     clk        : in     std_logic;"
                "--     getNothing : in     std_logic;"
@@ -262,9 +262,9 @@
                "	end if;"
                "end process; "
                ""
-               "RBG <= \"00\" when (getNot = '1' and  busyTemp = '0' and readyTemp '0') else"
-               "	   \"01\" when (getNot = '0' and  busyTemp = '0' and readyTemp '1') else "
-               "	   \"10\" when (getNot = '0' and  busyTemp = '1' and readyTemp '0') else "
+               "RBG <= \"00\" when getNot = '1' and  busyTemp = '0' and readyTemp '0' else"
+               "	   \"01\" when getNot = '0' and  busyTemp = '0' and readyTemp '1' else "
+               "	   \"10\" when getNot = '0' and  busyTemp = '1' and readyTemp '0' else "
                "	   \"11\";"
                ""
                "end architecture behavior ; -- of decode_RBG"
