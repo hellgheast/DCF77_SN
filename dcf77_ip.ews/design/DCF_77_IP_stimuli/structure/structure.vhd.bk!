@@ -1,0 +1,151 @@
+-- EASE/HDL begin --------------------------------------------------------------
+-- 
+-- Architecture 'structure' of entity 'DCF_77_IP_stimuli'.
+-- 
+--------------------------------------------------------------------------------
+-- 
+-- Copy of the interface declaration:
+-- 
+--   port (
+--     Adress      : out    std_logic_vector(3 downto 0);
+--     chip_select : out    std_logic;
+--     clk         : out    std_logic;
+--     data_in     : out    std_logic_vector(7 downto 0);
+--     data_out    : in     std_logic_vector(7 downto 0);
+--     dcf_77_in   : out    std_logic;
+--     read        : out    std_logic;
+--     reset_n     : out    std_logic;
+--     signal_int  : in     std_logic;
+--     start_acq   : in     std_logic;
+--     write       : out    std_logic);
+-- 
+-- EASE/HDL end ----------------------------------------------------------------
+
+architecture structure of DCF_77_IP_stimuli is
+
+begin
+--Declaration du composant UUT
+component DCF_77_IP_stimuli
+   port (
+     Adress      : out    std_logic_vector(3 downto 0);
+     chip_select : out    std_logic;
+     clk         : out    std_logic;
+     data_in     : out    std_logic_vector(7 downto 0);
+     data_out    : in     std_logic_vector(7 downto 0);
+     dcf_77_in   : out    std_logic;
+     read        : out    std_logic;
+     reset_n     : out    std_logic;
+     signal_int  : in     std_logic;
+     start_acq   : in     std_logic;
+     write       : out    std_logic);
+end component;
+
+   	--Inputs
+   	signal data_out    : in     std_logic_vector(7 downto 0);
+   	signal signal_int  : in     std_logic;
+   	signal start_acq   : in     std_logic; 
+	
+ 	--Outputs
+    signal Adress      : out    std_logic_vector(3 downto 0);
+    signal chip_select : out    std_logic;
+    signal clk         : out    std_logic;
+    signal data_in     : out    std_logic_vector(7 downto 0);
+    signal dcf_77_in   : out    std_logic;
+    signal read        : out    std_logic;
+    signal reset_n     : out    std_logic;
+    signal write       : out    std_logic);
+   
+
+--signaux propres au testbench
+SIGNAL sim_end      : BOOLEAN   := FALSE;
+SIGNAL mark_error   : std_logic := '0';
+SIGNAL error_number : INTEGER   :=  0;
+SIGNAL clk_gen      : std_logic := '0';
+
+BEGIN
+
+--Intanciation du composant UUT
+ uut: Mult251 PORT MAP (
+     Adress      =>  Adress,
+     chip_select =>  chip_select,
+     clk         =>  clk,
+     data_in     =>  data_in,
+     data_out    =>  data_out,
+     dcf_77_in   =>  dcf_77_in,
+     read        =>  read,
+     reset_n     =>  reset_n,
+     signal_int  =>  signal_int,
+     start_acq   =>  start_acq,
+     write       =>  write
+        );
+--********** PROCESS "clk_gengen" **********
+clk_gengen: PROCESS
+  BEGIN
+  IF sim_end = FALSE THEN
+    clk_gen <= '1', '0' AFTER 1 ns;
+    --clk     <= '1', '0' AFTER 5 ns, '1' AFTER 17 ns; --commenter si  on teste une fonction combinatoire (pas de clock)
+    wait for 25 ns;
+  ELSE
+    wait;
+  END IF;
+END PROCESS;
+
+--********** PROCESS "run" **********
+run: PROCESS
+
+  PROCEDURE sim_cycle(num : IN integer) IS
+  BEGIN
+    FOR index IN 1 TO num LOOP
+      wait until clk_gen'EVENT AND clk_gen = '1';
+    END LOOP;
+  END sim_cycle;
+
+  --********** PROCEDURE "init" **********
+  --fixer toutes les entrees du module à tester (DUT)
+  PROCEDURE init IS
+  BEGIN
+ 
+   --	D <= "00000000";
+   --	ABC <= "000";
+   --	OE <= '0';
+
+  END init;
+
+  --********** PROCEDURE "test_signal" **********
+  PROCEDURE test_signal(signal_test, value: IN std_logic; erreur : IN integer) IS 
+	BEGIN
+	   IF signal_test/= value THEN
+         	mark_error <= '1', '0' AFTER 1 ns;
+         	error_number <= erreur;
+         	ASSERT FALSE REPORT "Etat du signal non correct" SEVERITY WARNING;
+	   END IF;
+  END test_signal;
+
+ --********** PROCEDURE "test_vecteur" **********
+  PROCEDURE test_vecteur(signal_test, value: IN std_logic_vector(7 DOWNTO 0); erreur : IN integer) IS 
+	BEGIN
+	   IF signal_test/= value THEN
+         	mark_error <= '1', '0' AFTER 1 ns;
+         	error_number <= erreur;
+         	ASSERT FALSE REPORT "Etat du signal non correct" SEVERITY WARNING;
+	   END IF;
+  END test_vecteur;
+
+
+BEGIN --debut de la simulation temps t=0ns
+
+	init;  --appel procdure init
+	ASSERT FALSE REPORT "la simulation est en cour" SEVERITY NOTE;
+
+	--debut des tests
+	
+	
+
+	sim_end <= TRUE;
+	wait;
+
+END PROCESS;
+
+END structure;
+end architecture structure ; -- of DCF_77_IP_stimuli
+

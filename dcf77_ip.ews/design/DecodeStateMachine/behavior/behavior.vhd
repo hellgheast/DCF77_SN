@@ -14,7 +14,8 @@
 --     sec_overflow  : in     std_logic;
 --     start         : out    std_logic;
 --     state_bit     : out    std_logic;
---     stop          : out    std_logic);
+--     stop          : out    std_logic;
+--     stop_temp     : out    std_logic);
 -- 
 -- EASE/HDL end ----------------------------------------------------------------
   
@@ -31,7 +32,7 @@ architecture behavior of DecodeStateMachine is
   constant c_STATE_DECODE	: t_state := "10";
   
 -- Declare signals  
-  signal state 		  : t_state;
+  signal StateMachine : t_state;
   signal stop_temp 	  : std_logic; 
   
 begin
@@ -43,7 +44,7 @@ P1:process (clk, reset_n)
 		start 		<= '0';
 		stop  		<= '0';
 		state_bit 	<= '0';
-		
+		nbbit_pulse <= '0';  
 	
    	elsif(clk'EVENT and clk = '1') then 
    	
@@ -58,7 +59,7 @@ P1:process (clk, reset_n)
    			    	
    			    else  
    			    	if stop_temp = '1' then
-   			    		start <= '1';
+   			    		start = '1';
    			    		stop_temp  <= '0';
    			    	end if;
    			    	
@@ -72,7 +73,7 @@ P1:process (clk, reset_n)
    				
    			when c_BIT_DECODE =>  -- Décodage du numéro de bit (59e ou autre)
    			    
-   		   		start <= '0'; -- Start passe à '0', ce qui en fait une pulse.
+   		   		start = '0'; -- Start passe à '0', ce qui en fait une pulse.
    		   		
    				if sec_overflow = '1' then   -- 59e bit -> stop
    					stop_temp  <= '1';  
@@ -84,15 +85,15 @@ P1:process (clk, reset_n)
    											
    			when c_STATE_DECODE => -- Décodage de l'état du bit actuel de la trame
    			
-   				if high_ms_count = x"63" then
-   					state_bit <= '1';
+   				if high_ms_count = 99 then
+   					state_bit = '1';
    					state <= c_DCF_DETECT;		
-   				elsif high_ms_count = x"C7" then  
-   					state_bit <= '0';
+   				elsif high_ms_count = 199 then  
+   					state_bit = '0';
    					state <= c_DCF_DETECT;   		
    				else   
    					state <= c_STATE_DECODE;
-   				 end if;
+   				
    			when others =>
    			    state <= c_DCF_DETECT;     
    			    
