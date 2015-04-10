@@ -16,9 +16,12 @@
 -- 
 -- EASE/HDL end ----------------------------------------------------------------
    
-signal counter : std_logic_vector(5 DOWNTO 0); --Signal interne pour compteur, BitCount va jusqu'à 60
 
 architecture behavior of counter_nbbits is
+
+signal counter : std_logic_vector(5 DOWNTO 0); --Signal interne pour compteur, BitCount va jusqu'à 60
+
+BEGIN
 
 P1:process (clk, reset_n)
 	begin

@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Wed Apr 08 16:28:12 2015")
+      (PROPERTY "STAMP_TIME" "Fri Apr 10 16:27:47 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -13,14 +13,14 @@
       (NAME "decode_RBG")
       (USERNAME 1)
     )
-    (GEOMETRY 0 0 832 640)
+    (GEOMETRY 0 0 832 896)
     (SIDE 0)
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "vincent.meier")
+      (DESIGNER "mohammed.bensalah")
       (CREATED 1427123126 "Mon Mar 23 16:05:26 2015")
-      (MODIFIED 1428503286 "Wed Apr 08 16:28:06 2015")
+      (MODIFIED 1428676067 "Fri Apr 10 16:27:47 2015")
     )
     (PORT
       (OBID "eprtd9a1860ad0c20155c75009c37de1a963")
@@ -135,6 +135,54 @@
         (TEXT "getNothing")
       )
     )
+    (PORT
+      (OBID "eprt914a64203f3d72558201d74d4fa3d4f6")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420ef3d72558201d74d8fa3d4f6")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "reset_n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 728 40 808)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 768)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reset_n")
+      )
+    )
     (ARCH_DECLARATION 2 "archd9a1860a6bb20155c75009c3e5a1a963" "behavior")
   )
   (ARCH_DEFINITION
@@ -159,7 +207,9 @@
                "--   port ("
                "--     RBG        : out    std_logic_vector(2 downto 0);"
                "--     bit_count  : in     std_logic_vector(5 downto 0);"
+               "--     clk        : in     std_logic;"
                "--     getNothing : in     std_logic;"
+               "--     reset_n    : in     std_logic;"
                "--     start      : in     std_logic;"
                "--     stop       : in     std_logic);"
                "-- "
@@ -176,23 +226,23 @@
                "P1 : process(clk,reset_n) IS"
                "begin"
                "	if reset_n = '0' then"
-               " 		RBG => (others <= '0');"
+               " 		RBG <= (others => '0');"
                " 		busyTemp <= '0';"
                " 		readyTemp <= '0'; "
-               " 		getNot = '0';"
+               " 		getNot <= '0';"
                " 		"
                "	elsif  (clk = '1' AND clk'event) THEN  "
                "		 "
                "		-- GETNOTHING --> première priorité "
                "  	   	if getNothing = '0' then"
-               "  	   		getNot = '0';"
+               "  	   		getNot <= '0';"
                "  	   		"
                "	   		-- BUSY --> deuxième priorité "
                "  	   		if stop = '1' then   -- Priorité sur le stop"
                "  	   			busyTemp <= '0';"
                "  	   			"
                "    	   		-- READY --> troisième priorité "
-               "  	   			if stop = '1' and bit_count >= 59 then"
+               "  	   			if stop = '1' and bit_count >= \"111011\" then"
                "  	   				readyTemp <= '1';"
                "  	   			else"
                "  	   				readyTemp <= '0';"
@@ -212,9 +262,9 @@
                "	end if;"
                "end process; "
                ""
-               "RBG <= \"00\" when getNot = '1' and  busyTemp = '0' and readyTemp '0' else"
-               "	   \"01\" when getNot = '0' and  busyTemp = '0' and readyTemp '1' else "
-               "	   \"10\" when getNot = '0' and  busyTemp = '1' and readyTemp '0' else "
+               "RBG <= \"00\" when (getNot = '1' and  busyTemp = '0' and readyTemp '0') else"
+               "	   \"01\" when (getNot = '0' and  busyTemp = '0' and readyTemp '1') else "
+               "	   \"10\" when (getNot = '0' and  busyTemp = '1' and readyTemp '0') else "
                "	   \"11\";"
                ""
                "end architecture behavior ; -- of decode_RBG"

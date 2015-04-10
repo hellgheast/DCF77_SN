@@ -104,7 +104,8 @@ run: PROCESS
   PROCEDURE DCF_end IS 
 	BEGIN
         DCF_77_in <= '0';
-      	wait for 1000 ms;	
+      	wait for 1000 ms;
+   	
   END DCF_end;
 
 
@@ -219,43 +220,43 @@ BEGIN --debut de la simulation temps t=0ns
  -- END FRAME TEST -----------------------------------------  
     
  	sim_cycle(1);    
- 	test_signal(signal_int, 1, 1 ); -- Error 1 : End of frame is not detected  
+ 	test_signal(signal_int,'1', 1 ); -- Error 1 : End of frame is not detected  
  
  -- READ DATAS ---------------------------------------------
 	 
 	 read <= '1'; 
 	 
-	 data_in <= 0x06; -- Address of Minutes  
+	 data_in <= x"06"; -- Address of Minutes  
 	 sim_cycle(1); 
 	 
-	 test_vector(data_out, "xxxx", 2); -- Value of Minutes 
+	 test_vecteur(data_out, "xxxx", 2); -- Value of Minutes 
 	 sim_cycle(1);	  	  	  	  
 	 
-	 data_in <= 0x07; -- Address of Hours 
+	 data_in <= x"07"; -- Address of Hours 
 	 sim_cycle(1);
 	 
-	 test_vector(data_out, "xxxx", 3); -- Value of Hours 
+	 test_vecteur(data_out, "xxxx", 3); -- Value of Hours 
 	 sim_cycle(1); 
 	 
-	 data_in <= 0x08; -- Address of D of Month  
+	 data_in <= x"08"; -- Address of D of Month  
 	 sim_cycle(1); 
 	 
-	 test_vector(data_out, "xxxx", 4); -- Value of D of Month  
+	 test_vecteur(data_out, "xxxx", 4); -- Value of D of Month  
 	 sim_cycle(1);	  	  	  	  
 	 
-	 data_in <= 0x09; -- Address of D of Week 
+	 data_in <= x"09"; -- Address of D of Week 
 	 sim_cycle(1);
 	 
-	 test_vector(data_out, "xxxx", 5); -- Value of D of Week
+	 test_vecteur(data_out, "XXXX", 5); -- Value of D of Week
 	 sim_cycle(1);
      
      data_in <= 0x0A; -- Address of Month of Year 
 	 sim_cycle(1);
 	 
-	 test_vector(data_out, "xxxx", 6); -- Value of Month of Year 
+	 test_vecteur(data_out, "XXXX", 6); -- Value of Month of Year 
 	 sim_cycle(1);
      
-     data_in <= 0x0B; -- Address of Year 
+     data_in <= x"0B"; -- Address of Year 
 	 sim_cycle(1);
 	 
 	 sim_cycle(1);

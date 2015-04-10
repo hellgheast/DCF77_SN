@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Tue Apr 07 17:36:43 2015")
+      (PROPERTY "STAMP_TIME" "Fri Apr 10 16:25:12 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "vincent.meier")
+      (DESIGNER "mohammed.bensalah")
       (CREATED 1427718114 "Mon Mar 30 14:21:54 2015")
-      (MODIFIED 1428421002 "Tue Apr 07 17:36:42 2015")
+      (MODIFIED 1428675912 "Fri Apr 10 16:25:12 2015")
     )
     (PORT
       (OBID "eprtd9a1e65b850491554a9109c3ccf681d5")
@@ -157,9 +157,10 @@
                "-- "
                "-- EASE/HDL end ----------------------------------------------------------------"
                "         "
-               "signal counter : std_logic_vector(7 DOWNTO 0); --Signal interne pour compteur"
                ""
                "architecture behavior of counter_ms_getN is"
+               ""
+               "signal counter : std_logic_vector(9 DOWNTO 0); --Signal interne pour compteur"
                ""
                "begin"
                ""
@@ -178,15 +179,13 @@
                "	     	      	"
                "	     elsif stop_temp = '1' then	 "
                "	         	"
-               "	     	if counter <= 1000 then"
-               "	     		counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);   "
-               "	     		    	"
-               "	     	elsif counter > 1000 then"
-               "	     		counter  <= (OTHERS => '0');"
-               "	     		getNothing <= '1';"
-               "	     	end if;      "
+               "	     counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);   "
+               "	       IF counter > x\"3FF\" then"
+               "	         counter  <= (OTHERS => '0');"
+               "	         getNothing <= '1';"
+               "	       END IF;      "
                "	     	"
-               "         end if;   "
+               "         END IF;   "
                "         	"
                "	end if;	  "
                "		"

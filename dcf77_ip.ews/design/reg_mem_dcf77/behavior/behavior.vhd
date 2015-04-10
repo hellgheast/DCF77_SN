@@ -66,6 +66,7 @@ BEGIN
       	WHEN c_prescaler_h =>
       		 reg_prescaler(15 downto 8) <= data_in;
       	WHEN OTHERS => null;
+      END CASE;
     END IF;
   END IF;
 END PROCESS;

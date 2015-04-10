@@ -16,9 +16,9 @@
 -- 
 -- EASE/HDL end ----------------------------------------------------------------
   
-signal counter : std_logic_vector(7 DOWNTO 0); --Signal interne pour compteur
-
 architecture behavior of coutner_ms is
+
+signal counter : std_logic_vector(7 DOWNTO 0); --Signal interne pour compteur
 
 begin 
 
@@ -27,15 +27,15 @@ P1:process (clk, reset_n)
 	begin                  
 	
 	if(reset_n) = '0' then -- reset asynchrone
-		high_ms_count <= '0';
-		counter  <= (OTHERS => '0'); 
+		high_ms_count 	<= (OTHERS => '0');
+		counter  		<= (OTHERS => '0'); 
 		
 	elsif(clk'EVENT and clk = '1') then 
 	
 		if rising_edge_dcf_77 = '1' then
 		  counter  <= (OTHERS => '0');      
 		  
-	    else if freq and dcf_77_s = '1' then
+	    elsif freq = '1' and dcf_77_s = '1' then
 			counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1); 
 		
 		end if; 

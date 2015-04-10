@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 23 17:06:13 2015")
+      (PROPERTY "STAMP_TIME" "Fri Apr 10 16:25:12 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "vincent.meier")
+      (DESIGNER "mohammed.bensalah")
       (CREATED 1424694079 "Mon Feb 23 13:21:19 2015")
-      (MODIFIED 1427126773 "Mon Mar 23 17:06:13 2015")
+      (MODIFIED 1428675912 "Fri Apr 10 16:25:12 2015")
     )
     (PORT
       (OBID "eprt914a6420b4b1be450572d74d1b57bdc1")
@@ -595,6 +595,7 @@
                "      	WHEN c_prescaler_h =>"
                "      		 reg_prescaler(15 downto 8) <= data_in;"
                "      	WHEN OTHERS => null;"
+               "      END CASE;"
                "    END IF;"
                "  END IF;"
                "END PROCESS;"
