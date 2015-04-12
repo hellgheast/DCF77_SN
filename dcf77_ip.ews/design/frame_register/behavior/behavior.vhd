@@ -11,12 +11,13 @@
 --     bit_count   : in     std_logic_vector(5 downto 0);
 --     bit_input   : in     std_logic;
 --     clk         : in     std_logic;
---     reg_dmonth  : out    std_logic_vector(6 downto 0);
+--     reg_dmonth  : out    std_logic_vector(5 downto 0);
 --     reg_dweek   : out    std_logic_vector(2 downto 0);
 --     reg_flags   : out    std_logic_vector(3 downto 0);
 --     reg_hours   : out    std_logic_vector(5 downto 0);
 --     reg_minutes : out    std_logic_vector(6 downto 0);
 --     reg_month   : out    std_logic_vector(5 downto 0);
+--     reg_recbits : out    std_logic_vector(5 downto 0);
 --     reg_status  : out    std_logic_vector(7 downto 0);
 --     reg_year    : out    std_logic_vector(7 downto 0);
 --     reset_n     : in     std_logic;
@@ -28,11 +29,11 @@
 architecture behavior of frame_register is
 
 --Déclarations des registres
-signal reg_recbits_l		: std_logic_vector(5 downto 0) 	:="00000";
+
 signal reg_status_l         : std_logic_vector(7 downto 0) 	:=x"00"; 
 signal reg_prescaler_l     	: std_logic_vector(15 downto 0)	:=x"0000";
 signal reg_flags_l        	: std_logic_vector(3 downto 0) 	:="0000";
-signal reg_hours_l        	: std_logic_vector(5 downto 0) 	:="00000";
+signal reg_hours_l        	: std_logic_vector(5 downto 0) 	:="000000";
 signal reg_minutes_l        : std_logic_vector(6 downto 0) 	:="0000000";
 signal reg_dmonth_l        	: std_logic_vector(5 downto 0)  :="000000";
 signal reg_dweek_l        	: std_logic_vector(2 downto 0)  :="000";
@@ -47,51 +48,51 @@ begin
   ELSIF(clk'event AND clk = '1') THEN
     CASE unsigned(bit_count) IS 
     
-			WHEN "10000" =>    -- 16
+			WHEN "010000" =>    -- 16
 			   	reg_status_l(2) <= bit_input; --A1     
 			   	
-			WHEN "10001" =>
+			WHEN "010001" =>
 				reg_status_l(0) <= bit_input; --Z1  
 				
-			WHEN "10010" =>
+			WHEN "010010" =>
 				reg_status_l(1) <= bit_input; --Z2  				
 				
-			WHEN "10011" =>                        		
+			WHEN "010011" =>                        		
 				reg_status_l(3) <= bit_input; --A2    
 				
 			--WHEN "10100" =>;      -- 20               
 			
-			WHEN "10101" =>
+			WHEN "010101" =>
 				reg_minutes_l(0) <= bit_input; 				  
 				
-			WHEN "10110" =>
+			WHEN "010110" =>
 				reg_minutes_l(1) <= bit_input;  				
 				
-			WHEN "10111" =>
+			WHEN "010111" =>
 				reg_minutes_l(2) <= bit_input;  			 
 				
-			WHEN "11000" =>
+			WHEN "011000" =>
 				reg_minutes_l(3) <= bit_input; 
 				 			
-			WHEN "11001" =>
+			WHEN "011001" =>
 				reg_minutes_l(4) <= bit_input; 				  
 				
-			WHEN "11010" =>
+			WHEN "011010" =>
 				reg_minutes_l(5) <= bit_input;   
 								
-			WHEN "11011" =>
+			WHEN "011011" =>
 				reg_minutes_l(6) <= bit_input;  
 				
-			WHEN "11100" =>
+			WHEN "011100" =>
 				reg_status_l(2) <= bit_input;  
 				
-			WHEN "11101" =>
+			WHEN "011101" =>
 				reg_hours_l(0) <= bit_input; 
 				
-			WHEN "11110" =>
+			WHEN "011110" =>
 				reg_hours_l(1) <= bit_input; 
 				
-			WHEN "11111" =>
+			WHEN "011111" =>
 				reg_hours_l(2) <= bit_input;  
 				
 			WHEN "100000" =>
@@ -184,7 +185,20 @@ begin
 		END CASE;  
 	END IF;		 
 
-end process;
+end process;  
+
+reg_recbits <= bit_count;
+reg_dmonth  <= reg_dmonth_l;
+reg_dweek   <= reg_dweek_l;
+reg_flags   <= reg_flags_l;
+reg_hours   <= reg_hours_l;
+reg_minutes <= reg_minutes_l;
+reg_month   <= reg_dmonth_l;
+reg_status  <= reg_status_l;
+reg_year    <= reg_year_l;
+
+
+
 
 end architecture behavior ; -- of frame_register
 

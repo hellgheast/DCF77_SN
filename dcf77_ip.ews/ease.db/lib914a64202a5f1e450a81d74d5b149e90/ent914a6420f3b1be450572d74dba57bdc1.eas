@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Sun Apr 12 11:03:52 2015")
+      (PROPERTY "STAMP_TIME" "Sun Apr 12 17:41:51 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1424694079 "Mon Feb 23 13:21:19 2015")
-      (MODIFIED 1428829432 "Sun Apr 12 11:03:52 2015")
+      (MODIFIED 1428853311 "Sun Apr 12 17:41:51 2015")
     )
     (PORT
       (OBID "eprt914a6420b4b1be450572d74d1b57bdc1")
@@ -232,7 +232,7 @@
           (MODE 1)
           (CONSTRAINT
             (DIRECTION 1)
-            (RANGE "6" "0")
+            (RANGE "5" "0")
           )
         )
       )
@@ -245,7 +245,7 @@
         (SIDE 3)
         (ALIGNMENT 3)
         (FORMAT 35)
-        (TEXT "reg_dmonth(6:0)")
+        (TEXT "reg_dmonth(5:0)")
       )
     )
     (PORT
@@ -527,10 +527,10 @@
           )
         )
       )
-      (GEOMETRY -40 1240 40 1320)
+      (GEOMETRY -40 1304 40 1384)
       (SIDE 3)
       (LABEL
-        (POSITION 64 1280)
+        (POSITION 64 1344)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -571,7 +571,7 @@
                "--     data_out    : out    std_logic_vector(7 downto 0);"
                "--     prescaler   : out    std_logic_vector(15 downto 0);"
                "--     read        : in     std_logic;"
-               "--     reg_dmonth  : in     std_logic_vector(6 downto 0);"
+               "--     reg_dmonth  : in     std_logic_vector(5 downto 0);"
                "--     reg_dweek   : in     std_logic_vector(2 downto 0);"
                "--     reg_flags   : in     std_logic_vector(3 downto 0);"
                "--     reg_hours   : in     std_logic_vector(5 downto 0);"
@@ -659,7 +659,9 @@
                "      WHEN c_month =>"
                "      	   data_out <= \"00\" & reg_month;"
                "      WHEN c_year => "
-               "      	   data_out <= reg_year;  "
+               "      	   data_out <= reg_year;"
+               "      WHEN OTHERS =>"
+               "      		null;  "
                "      	   "
                "    END CASE;"
                "  END IF;                                                                                "

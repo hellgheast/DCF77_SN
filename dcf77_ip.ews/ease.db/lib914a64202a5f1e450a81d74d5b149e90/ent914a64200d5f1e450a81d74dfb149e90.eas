@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Sun Apr 12 11:03:21 2015")
+      (PROPERTY "STAMP_TIME" "Sun Apr 12 17:40:24 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1424094672 "Mon Feb 16 14:51:12 2015")
-      (MODIFIED 1428829398 "Sun Apr 12 11:03:18 2015")
+      (MODIFIED 1428853216 "Sun Apr 12 17:40:16 2015")
     )
     (PORT
       (OBID "eprt914a64208e5f1e450a81d74d4c149e90")
@@ -1388,10 +1388,10 @@
           (NAME "u2")
           (USERNAME 1)
         )
-        (GEOMETRY 3392 1664 4864 3072)
+        (GEOMETRY 3392 1600 4864 3072)
         (SIDE 0)
         (LABEL
-          (POSITION 3289 1624)
+          (POSITION 3289 1560)
           (SCALE 128)
           (COLOR_LINE 0)
           (SIDE 3)
@@ -1745,7 +1745,7 @@
               (MODE 2)
               (CONSTRAINT
                 (DIRECTION 1)
-                (RANGE "6" "0")
+                (RANGE "5" "0")
               )
             )
           )
@@ -1758,7 +1758,7 @@
             (SIDE 1)
             (ALIGNMENT 5)
             (FORMAT 35)
-            (TEXT "reg_dmonth(6:0)")
+            (TEXT "reg_dmonth(5:0)")
           )
           (PORT "eprt914a64204581be450572d74d9457bdc1")
           (CONNECTION
@@ -1997,6 +1997,45 @@
               (COLOR_LINE 0)
               (SIDE 3)
               (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprtd9a1242988a8a2550f3209c3e283f770")
+          (HDL_IDENT
+            (NAME "reg_recbits")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 2)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "5" "0")
+              )
+            )
+          )
+          (GEOMETRY 4824 1688 4904 1768)
+          (SIDE 1)
+          (LABEL
+            (POSITION 4800 1728)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "reg_recbits(5:0)")
+          )
+          (PORT "eprtd9a1242988a8a2550f3209c3d283f770")
+          (CONNECTION
+            (OBID "ncond9a1242988a8a2550f3209c3f283f770")
+            (GEOMETRY 4928 1728 4928 1728)
+            (SIDE 2)
+            (LABEL
+              (POSITION 4928 1760)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
               (FORMAT 128)
             )
           )
@@ -2582,7 +2621,7 @@
               (MODE 1)
               (CONSTRAINT
                 (DIRECTION 1)
-                (RANGE "6" "0")
+                (RANGE "5" "0")
               )
             )
           )
@@ -2595,7 +2634,7 @@
             (SIDE 3)
             (ALIGNMENT 3)
             (FORMAT 35)
-            (TEXT "reg_dmonth(6:0)")
+            (TEXT "reg_dmonth(5:0)")
           )
           (PORT "eprt914a6420d9b1be450572d74db667bdc1")
           (CONNECTION
@@ -3048,10 +3087,10 @@
               )
             )
           )
-          (GEOMETRY 7064 1624 7144 1704)
+          (GEOMETRY 7064 1688 7144 1768)
           (SIDE 3)
           (LABEL
-            (POSITION 7168 1664)
+            (POSITION 7168 1728)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -3062,10 +3101,10 @@
           (PORT "eprtd9a1347ce843a255427209c3e7d0aec1")
           (CONNECTION
             (OBID "ncond9a1347ce843a255427209c308d0aec1")
-            (GEOMETRY 7040 1664 7040 1664)
+            (GEOMETRY 7040 1728 7040 1728)
             (SIDE 0)
             (LABEL
-              (POSITION 7040 1632)
+              (POSITION 7040 1696)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
@@ -3488,7 +3527,7 @@
               (MODE 1)
               (CONSTRAINT
                 (DIRECTION 1)
-                (RANGE "6" "0")
+                (RANGE "5" "0")
               )
             )
           )
@@ -3501,7 +3540,7 @@
             (SIDE 3)
             (ALIGNMENT 3)
             (FORMAT 35)
-            (TEXT "dmonth(6:0)")
+            (TEXT "dmonth(5:0)")
           )
           (PORT "eprtd9a1860a58830155c75009c319f1a963")
           (CONNECTION
@@ -3760,11 +3799,11 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 2688 3712 2688 2112)
-          (WIRE 2880 3712 2688 3712)
+          (WIRE 2688 2112 2688 3712)
+          (WIRE 2688 3712 2880 3712)
           (WIRE 2688 3712 2688 5504)
           (WIRE 2688 2112 3328 2112)
-          (WIRE 8832 5504 2688 5504)
+          (WIRE 2688 5504 8832 5504)
           (WIRE 2304 2112 2688 2112)
           (PORT
             (OBID "cprtd9a1860ad0c20155c75009c38de1a963")
@@ -3803,7 +3842,7 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 3328 1792 2304 1792)
+          (WIRE 2304 1792 3328 1792)
           (PORT
             (OBID "cprt914a6420d151be450572d74da257bdc1")
             (NAME "bit_input")
@@ -4000,7 +4039,7 @@
         (PART
           (OBID "nprt914a64204262be450572d74d21c7bdc1")
           (LABEL
-            (POSITION 6304 1520)
+            (POSITION 5984 1840)
             (SCALE 96)
             (COLOR_LINE 52)
             (SIDE 3)
@@ -4036,7 +4075,7 @@
         (PART
           (OBID "nprt914a64206262be450572d74d61c7bdc1")
           (LABEL
-            (POSITION 6176 1648)
+            (POSITION 5984 1968)
             (SCALE 96)
             (COLOR_LINE 52)
             (SIDE 3)
@@ -4082,7 +4121,7 @@
           (WIRE 4928 2560 5248 2560)
           (WIRE 5248 2560 5248 4800)
           (WIRE 5248 4800 5632 4800)
-          (WIRE 7040 2560 5248 2560)
+          (WIRE 5248 2560 7040 2560)
           (PORT
             (OBID "cprt914a6420a681be450572d74de457bdc1")
             (NAME "reg_dweek")
@@ -4125,7 +4164,7 @@
           (WIRE 4928 2752 5120 2752)
           (WIRE 5120 2752 5120 4928)
           (WIRE 5120 4928 5632 4928)
-          (WIRE 7040 2752 5120 2752)
+          (WIRE 5120 2752 7040 2752)
           (PORT
             (OBID "cprt914a64205b81be450572d74d2557bdc1")
             (NAME "reg_month")
@@ -4168,7 +4207,7 @@
           (WIRE 4928 2880 4992 2880)
           (WIRE 4992 2880 4992 5056)
           (WIRE 4992 5056 5632 5056)
-          (WIRE 7040 2880 4992 2880)
+          (WIRE 4992 2880 7040 2880)
           (PORT
             (OBID "cprt914a64206e81be450572d74d6557bdc1")
             (NAME "reg_year")
@@ -4202,11 +4241,11 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 2560 3840 2560 2240)
+          (WIRE 2560 2240 2560 3840)
           (WIRE 2560 3840 2560 5632)
           (WIRE 2560 3840 2880 3840)
-          (WIRE 8832 5632 2560 5632)
-          (WIRE 3328 2240 2560 2240)
+          (WIRE 2560 5632 8832 5632)
+          (WIRE 2560 2240 3328 2240)
           (WIRE 2304 2240 2560 2240)
           (PORT
             (OBID "cprtd9a1860a21c20155c75009c3fde1a963")
@@ -4263,62 +4302,6 @@
         )
       )
       (NET
-        (OBID "netd9a1860afea20155c75009c374a1a963")
-        (HDL_IDENT
-          (NAME "u4_Adress")
-          (ATTRIBUTES
-            (CONSTRAINT
-              (DIRECTION 1)
-              (RANGE "3" "0")
-            )
-          )
-        )
-        (PART
-          (OBID "nprtd9a1860afea20155c75009c384a1a963")
-          (CBN 1)
-        )
-        (PART
-          (OBID "nprtd9a1860afea20155c75009c394a1a963")
-          (LABEL
-            (POSITION 4864 1008)
-            (SCALE 96)
-            (COLOR_LINE 52)
-            (SIDE 3)
-            (ALIGNMENT 7)
-            (FORMAT 4099)
-          )
-          (WIRE 896 -64 2688 -64)
-        )
-      )
-      (NET
-        (OBID "netd9a1860a2fa20155c75009c3b4a1a963")
-        (HDL_IDENT
-          (NAME "Net_0")
-          (ATTRIBUTES
-            (CONSTRAINT
-              (DIRECTION 1)
-              (RANGE "7" "0")
-            )
-          )
-        )
-        (PART
-          (OBID "nprtd9a1860a2fa20155c75009c3c4a1a963")
-          (CBN 1)
-        )
-        (PART
-          (OBID "nprtd9a1860a2fa20155c75009c3d4a1a963")
-          (LABEL
-            (POSITION 3264 -144)
-            (SCALE 96)
-            (COLOR_LINE 52)
-            (SIDE 3)
-            (ALIGNMENT 7)
-            (FORMAT 4099)
-          )
-          (WIRE 832 -128 5696 -128)
-        )
-      )
-      (NET
         (OBID "netd9a1860a5c730155c75009c3dee1a963")
         (HDL_IDENT
           (NAME "bit_count")
@@ -4343,14 +4326,10 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 2432 3968 2432 1920)
-          (WIRE 2880 3968 2432 3968)
-          (WIRE 3328 1920 2432 1920)
+          (WIRE 2432 1920 2432 3968)
+          (WIRE 2432 3968 2880 3968)
+          (WIRE 2432 1920 3328 1920)
           (WIRE 2304 1920 2432 1920)
-          (WIRE 2432 1408 2432 1920)
-          (WIRE 5632 1408 2432 1408)
-          (WIRE 5632 1408 5632 1664)
-          (WIRE 5632 1664 7040 1664)
           (PORT
             (OBID "cprtd9a1860af1c20155c75009c36ee1a963")
             (NAME "bit_count")
@@ -4362,10 +4341,6 @@
           (PORT
             (OBID "cprt914a64201a402e450a81d74de6249e90")
             (NAME "bit_count")
-          )
-          (PORT
-            (OBID "cprtd9a1347ce843a255427209c3f7d0aec1")
-            (NAME "reg_recbits")
           )
         )
       )
@@ -4394,9 +4369,9 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 5632 2112 4928 2112)
-          (WIRE 5632 4416 5632 2112)
-          (WIRE 7040 2112 5632 2112)
+          (WIRE 4928 2112 5632 2112)
+          (WIRE 5632 2112 5632 4416)
+          (WIRE 5632 2112 7040 2112)
           (PORT
             (OBID "cprt914a6420e971be450572d74d2457bdc1")
             (NAME "reg_hours")
@@ -4437,9 +4412,9 @@
             (FORMAT 4099)
           )
           (WIRE 4928 2240 5504 2240)
-          (WIRE 5504 4544 5504 2240)
+          (WIRE 5504 2240 5504 4544)
           (WIRE 5504 4544 5632 4544)
-          (WIRE 7040 2240 5504 2240)
+          (WIRE 5504 2240 7040 2240)
           (PORT
             (OBID "cprt914a64201381be450572d74d6457bdc1")
             (NAME "reg_minutes")
@@ -4451,49 +4426,6 @@
           (PORT
             (OBID "cprt914a6420d9b1be450572d74d4767bdc1")
             (NAME "reg_minutes")
-          )
-        )
-      )
-      (NET
-        (OBID "netd9a1860a41930155c75009c35cf1a963")
-        (HDL_IDENT
-          (NAME "reg_dmonth")
-          (ATTRIBUTES
-            (CONSTRAINT
-              (DIRECTION 1)
-              (RANGE "6" "0")
-            )
-          )
-        )
-        (PART
-          (OBID "nprtd9a1860a41930155c75009c36cf1a963")
-          (CBN 1)
-        )
-        (PART
-          (OBID "nprtd9a1860a41930155c75009c37cf1a963")
-          (LABEL
-            (POSITION 5824 3072)
-            (SCALE 96)
-            (COLOR_LINE 52)
-            (SIDE 3)
-            (ALIGNMENT 7)
-            (FORMAT 4099)
-          )
-          (WIRE 4928 2432 5376 2432)
-          (WIRE 5376 2432 5376 4672)
-          (WIRE 5376 4672 5632 4672)
-          (WIRE 7040 2432 5376 2432)
-          (PORT
-            (OBID "cprt914a64204581be450572d74da457bdc1")
-            (NAME "reg_dmonth")
-          )
-          (PORT
-            (OBID "cprt914a6420d9b1be450572d74d6767bdc1")
-            (NAME "reg_dmonth")
-          )
-          (PORT
-            (OBID "cprtd9a1860a58830155c75009c329f1a963")
-            (NAME "dmonth")
           )
         )
       )
@@ -4690,42 +4622,6 @@
         )
       )
       (NET
-        (OBID "netd9a1860ae4a30155c75009c3d712a963")
-        (HDL_IDENT
-          (NAME "Adress")
-          (ATTRIBUTES
-            (CONSTRAINT
-              (DIRECTION 1)
-              (RANGE "3" "0")
-            )
-          )
-        )
-        (PART
-          (OBID "nprtd9a1860ae4a30155c75009c3e712a963")
-          (CBN 1)
-        )
-        (PART
-          (OBID "nprtd9a1860ae4a30155c75009c3f712a963")
-          (LABEL
-            (POSITION 4864 1008)
-            (SCALE 96)
-            (COLOR_LINE 52)
-            (SIDE 3)
-            (ALIGNMENT 7)
-            (FORMAT 4099)
-          )
-          (WIRE 704 1024 7040 1024)
-          (PORT
-            (OBID "aprt914a6420926f1e450a81d74dfd149e90")
-            (NAME "Adress")
-          )
-          (PORT
-            (OBID "cprt914a6420a6d1be450572d74d7967bdc1")
-            (NAME "Adress")
-          )
-        )
-      )
-      (NET
         (OBID "netd9a1860a15a30155c75009c31812a963")
         (HDL_IDENT
           (NAME "data_in")
@@ -4762,46 +4658,6 @@
         )
       )
       (NET
-        (OBID "netd9a1860affa30155c75009c35422a963")
-        (HDL_IDENT
-          (NAME "RBG")
-          (ATTRIBUTES
-            (CONSTRAINT
-              (DIRECTION 1)
-              (RANGE "2" "0")
-            )
-          )
-        )
-        (PART
-          (OBID "nprtd9a1860a50b30155c75009c3a422a963")
-          (CBN 1)
-        )
-        (PART
-          (OBID "nprtd9a1860affa30155c75009c36422a963")
-          (LABEL
-            (POSITION 3744 3312)
-            (SCALE 96)
-            (COLOR_LINE 52)
-            (SIDE 3)
-            (ALIGNMENT 7)
-            (FORMAT 4099)
-          )
-          (WIRE 3072 3200 3072 2368)
-          (WIRE 3072 3200 4608 3200)
-          (WIRE 4608 3776 4608 3200)
-          (WIRE 3840 3776 4608 3776)
-          (WIRE 3072 2368 3328 2368)
-          (PORT
-            (OBID "cprtd9a1860a9b730155c75009c3aee1a963")
-            (NAME "RBG")
-          )
-          (PORT
-            (OBID "cprtd9a1860afea30155c75009c32422a963")
-            (NAME "RBG")
-          )
-        )
-      )
-      (NET
         (OBID "netd9a1e65bff449155829109c3ba475c80")
         (HDL_IDENT
           (NAME "getNothing")
@@ -4820,8 +4676,8 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 2816 4096 2816 2368)
-          (WIRE 2880 4096 2816 4096)
+          (WIRE 2816 2368 2816 4096)
+          (WIRE 2816 4096 2880 4096)
           (WIRE 2304 2368 2816 2368)
           (PORT
             (OBID "cprtd9a1e65bee449155829109c38a475c80")
@@ -4830,6 +4686,162 @@
           (PORT
             (OBID "cprtd9a1e65b04449155829109c31c175c80")
             (NAME "getNothing")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a124295078a2550f3209c3ef73f770")
+        (HDL_IDENT
+          (NAME "RBG")
+          (ATTRIBUTES
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "1" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprtd9a124299078a2550f3209c33083f770")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a124295078a2550f3209c3ff73f770")
+          (LABEL
+            (POSITION 3776 3184)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 3008 2368 3328 2368)
+          (WIRE 3008 2368 3008 3200)
+          (WIRE 3008 3200 4544 3200)
+          (WIRE 4544 3200 4544 3776)
+          (WIRE 3840 3776 4544 3776)
+          (PORT
+            (OBID "cprtd9a1860afea30155c75009c32422a963")
+            (NAME "RBG")
+          )
+          (PORT
+            (OBID "cprtd9a1860a9b730155c75009c3aee1a963")
+            (NAME "RBG")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a124295378a2550f3209c3e083f770")
+        (HDL_IDENT
+          (NAME "Adress")
+          (ATTRIBUTES
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "3" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprtd9a124295378a2550f3209c3f083f770")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a124295378a2550f3209c30183f770")
+          (LABEL
+            (POSITION 3872 1008)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 704 1024 7040 1024)
+          (PORT
+            (OBID "aprt914a6420926f1e450a81d74dfd149e90")
+            (NAME "Adress")
+          )
+          (PORT
+            (OBID "cprt914a6420a6d1be450572d74d7967bdc1")
+            (NAME "Adress")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a12429d9a8a2550f3209c34383f770")
+        (HDL_IDENT
+          (NAME "reg_recbits")
+          (ATTRIBUTES
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "5" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprtd9a12429d9a8a2550f3209c35383f770")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a12429d9a8a2550f3209c36383f770")
+          (LABEL
+            (POSITION 5920 1712)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 4928 1728 6912 1728)
+          (WIRE 6912 1728 7040 1728)
+          (PORT
+            (OBID "cprtd9a1242988a8a2550f3209c3e283f770")
+            (NAME "reg_recbits")
+          )
+          (PORT
+            (OBID "cprtd9a1347ce843a255427209c3f7d0aec1")
+            (NAME "reg_recbits")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a124290e19a2554be009c3d177c811")
+        (HDL_IDENT
+          (NAME "reg_dmonth")
+          (ATTRIBUTES
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "5" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprtd9a124290e19a2554be009c3e177c811")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a124290e19a2554be009c3f177c811")
+          (LABEL
+            (POSITION 5440 3552)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 7040 2432 5376 2432)
+          (WIRE 4928 2432 5376 2432)
+          (WIRE 5376 2432 5376 4672)
+          (WIRE 5376 4672 5632 4672)
+          (PORT
+            (OBID "cprt914a6420d9b1be450572d74d6767bdc1")
+            (NAME "reg_dmonth")
+          )
+          (PORT
+            (OBID "cprt914a64204581be450572d74da457bdc1")
+            (NAME "reg_dmonth")
+          )
+          (PORT
+            (OBID "cprtd9a1860a58830155c75009c329f1a963")
+            (NAME "dmonth")
           )
         )
       )

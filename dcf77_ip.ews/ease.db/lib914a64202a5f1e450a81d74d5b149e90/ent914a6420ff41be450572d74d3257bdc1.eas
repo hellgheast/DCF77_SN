@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Sun Apr 12 10:35:09 2015")
+      (PROPERTY "STAMP_TIME" "Sun Apr 12 17:33:57 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -13,14 +13,14 @@
       (NAME "frame_register")
       (USERNAME 1)
     )
-    (GEOMETRY 0 0 1472 1408)
+    (GEOMETRY 0 0 1472 1472)
     (SIDE 0)
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1424692479 "Mon Feb 23 12:54:39 2015")
-      (MODIFIED 1428827709 "Sun Apr 12 10:35:09 2015")
+      (MODIFIED 1428852837 "Sun Apr 12 17:33:57 2015")
     )
     (PORT
       (OBID "eprt914a6420d151be450572d74d9257bdc1")
@@ -34,10 +34,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 88 40 168)
+      (GEOMETRY -40 152 40 232)
       (SIDE 3)
       (LABEL
-        (POSITION 64 128)
+        (POSITION 64 192)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -62,10 +62,10 @@
           )
         )
       )
-      (GEOMETRY -40 216 40 296)
+      (GEOMETRY -40 280 40 360)
       (SIDE 3)
       (LABEL
-        (POSITION 64 256)
+        (POSITION 64 320)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -86,10 +86,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 1112 40 1192)
+      (GEOMETRY -40 1176 40 1256)
       (SIDE 3)
       (LABEL
-        (POSITION 64 1152)
+        (POSITION 64 1216)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -110,10 +110,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 1240 40 1320)
+      (GEOMETRY -40 1304 40 1384)
       (SIDE 3)
       (LABEL
-        (POSITION 64 1280)
+        (POSITION 64 1344)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -135,10 +135,10 @@
           )
         )
       )
-      (GEOMETRY 1432 152 1512 232)
+      (GEOMETRY 1432 216 1512 296)
       (SIDE 1)
       (LABEL
-        (POSITION 1408 192)
+        (POSITION 1408 256)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 1)
@@ -160,10 +160,10 @@
           )
         )
       )
-      (GEOMETRY 1432 280 1512 360)
+      (GEOMETRY 1432 344 1512 424)
       (SIDE 1)
       (LABEL
-        (POSITION 1408 320)
+        (POSITION 1408 384)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 1)
@@ -185,10 +185,10 @@
           )
         )
       )
-      (GEOMETRY 1432 408 1512 488)
+      (GEOMETRY 1432 472 1512 552)
       (SIDE 1)
       (LABEL
-        (POSITION 1408 448)
+        (POSITION 1408 512)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 1)
@@ -210,10 +210,10 @@
           )
         )
       )
-      (GEOMETRY 1432 536 1512 616)
+      (GEOMETRY 1432 600 1512 680)
       (SIDE 1)
       (LABEL
-        (POSITION 1408 576)
+        (POSITION 1408 640)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 1)
@@ -231,20 +231,20 @@
           (MODE 2)
           (CONSTRAINT
             (DIRECTION 1)
-            (RANGE "6" "0")
+            (RANGE "5" "0")
           )
         )
       )
-      (GEOMETRY 1432 728 1512 808)
+      (GEOMETRY 1432 792 1512 872)
       (SIDE 1)
       (LABEL
-        (POSITION 1408 768)
+        (POSITION 1408 832)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 1)
         (ALIGNMENT 5)
         (FORMAT 35)
-        (TEXT "reg_dmonth(6:0)")
+        (TEXT "reg_dmonth(5:0)")
       )
     )
     (PORT
@@ -260,10 +260,10 @@
           )
         )
       )
-      (GEOMETRY 1432 856 1512 936)
+      (GEOMETRY 1432 920 1512 1000)
       (SIDE 1)
       (LABEL
-        (POSITION 1408 896)
+        (POSITION 1408 960)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 1)
@@ -285,10 +285,10 @@
           )
         )
       )
-      (GEOMETRY 1432 1048 1512 1128)
+      (GEOMETRY 1432 1112 1512 1192)
       (SIDE 1)
       (LABEL
-        (POSITION 1408 1088)
+        (POSITION 1408 1152)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 1)
@@ -310,10 +310,10 @@
           )
         )
       )
-      (GEOMETRY 1432 1176 1512 1256)
+      (GEOMETRY 1432 1240 1512 1320)
       (SIDE 1)
       (LABEL
-        (POSITION 1408 1216)
+        (POSITION 1408 1280)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 1)
@@ -334,10 +334,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 408 40 488)
+      (GEOMETRY -40 472 40 552)
       (SIDE 3)
       (LABEL
-        (POSITION 64 448)
+        (POSITION 64 512)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -358,10 +358,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 536 40 616)
+      (GEOMETRY -40 600 40 680)
       (SIDE 3)
       (LABEL
-        (POSITION 64 576)
+        (POSITION 64 640)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -383,16 +383,41 @@
           )
         )
       )
-      (GEOMETRY -40 664 40 744)
+      (GEOMETRY -40 728 40 808)
       (SIDE 3)
       (LABEL
-        (POSITION 64 704)
+        (POSITION 64 768)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
         (ALIGNMENT 3)
         (FORMAT 35)
         (TEXT "RBG(1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1242988a8a2550f3209c3d283f770")
+      (HDL_IDENT
+        (NAME "reg_recbits")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "5" "0")
+          )
+        )
+      )
+      (GEOMETRY 1432 88 1512 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1408 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "reg_recbits(5:0)")
       )
     )
     (ARCH_DECLARATION 2 "arch914a6420ff41be450572d74d6257bdc1" "behavior")
@@ -421,12 +446,13 @@
                "--     bit_count   : in     std_logic_vector(5 downto 0);"
                "--     bit_input   : in     std_logic;"
                "--     clk         : in     std_logic;"
-               "--     reg_dmonth  : out    std_logic_vector(6 downto 0);"
+               "--     reg_dmonth  : out    std_logic_vector(5 downto 0);"
                "--     reg_dweek   : out    std_logic_vector(2 downto 0);"
                "--     reg_flags   : out    std_logic_vector(3 downto 0);"
                "--     reg_hours   : out    std_logic_vector(5 downto 0);"
                "--     reg_minutes : out    std_logic_vector(6 downto 0);"
                "--     reg_month   : out    std_logic_vector(5 downto 0);"
+               "--     reg_recbits : out    std_logic_vector(5 downto 0);"
                "--     reg_status  : out    std_logic_vector(7 downto 0);"
                "--     reg_year    : out    std_logic_vector(7 downto 0);"
                "--     reset_n     : in     std_logic;"
@@ -438,11 +464,11 @@
                "architecture behavior of frame_register is"
                ""
                "--Déclarations des registres"
-               "signal reg_recbits_l		: std_logic_vector(5 downto 0) 	:=\"00000\";"
+               ""
                "signal reg_status_l         : std_logic_vector(7 downto 0) 	:=x\"00\"; "
                "signal reg_prescaler_l     	: std_logic_vector(15 downto 0)	:=x\"0000\";"
                "signal reg_flags_l        	: std_logic_vector(3 downto 0) 	:=\"0000\";"
-               "signal reg_hours_l        	: std_logic_vector(5 downto 0) 	:=\"00000\";"
+               "signal reg_hours_l        	: std_logic_vector(5 downto 0) 	:=\"000000\";"
                "signal reg_minutes_l        : std_logic_vector(6 downto 0) 	:=\"0000000\";"
                "signal reg_dmonth_l        	: std_logic_vector(5 downto 0)  :=\"000000\";"
                "signal reg_dweek_l        	: std_logic_vector(2 downto 0)  :=\"000\";"
@@ -457,51 +483,51 @@
                "  ELSIF(clk'event AND clk = '1') THEN"
                "    CASE unsigned(bit_count) IS "
                "    "
-               "			WHEN \"10000\" =>    -- 16"
+               "			WHEN \"010000\" =>    -- 16"
                "			   	reg_status_l(2) <= bit_input; --A1     "
                "			   	"
-               "			WHEN \"10001\" =>"
+               "			WHEN \"010001\" =>"
                "				reg_status_l(0) <= bit_input; --Z1  "
                "				"
-               "			WHEN \"10010\" =>"
+               "			WHEN \"010010\" =>"
                "				reg_status_l(1) <= bit_input; --Z2  				"
                "				"
-               "			WHEN \"10011\" =>                        		"
+               "			WHEN \"010011\" =>                        		"
                "				reg_status_l(3) <= bit_input; --A2    "
                "				"
                "			--WHEN \"10100\" =>;      -- 20               "
                "			"
-               "			WHEN \"10101\" =>"
+               "			WHEN \"010101\" =>"
                "				reg_minutes_l(0) <= bit_input; 				  "
                "				"
-               "			WHEN \"10110\" =>"
+               "			WHEN \"010110\" =>"
                "				reg_minutes_l(1) <= bit_input;  				"
                "				"
-               "			WHEN \"10111\" =>"
+               "			WHEN \"010111\" =>"
                "				reg_minutes_l(2) <= bit_input;  			 "
                "				"
-               "			WHEN \"11000\" =>"
+               "			WHEN \"011000\" =>"
                "				reg_minutes_l(3) <= bit_input; "
                "				 			"
-               "			WHEN \"11001\" =>"
+               "			WHEN \"011001\" =>"
                "				reg_minutes_l(4) <= bit_input; 				  "
                "				"
-               "			WHEN \"11010\" =>"
+               "			WHEN \"011010\" =>"
                "				reg_minutes_l(5) <= bit_input;   "
                "								"
-               "			WHEN \"11011\" =>"
+               "			WHEN \"011011\" =>"
                "				reg_minutes_l(6) <= bit_input;  "
                "				"
-               "			WHEN \"11100\" =>"
+               "			WHEN \"011100\" =>"
                "				reg_status_l(2) <= bit_input;  "
                "				"
-               "			WHEN \"11101\" =>"
+               "			WHEN \"011101\" =>"
                "				reg_hours_l(0) <= bit_input; "
                "				"
-               "			WHEN \"11110\" =>"
+               "			WHEN \"011110\" =>"
                "				reg_hours_l(1) <= bit_input; "
                "				"
-               "			WHEN \"11111\" =>"
+               "			WHEN \"011111\" =>"
                "				reg_hours_l(2) <= bit_input;  "
                "				"
                "			WHEN \"100000\" =>"
@@ -594,7 +620,20 @@
                "		END CASE;  "
                "	END IF;		 "
                ""
-               "end process;"
+               "end process;  "
+               ""
+               "reg_recbits <= bit_count;"
+               "reg_dmonth  <= reg_dmonth_l;"
+               "reg_dweek   <= reg_dweek_l;"
+               "reg_flags   <= reg_flags_l;"
+               "reg_hours   <= reg_hours_l;"
+               "reg_minutes <= reg_minutes_l;"
+               "reg_month   <= reg_dmonth_l;"
+               "reg_status  <= reg_status_l;"
+               "reg_year    <= reg_year_l;"
+               ""
+               ""
+               ""
                ""
                "end architecture behavior ; -- of frame_register"
                ""

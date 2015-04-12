@@ -17,7 +17,7 @@
 --     data_out    : out    std_logic_vector(7 downto 0);
 --     prescaler   : out    std_logic_vector(15 downto 0);
 --     read        : in     std_logic;
---     reg_dmonth  : in     std_logic_vector(6 downto 0);
+--     reg_dmonth  : in     std_logic_vector(5 downto 0);
 --     reg_dweek   : in     std_logic_vector(2 downto 0);
 --     reg_flags   : in     std_logic_vector(3 downto 0);
 --     reg_hours   : in     std_logic_vector(5 downto 0);
@@ -105,7 +105,9 @@ BEGIN
       WHEN c_month =>
       	   data_out <= "00" & reg_month;
       WHEN c_year => 
-      	   data_out <= reg_year;  
+      	   data_out <= reg_year;
+      WHEN OTHERS =>
+      		null;  
       	   
     END CASE;
   END IF;                                                                                

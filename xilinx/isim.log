@@ -1,0 +1,18 @@
+ISim log file
+Running: C:\Users\vincent.meier\Documents\GitHub\DCF77_SN\xilinx\DCF_77_IP_tb_isim.exe -gui 
+ISim P.49d (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# run 120s
+Simulator is doing circuit initialization process.
+at 0 ps: Note: la simulation est en cour (/dcf_77_ip_tb/stimuli/).
+Finished circuit initialization process.
+Stopped at time : 20171742 ns : File "C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/reg_mem_dcf77.vhd" Line 85
+ISim P.49d (signature 0x7708f090)
+This is a Full version of ISim.
+# run 120s
+Simulator is doing circuit initialization process.
+at 0 ps: Note: la simulation est en cour (/dcf_77_ip_tb/stimuli/).
+Finished circuit initialization process.
+Stopped at time : 30472855 ns : File "C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/div_freq.vhd" Line 50
+# run 1us

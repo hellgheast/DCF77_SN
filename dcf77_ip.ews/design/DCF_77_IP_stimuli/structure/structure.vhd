@@ -117,20 +117,24 @@ BEGIN --debut de la simulation temps t=0ns
 	--debut des tests
 	 sim_cycle(2); 
  
--- PRESCALER -----------------------------------------
+-- PRESCALER ----------------------------------------- 
+
+	 -- T = 25ns
+	 -- F = 40 MHz
+	 -- Prescaler = F/10'000 = 4000 = 0000 1111 1010 0000
 	 
 	 write <= '1'; 
 	 
-	 Adress <= x"03"; -- Low Address of Prescaler  
+	 Adress <= x"3"; -- Low Address of Prescaler  
 	 sim_cycle(1); 
 	 
-	 data_in <= "10000000"; -- Low Value of Prescaler 
+	 data_in <= "10100000"; -- Low Value of Prescaler 
 	 sim_cycle(1);	  	  	  	  
 	 
-	 Adress <= x"04"; -- High Address of Prescaler 
+	 Adress <= x"4"; -- High Address of Prescaler 
 	 sim_cycle(1);
 	 
-	 data_in <= "00110000"; -- High Value of Prescaler 
+	 data_in <= "00001111"; -- High Value of Prescaler 
 	 sim_cycle(1);
      
      write <= '0';                                                
@@ -155,117 +159,115 @@ BEGIN --debut de la simulation temps t=0ns
 	 DCF_bit('1');
 	  
 	 -- bits 15-19 (divers)
-	 DCF_bit('1'); -- bit d'appel 
-	 DCF_bit('1'); -- annonce un basculement été/hiver (A1)	 
+	 DCF_bit('0'); -- bit d'appel 
+	 DCF_bit('0'); -- annonce un basculement été/hiver (A1)	 
 	 DCF_bit('0'); -- bit de décalage horaire (Z1)
-	 DCF_bit('1'); -- bit de décalage horaire (Z2)  
-	 DCF_bit('1'); -- annonce l'ajout de sec. intercalaire (A2)
+	 DCF_bit('0'); -- bit de décalage horaire (Z2)  
+	 DCF_bit('0'); -- annonce l'ajout de sec. intercalaire (A2)
 	 
 	 -- bit de début du codage du temps
 	 DCF_bit('1'); -- bit 20 toujours à 1
 	       
 	 -- bits 21-28 (minutes)
-	 DCF_bit('1'); 
+	 DCF_bit('0'); 
+	 DCF_bit('0');
+	 DCF_bit('0');
+	 DCF_bit('0'); -- 30min BCD -> 0011 0000 -> lsb first 
 	 DCF_bit('0');
 	 DCF_bit('1');
 	 DCF_bit('1');
-	 DCF_bit('1');
-	 DCF_bit('0');
-	 DCF_bit('1');
-	 DCF_bit('1'); -- Parité 
+	 DCF_bit('0'); -- Parité paire
 	              
 	 -- bits 29-35 (heures)
 	 DCF_bit('1');
-	 DCF_bit('0');
-	 DCF_bit('1'); 
 	 DCF_bit('1');
-	 DCF_bit('1');
+	 DCF_bit('0'); 
+	 DCF_bit('0'); -- 23h BCD -> 0010 0011 -> lsb first
 	 DCF_bit('0');
-	 DCF_bit('1'); -- Parité
+	 DCF_bit('1');
+	 DCF_bit('1'); -- Parité paire
 	 
 	 -- bits 36-41 (jour du mois)
 	 DCF_bit('1');
-	 DCF_bit('1');
 	 DCF_bit('0');
+	 DCF_bit('0'); -- 19 BCD -> 0001 1001 -> lsb first
 	 DCF_bit('1');
 	 DCF_bit('1'); 
-	 DCF_bit('1');
+	 DCF_bit('0');
 	 
 	 -- bits 42-44 (jour de la semaine) : 1 = Lundi, 7 = Dimanche
-	 DCF_bit('0');
 	 DCF_bit('1');
+	 DCF_bit('1'); -- Dimanche = 7 = 111
 	 DCF_bit('1'); 
 	 
 	 -- bits 45-49 (No du mois)
-	 DCF_bit('1');
 	 DCF_bit('0');
-	 DCF_bit('1');
-	 DCF_bit('1');
-	 DCF_bit('1');
+	 DCF_bit('0');
+	 DCF_bit('1'); -- Avril = 4 = 0100
+	 DCF_bit('0');
+	 DCF_bit('0');
 	 
 	 -- bits 50-57 (année dans le siècle)
+	 DCF_bit('1');
+	 DCF_bit('0'); 
+	 DCF_bit('1');
+	 DCF_bit('0'); -- 15 BCD -> 0001 0101 -> lsb first
+	 DCF_bit('1');
 	 DCF_bit('0');
-	 DCF_bit('1'); 
-	 DCF_bit('1');
-	 DCF_bit('1');
 	 DCF_bit('0');
-	 DCF_bit('1');
-	 DCF_bit('1');
-	 DCF_bit('1'); 
-	 DCF_bit('0'); -- Parité
+	 DCF_bit('0'); 
+	 DCF_bit('1'); -- Parité paire
     
 	 DCF_end; 	   -- bit de fin de trame, aucune modulation
 	                                                         
 	 
  -- END FRAME TEST -----------------------------------------  
     
- 	sim_cycle(1);    
- 	test_signal(signal_int,'1', 1 ); -- Error 1 : End of frame is not detected  
+ --	sim_cycle(1);    
+ --	test_signal(signal_int,'1', 1 ); -- Error 1 : End of frame is not detected  
  
  -- READ DATAS ---------------------------------------------
 	 
 	 read <= '1'; 
 	 
-	 Adress <= x"06"; -- Address of Minutes  
+	 Adress <= x"6"; -- Address of Minutes  
 	 sim_cycle(1); 
 	 
-	 test_vecteur(data_out, "10110000", 2); -- Value of Minutes 
+	 test_vecteur(data_out, "00110000", 2); -- Value of Minutes 
 	 sim_cycle(1);	  	  	  	  
 	 
-	 Adress <= x"07"; -- Address of Hours 
+	 Adress <= x"7"; -- Address of Hours 
 	 sim_cycle(1);
 	 
-	 test_vecteur(data_out, "10110000", 3); -- Value of Hours 
+	 test_vecteur(data_out, "00100011", 3); -- Value of Hours 
 	 sim_cycle(1); 
 	 
-	 Adress <= x"08"; -- Address of D of Month  
+	 Adress <= x"8"; -- Address of D of Month  
 	 sim_cycle(1); 
 	 
-	 test_vecteur(data_out, "10110000", 4); -- Value of D of Month  
+	 test_vecteur(data_out, "00011001", 4); -- Value of D of Month  
 	 sim_cycle(1);	  	  	  	  
 	 
-	 Adress <= x"09"; -- Address of D of Week 
+	 Adress <= x"9"; -- Address of D of Week 
 	 sim_cycle(1);
 	 
-	 test_vecteur(data_out, "10110000", 5); -- Value of D of Week
+	 test_vecteur(data_out, "00000111", 5); -- Value of D of Week
 	 sim_cycle(1);
      
-     Adress <= x"0A"; -- Address of Month of Year 
+     Adress <= x"A"; -- Address of Num of Month 
 	 sim_cycle(1);
 	 
-	 test_vecteur(data_out, "10110000", 6); -- Value of Month of Year 
+	 test_vecteur(data_out, "00000100", 6); -- Value of Num of Month 
 	 sim_cycle(1);
      
-     Adress <= x"0B"; -- Address of Year 
+     Adress <= x"B"; -- Address of Year 
 	 sim_cycle(1);
 	 
+	 test_vecteur(data_out, "00010101", 6); -- Value of Year 
 	 sim_cycle(1);
-     
-     
+	 
      read <= '0';                     	
- 	
- 	 
-	 	
+ 		 	
 
 	sim_end <= TRUE;
 	wait;
