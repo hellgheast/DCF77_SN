@@ -62,7 +62,8 @@ run: PROCESS
    	reset_n		<= '0';
    	chip_select	<= '1'; 
  	read 		<= '0';
-	write 		<= '0';    
+	write 		<= '0';
+	dcf_77_in   <= '0';    
 
   END init;
 
