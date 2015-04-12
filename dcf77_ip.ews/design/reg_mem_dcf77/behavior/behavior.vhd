@@ -63,7 +63,7 @@ BEGIN
     IF (wr_acc = '1') THEN
       CASE Adress IS
       	WHEN c_prescaler_l => 
-      	  	 reg_prescaler(7 downto 0) <= data_in;
+      	  	 reg_prescaler(7 downto 0) <= data_in;         -- faire sim_cylce 10 dans le stimuli entre les deux adresses
       	WHEN c_prescaler_h =>
       		 reg_prescaler(15 downto 8) <= data_in;
       	WHEN OTHERS => null;
