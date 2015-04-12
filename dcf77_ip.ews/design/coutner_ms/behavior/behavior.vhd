@@ -26,14 +26,13 @@ P1:process (clk, reset_n)
 
 	begin                  
 	
-	if(reset_n) = '0' then -- reset asynchrone
-		high_ms_count 	<= (OTHERS => '0');
-		counter  		<= (OTHERS => '0'); 
+	if(reset_n = '0') then -- reset asynchrone
+		counter  <= (OTHERS => '0'); 
 		
 	elsif(clk'EVENT and clk = '1') then 
 	
 		if rising_edge_dcf_77 = '1' then
-		  counter  <= (OTHERS => '0');      
+		  	counter  <= (OTHERS => '0');      
 		  
 	    elsif freq = '1' and dcf_77_s = '1' then
 			counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1); 
