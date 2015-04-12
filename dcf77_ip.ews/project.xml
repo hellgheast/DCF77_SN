@@ -133,11 +133,6 @@
       <key type="int" value="0" name="design::C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP_stimuli.vhd"/>
       <key type="int" value="0" name="design::C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP_tb.vhd"/>
     </section>
-    <section name="DiagramView">
-      <key type="geometry" value="0,0,14699,6399" name="diag914a64200d5f1e450a81d74d0c149e90"/>
-      <key type="geometry" value="0,0,9799,4265" name="diag914a64202a5f1e450a81d74d6b149e90"/>
-      <key type="geometry" value="0,0,9912,4264" name="diagd9a12467da9f3255087209c371312af5"/>
-    </section>
     <section name="FileView">
       <key type="bool" value="true" name="design"/>
     </section>
