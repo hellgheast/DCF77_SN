@@ -91,13 +91,11 @@ run: PROCESS
 	BEGIN
 	   IF state_bit = '0' THEN
          	DCF_77_in <= '1', '0' AFTER 200 ms;
-         	wait for 1000 ms;
-        	 
        ELSIF state_bit = '1' THEN
             DCF_77_in <= '1', '0' AFTER 100 ms;
-      	    wait for 1000 ms;
-      	    
 	   END IF;
+	   wait for 1000 ms; 
+	   
   END DCF_bit;  
   
     --********** PROCEDURE "DCF_bit" **********
@@ -116,6 +114,7 @@ BEGIN --debut de la simulation temps t=0ns
 
 	--debut des tests
 	 sim_cycle(2); 
+	 reset_n <= '1';
  
 -- PRESCALER ----------------------------------------- 
 

@@ -25,8 +25,8 @@ Compiling architecture structure of entity DCF_77_IP [dcf_77_ip_default]
 Compiling architecture structure of entity DCF_77_IP_stimuli [dcf_77_ip_stimuli_default]
 Compiling architecture behaviour of entity dcf_77_ip_tb
 Time Resolution for simulation is 1ps.
-Waiting for 4 sub-compilation(s) to finish...
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 36 VHDL Units
 Built simulation executable DCF_77_IP_tb_isim.exe
-Fuse Memory Usage: 35256 KB
-Fuse CPU Usage: 483 ms
+Fuse Memory Usage: 35260 KB
+Fuse CPU Usage: 498 ms

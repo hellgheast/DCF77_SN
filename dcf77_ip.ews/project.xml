@@ -43,76 +43,76 @@
       <key type="bool" value="true" name="archd9a12467da9f3255087209c3b1312af5"/>
     </section>
     <section name="GenerationStamps">
-      <key type="string" value="1428855461" name="entd9a1860a11830155c75009c39fe1a963"/>
-      <key type="string" value="1428855461" name="archd9a1860a11830155c75009c3cfe1a963"/>
-      <key type="string" value="1428853233" name="entd9a1860a6bb20155c75009c3b5a1a963"/>
-      <key type="string" value="1428853233" name="archd9a1860a6bb20155c75009c3e5a1a963"/>
-      <key type="string" value="1428853319" name="ent914a6420f3b1be450572d74dba57bdc1"/>
-      <key type="string" value="1428853319" name="arch914a6420f3b1be450572d74dea57bdc1"/>
-      <key type="string" value="1428853233" name="ent914a64201a91be450572d74d9557bdc1"/>
-      <key type="string" value="1428853233" name="arch914a64201a91be450572d74dd557bdc1"/>
-      <key type="string" value="1428853233" name="ent914a6420ff41be450572d74d3257bdc1"/>
-      <key type="string" value="1428853233" name="arch914a6420ff41be450572d74d6257bdc1"/>
-      <key type="string" value="1428853233" name="ent914a6420c44adf458472d74d1d86b0b7"/>
-      <key type="string" value="1428853233" name="arch914a6420c44adf458472d74d4d86b0b7"/>
-      <key type="string" value="1428853233" name="ent914a6420421adf458472d74dd886b0b7"/>
-      <key type="string" value="1428853233" name="arch914a6420421adf458472d74d0986b0b7"/>
-      <key type="string" value="1428853233" name="ent914a6420f762be450572d74da3c7bdc1"/>
-      <key type="string" value="1428853233" name="arch914a6420f762be450572d74dd3c7bdc1"/>
-      <key type="string" value="1428853233" name="entd9a1e65b2ef391554a9109c3dbf681d5"/>
-      <key type="string" value="1428853233" name="archd9a1e65b2ef391554a9109c30cf681d5"/>
-      <key type="string" value="1428853233" name="ent914a6420fe33be450572d74d27e7bdc1"/>
-      <key type="string" value="1428853233" name="arch914a6420fe33be450572d74d67e7bdc1"/>
-      <key type="string" value="1428853233" name="ent914a6420e723be450572d74db4e7bdc1"/>
-      <key type="string" value="1428853233" name="arch914a6420e723be450572d74df4e7bdc1"/>
-      <key type="string" value="1428853233" name="ent914a64208903be450572d74df5d7bdc1"/>
-      <key type="string" value="1428853233" name="arch914a64208903be450572d74d16d7bdc1"/>
-      <key type="string" value="1428853233" name="ent914a6420b1102e450a81d74dd3249e90"/>
-      <key type="string" value="1428853233" name="arch914a6420b1102e450a81d74d14249e90"/>
-      <key type="string" value="1428853233" name="ent914a64207c002e450a81d74d72249e90"/>
-      <key type="string" value="1428853233" name="arch914a64207c002e450a81d74da2249e90"/>
-      <key type="string" value="1428853233" name="ent914a64200d5f1e450a81d74dfb149e90"/>
-      <key type="string" value="1428853233" name="arch914a64200d5f1e450a81d74d2c149e90"/>
-      <key type="string" value="1428856325" name="entd9a12467da9f3255087209c300312af5"/>
-      <key type="string" value="1428856325" name="archd9a12467da9f3255087209c391312af5"/>
-      <key type="string" value="1428852064" name="entd9a12467da9f3255087209c3ff212af5"/>
-      <key type="string" value="1428852064" name="archd9a12467da9f3255087209c3b1312af5"/>
+      <key type="string" value="1428866709" name="entd9a1860a11830155c75009c39fe1a963"/>
+      <key type="string" value="1428866709" name="archd9a1860a11830155c75009c3cfe1a963"/>
+      <key type="string" value="1428866709" name="entd9a1860a6bb20155c75009c3b5a1a963"/>
+      <key type="string" value="1428866709" name="archd9a1860a6bb20155c75009c3e5a1a963"/>
+      <key type="string" value="1428866709" name="ent914a6420f3b1be450572d74dba57bdc1"/>
+      <key type="string" value="1428866709" name="arch914a6420f3b1be450572d74dea57bdc1"/>
+      <key type="string" value="1428866709" name="ent914a64201a91be450572d74d9557bdc1"/>
+      <key type="string" value="1428866709" name="arch914a64201a91be450572d74dd557bdc1"/>
+      <key type="string" value="1428866709" name="ent914a6420ff41be450572d74d3257bdc1"/>
+      <key type="string" value="1428866709" name="arch914a6420ff41be450572d74d6257bdc1"/>
+      <key type="string" value="1428866710" name="ent914a6420c44adf458472d74d1d86b0b7"/>
+      <key type="string" value="1428866710" name="arch914a6420c44adf458472d74d4d86b0b7"/>
+      <key type="string" value="1428866710" name="ent914a6420421adf458472d74dd886b0b7"/>
+      <key type="string" value="1428866710" name="arch914a6420421adf458472d74d0986b0b7"/>
+      <key type="string" value="1428866710" name="ent914a6420f762be450572d74da3c7bdc1"/>
+      <key type="string" value="1428866710" name="arch914a6420f762be450572d74dd3c7bdc1"/>
+      <key type="string" value="1428866710" name="entd9a1e65b2ef391554a9109c3dbf681d5"/>
+      <key type="string" value="1428866710" name="archd9a1e65b2ef391554a9109c30cf681d5"/>
+      <key type="string" value="1428866710" name="ent914a6420fe33be450572d74d27e7bdc1"/>
+      <key type="string" value="1428866710" name="arch914a6420fe33be450572d74d67e7bdc1"/>
+      <key type="string" value="1428866710" name="ent914a6420e723be450572d74db4e7bdc1"/>
+      <key type="string" value="1428866710" name="arch914a6420e723be450572d74df4e7bdc1"/>
+      <key type="string" value="1428866710" name="ent914a64208903be450572d74df5d7bdc1"/>
+      <key type="string" value="1428866710" name="arch914a64208903be450572d74d16d7bdc1"/>
+      <key type="string" value="1428866710" name="ent914a6420b1102e450a81d74dd3249e90"/>
+      <key type="string" value="1428866710" name="arch914a6420b1102e450a81d74d14249e90"/>
+      <key type="string" value="1428866710" name="ent914a64207c002e450a81d74d72249e90"/>
+      <key type="string" value="1428866710" name="arch914a64207c002e450a81d74da2249e90"/>
+      <key type="string" value="1428866710" name="ent914a64200d5f1e450a81d74dfb149e90"/>
+      <key type="string" value="1428866710" name="arch914a64200d5f1e450a81d74d2c149e90"/>
+      <key type="string" value="1428867621" name="entd9a12467da9f3255087209c300312af5"/>
+      <key type="string" value="1428867621" name="archd9a12467da9f3255087209c391312af5"/>
+      <key type="string" value="1428866710" name="entd9a12467da9f3255087209c3ff212af5"/>
+      <key type="string" value="1428866710" name="archd9a12467da9f3255087209c3b1312af5"/>
     </section>
     <section name="GeneratedHdlFiles">
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/CheckParity.vhd" name="entd9a1860a11830155c75009c39fe1a963"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/CheckParity.vhd" name="archd9a1860a11830155c75009c3cfe1a963"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/decode_RBG.vhd" name="entd9a1860a6bb20155c75009c3b5a1a963"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/decode_RBG.vhd" name="archd9a1860a6bb20155c75009c3e5a1a963"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/reg_mem_dcf77.vhd" name="ent914a6420f3b1be450572d74dba57bdc1"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/reg_mem_dcf77.vhd" name="arch914a6420f3b1be450572d74dea57bdc1"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/sync_dcf77.vhd" name="ent914a64201a91be450572d74d9557bdc1"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/sync_dcf77.vhd" name="arch914a64201a91be450572d74dd557bdc1"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/frame_register.vhd" name="ent914a6420ff41be450572d74d3257bdc1"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/frame_register.vhd" name="arch914a6420ff41be450572d74d6257bdc1"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/counter_ms_oveflow.vhd" name="ent914a6420c44adf458472d74d1d86b0b7"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/counter_ms_oveflow.vhd" name="arch914a6420c44adf458472d74d4d86b0b7"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/rising_edge_dectection.vhd" name="ent914a6420421adf458472d74dd886b0b7"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/rising_edge_dectection.vhd" name="arch914a6420421adf458472d74d0986b0b7"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/coutner_ms.vhd" name="ent914a6420f762be450572d74da3c7bdc1"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/coutner_ms.vhd" name="arch914a6420f762be450572d74dd3c7bdc1"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/counter_ms_getN.vhd" name="entd9a1e65b2ef391554a9109c3dbf681d5"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/counter_ms_getN.vhd" name="archd9a1e65b2ef391554a9109c30cf681d5"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DecodeStateMachine.vhd" name="ent914a6420fe33be450572d74d27e7bdc1"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DecodeStateMachine.vhd" name="arch914a6420fe33be450572d74d67e7bdc1"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/counter_nbbits.vhd" name="ent914a6420e723be450572d74db4e7bdc1"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/counter_nbbits.vhd" name="arch914a6420e723be450572d74df4e7bdc1"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/decode_block.vhd" name="ent914a64208903be450572d74df5d7bdc1"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/decode_block.vhd" name="arch914a64208903be450572d74d16d7bdc1"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/decode_dcf77.vhd" name="ent914a6420b1102e450a81d74dd3249e90"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/decode_dcf77.vhd" name="arch914a6420b1102e450a81d74d14249e90"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/div_freq.vhd" name="ent914a64207c002e450a81d74d72249e90"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/div_freq.vhd" name="arch914a64207c002e450a81d74da2249e90"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP.vhd" name="ent914a64200d5f1e450a81d74dfb149e90"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP.vhd" name="arch914a64200d5f1e450a81d74d2c149e90"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP_stimuli.vhd" name="entd9a12467da9f3255087209c300312af5"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP_stimuli.vhd" name="archd9a12467da9f3255087209c391312af5"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP_tb.vhd" name="entd9a12467da9f3255087209c3ff212af5"/>
-      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP_tb.vhd" name="archd9a12467da9f3255087209c3b1312af5"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/CheckParity.vhd" name="entd9a1860a11830155c75009c39fe1a963"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/CheckParity.vhd" name="archd9a1860a11830155c75009c3cfe1a963"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/decode_RBG.vhd" name="entd9a1860a6bb20155c75009c3b5a1a963"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/decode_RBG.vhd" name="archd9a1860a6bb20155c75009c3e5a1a963"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/reg_mem_dcf77.vhd" name="ent914a6420f3b1be450572d74dba57bdc1"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/reg_mem_dcf77.vhd" name="arch914a6420f3b1be450572d74dea57bdc1"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/sync_dcf77.vhd" name="ent914a64201a91be450572d74d9557bdc1"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/sync_dcf77.vhd" name="arch914a64201a91be450572d74dd557bdc1"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/frame_register.vhd" name="ent914a6420ff41be450572d74d3257bdc1"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/frame_register.vhd" name="arch914a6420ff41be450572d74d6257bdc1"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/counter_ms_oveflow.vhd" name="ent914a6420c44adf458472d74d1d86b0b7"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/counter_ms_oveflow.vhd" name="arch914a6420c44adf458472d74d4d86b0b7"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/rising_edge_dectection.vhd" name="ent914a6420421adf458472d74dd886b0b7"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/rising_edge_dectection.vhd" name="arch914a6420421adf458472d74d0986b0b7"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/coutner_ms.vhd" name="ent914a6420f762be450572d74da3c7bdc1"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/coutner_ms.vhd" name="arch914a6420f762be450572d74dd3c7bdc1"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/counter_ms_getN.vhd" name="entd9a1e65b2ef391554a9109c3dbf681d5"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/counter_ms_getN.vhd" name="archd9a1e65b2ef391554a9109c30cf681d5"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DecodeStateMachine.vhd" name="ent914a6420fe33be450572d74d27e7bdc1"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DecodeStateMachine.vhd" name="arch914a6420fe33be450572d74d67e7bdc1"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/counter_nbbits.vhd" name="ent914a6420e723be450572d74db4e7bdc1"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/counter_nbbits.vhd" name="arch914a6420e723be450572d74df4e7bdc1"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/decode_block.vhd" name="ent914a64208903be450572d74df5d7bdc1"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/decode_block.vhd" name="arch914a64208903be450572d74d16d7bdc1"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/decode_dcf77.vhd" name="ent914a6420b1102e450a81d74dd3249e90"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/decode_dcf77.vhd" name="arch914a6420b1102e450a81d74d14249e90"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/div_freq.vhd" name="ent914a64207c002e450a81d74d72249e90"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/div_freq.vhd" name="arch914a64207c002e450a81d74da2249e90"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP.vhd" name="ent914a64200d5f1e450a81d74dfb149e90"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP.vhd" name="arch914a64200d5f1e450a81d74d2c149e90"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP_stimuli.vhd" name="entd9a12467da9f3255087209c300312af5"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP_stimuli.vhd" name="archd9a12467da9f3255087209c391312af5"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP_tb.vhd" name="entd9a12467da9f3255087209c3ff212af5"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP_tb.vhd" name="archd9a12467da9f3255087209c3b1312af5"/>
     </section>
     <section name="SimulatorCompileTimes">
       <key type="int" value="0" name="design::C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/CheckParity.vhd"/>
@@ -132,9 +132,29 @@
       <key type="int" value="0" name="design::C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP.vhd"/>
       <key type="int" value="0" name="design::C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP_stimuli.vhd"/>
       <key type="int" value="0" name="design::C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP_tb.vhd"/>
+      <key type="int" value="0" name="design::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP_stimuli.vhd"/>
+      <key type="int" value="0" name="design::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/CheckParity.vhd"/>
+      <key type="int" value="0" name="design::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/decode_RBG.vhd"/>
+      <key type="int" value="0" name="design::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/reg_mem_dcf77.vhd"/>
+      <key type="int" value="0" name="design::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/sync_dcf77.vhd"/>
+      <key type="int" value="0" name="design::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/frame_register.vhd"/>
+      <key type="int" value="0" name="design::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/counter_ms_oveflow.vhd"/>
+      <key type="int" value="0" name="design::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/rising_edge_dectection.vhd"/>
+      <key type="int" value="0" name="design::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/coutner_ms.vhd"/>
+      <key type="int" value="0" name="design::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/counter_ms_getN.vhd"/>
+      <key type="int" value="0" name="design::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DecodeStateMachine.vhd"/>
+      <key type="int" value="0" name="design::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/counter_nbbits.vhd"/>
+      <key type="int" value="0" name="design::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/decode_block.vhd"/>
+      <key type="int" value="0" name="design::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/decode_dcf77.vhd"/>
+      <key type="int" value="0" name="design::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/div_freq.vhd"/>
+      <key type="int" value="0" name="design::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP.vhd"/>
+      <key type="int" value="0" name="design::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP_tb.vhd"/>
     </section>
     <section name="FileView">
       <key type="bool" value="true" name="design"/>
+    </section>
+    <section name="DiagramView">
+      <key type="geometry" value="0,0,9158,4264" name="diagd9a12467da9f3255087209c371312af5"/>
     </section>
   </sections>
 </CONFIGURATION>
