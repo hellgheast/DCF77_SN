@@ -15,8 +15,21 @@
 -- EASE/HDL end ----------------------------------------------------------------
 
 architecture behavioral of rising_edge_dectection is
+    
+signal sync1 : std_logic;
 
-begin
+begin       
 
+P1:process(clk, reset_n) is
+	begin
+	if reset_n = '0' then
+		rising_edge_dcf_77 <= '0';
+	elsif (clk = '1' and clk'event) then
+	     sync1 <= dcf_77_s;
+	end if;
+end process;
+
+rising_edge_dcf_77 <= '1' when dcf_77_s = '1' and sync1 = '0' else '0';
+ 
 end architecture behavioral ; -- of rising_edge_dectection
 
