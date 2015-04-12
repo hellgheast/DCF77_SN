@@ -121,13 +121,13 @@ BEGIN --debut de la simulation temps t=0ns
 	 
 	 write <= '1'; 
 	 
-	 data_in <= x"03"; -- Low Address of Prescaler  
+	 Adress <= x"03"; -- Low Address of Prescaler  
 	 sim_cycle(1); 
 	 
 	 data_in <= "10000000"; -- Low Value of Prescaler 
 	 sim_cycle(1);	  	  	  	  
 	 
-	 data_in <= x"04"; -- High Address of Prescaler 
+	 Adress <= x"04"; -- High Address of Prescaler 
 	 sim_cycle(1);
 	 
 	 data_in <= "00110000"; -- High Value of Prescaler 
@@ -226,37 +226,37 @@ BEGIN --debut de la simulation temps t=0ns
 	 
 	 read <= '1'; 
 	 
-	 data_in <= x"06"; -- Address of Minutes  
+	 Adress <= x"06"; -- Address of Minutes  
 	 sim_cycle(1); 
 	 
-	 test_vecteur(data_out, "xxxx", 2); -- Value of Minutes 
+	 test_vecteur(data_out, "10110000", 2); -- Value of Minutes 
 	 sim_cycle(1);	  	  	  	  
 	 
-	 data_in <= x"07"; -- Address of Hours 
+	 Adress <= x"07"; -- Address of Hours 
 	 sim_cycle(1);
 	 
-	 test_vecteur(data_out, "xxxx", 3); -- Value of Hours 
+	 test_vecteur(data_out, "10110000", 3); -- Value of Hours 
 	 sim_cycle(1); 
 	 
-	 data_in <= x"08"; -- Address of D of Month  
+	 Adress <= x"08"; -- Address of D of Month  
 	 sim_cycle(1); 
 	 
-	 test_vecteur(data_out, "xxxx", 4); -- Value of D of Month  
+	 test_vecteur(data_out, "10110000", 4); -- Value of D of Month  
 	 sim_cycle(1);	  	  	  	  
 	 
-	 data_in <= x"09"; -- Address of D of Week 
+	 Adress <= x"09"; -- Address of D of Week 
 	 sim_cycle(1);
 	 
-	 test_vecteur(data_out, "XXXX", 5); -- Value of D of Week
+	 test_vecteur(data_out, "10110000", 5); -- Value of D of Week
 	 sim_cycle(1);
      
-     data_in <= 0x0A; -- Address of Month of Year 
+     Adress <= x"0A"; -- Address of Month of Year 
 	 sim_cycle(1);
 	 
-	 test_vecteur(data_out, "XXXX", 6); -- Value of Month of Year 
+	 test_vecteur(data_out, "10110000", 6); -- Value of Month of Year 
 	 sim_cycle(1);
      
-     data_in <= x"0B"; -- Address of Year 
+     Adress <= x"0B"; -- Address of Year 
 	 sim_cycle(1);
 	 
 	 sim_cycle(1);
