@@ -2,9 +2,9 @@ Command line:
    DCF_77_IP_tb_isim.exe
      -simmode  gui
      -simrunnum  0
-     -socket  59104
+     -socket  61126
 
-Sun Apr 12 21:52:25 2015
+Sun Apr 12 23:01:37 2015
 
 
- Elaboration Time: 0.0624 sec
+ Elaboration Time: 0.0936 sec

@@ -4,9 +4,9 @@
 --
 -- Ease library  : design
 -- HDL library   : design
--- Host name     : INF13-BENSALAHM
--- User name     : mohammed.bensalah
--- Time stamp    : Sun Apr 12 21:50:36 2015
+-- Host name     : INF13-MEIERV
+-- User name     : vincent.meier
+-- Time stamp    : Sun Apr 12 23:00:17 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design.DCF_77_IP_stimuli
--- Last modified : Sun Apr 12 21:47:20 2015.
+-- Last modified : Sun Apr 12 23:00:16 2015.
 --------------------------------------------------------------------------------
 
 
@@ -42,7 +42,7 @@ end entity DCF_77_IP_stimuli;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design.DCF_77_IP_stimuli.structure
--- Last modified : Sun Apr 12 21:47:20 2015.
+-- Last modified : Sun Apr 12 23:00:16 2015.
 --------------------------------------------------------------------------------
 
 
@@ -139,6 +139,7 @@ BEGIN --debut de la simulation temps t=0ns
 
 	--debut des tests
 	 sim_cycle(2); 
+	 reset_n <= '1';
  
 -- PRESCALER ----------------------------------------- 
 
