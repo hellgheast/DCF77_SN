@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Fri Apr 10 17:04:34 2015")
+      (PROPERTY "STAMP_TIME" "Sun Apr 12 10:35:09 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1424694079 "Mon Feb 23 13:21:19 2015")
-      (MODIFIED 1428678274 "Fri Apr 10 17:04:34 2015")
+      (MODIFIED 1428827709 "Sun Apr 12 10:35:09 2015")
     )
     (PORT
       (OBID "eprt914a6420b4b1be450572d74d1b57bdc1")
@@ -613,6 +613,9 @@
                "     --      data_out <= \"00\"& reg_recbits;      /!\\ Relier la sortie \"bitcount\" au bloc registre mémoire !"
                "      WHEN c_status =>"
                "      	   data_out <= reg_status;"
+               "      	   data_out(7) <= ParityD;"
+               "      	   data_out(6) <= ParityH;"
+               "      	   data_out(5) <= ParityM;     	   "
                "      WHEN c_prescaler_l =>"
                "      	   data_out <= reg_prescaler(7 downto 0);"
                "      WHEN c_prescaler_h =>"

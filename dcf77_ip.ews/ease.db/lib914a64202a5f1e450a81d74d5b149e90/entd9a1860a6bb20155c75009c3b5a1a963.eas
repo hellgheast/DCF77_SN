@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Fri Apr 10 17:21:27 2015")
+      (PROPERTY "STAMP_TIME" "Sun Apr 12 10:35:09 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1427123126 "Mon Mar 23 16:05:26 2015")
-      (MODIFIED 1428679287 "Fri Apr 10 17:21:27 2015")
+      (MODIFIED 1428827709 "Sun Apr 12 10:35:09 2015")
     )
     (PORT
       (OBID "eprtd9a1860ad0c20155c75009c37de1a963")
@@ -262,9 +262,9 @@
                "	end if;"
                "end process; "
                ""
-               "RBG <= \"00\" when getNot = '1' and  busyTemp = '0' and readyTemp '0' else"
-               "	   \"01\" when getNot = '0' and  busyTemp = '0' and readyTemp '1' else "
-               "	   \"10\" when getNot = '0' and  busyTemp = '1' and readyTemp '0' else "
+               "RBG <= \"00\" when getNot = '1' and  busyTemp = '0' and readyTemp = '0' else"
+               "	   \"01\" when getNot = '0' and  busyTemp = '1' and readyTemp = '0' else "
+               "	   \"10\" when getNot = '0' and  busyTemp = '0' and readyTemp = '1' else "
                "	   \"11\";"
                ""
                "end architecture behavior ; -- of decode_RBG"

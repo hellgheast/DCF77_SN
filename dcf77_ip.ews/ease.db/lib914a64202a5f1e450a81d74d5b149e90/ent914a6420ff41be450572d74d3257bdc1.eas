@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Fri Apr 10 17:21:39 2015")
+      (PROPERTY "STAMP_TIME" "Sun Apr 12 10:35:09 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1424692479 "Mon Feb 23 12:54:39 2015")
-      (MODIFIED 1428679299 "Fri Apr 10 17:21:39 2015")
+      (MODIFIED 1428827709 "Sun Apr 12 10:35:09 2015")
     )
     (PORT
       (OBID "eprt914a6420d151be450572d74d9257bdc1")
@@ -585,10 +585,10 @@
                "			WHEN \"111010\" =>"
                "				reg_status_l(4) <= bit_input;  --Date"
                "				"
-               "			--WHEN \"110011\" =>; "
+               "			--WHEN \"110011\" =>;        -- 59"
                "			"
                "			WHEN OTHERS =>"
-               "				null;"
+               "				reg_status_l(1 downto 0) <= RBG;   -- Envoie les informations externes à la trame dans les autres cas."
                "			"
                "		"
                "		END CASE;  "

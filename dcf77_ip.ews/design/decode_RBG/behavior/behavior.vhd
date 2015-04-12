@@ -64,9 +64,9 @@ begin
 	end if;
 end process; 
 
-RBG <= "00" when getNot = '1' and  busyTemp = '0' and readyTemp '0' else
-	   "01" when getNot = '0' and  busyTemp = '0' and readyTemp '1' else 
-	   "10" when getNot = '0' and  busyTemp = '1' and readyTemp '0' else 
+RBG <= "00" when getNot = '1' and  busyTemp = '0' and readyTemp = '0' else
+	   "01" when getNot = '0' and  busyTemp = '1' and readyTemp = '0' else 
+	   "10" when getNot = '0' and  busyTemp = '0' and readyTemp = '1' else 
 	   "11";
 
 end architecture behavior ; -- of decode_RBG
