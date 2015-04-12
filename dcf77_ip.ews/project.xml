@@ -16,8 +16,8 @@
       <key type="bool" value="false" name="StartBrowser"/>
     </section>
     <section name="Markers">
-      <key type="string" value="design:DCF_77_IP_tb:&lt;Internal>" name="CurrentPath"/>
-      <key type="string" value="diagd9a12467da9f3255087209c371312af5" name="CurrentDiagram"/>
+      <key type="string" value="design:DCF_77_IP:&lt;Internal>" name="CurrentPath"/>
+      <key type="string" value="diag914a64200d5f1e450a81d74d0c149e90" name="CurrentDiagram"/>
       <key type="string" value="ent914a64200d5f1e450a81d74dfb149e90" name="HdlOutputObject"/>
     </section>
     <section name="Browser">
@@ -42,7 +42,7 @@
     </section>
     <section name="DiagramView">
       <key type="geometry" value="0,0,11386,4265" name="diag914a64202a5f1e450a81d74d6b149e90"/>
-      <key type="geometry" value="0,0,17085,6400" name="diag914a64200d5f1e450a81d74d0c149e90"/>
+      <key type="geometry" value="0,1319,9611,4880" name="diag914a64200d5f1e450a81d74d0c149e90"/>
       <key type="geometry" value="0,0,11383,4264" name="diagd9a12467da9f3255087209c371312af5"/>
       <key type="geometry" value="0,0,11388,4265" name="diag914a6420b1102e450a81d74de3249e90"/>
     </section>

@@ -23,6 +23,7 @@
 --     reg_hours   : in     std_logic_vector(5 downto 0);
 --     reg_minutes : in     std_logic_vector(6 downto 0);
 --     reg_month   : in     std_logic_vector(5 downto 0);
+--     reg_recbits : in     std_logic_vector(5 downto 0);
 --     reg_status  : in     std_logic_vector(7 downto 0);
 --     reg_year    : in     std_logic_vector(7 downto 0);
 --     reset_n     : in     std_logic;
@@ -80,8 +81,8 @@ BEGIN
   IF rd_acc = '1' THEN
     data_out <= (OTHERS => '0');
     CASE Adress IS
-   --   WHEN c_rec_bits =>
-     --      data_out <= "00"& reg_recbits;      /!\ Relier la sortie "bitcount" au bloc registre mémoire !
+      WHEN c_rec_bits =>
+           data_out <= "00"& reg_recbits;     
       WHEN c_status =>
       	   data_out <= reg_status;
       	   data_out(7) <= ParityD;

@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Sun Apr 12 10:35:09 2015")
+      (PROPERTY "STAMP_TIME" "Sun Apr 12 11:03:52 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -13,14 +13,14 @@
       (NAME "reg_mem_dcf77")
       (USERNAME 1)
     )
-    (GEOMETRY 0 0 1472 3008)
+    (GEOMETRY 0 0 1536 3328)
     (SIDE 0)
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1424694079 "Mon Feb 23 13:21:19 2015")
-      (MODIFIED 1428827709 "Sun Apr 12 10:35:09 2015")
+      (MODIFIED 1428829432 "Sun Apr 12 11:03:52 2015")
     )
     (PORT
       (OBID "eprt914a6420b4b1be450572d74d1b57bdc1")
@@ -34,10 +34,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 2712 40 2792)
+      (GEOMETRY -40 3096 40 3176)
       (SIDE 3)
       (LABEL
-        (POSITION 64 2752)
+        (POSITION 64 3136)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -58,10 +58,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 2840 40 2920)
+      (GEOMETRY -40 3224 40 3304)
       (SIDE 3)
       (LABEL
-        (POSITION 64 2880)
+        (POSITION 64 3264)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -86,10 +86,10 @@
           )
         )
       )
-      (GEOMETRY -40 2136 40 2216)
+      (GEOMETRY -40 2456 40 2536)
       (SIDE 3)
       (LABEL
-        (POSITION 64 2176)
+        (POSITION 64 2496)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -111,10 +111,10 @@
           )
         )
       )
-      (GEOMETRY -40 2008 40 2088)
+      (GEOMETRY -40 2328 40 2408)
       (SIDE 3)
       (LABEL
-        (POSITION 64 2048)
+        (POSITION 64 2368)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -136,10 +136,10 @@
           )
         )
       )
-      (GEOMETRY -40 1112 40 1192)
+      (GEOMETRY -40 1432 40 1512)
       (SIDE 3)
       (LABEL
-        (POSITION 64 1152)
+        (POSITION 64 1472)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -161,10 +161,10 @@
           )
         )
       )
-      (GEOMETRY -40 1240 40 1320)
+      (GEOMETRY -40 1560 40 1640)
       (SIDE 3)
       (LABEL
-        (POSITION 64 1280)
+        (POSITION 64 1600)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -186,10 +186,10 @@
           )
         )
       )
-      (GEOMETRY -40 1368 40 1448)
+      (GEOMETRY -40 1688 40 1768)
       (SIDE 3)
       (LABEL
-        (POSITION 64 1408)
+        (POSITION 64 1728)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -211,10 +211,10 @@
           )
         )
       )
-      (GEOMETRY -40 1496 40 1576)
+      (GEOMETRY -40 1816 40 1896)
       (SIDE 3)
       (LABEL
-        (POSITION 64 1536)
+        (POSITION 64 1856)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -236,10 +236,10 @@
           )
         )
       )
-      (GEOMETRY -40 1688 40 1768)
+      (GEOMETRY -40 2008 40 2088)
       (SIDE 3)
       (LABEL
-        (POSITION 64 1728)
+        (POSITION 64 2048)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -261,10 +261,10 @@
           )
         )
       )
-      (GEOMETRY -40 1816 40 1896)
+      (GEOMETRY -40 2136 40 2216)
       (SIDE 3)
       (LABEL
-        (POSITION 64 1856)
+        (POSITION 64 2176)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -310,10 +310,10 @@
           )
         )
       )
-      (GEOMETRY 1432 792 1512 872)
+      (GEOMETRY 1496 792 1576 872)
       (SIDE 1)
       (LABEL
-        (POSITION 1408 832)
+        (POSITION 1472 832)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 1)
@@ -460,10 +460,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 2584 40 2664)
+      (GEOMETRY -40 2840 40 2920)
       (SIDE 3)
       (LABEL
-        (POSITION 64 2624)
+        (POSITION 64 2880)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -481,10 +481,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 2456 40 2536)
+      (GEOMETRY -40 2712 40 2792)
       (SIDE 3)
       (LABEL
-        (POSITION 64 2496)
+        (POSITION 64 2752)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -502,16 +502,41 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 2328 40 2408)
+      (GEOMETRY -40 2584 40 2664)
       (SIDE 3)
       (LABEL
-        (POSITION 64 2368)
+        (POSITION 64 2624)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
         (ALIGNMENT 3)
         (FORMAT 35)
         (TEXT "ParityH")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1347ce843a255427209c3e7d0aec1")
+      (HDL_IDENT
+        (NAME "reg_recbits")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "5" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 1240 40 1320)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1280)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reg_recbits(5:0)")
       )
     )
     (ARCH_DECLARATION 2 "arch914a6420f3b1be450572d74dea57bdc1" "behavior")
@@ -552,6 +577,7 @@
                "--     reg_hours   : in     std_logic_vector(5 downto 0);"
                "--     reg_minutes : in     std_logic_vector(6 downto 0);"
                "--     reg_month   : in     std_logic_vector(5 downto 0);"
+               "--     reg_recbits : in     std_logic_vector(5 downto 0);"
                "--     reg_status  : in     std_logic_vector(7 downto 0);"
                "--     reg_year    : in     std_logic_vector(7 downto 0);"
                "--     reset_n     : in     std_logic;"
@@ -609,8 +635,8 @@
                "  IF rd_acc = '1' THEN"
                "    data_out <= (OTHERS => '0');"
                "    CASE Adress IS"
-               "   --   WHEN c_rec_bits =>"
-               "     --      data_out <= \"00\"& reg_recbits;      /!\\ Relier la sortie \"bitcount\" au bloc registre mémoire !"
+               "      WHEN c_rec_bits =>"
+               "           data_out <= \"00\"& reg_recbits;     "
                "      WHEN c_status =>"
                "      	   data_out <= reg_status;"
                "      	   data_out(7) <= ParityD;"
