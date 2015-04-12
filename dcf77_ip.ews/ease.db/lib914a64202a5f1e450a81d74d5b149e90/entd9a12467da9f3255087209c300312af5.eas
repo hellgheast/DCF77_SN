@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Sun Apr 12 21:47:20 2015")
+      (PROPERTY "STAMP_TIME" "Sun Apr 12 23:14:21 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1428421037 "Tue Apr 07 17:37:17 2015")
-      (MODIFIED 1428868040 "Sun Apr 12 21:47:20 2015")
+      (MODIFIED 1428873260 "Sun Apr 12 23:14:20 2015")
     )
     (PORT
       (OBID "eprtd9a12467da9f3255087209c310312af5")
@@ -421,6 +421,7 @@
                ""
                "	--debut des tests"
                "	 sim_cycle(2); "
+               "	 reset_n <= '1';"
                " "
                "-- PRESCALER ----------------------------------------- "
                ""

@@ -6,7 +6,7 @@
 -- HDL library   : design
 -- Host name     : INF13-MEIERV
 -- User name     : vincent.meier
--- Time stamp    : Sun Apr 12 23:00:17 2015
+-- Time stamp    : Sun Apr 12 23:14:50 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design.rising_edge_dectection
--- Last modified : Sun Apr 12 23:00:16 2015.
+-- Last modified : Sun Apr 12 23:14:20 2015.
 --------------------------------------------------------------------------------
 
 
@@ -35,7 +35,7 @@ end entity rising_edge_dectection;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design.rising_edge_dectection.behavioral
--- Last modified : Sun Apr 12 23:00:16 2015.
+-- Last modified : Sun Apr 12 23:14:20 2015.
 --------------------------------------------------------------------------------
 
 

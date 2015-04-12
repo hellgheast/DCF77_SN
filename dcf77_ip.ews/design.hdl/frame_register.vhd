@@ -4,9 +4,9 @@
 --
 -- Ease library  : design
 -- HDL library   : design
--- Host name     : INF13-BENSALAHM
--- User name     : mohammed.bensalah
--- Time stamp    : Sun Apr 12 21:50:36 2015
+-- Host name     : INF13-MEIERV
+-- User name     : vincent.meier
+-- Time stamp    : Sun Apr 12 23:14:50 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design.frame_register
--- Last modified : Sun Apr 12 17:33:57 2015.
+-- Last modified : Sun Apr 12 23:14:20 2015.
 --------------------------------------------------------------------------------
 
 
@@ -47,7 +47,7 @@ end entity frame_register;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design.frame_register.behavior
--- Last modified : Sun Apr 12 17:33:57 2015.
+-- Last modified : Sun Apr 12 23:14:20 2015.
 --------------------------------------------------------------------------------
 
 
@@ -69,7 +69,17 @@ begin
      
 process(clk,reset_n)
 begin
-  IF (reset_n = '0') THEN
+  IF (reset_n = '0') THEN 
+  	reg_status_l   <= x"00";
+	reg_prescaler_l<= x"0000";
+	reg_flags_l    <= "0000";
+	reg_hours_l    <= "000000";
+	reg_minutes_l  <= "0000000";
+	reg_dmonth_l   <= "000000";
+	reg_dweek_l    <= "000";
+	reg_month_l    <= "000000";
+	reg_year_l     <= x"00"; 
+	
   ELSIF(clk'event AND clk = '1') THEN
     CASE unsigned(bit_count) IS 
     

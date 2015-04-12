@@ -6,7 +6,7 @@
 -- HDL library   : design
 -- Host name     : INF13-MEIERV
 -- User name     : vincent.meier
--- Time stamp    : Sun Apr 12 23:00:17 2015
+-- Time stamp    : Sun Apr 12 23:14:50 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design.DCF_77_IP_stimuli
--- Last modified : Sun Apr 12 23:00:16 2015.
+-- Last modified : Sun Apr 12 23:14:20 2015.
 --------------------------------------------------------------------------------
 
 
@@ -42,7 +42,7 @@ end entity DCF_77_IP_stimuli;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design.DCF_77_IP_stimuli.structure
--- Last modified : Sun Apr 12 23:00:16 2015.
+-- Last modified : Sun Apr 12 23:14:20 2015.
 --------------------------------------------------------------------------------
 
 

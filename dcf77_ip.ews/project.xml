@@ -16,8 +16,8 @@
       <key type="bool" value="false" name="StartBrowser"/>
     </section>
     <section name="Markers">
-      <key type="string" value="design:DCF_77_IP_tb:&lt;Internal>" name="CurrentPath"/>
-      <key type="string" value="diagd9a12467da9f3255087209c371312af5" name="CurrentDiagram"/>
+      <key type="string" value="design:DCF_77_IP_tb:&lt;Internal>/compd9a12467da9f3255087209c381312af5" name="CurrentPath"/>
+      <key type="string" value="diag914a64200d5f1e450a81d74d0c149e90" name="CurrentDiagram"/>
       <key type="string" value="entd9a12467da9f3255087209c3ff212af5" name="HdlOutputObject"/>
     </section>
     <section name="Browser">
@@ -55,8 +55,8 @@
       <key type="string" value="1428866709" name="arch914a6420ff41be450572d74d6257bdc1"/>
       <key type="string" value="1428866710" name="ent914a6420c44adf458472d74d1d86b0b7"/>
       <key type="string" value="1428866710" name="arch914a6420c44adf458472d74d4d86b0b7"/>
-      <key type="string" value="1428866710" name="ent914a6420421adf458472d74dd886b0b7"/>
-      <key type="string" value="1428866710" name="arch914a6420421adf458472d74d0986b0b7"/>
+      <key type="string" value="1428872418" name="ent914a6420421adf458472d74dd886b0b7"/>
+      <key type="string" value="1428872418" name="arch914a6420421adf458472d74d0986b0b7"/>
       <key type="string" value="1428866710" name="ent914a6420f762be450572d74da3c7bdc1"/>
       <key type="string" value="1428866710" name="arch914a6420f762be450572d74dd3c7bdc1"/>
       <key type="string" value="1428866710" name="entd9a1e65b2ef391554a9109c3dbf681d5"/>
@@ -73,8 +73,8 @@
       <key type="string" value="1428866710" name="arch914a64207c002e450a81d74da2249e90"/>
       <key type="string" value="1428866710" name="ent914a64200d5f1e450a81d74dfb149e90"/>
       <key type="string" value="1428866710" name="arch914a64200d5f1e450a81d74d2c149e90"/>
-      <key type="string" value="1428867621" name="entd9a12467da9f3255087209c300312af5"/>
-      <key type="string" value="1428867621" name="archd9a12467da9f3255087209c391312af5"/>
+      <key type="string" value="1428872417" name="entd9a12467da9f3255087209c300312af5"/>
+      <key type="string" value="1428872417" name="archd9a12467da9f3255087209c391312af5"/>
       <key type="string" value="1428866710" name="entd9a12467da9f3255087209c3ff212af5"/>
       <key type="string" value="1428866710" name="archd9a12467da9f3255087209c3b1312af5"/>
     </section>
@@ -91,8 +91,8 @@
       <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/frame_register.vhd" name="arch914a6420ff41be450572d74d6257bdc1"/>
       <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/counter_ms_oveflow.vhd" name="ent914a6420c44adf458472d74d1d86b0b7"/>
       <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/counter_ms_oveflow.vhd" name="arch914a6420c44adf458472d74d4d86b0b7"/>
-      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/rising_edge_dectection.vhd" name="ent914a6420421adf458472d74dd886b0b7"/>
-      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/rising_edge_dectection.vhd" name="arch914a6420421adf458472d74d0986b0b7"/>
+      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/rising_edge_dectection.vhd" name="ent914a6420421adf458472d74dd886b0b7"/>
+      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/rising_edge_dectection.vhd" name="arch914a6420421adf458472d74d0986b0b7"/>
       <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/coutner_ms.vhd" name="ent914a6420f762be450572d74da3c7bdc1"/>
       <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/coutner_ms.vhd" name="arch914a6420f762be450572d74dd3c7bdc1"/>
       <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/counter_ms_getN.vhd" name="entd9a1e65b2ef391554a9109c3dbf681d5"/>
@@ -109,8 +109,8 @@
       <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/div_freq.vhd" name="arch914a64207c002e450a81d74da2249e90"/>
       <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP.vhd" name="ent914a64200d5f1e450a81d74dfb149e90"/>
       <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP.vhd" name="arch914a64200d5f1e450a81d74d2c149e90"/>
-      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP_stimuli.vhd" name="entd9a12467da9f3255087209c300312af5"/>
-      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP_stimuli.vhd" name="archd9a12467da9f3255087209c391312af5"/>
+      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP_stimuli.vhd" name="entd9a12467da9f3255087209c300312af5"/>
+      <key type="string" value="C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP_stimuli.vhd" name="archd9a12467da9f3255087209c391312af5"/>
       <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP_tb.vhd" name="entd9a12467da9f3255087209c3ff212af5"/>
       <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP_tb.vhd" name="archd9a12467da9f3255087209c3b1312af5"/>
     </section>
@@ -154,7 +154,10 @@
       <key type="bool" value="true" name="design"/>
     </section>
     <section name="DiagramView">
-      <key type="geometry" value="0,0,9158,4264" name="diagd9a12467da9f3255087209c371312af5"/>
+      <key type="geometry" value="0,0,9794,4264" name="diagd9a12467da9f3255087209c371312af5"/>
+      <key type="geometry" value="0,0,14699,6399" name="diag914a64200d5f1e450a81d74d0c149e90"/>
+      <key type="geometry" value="0,0,9794,4264" name="diag914a6420b1102e450a81d74de3249e90"/>
+      <key type="geometry" value="0,0,9794,4264" name="diag914a64208903be450572d74d06d7bdc1"/>
     </section>
   </sections>
 </CONFIGURATION>

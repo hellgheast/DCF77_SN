@@ -45,15 +45,15 @@ begin
 process(clk,reset_n)
 begin
   IF (reset_n = '0') THEN 
-  	reg_status_l   <= '0';
-	reg_prescaler_l<= '0';
-	reg_flags_l    <= '0';
-	reg_hours_l    <= '0';
-	reg_minutes_l  <= '0';
-	reg_dmonth_l   <= '0';
-	reg_dweek_l    <= '0';
-	reg_month_l    <= '0';
-	reg_year_l     <= '0'; 
+  	reg_status_l   <= x"00";
+	reg_prescaler_l<= x"0000";
+	reg_flags_l    <= "0000";
+	reg_hours_l    <= "000000";
+	reg_minutes_l  <= "0000000";
+	reg_dmonth_l   <= "000000";
+	reg_dweek_l    <= "000";
+	reg_month_l    <= "000000";
+	reg_year_l     <= x"00"; 
 	
   ELSIF(clk'event AND clk = '1') THEN
     CASE unsigned(bit_count) IS 
