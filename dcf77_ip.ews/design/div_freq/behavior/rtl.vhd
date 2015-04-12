@@ -26,8 +26,8 @@ P1:process (clk, reset_n)
 		freq <= '0';
 		counter <= (OTHERS => '0');
 	elsif(clk'EVENT and clk = '1') then
-		if UNSIGNED(counter) = 1 then
-			counter <= div;
+		if UNSIGNED(counter) = 0 then
+			counter <= std_logic_vector(UNSIGNED(div) - 1);
 			freq <= '1';
 		else
 			counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) - 1);
