@@ -91,11 +91,11 @@ run: PROCESS
 	BEGIN
 	   IF state_bit = '0' THEN
          	DCF_77_in <= '1', '0' AFTER 200 ms;
-         	wait 800 ms;
+         	wait for 1000 ms;
         	 
        ELSIF state_bit = '1' THEN
             DCF_77_in <= '1', '0' AFTER 100 ms;
-      	    wait 900 ms;
+      	    wait for 1000 ms;
       	    
 	   END IF;
   END DCF_bit;  
@@ -104,7 +104,7 @@ run: PROCESS
   PROCEDURE DCF_end IS 
 	BEGIN
         DCF_77_in <= '0';
-      	wait 1000 ms;
+      	wait for 1000 ms;
    	
   END DCF_end;
 

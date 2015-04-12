@@ -2,27 +2,9 @@ Command line:
    DCF_77_IP_tb_isim.exe
      -simmode  gui
      -simrunnum  0
-     -socket  61030
+     -socket  57972
 
-Sun Apr 12 18:36:59 2015
+Sun Apr 12 21:21:47 2015
 
 
- Elaboration Time: 0.0468 sec
-
- Current Memory Usage: 825.303 Meg
-
- Total Signals          : 203
- Total Nets             : 266
- Total Signal Drivers   : 64
- Total Blocks           : 19
- Total Primitive Blocks : 15
- Total Processes        : 36
- Total Traceable Variables  : 27
- Total Scalar Nets and Variables : 799
-
- Total Simulation Time: 5.66284 sec
-
- Current Memory Usage: 825.303 Meg
-
-Sun Apr 12 18:39:28 2015
-
+ Elaboration Time: 0.140401 sec

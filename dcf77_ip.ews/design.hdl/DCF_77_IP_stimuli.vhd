@@ -4,9 +4,9 @@
 --
 -- Ease library  : design
 -- HDL library   : design
--- Host name     : INF13-MEIERV
--- User name     : vincent.meier
--- Time stamp    : Sun Apr 12 18:32:05 2015
+-- Host name     : INF13-BENSALAHM
+-- User name     : mohammed.bensalah
+-- Time stamp    : Sun Apr 12 21:25:19 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design.DCF_77_IP_stimuli
--- Last modified : Sun Apr 12 18:32:04 2015.
+-- Last modified : Sun Apr 12 21:25:18 2015.
 --------------------------------------------------------------------------------
 
 
@@ -42,7 +42,7 @@ end entity DCF_77_IP_stimuli;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design.DCF_77_IP_stimuli.structure
--- Last modified : Sun Apr 12 18:32:04 2015.
+-- Last modified : Sun Apr 12 21:25:18 2015.
 --------------------------------------------------------------------------------
 
 
@@ -116,11 +116,11 @@ run: PROCESS
 	BEGIN
 	   IF state_bit = '0' THEN
          	DCF_77_in <= '1', '0' AFTER 200 ms;
-         	wait for 800 ms;
+         	wait for 1000 ms;
         	 
        ELSIF state_bit = '1' THEN
             DCF_77_in <= '1', '0' AFTER 100 ms;
-      	    wait for 900 ms;
+      	    wait for 1000 ms;
       	    
 	   END IF;
   END DCF_bit;  

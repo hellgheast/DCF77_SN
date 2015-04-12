@@ -4,9 +4,9 @@
 --
 -- Ease library  : design
 -- HDL library   : design
--- Host name     : INF13-MEIERV
--- User name     : vincent.meier
--- Time stamp    : Sun Apr 12 17:21:04 2015
+-- Host name     : INF13-BENSALAHM
+-- User name     : mohammed.bensalah
+-- Time stamp    : Sun Apr 12 21:25:09 2015
 --
 -- Designed by   : 
 -- Company       : 

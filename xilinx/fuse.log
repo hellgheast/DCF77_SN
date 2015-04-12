@@ -1,4 +1,4 @@
-Running: fuse.exe -relaunch "design.DCF_77_IP_tb" -o "DCF_77_IP_tb_isim.exe" 
+Running: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe design.DCF_77_IP_tb -o DCF_77_IP_tb_isim.exe 
 ISim P.49d (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
@@ -25,8 +25,8 @@ Compiling architecture structure of entity DCF_77_IP [dcf_77_ip_default]
 Compiling architecture structure of entity DCF_77_IP_stimuli [dcf_77_ip_stimuli_default]
 Compiling architecture behaviour of entity dcf_77_ip_tb
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
+Waiting for 4 sub-compilation(s) to finish...
 Compiled 36 VHDL Units
 Built simulation executable DCF_77_IP_tb_isim.exe
-Fuse Memory Usage: 35328 KB
-Fuse CPU Usage: 780 ms
+Fuse Memory Usage: 35256 KB
+Fuse CPU Usage: 483 ms
