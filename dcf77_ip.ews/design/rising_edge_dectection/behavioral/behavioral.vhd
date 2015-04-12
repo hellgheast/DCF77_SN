@@ -16,7 +16,7 @@
 
 architecture behavioral of rising_edge_dectection is
     
-signal sync1 : std_logic;
+signal sync1 : std_logic = '0';
 
 begin       
 
