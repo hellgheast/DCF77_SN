@@ -93,9 +93,9 @@ BEGIN
            data_out <= "00"& reg_recbits;     
       WHEN c_status =>
       	   data_out <= reg_status;
-      	   data_out(7) <= ParityD;
-      	   data_out(6) <= ParityH;
-      	   data_out(5) <= ParityM;     	   
+      	   data_out(7) <= ParityD xnor reg_status(4);
+      	   data_out(6) <= ParityH xnor reg_status(3);
+      	   data_out(5) <= ParityM xnor reg_status(2);     	   
       WHEN c_prescaler_l =>
       	   data_out <= reg_prescaler(7 downto 0);
       WHEN c_prescaler_h =>
