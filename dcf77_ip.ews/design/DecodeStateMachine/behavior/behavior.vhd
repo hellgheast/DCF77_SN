@@ -73,11 +73,11 @@ P1:process (clk, reset_n)
    				end if;
    				
    			when c_BIT_DECODE =>  -- Décodage du numéro de bit (59e ou autre)
-   			    start <= '0';   
-   			    if dcf_77_s = '0' then
-   		   			
+   			    start <= '0';  
+   			     
+   			    if dcf_77_s = '0' then	
    					if sec_overflow = '1' then   -- 59e bit -> stop
-   						stop_temp_intern  <= '1';  
+   						stop_temp_intern <= '1';  
    						stop  <= '1';  
    						StateMachine <= c_DCF_DETECT;  	
   					else
@@ -89,10 +89,10 @@ P1:process (clk, reset_n)
    											
    			when c_STATE_DECODE => -- Décodage de l'état du bit actuel de la trame
    			        start <= '0';
-   					if (high_ms_count = x"64") then  
+   					if (high_ms_count = x"63" or high_ms_count = x"64") then     -- vaut 99 lors du premier bit à l'enclenchement !
    						state_bit <= '1';
    						StateMachine <= c_DCF_DETECT;		
-   					elsif(high_ms_count = x"C8") then  
+   					elsif(high_ms_count = x"C7" or high_ms_count = x"C8") then   -- vaut 199 lors du premier bit à l'enclenchement !
    						state_bit <= '0';
    						StateMachine <= c_DCF_DETECT;   		
    					else   
