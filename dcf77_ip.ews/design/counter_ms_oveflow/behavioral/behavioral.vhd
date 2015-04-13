@@ -31,6 +31,7 @@ P1:process (clk, reset_n)
 	elsif(clk'EVENT and clk = '1') then
 		if rising_edge_dcf_77 = '1' then 
 			en_count <= '1';
+			counter <= (OTHERS => '0');
 		end if;
 		
 		if counter > x"3E8" then        
