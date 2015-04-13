@@ -99,13 +99,53 @@ run: PROCESS
 	   
   END DCF_bit;  
   
-    --********** PROCEDURE "DCF_bit" **********
+  --********** PROCEDURE "DCF_bit" **********
   PROCEDURE DCF_end IS 
 	BEGIN
         DCF_77_in <= '0';
       	wait for 1000 ms;
    	
-  END DCF_end;
+  END DCF_end;      
+  
+   --********** PROCEDURE "WRITE_BYTE" **********
+   PROCEDURE WRITE_BYTE (data_write: IN STD_LOGIC_VECTOR(15 downto 0); adr: IN STD_LOGIC_VECTOR(3 downto 0)) IS
+     BEGIN
+     chip_select <= '1';
+     write <= '1';
+     
+     Adress <= adr;
+     data_in <= data_write;
+     sim_cycle(1);
+     
+     chip_select <= '0';
+     write <= '0';
+     
+     data_in <= (OTHERS => 'Z');
+   END WRITE_BYTE;
+   
+   --********** PROCEDURE "READ_BYTE" **********
+   PROCEDURE READ_BYTE(adr: IN STD_LOGIC_VECTOR (3 downto 0); data_await:IN STD_LOGIC_VECTOR(7 downto 0);erreur : IN integer) IS
+   
+   BEGIN
+   
+     chip_select	<= '0';
+     read 		<= '1'
+   
+     Adress <= adr;
+   
+     sim_cycle(1);
+   
+     IF data_await/= data THEN
+       mark_error <= '1', '0' AFTER 1 ns;
+       error_number <= erreur;
+       ASSERT FALSE REPORT "Etat du signal non correct" SEVERITY WARNING;
+	  END IF;   
+   
+     sim_cycle(1);
+   
+   END acc_read;
+ 
+  
 
 
 BEGIN --debut de la simulation temps t=0ns
