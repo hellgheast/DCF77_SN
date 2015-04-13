@@ -7,6 +7,7 @@
 -- Copy of the interface declaration:
 -- 
 --   port (
+--     Enable  : in     std_logic;
 --     clk     : in     std_logic;
 --     div     : in     std_logic_vector(15 downto 0);
 --     freq    : out    std_logic;
@@ -26,10 +27,10 @@ P1:process (clk, reset_n)
 		freq <= '0';
 		counter <= (OTHERS => '0');
 	elsif(clk'EVENT and clk = '1') then
-		if (UNSIGNED(counter) = 0 and std_logic_vector(UNSIGNED(div)) /= x"0000") then
+		if (UNSIGNED(counter) = 0 and Enable = '1') then
 			counter <= std_logic_vector(UNSIGNED(div) - 1);
 			freq <= '1';
-		else
+		elsif (Enable = '1') then
 			counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) - 1);
 			freq <= '0';
 		end if;

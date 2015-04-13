@@ -54,11 +54,11 @@ P1:process (clk, reset_n)
    			     
    			    stop <= '0';
    			    
-   			    if stop_temp_intern = '1' and dcf_77_s = '0' then 
+   			    if stop_temp_intern = '1' and dcf_77_s = '0' then -- Stop
    			    	StateMachine <= c_DCF_DETECT; 
    			    	
    			    else  
-   			    	if stop_temp_intern = '1' then
+   			    	if stop_temp_intern = '1' then -- Un stop vient d'être activé
    			    		start <= '1';
    			    		stop_temp_intern  <= '0';
    			    	end if;
@@ -72,29 +72,35 @@ P1:process (clk, reset_n)
    				end if;
    				
    			when c_BIT_DECODE =>  -- Décodage du numéro de bit (59e ou autre)
-   			    
-   		   		start <= '0'; -- Start passe à '0', ce qui en fait une pulse.
-   		   		
-   				if sec_overflow = '1' then   -- 59e bit -> stop
-   					stop_temp_intern  <= '1';  
-   					stop  <= '1';  
-   					StateMachine <= c_DCF_DETECT;  	
-  				else
-   					StateMachine <= c_STATE_DECODE; 
-   				end if;		
+   			       
+   			    if dcf_77_s = '0' then
+   		   			start <= '0'; -- Start passe à '0', ce qui en fait une pulse.
+   					if sec_overflow = '1' then   -- 59e bit -> stop
+   						stop_temp_intern  <= '1';  
+   						stop  <= '1';  
+   						StateMachine <= c_DCF_DETECT;  	
+  					else
+   						StateMachine <= c_STATE_DECODE; 
+   					end if;	
+   				else
+   					StateMachine <= c_DCF_DETECT;
+   				end if;
    											
    			when c_STATE_DECODE => -- Décodage de l'état du bit actuel de la trame
-   			
-   				if high_ms_count = x"63" then
-   					state_bit <= '1';
-   					StateMachine <= c_DCF_DETECT;		
-   				elsif high_ms_count = x"C7" then  
-   					state_bit <= '0';
-   					StateMachine <= c_DCF_DETECT;   		
-   				else   
-   					StateMachine <= c_STATE_DECODE;
+   			    
+   			    if dcf_77_s = '0' then
+   					if (high_ms_count = x"63") then  
+   						state_bit <= '1';
+   						StateMachine <= c_DCF_DETECT;		
+   					elsif(high_ms_count = x"C7") then  
+   						state_bit <= '0';
+   						StateMachine <= c_DCF_DETECT;   		
+   					else   
+   						StateMachine <= c_STATE_DECODE;
+   					end if;
+   				else
+   					StateMachine <= c_DCF_DETECT;
    				end if;
-   				
    			when others =>
    			    StateMachine <= c_DCF_DETECT;     
    			    

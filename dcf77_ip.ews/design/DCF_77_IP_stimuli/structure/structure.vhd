@@ -126,21 +126,24 @@ BEGIN --debut de la simulation temps t=0ns
 	 Adress <= x"3"; -- Low Address of Prescaler  
 	 
 	 write <= '1'; 
- 	 data_in <= "10100000"; -- Low Value of Prescaler 
+ 	 data_in <= "01000000";  --"10100000"; -- Low Value of Prescaler 
 	 sim_cycle(1);
 	 write <= '0';	 
 	    	  	  	  
 	 Adress <= x"4"; -- High Address of Prescaler 
 	 
 	 write <= '1';	 
-	 data_in <= "00001111"; -- High Value of Prescaler 
+	 data_in <= "10011100";-- "00001111"; -- High Value of Prescaler 
 	 sim_cycle(1); 
      write <= '0';                                                
 
 -- DCF FRAME ----------------------------------------- 
-
+ 
+ DCF_bit('1');    
+ DCF_end;
+ 
 	 -- bits 0-14 (témoins d'alertes civiles)
-	 DCF_bit('0');  -- bit 0
+	 DCF_bit('1');  -- bit 0
 	 DCF_bit('0');
 	 DCF_bit('1');
 	 DCF_bit('1');
