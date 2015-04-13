@@ -167,14 +167,14 @@ BEGIN --debut de la simulation temps t=0ns
 	 Adress <= x"3"; -- Low Address of Prescaler  
 	 
 	 write <= '1'; 
- 	 data_in <=  --"01000000";  -- Low Value of Prescaler 
+ 	 data_in <=  "10100000";  -- Low Value of Prescaler 
 	 sim_cycle(1);
 	 write <= '0';	 
 	    	  	  	  
 	 Adress <= x"4"; -- High Address of Prescaler 
 	 
 	 write <= '1';	 
-	 data_in <=  -- High Value of Prescaler 
+	 data_in <= "00001111"; -- High Value of Prescaler 
 	 sim_cycle(1); 
      write <= '0';                                                
 
