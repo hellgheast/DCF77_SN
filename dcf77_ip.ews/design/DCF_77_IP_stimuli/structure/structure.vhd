@@ -163,20 +163,10 @@ BEGIN --debut de la simulation temps t=0ns
 	 -- T = 25ns
 	 -- F = 40 MHz
 	 -- Prescaler = F/10'000 = 4000 = 0000 1111 1010 0000
-	  	 
-	 Adress <= x"3"; -- Low Address of Prescaler  
+	 WRITE_BYTE("10000000",x"3");
+	 WRITE_BYTE("00011010",x"4");
 	 
-	 write <= '1'; 
- 	 data_in <=  "10100000";  -- Low Value of Prescaler 
-	 sim_cycle(1);
-	 write <= '0';	 
-	    	  	  	  
-	 Adress <= x"4"; -- High Address of Prescaler 
-	 
-	 write <= '1';	 
-	 data_in <= "00001111"; -- High Value of Prescaler 
-	 sim_cycle(1); 
-     write <= '0';                                                
+                                                     
 
 -- DCF FRAME ----------------------------------------- 
  
