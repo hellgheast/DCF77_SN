@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Fri Apr 10 16:25:12 2015")
+      (PROPERTY "STAMP_TIME" "Mon Apr 13 14:31:37 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1424700030 "Mon Feb 23 15:00:30 2015")
-      (MODIFIED 1428675912 "Fri Apr 10 16:25:12 2015")
+      (MODIFIED 1428928297 "Mon Apr 13 14:31:37 2015")
     )
     (PORT
       (OBID "eprt914a64205e23be450572d74d25e7bdc1")
@@ -212,7 +212,8 @@
                "	elsif(clk'EVENT and clk = '1') then "
                "		 "
                "		if start = '1' then"
-               "				counter <= (OTHERS => '0');	"
+               "				counter <= (OTHERS => '0');"
+               "				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);	"
                "		elsif (rising_edge_dcf_77 = '1') or (stop = '1') then  "
                "				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);"
                "		end if;		"

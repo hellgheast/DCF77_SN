@@ -4,9 +4,9 @@
 --
 -- Ease library  : design
 -- HDL library   : design
--- Host name     : INF13-BENSALAHM
--- User name     : mohammed.bensalah
--- Time stamp    : Sun Apr 12 21:50:36 2015
+-- Host name     : INF13-MEIERV
+-- User name     : vincent.meier
+-- Time stamp    : Mon Apr 13 14:34:32 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design.DCF_77_IP
--- Last modified : Sun Apr 12 17:40:16 2015.
+-- Last modified : Mon Apr 13 14:34:22 2015.
 --------------------------------------------------------------------------------
 
 
@@ -42,7 +42,7 @@ end entity DCF_77_IP;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design.DCF_77_IP.structure
--- Last modified : Sun Apr 12 17:40:16 2015.
+-- Last modified : Mon Apr 13 14:34:22 2015.
 --------------------------------------------------------------------------------
 
 architecture structure of DCF_77_IP is
@@ -68,9 +68,11 @@ architecture structure of DCF_77_IP is
   signal RBG            : std_logic_vector(1 downto 0);
   signal reg_recbits    : std_logic_vector(5 downto 0);
   signal reg_dmonth     : std_logic_vector(5 downto 0);
+  signal Enable         : std_logic;
 
   component div_freq
     port (
+      Enable  : in     std_logic;
       clk     : in     std_logic;
       div     : in     std_logic_vector(15 downto 0);
       freq    : out    std_logic;
@@ -121,6 +123,7 @@ architecture structure of DCF_77_IP is
   component reg_mem_dcf77
     port (
       Adress      : in     std_logic_vector(3 downto 0);
+      Enable      : out    std_logic;
       ParityD     : in     std_logic;
       ParityH     : in     std_logic;
       ParityM     : in     std_logic;
@@ -173,6 +176,7 @@ begin
 
   u0: div_freq
     port map(
+      Enable  => Enable,
       clk     => clk,
       div     => prescaler,
       freq    => freq,
@@ -219,6 +223,7 @@ begin
   u4: reg_mem_dcf77
     port map(
       Adress      => Adress,
+      Enable      => Enable,
       ParityD     => ParityD,
       ParityH     => ParityH,
       ParityM     => ParityM,

@@ -4,9 +4,9 @@
 --
 -- Ease library  : design
 -- HDL library   : design
--- Host name     : INF13-BENSALAHM
--- User name     : mohammed.bensalah
--- Time stamp    : Sun Apr 12 21:50:36 2015
+-- Host name     : INF13-MEIERV
+-- User name     : vincent.meier
+-- Time stamp    : Mon Apr 13 14:34:32 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design.div_freq
--- Last modified : Mon Mar 02 15:16:28 2015.
+-- Last modified : Mon Apr 13 14:33:55 2015.
 --------------------------------------------------------------------------------
 
 
@@ -27,6 +27,7 @@ use ieee.std_logic_1164.all;
 
 entity div_freq is
   port (
+    Enable  : in     std_logic;
     clk     : in     std_logic;
     div     : in     std_logic_vector(15 downto 0);
     freq    : out    std_logic;
@@ -35,7 +36,7 @@ end entity div_freq;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design.div_freq.behavior
--- Last modified : Mon Mar 02 15:16:28 2015.
+-- Last modified : Mon Apr 13 14:33:55 2015.
 --------------------------------------------------------------------------------
 
 
@@ -51,10 +52,10 @@ P1:process (clk, reset_n)
 		freq <= '0';
 		counter <= (OTHERS => '0');
 	elsif(clk'EVENT and clk = '1') then
-		if UNSIGNED(counter) = 1 then
-			counter <= div;
+		if (UNSIGNED(counter) = 0 and Enable = '1') then
+			counter <= std_logic_vector(UNSIGNED(div) - 1);
 			freq <= '1';
-		else
+		elsif (Enable = '1') then
 			counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) - 1);
 			freq <= '0';
 		end if;

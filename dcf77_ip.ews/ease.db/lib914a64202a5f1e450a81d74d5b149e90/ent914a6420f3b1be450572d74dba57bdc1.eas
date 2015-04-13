@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Sun Apr 12 17:41:51 2015")
+      (PROPERTY "STAMP_TIME" "Mon Apr 13 14:33:55 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -13,14 +13,14 @@
       (NAME "reg_mem_dcf77")
       (USERNAME 1)
     )
-    (GEOMETRY 0 0 1536 3328)
+    (GEOMETRY 0 0 1600 3520)
     (SIDE 0)
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1424694079 "Mon Feb 23 13:21:19 2015")
-      (MODIFIED 1428853311 "Sun Apr 12 17:41:51 2015")
+      (MODIFIED 1428928435 "Mon Apr 13 14:33:55 2015")
     )
     (PORT
       (OBID "eprt914a6420b4b1be450572d74d1b57bdc1")
@@ -34,10 +34,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 3096 40 3176)
+      (GEOMETRY -40 3288 40 3368)
       (SIDE 3)
       (LABEL
-        (POSITION 64 3136)
+        (POSITION 64 3328)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -58,10 +58,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 3224 40 3304)
+      (GEOMETRY -40 3416 40 3496)
       (SIDE 3)
       (LABEL
-        (POSITION 64 3264)
+        (POSITION 64 3456)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -86,10 +86,10 @@
           )
         )
       )
-      (GEOMETRY -40 2456 40 2536)
+      (GEOMETRY -40 2648 40 2728)
       (SIDE 3)
       (LABEL
-        (POSITION 64 2496)
+        (POSITION 64 2688)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -111,10 +111,10 @@
           )
         )
       )
-      (GEOMETRY -40 2328 40 2408)
+      (GEOMETRY -40 2520 40 2600)
       (SIDE 3)
       (LABEL
-        (POSITION 64 2368)
+        (POSITION 64 2560)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -136,10 +136,10 @@
           )
         )
       )
-      (GEOMETRY -40 1432 40 1512)
+      (GEOMETRY -40 1624 40 1704)
       (SIDE 3)
       (LABEL
-        (POSITION 64 1472)
+        (POSITION 64 1664)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -161,10 +161,10 @@
           )
         )
       )
-      (GEOMETRY -40 1560 40 1640)
+      (GEOMETRY -40 1752 40 1832)
       (SIDE 3)
       (LABEL
-        (POSITION 64 1600)
+        (POSITION 64 1792)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -186,10 +186,10 @@
           )
         )
       )
-      (GEOMETRY -40 1688 40 1768)
+      (GEOMETRY -40 1880 40 1960)
       (SIDE 3)
       (LABEL
-        (POSITION 64 1728)
+        (POSITION 64 1920)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -211,10 +211,10 @@
           )
         )
       )
-      (GEOMETRY -40 1816 40 1896)
+      (GEOMETRY -40 2008 40 2088)
       (SIDE 3)
       (LABEL
-        (POSITION 64 1856)
+        (POSITION 64 2048)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -236,10 +236,10 @@
           )
         )
       )
-      (GEOMETRY -40 2008 40 2088)
+      (GEOMETRY -40 2200 40 2280)
       (SIDE 3)
       (LABEL
-        (POSITION 64 2048)
+        (POSITION 64 2240)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -261,10 +261,10 @@
           )
         )
       )
-      (GEOMETRY -40 2136 40 2216)
+      (GEOMETRY -40 2328 40 2408)
       (SIDE 3)
       (LABEL
-        (POSITION 64 2176)
+        (POSITION 64 2368)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -285,10 +285,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 216 40 296)
+      (GEOMETRY -40 408 40 488)
       (SIDE 3)
       (LABEL
-        (POSITION 64 256)
+        (POSITION 64 448)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -310,10 +310,10 @@
           )
         )
       )
-      (GEOMETRY 1496 792 1576 872)
+      (GEOMETRY 1560 984 1640 1064)
       (SIDE 1)
       (LABEL
-        (POSITION 1472 832)
+        (POSITION 1536 1024)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 1)
@@ -334,10 +334,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 344 40 424)
+      (GEOMETRY -40 536 40 616)
       (SIDE 3)
       (LABEL
-        (POSITION 64 384)
+        (POSITION 64 576)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -358,10 +358,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 472 40 552)
+      (GEOMETRY -40 664 40 744)
       (SIDE 3)
       (LABEL
-        (POSITION 64 512)
+        (POSITION 64 704)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -386,10 +386,10 @@
           )
         )
       )
-      (GEOMETRY -40 600 40 680)
+      (GEOMETRY -40 792 40 872)
       (SIDE 3)
       (LABEL
-        (POSITION 64 640)
+        (POSITION 64 832)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -411,10 +411,10 @@
           )
         )
       )
-      (GEOMETRY -40 24 40 104)
+      (GEOMETRY -40 88 40 168)
       (SIDE 3)
       (LABEL
-        (POSITION 64 64)
+        (POSITION 64 128)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -439,10 +439,10 @@
           )
         )
       )
-      (GEOMETRY -40 728 40 808)
+      (GEOMETRY -40 920 40 1000)
       (SIDE 3)
       (LABEL
-        (POSITION 64 768)
+        (POSITION 64 960)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -460,10 +460,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 2840 40 2920)
+      (GEOMETRY -40 3032 40 3112)
       (SIDE 3)
       (LABEL
-        (POSITION 64 2880)
+        (POSITION 64 3072)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -481,10 +481,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 2712 40 2792)
+      (GEOMETRY -40 2904 40 2984)
       (SIDE 3)
       (LABEL
-        (POSITION 64 2752)
+        (POSITION 64 2944)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -502,10 +502,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 2584 40 2664)
+      (GEOMETRY -40 2776 40 2856)
       (SIDE 3)
       (LABEL
-        (POSITION 64 2624)
+        (POSITION 64 2816)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -527,16 +527,37 @@
           )
         )
       )
-      (GEOMETRY -40 1304 40 1384)
+      (GEOMETRY -40 1496 40 1576)
       (SIDE 3)
       (LABEL
-        (POSITION 64 1344)
+        (POSITION 64 1536)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
         (ALIGNMENT 3)
         (FORMAT 35)
         (TEXT "reg_recbits(5:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1d6fe8a7bb255c38009c3935475c0")
+      (HDL_IDENT
+        (NAME "Enable")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Enable")
       )
     )
     (ARCH_DECLARATION 2 "arch914a6420f3b1be450572d74dea57bdc1" "behavior")
@@ -562,6 +583,7 @@
                "-- "
                "--   port ("
                "--     Adress      : in     std_logic_vector(3 downto 0);"
+               "--     Enable      : out    std_logic;"
                "--     ParityD     : in     std_logic;"
                "--     ParityH     : in     std_logic;"
                "--     ParityM     : in     std_logic;"
@@ -602,7 +624,10 @@
                ""
                "--Déclarations des registres"
                "signal reg_prescaler 	: std_logic_vector(15 downto 0)	:=x\"0000\";"
-               "        "
+               "                         "
+               "signal en1 : std_logic := '0';  -- Enable pour prescaler (attendre que 16 bits soient chargés)"
+               "signal en2 : std_logic := '0';"
+               ""
                "signal wr_acc : std_logic;"
                "signal rd_acc: std_logic;"
                ""
@@ -613,13 +638,17 @@
                "BEGIN"
                "  IF(reset_n = '0') THEN"
                "    reg_prescaler 	<= (OTHERS => '0');"
-               "  ELSIF (clk'event and clk = '1')THEN"
+               "    en1 <= '1';"
+               "    en2 <= '1'; "
+               "    ELSIF (clk'event and clk = '1')THEN"
                "    IF (wr_acc = '1') THEN"
                "      CASE Adress IS"
                "      	WHEN c_prescaler_l => "
                "      	  	 reg_prescaler(7 downto 0) <= data_in;"
+               "      	  	 en1 <= '1';         "
                "      	WHEN c_prescaler_h =>"
                "      		 reg_prescaler(15 downto 8) <= data_in;"
+               "      		 en2 <= '1';"
                "      	WHEN OTHERS => null;"
                "      END CASE;"
                "    END IF;"
@@ -639,9 +668,9 @@
                "           data_out <= \"00\"& reg_recbits;     "
                "      WHEN c_status =>"
                "      	   data_out <= reg_status;"
-               "      	   data_out(7) <= ParityD;"
-               "      	   data_out(6) <= ParityH;"
-               "      	   data_out(5) <= ParityM;     	   "
+               "      	   data_out(7) <= ParityD xnor reg_status(4);"
+               "      	   data_out(6) <= ParityH xnor reg_status(3);"
+               "      	   data_out(5) <= ParityM xnor reg_status(2);     	   "
                "      WHEN c_prescaler_l =>"
                "      	   data_out <= reg_prescaler(7 downto 0);"
                "      WHEN c_prescaler_h =>"
@@ -670,6 +699,8 @@
                "--Signaux combinatoire"
                "wr_acc <= '1' WHEN write = '1' and chip_select = '1' ELSE '0';"
                "rd_acc <= '1' WHEN read = '1' and chip_select = '1' ELSE '0';"
+               ""
+               "Enable <= '1' WHEN en1 = '1' and en2 = '1' ELSE '0';"
                ""
                "end architecture behavior ; -- of reg_mem_dcf77"
                ""

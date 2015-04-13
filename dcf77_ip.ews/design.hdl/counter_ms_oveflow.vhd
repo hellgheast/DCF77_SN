@@ -4,9 +4,9 @@
 --
 -- Ease library  : design
 -- HDL library   : design
--- Host name     : INF13-BENSALAHM
--- User name     : mohammed.bensalah
--- Time stamp    : Sun Apr 12 21:50:36 2015
+-- Host name     : INF13-MEIERV
+-- User name     : vincent.meier
+-- Time stamp    : Mon Apr 13 14:34:32 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design.counter_ms_oveflow
--- Last modified : Fri Apr 10 16:25:12 2015.
+-- Last modified : Mon Apr 13 14:31:37 2015.
 --------------------------------------------------------------------------------
 
 
@@ -36,31 +36,38 @@ end entity counter_ms_oveflow;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design.counter_ms_oveflow.behavioral
--- Last modified : Fri Apr 10 16:25:12 2015.
+-- Last modified : Mon Apr 13 14:31:37 2015.
 --------------------------------------------------------------------------------
 
 
 
 architecture behavioral of counter_ms_oveflow is
 
-signal counter : std_logic_vector(5 DOWNTO 0); --Signal interne pour compteur, BitCount va jusqu'à 60
-  
+signal counter : std_logic_vector(11 DOWNTO 0); --Signal interne pour compteur, BitCount va jusqu'à 60
+signal en_count : std_logic;
+
 begin
 
 P1:process (clk, reset_n)
 	begin
 	if(reset_n) = '0' then -- reset asynchrone
 		counter  <= (OTHERS => '0');
+		sec_overflow <= '0';
 	elsif(clk'EVENT and clk = '1') then
 		if rising_edge_dcf_77 = '1' then 
-			if counter > x"3FF" then        
-				sec_overflow <= '1';
-				counter <= (OTHERS => '0');
-			elsif freq = '1' then      	-- Vérifier !!!
-				sec_overflow <= '0';
-				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);
-			end if;      
-		end if;		
+			en_count <= '1';
+			counter <= (OTHERS => '0');
+		end if;
+		
+		if counter > x"3E8" then        
+			sec_overflow <= '1';
+			counter <= (OTHERS => '0');
+			en_count <= '0';
+		elsif freq = '1' and en_count = '1' then      	
+			sec_overflow <= '0';
+			counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);
+		end if;      
+			
 	end if;		
 end process;          
 

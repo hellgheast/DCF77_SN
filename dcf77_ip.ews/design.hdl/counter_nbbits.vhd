@@ -4,9 +4,9 @@
 --
 -- Ease library  : design
 -- HDL library   : design
--- Host name     : INF13-BENSALAHM
--- User name     : mohammed.bensalah
--- Time stamp    : Sun Apr 12 21:50:36 2015
+-- Host name     : INF13-MEIERV
+-- User name     : vincent.meier
+-- Time stamp    : Mon Apr 13 14:34:32 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design.counter_nbbits
--- Last modified : Fri Apr 10 16:25:12 2015.
+-- Last modified : Mon Apr 13 14:31:37 2015.
 --------------------------------------------------------------------------------
 
 
@@ -37,7 +37,7 @@ end entity counter_nbbits;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design.counter_nbbits.behavior
--- Last modified : Fri Apr 10 16:25:12 2015.
+-- Last modified : Mon Apr 13 14:31:37 2015.
 --------------------------------------------------------------------------------
 
    
@@ -55,7 +55,8 @@ P1:process (clk, reset_n)
 	elsif(clk'EVENT and clk = '1') then 
 		 
 		if start = '1' then
-				counter <= (OTHERS => '0');	
+				counter <= (OTHERS => '0');
+				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);	
 		elsif (rising_edge_dcf_77 = '1') or (stop = '1') then  
 				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);
 		end if;		

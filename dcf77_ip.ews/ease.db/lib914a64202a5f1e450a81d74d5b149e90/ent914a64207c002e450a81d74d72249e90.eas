@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Mar 02 15:16:28 2015")
+      (PROPERTY "STAMP_TIME" "Mon Apr 13 14:33:55 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -13,14 +13,14 @@
       (NAME "div_freq")
       (USERNAME 1)
     )
-    (GEOMETRY 0 0 896 384)
+    (GEOMETRY 0 0 960 512)
     (SIDE 0)
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1424097479 "Mon Feb 16 15:37:59 2015")
-      (MODIFIED 1425305788 "Mon Mar 02 15:16:28 2015")
+      (MODIFIED 1428928435 "Mon Apr 13 14:33:55 2015")
     )
     (PORT
       (OBID "eprt914a64201d002e450a81d74dd2249e90")
@@ -34,10 +34,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 216 40 296)
+      (GEOMETRY -40 344 40 424)
       (SIDE 3)
       (LABEL
-        (POSITION 64 256)
+        (POSITION 64 384)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -58,10 +58,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 88 40 168)
+      (GEOMETRY -40 216 40 296)
       (SIDE 3)
       (LABEL
-        (POSITION 64 128)
+        (POSITION 64 256)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -79,10 +79,10 @@
           (MODE 2)
         )
       )
-      (GEOMETRY 856 216 936 296)
+      (GEOMETRY 920 344 1000 424)
       (SIDE 1)
       (LABEL
-        (POSITION 832 256)
+        (POSITION 896 384)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 1)
@@ -107,16 +107,40 @@
           )
         )
       )
-      (GEOMETRY 856 88 936 168)
+      (GEOMETRY 920 88 1000 168)
       (SIDE 1)
       (LABEL
-        (POSITION 838 141)
+        (POSITION 902 141)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 1)
         (ALIGNMENT 5)
         (FORMAT 35)
         (TEXT "div(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1d6fe3a7bb255c38009c3135475c0")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Enable")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 920 216 1000 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 896 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Enable")
       )
     )
     (ARCH_DECLARATION 2 "arch914a64207c002e450a81d74da2249e90" "behavior")
@@ -141,6 +165,7 @@
                "-- Copy of the interface declaration:"
                "-- "
                "--   port ("
+               "--     Enable  : in     std_logic;"
                "--     clk     : in     std_logic;"
                "--     div     : in     std_logic_vector(15 downto 0);"
                "--     freq    : out    std_logic;"
@@ -160,10 +185,10 @@
                "		freq <= '0';"
                "		counter <= (OTHERS => '0');"
                "	elsif(clk'EVENT and clk = '1') then"
-               "		if UNSIGNED(counter) = 1 then"
-               "			counter <= div;"
+               "		if (UNSIGNED(counter) = 0 and Enable = '1') then"
+               "			counter <= std_logic_vector(UNSIGNED(div) - 1);"
                "			freq <= '1';"
-               "		else"
+               "		elsif (Enable = '1') then"
                "			counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) - 1);"
                "			freq <= '0';"
                "		end if;"

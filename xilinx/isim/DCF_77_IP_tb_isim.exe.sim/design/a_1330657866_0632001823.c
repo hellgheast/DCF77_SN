@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP.vhd";
+static const char *ng0 = "C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/DCF_77_IP.vhd";
 
 
 
@@ -36,12 +36,12 @@ static void design_a_1330657866_0632001823_p_0(char *t0)
     char *t7;
     char *t8;
 
-LAB0:    xsi_set_current_line(171, ng0);
+LAB0:    xsi_set_current_line(174, ng0);
 
 LAB3:    t1 = (t0 + 2792U);
     t2 = *((char **)t1);
     t3 = *((unsigned char *)t2);
-    t1 = (t0 + 7816);
+    t1 = (t0 + 7976);
     t4 = (t1 + 56U);
     t5 = *((char **)t4);
     t6 = (t5 + 56U);
@@ -49,7 +49,7 @@ LAB3:    t1 = (t0 + 2792U);
     *((unsigned char *)t7) = t3;
     xsi_driver_first_trans_fast_port(t1);
 
-LAB2:    t8 = (t0 + 7720);
+LAB2:    t8 = (t0 + 7880);
     *((int *)t8) = 1;
 
 LAB1:    return;
@@ -68,12 +68,12 @@ static void design_a_1330657866_0632001823_p_1(char *t0)
     char *t7;
     char *t8;
 
-LAB0:    xsi_set_current_line(172, ng0);
+LAB0:    xsi_set_current_line(175, ng0);
 
 LAB3:    t1 = (t0 + 4232U);
     t2 = *((char **)t1);
     t3 = *((unsigned char *)t2);
-    t1 = (t0 + 7880);
+    t1 = (t0 + 8040);
     t4 = (t1 + 56U);
     t5 = *((char **)t4);
     t6 = (t5 + 56U);
@@ -81,7 +81,7 @@ LAB3:    t1 = (t0 + 4232U);
     *((unsigned char *)t7) = t3;
     xsi_driver_first_trans_fast_port(t1);
 
-LAB2:    t8 = (t0 + 7736);
+LAB2:    t8 = (t0 + 7896);
     *((int *)t8) = 1;
 
 LAB1:    return;

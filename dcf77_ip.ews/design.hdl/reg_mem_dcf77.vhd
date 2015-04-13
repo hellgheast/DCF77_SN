@@ -4,9 +4,9 @@
 --
 -- Ease library  : design
 -- HDL library   : design
--- Host name     : INF13-BENSALAHM
--- User name     : mohammed.bensalah
--- Time stamp    : Sun Apr 12 21:50:36 2015
+-- Host name     : INF13-MEIERV
+-- User name     : vincent.meier
+-- Time stamp    : Mon Apr 13 14:34:31 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design.reg_mem_dcf77
--- Last modified : Sun Apr 12 17:41:51 2015.
+-- Last modified : Mon Apr 13 14:33:55 2015.
 --------------------------------------------------------------------------------
 
 
@@ -28,6 +28,7 @@ use ieee.std_logic_1164.all;
 entity reg_mem_dcf77 is
   port (
     Adress      : in     std_logic_vector(3 downto 0);
+    Enable      : out    std_logic;
     ParityD     : in     std_logic;
     ParityH     : in     std_logic;
     ParityM     : in     std_logic;
@@ -52,7 +53,7 @@ end entity reg_mem_dcf77;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design.reg_mem_dcf77.behavior
--- Last modified : Sun Apr 12 17:41:51 2015.
+-- Last modified : Mon Apr 13 14:33:55 2015.
 --------------------------------------------------------------------------------
 
 
@@ -73,7 +74,10 @@ CONSTANT c_year			: std_logic_vector(3 DOWNTO 0) := "1011";
 
 --Déclarations des registres
 signal reg_prescaler 	: std_logic_vector(15 downto 0)	:=x"0000";
-        
+                         
+signal en1 : std_logic := '0';  -- Enable pour prescaler (attendre que 16 bits soient chargés)
+signal en2 : std_logic := '0';
+
 signal wr_acc : std_logic;
 signal rd_acc: std_logic;
 
@@ -84,13 +88,17 @@ P1:PROCESS (clk,reset_n)
 BEGIN
   IF(reset_n = '0') THEN
     reg_prescaler 	<= (OTHERS => '0');
-  ELSIF (clk'event and clk = '1')THEN
+    en1 <= '1';
+    en2 <= '1'; 
+    ELSIF (clk'event and clk = '1')THEN
     IF (wr_acc = '1') THEN
       CASE Adress IS
       	WHEN c_prescaler_l => 
       	  	 reg_prescaler(7 downto 0) <= data_in;
+      	  	 en1 <= '1';         
       	WHEN c_prescaler_h =>
       		 reg_prescaler(15 downto 8) <= data_in;
+      		 en2 <= '1';
       	WHEN OTHERS => null;
       END CASE;
     END IF;
@@ -110,9 +118,9 @@ BEGIN
            data_out <= "00"& reg_recbits;     
       WHEN c_status =>
       	   data_out <= reg_status;
-      	   data_out(7) <= ParityD;
-      	   data_out(6) <= ParityH;
-      	   data_out(5) <= ParityM;     	   
+      	   data_out(7) <= ParityD xnor reg_status(4);
+      	   data_out(6) <= ParityH xnor reg_status(3);
+      	   data_out(5) <= ParityM xnor reg_status(2);     	   
       WHEN c_prescaler_l =>
       	   data_out <= reg_prescaler(7 downto 0);
       WHEN c_prescaler_h =>
@@ -141,6 +149,8 @@ END PROCESS;
 --Signaux combinatoire
 wr_acc <= '1' WHEN write = '1' and chip_select = '1' ELSE '0';
 rd_acc <= '1' WHEN read = '1' and chip_select = '1' ELSE '0';
+
+Enable <= '1' WHEN en1 = '1' and en2 = '1' ELSE '0';
 
 end architecture behavior ; -- of reg_mem_dcf77
 

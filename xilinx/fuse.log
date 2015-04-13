@@ -28,5 +28,5 @@ Time Resolution for simulation is 1ps.
 Waiting for 4 sub-compilation(s) to finish...
 Compiled 36 VHDL Units
 Built simulation executable DCF_77_IP_tb_isim.exe
-Fuse Memory Usage: 35324 KB
-Fuse CPU Usage: 701 ms
+Fuse Memory Usage: 35468 KB
+Fuse CPU Usage: 670 ms

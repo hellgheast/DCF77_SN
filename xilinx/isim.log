@@ -3,7 +3,8 @@ Running: C:\Users\vincent.meier\Documents\GitHub\DCF77_SN\xilinx\DCF_77_IP_tb_is
 ISim P.49d (signature 0x7708f090)
 This is a Full version of ISim.
 Time resolution is 1 ps
-# run 3000ms
+# run 3s
 Simulator is doing circuit initialization process.
 at 0 ps: Note: la simulation est en cour (/dcf_77_ip_tb/stimuli/).
 Finished circuit initialization process.
+Stopped at time : 2281695717 ns : File "C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/div_freq.vhd" Line 60

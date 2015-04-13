@@ -6,7 +6,7 @@
 -- HDL library   : design
 -- Host name     : INF13-MEIERV
 -- User name     : vincent.meier
--- Time stamp    : Sun Apr 12 23:14:50 2015
+-- Time stamp    : Mon Apr 13 14:34:31 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design.DCF_77_IP_stimuli
--- Last modified : Sun Apr 12 23:14:20 2015.
+-- Last modified : Mon Apr 13 13:51:02 2015.
 --------------------------------------------------------------------------------
 
 
@@ -42,7 +42,7 @@ end entity DCF_77_IP_stimuli;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design.DCF_77_IP_stimuli.structure
--- Last modified : Sun Apr 12 23:14:20 2015.
+-- Last modified : Mon Apr 13 13:51:02 2015.
 --------------------------------------------------------------------------------
 
 
@@ -87,7 +87,9 @@ run: PROCESS
    	reset_n		<= '0';
    	chip_select	<= '1'; 
  	read 		<= '0';
-	write 		<= '0';    
+	write 		<= '0';
+	dcf_77_in   <= '0';
+	data_in     <= (OTHERS => 'Z');    
 
   END init;
 
@@ -123,13 +125,56 @@ run: PROCESS
 	   
   END DCF_bit;  
   
-    --********** PROCEDURE "DCF_bit" **********
+  --********** PROCEDURE "DCF_bit" **********
   PROCEDURE DCF_end IS 
 	BEGIN
         DCF_77_in <= '0';
       	wait for 1000 ms;
    	
-  END DCF_end;
+  END DCF_end;      
+  
+   --********** PROCEDURE "WRITE_BYTE" **********
+   PROCEDURE WRITE_BYTE (data_write: IN STD_LOGIC_VECTOR(7 downto 0); adr: IN STD_LOGIC_VECTOR(3 downto 0)) IS
+     BEGIN
+     chip_select <= '1';
+     write <= '1';
+     
+     Adress <= adr;
+     data_in <= data_write;
+     sim_cycle(1);
+     
+     chip_select <= '0';
+     write <= '0';
+     
+     data_in <= (OTHERS => 'Z');
+   END WRITE_BYTE;
+   
+   --********** PROCEDURE "READ_BYTE" **********
+   PROCEDURE READ_BYTE(adr: IN STD_LOGIC_VECTOR (3 downto 0); data_await:IN STD_LOGIC_VECTOR(7 downto 0);erreur : IN integer) IS
+   
+   BEGIN
+   
+     chip_select	<= '1';
+     read 		<= '1';
+   
+     Adress <= adr;
+   
+     sim_cycle(1);
+   
+     IF data_await /= data_out THEN
+       mark_error <= '1', '0' AFTER 1 ns;
+       error_number <= erreur;
+       ASSERT FALSE REPORT "Etat du signal non correct" SEVERITY WARNING;
+	  END IF;   
+     
+  	 chip_select	<= '0';
+     read 		<= '0';
+     
+     sim_cycle(1);
+     
+   END READ_BYTE;
+ 
+  
 
 
 BEGIN --debut de la simulation temps t=0ns
@@ -146,27 +191,18 @@ BEGIN --debut de la simulation temps t=0ns
 	 -- T = 25ns
 	 -- F = 40 MHz
 	 -- Prescaler = F/10'000 = 4000 = 0000 1111 1010 0000
+	 WRITE_BYTE("01000000",x"3");
+	 WRITE_BYTE("10011100",x"4");
 	 
-	 write <= '1'; 
-	 
-	 Adress <= x"3"; -- Low Address of Prescaler  
-	 sim_cycle(1); 
-	 
-	 data_in <= "10100000"; -- Low Value of Prescaler 
-	 sim_cycle(1);	  	  	  	  
-	 
-	 Adress <= x"4"; -- High Address of Prescaler 
-	 sim_cycle(1);
-	 
-	 data_in <= "00001111"; -- High Value of Prescaler 
-	 sim_cycle(1);
-     
-     write <= '0';                                                
+                                                     
 
 -- DCF FRAME ----------------------------------------- 
-
+ 
+ DCF_bit('1');    
+ DCF_end;
+ 
 	 -- bits 0-14 (témoins d'alertes civiles)
-	 DCF_bit('0');  -- bit 0
+	 DCF_bit('1');  -- bit 0
 	 DCF_bit('0');
 	 DCF_bit('1');
 	 DCF_bit('1');

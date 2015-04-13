@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Fri Apr 10 16:25:12 2015")
+      (PROPERTY "STAMP_TIME" "Mon Apr 13 14:31:37 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1425908812 "Mon Mar 09 14:46:52 2015")
-      (MODIFIED 1428675912 "Fri Apr 10 16:25:12 2015")
+      (MODIFIED 1428928297 "Mon Apr 13 14:31:37 2015")
     )
     (PORT
       (OBID "eprt914a6420754adf458472d74d4e86b0b7")
@@ -160,24 +160,31 @@
                ""
                "architecture behavioral of counter_ms_oveflow is"
                ""
-               "signal counter : std_logic_vector(5 DOWNTO 0); --Signal interne pour compteur, BitCount va jusqu'à 60"
-               "  "
+               "signal counter : std_logic_vector(11 DOWNTO 0); --Signal interne pour compteur, BitCount va jusqu'à 60"
+               "signal en_count : std_logic;"
+               ""
                "begin"
                ""
                "P1:process (clk, reset_n)"
                "	begin"
                "	if(reset_n) = '0' then -- reset asynchrone"
                "		counter  <= (OTHERS => '0');"
+               "		sec_overflow <= '0';"
                "	elsif(clk'EVENT and clk = '1') then"
                "		if rising_edge_dcf_77 = '1' then "
-               "			if counter > x\"3FF\" then        "
-               "				sec_overflow <= '1';"
-               "				counter <= (OTHERS => '0');"
-               "			elsif freq = '1' then      	-- Vérifier !!!"
-               "				sec_overflow <= '0';"
-               "				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);"
-               "			end if;      "
-               "		end if;		"
+               "			en_count <= '1';"
+               "			counter <= (OTHERS => '0');"
+               "		end if;"
+               "		"
+               "		if counter > x\"3E8\" then        "
+               "			sec_overflow <= '1';"
+               "			counter <= (OTHERS => '0');"
+               "			en_count <= '0';"
+               "		elsif freq = '1' and en_count = '1' then      	"
+               "			sec_overflow <= '0';"
+               "			counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);"
+               "		end if;      "
+               "			"
                "	end if;		"
                "end process;          "
                ""

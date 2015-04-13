@@ -6,7 +6,7 @@
 -- HDL library   : design
 -- Host name     : INF13-MEIERV
 -- User name     : vincent.meier
--- Time stamp    : Sun Apr 12 23:14:50 2015
+-- Time stamp    : Mon Apr 13 14:34:32 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design.rising_edge_dectection
--- Last modified : Sun Apr 12 23:14:20 2015.
+-- Last modified : Mon Apr 13 14:31:37 2015.
 --------------------------------------------------------------------------------
 
 
@@ -35,26 +35,26 @@ end entity rising_edge_dectection;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design.rising_edge_dectection.behavioral
--- Last modified : Sun Apr 12 23:14:20 2015.
+-- Last modified : Mon Apr 13 14:31:37 2015.
 --------------------------------------------------------------------------------
 
 
 architecture behavioral of rising_edge_dectection is
     
-signal sync1 : std_logic;
+signal sync1 : std_logic := '0';
 
 begin       
 
 P1:process(clk, reset_n) is
 	begin
 	if reset_n = '0' then
-		rising_edge_dcf_77 <= '0';
+		--rising_edge_dcf_77 <= '0';
 	elsif (clk = '1' and clk'event) then
 	     sync1 <= dcf_77_s;
 	end if;
 end process;
 
-rising_edge_dcf_77 <= '1' when dcf_77_s = '1' and sync1 = '0' else '0';
+rising_edge_dcf_77 <= '1' when (dcf_77_s = '1' and sync1 = '0') else '0';
  
 end architecture behavioral ; -- of rising_edge_dectection
 

@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Sun Apr 12 23:14:21 2015")
+      (PROPERTY "STAMP_TIME" "Mon Apr 13 14:31:37 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1425908004 "Mon Mar 09 14:33:24 2015")
-      (MODIFIED 1428873260 "Sun Apr 12 23:14:20 2015")
+      (MODIFIED 1428928297 "Mon Apr 13 14:31:37 2015")
     )
     (PORT
       (OBID "eprt914a6420d35adf458472d74d7096b0b7")
@@ -143,20 +143,20 @@
                ""
                "architecture behavioral of rising_edge_dectection is"
                "    "
-               "signal sync1 : std_logic;"
+               "signal sync1 : std_logic := '0';"
                ""
                "begin       "
                ""
                "P1:process(clk, reset_n) is"
                "	begin"
                "	if reset_n = '0' then"
-               "		rising_edge_dcf_77 <= '0';"
+               "		--rising_edge_dcf_77 <= '0';"
                "	elsif (clk = '1' and clk'event) then"
                "	     sync1 <= dcf_77_s;"
                "	end if;"
                "end process;"
                ""
-               "rising_edge_dcf_77 <= '1' when dcf_77_s = '1' and sync1 = '0' else '0';"
+               "rising_edge_dcf_77 <= '1' when (dcf_77_s = '1' and sync1 = '0') else '0';"
                " "
                "end architecture behavioral ; -- of rising_edge_dectection"
                ""

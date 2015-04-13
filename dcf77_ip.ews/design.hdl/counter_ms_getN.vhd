@@ -4,9 +4,9 @@
 --
 -- Ease library  : design
 -- HDL library   : design
--- Host name     : INF13-BENSALAHM
--- User name     : mohammed.bensalah
--- Time stamp    : Sun Apr 12 21:50:36 2015
+-- Host name     : INF13-MEIERV
+-- User name     : vincent.meier
+-- Time stamp    : Mon Apr 13 14:34:32 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design.counter_ms_getN
--- Last modified : Fri Apr 10 16:25:12 2015.
+-- Last modified : Mon Apr 13 14:31:37 2015.
 --------------------------------------------------------------------------------
 
 
@@ -36,7 +36,7 @@ end entity counter_ms_getN;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design.counter_ms_getN.behavior
--- Last modified : Fri Apr 10 16:25:12 2015.
+-- Last modified : Mon Apr 13 14:31:37 2015.
 --------------------------------------------------------------------------------
 
          
@@ -63,7 +63,7 @@ P1:process (clk, reset_n)
 	     elsif stop_temp = '1' then	 
 	         	
 	     counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);   
-	       IF counter > x"3FF" then
+	       IF counter > x"3E8" then
 	         counter  <= (OTHERS => '0');
 	         getNothing <= '1';
 	       END IF;      

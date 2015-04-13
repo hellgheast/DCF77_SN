@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/coutner_ms.vhd";
+static const char *ng0 = "C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/coutner_ms.vhd";
 extern char *IEEE_P_1242562249;
 
 char *ieee_p_1242562249_sub_1919365254_1035706684(char *, char *, char *, char *, int );
@@ -81,22 +81,10 @@ LAB2:    xsi_set_current_line(55, ng0);
     t9 = (t8 + 56U);
     t10 = *((char **)t9);
     memcpy(t10, t1, 8U);
-    xsi_driver_first_trans_fast_port(t6);
-    xsi_set_current_line(56, ng0);
-    t1 = xsi_get_transient_memory(8U);
-    memset(t1, 0, 8U);
-    t2 = t1;
-    memset(t2, (unsigned char)2, 8U);
-    t5 = (t0 + 3880);
-    t6 = (t5 + 56U);
-    t7 = *((char **)t6);
-    t8 = (t7 + 56U);
-    t9 = *((char **)t8);
-    memcpy(t9, t1, 8U);
-    xsi_driver_first_trans_fast(t5);
+    xsi_driver_first_trans_fast(t6);
     goto LAB3;
 
-LAB5:    xsi_set_current_line(60, ng0);
+LAB5:    xsi_set_current_line(59, ng0);
     t2 = (t0 + 1832U);
     t6 = *((char **)t2);
     t13 = *((unsigned char *)t6);
@@ -126,12 +114,12 @@ LAB7:    t2 = (t0 + 1032U);
     t3 = t12;
     goto LAB9;
 
-LAB10:    xsi_set_current_line(61, ng0);
+LAB10:    xsi_set_current_line(60, ng0);
     t2 = xsi_get_transient_memory(8U);
     memset(t2, 0, 8U);
     t7 = t2;
     memset(t7, (unsigned char)2, 8U);
-    t8 = (t0 + 3880);
+    t8 = (t0 + 3816);
     t9 = (t8 + 56U);
     t10 = *((char **)t9);
     t15 = (t10 + 56U);
@@ -140,12 +128,12 @@ LAB10:    xsi_set_current_line(61, ng0);
     xsi_driver_first_trans_fast(t8);
     goto LAB11;
 
-LAB13:    xsi_set_current_line(64, ng0);
+LAB13:    xsi_set_current_line(63, ng0);
     t1 = (t0 + 1992U);
     t6 = *((char **)t1);
-    t1 = (t0 + 6340U);
+    t1 = (t0 + 6228U);
     t7 = ieee_p_1242562249_sub_1919365254_1035706684(IEEE_P_1242562249, t17, t6, t1, 1);
-    t8 = (t0 + 3880);
+    t8 = (t0 + 3816);
     t9 = (t8 + 56U);
     t10 = *((char **)t9);
     t15 = (t10 + 56U);
@@ -173,11 +161,11 @@ static void design_a_3538705604_2372691052_p_1(char *t0)
     char *t6;
     char *t7;
 
-LAB0:    xsi_set_current_line(72, ng0);
+LAB0:    xsi_set_current_line(71, ng0);
 
 LAB3:    t1 = (t0 + 1992U);
     t2 = *((char **)t1);
-    t1 = (t0 + 3944);
+    t1 = (t0 + 3880);
     t3 = (t1 + 56U);
     t4 = *((char **)t3);
     t5 = (t4 + 56U);

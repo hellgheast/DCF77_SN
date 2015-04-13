@@ -4,9 +4,9 @@
 --
 -- Ease library  : design
 -- HDL library   : design
--- Host name     : INF13-BENSALAHM
--- User name     : mohammed.bensalah
--- Time stamp    : Sun Apr 12 21:50:36 2015
+-- Host name     : INF13-MEIERV
+-- User name     : vincent.meier
+-- Time stamp    : Mon Apr 13 14:34:32 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design.DecodeStateMachine
--- Last modified : Fri Apr 10 16:25:12 2015.
+-- Last modified : Mon Apr 13 14:23:03 2015.
 --------------------------------------------------------------------------------
 
 
@@ -40,7 +40,7 @@ end entity DecodeStateMachine;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design.DecodeStateMachine.behavior
--- Last modified : Fri Apr 10 16:25:12 2015.
+-- Last modified : Mon Apr 13 14:23:03 2015.
 --------------------------------------------------------------------------------
 
   
@@ -78,12 +78,13 @@ P1:process (clk, reset_n)
    			when c_DCF_DETECT =>  -- Détection d'un '0' de la trame DCF77  
    			     
    			    stop <= '0';
+   			    start <= '0';
    			    
-   			    if stop_temp_intern = '1' and dcf_77_s = '0' then 
+   			    if stop_temp_intern = '1' and dcf_77_s = '0' then -- Stop
    			    	StateMachine <= c_DCF_DETECT; 
    			    	
    			    else  
-   			    	if stop_temp_intern = '1' then
+   			    	if stop_temp_intern = '1' then -- Un stop a été activé précédemment
    			    		start <= '1';
    			    		stop_temp_intern  <= '0';
    			    	end if;
@@ -97,29 +98,32 @@ P1:process (clk, reset_n)
    				end if;
    				
    			when c_BIT_DECODE =>  -- Décodage du numéro de bit (59e ou autre)
-   			    
-   		   		start <= '0'; -- Start passe à '0', ce qui en fait une pulse.
-   		   		
-   				if sec_overflow = '1' then   -- 59e bit -> stop
-   					stop_temp_intern  <= '1';  
-   					stop  <= '1';  
-   					StateMachine <= c_DCF_DETECT;  	
-  				else
-   					StateMachine <= c_STATE_DECODE; 
-   				end if;		
+   			    start <= '0';  
+   			     
+   			    if dcf_77_s = '0' then	
+   					if sec_overflow = '1' then   -- 59e bit -> stop
+   						stop_temp_intern <= '1';  
+   						stop  <= '1';  
+   						StateMachine <= c_DCF_DETECT;  	
+  					else
+   						StateMachine <= c_STATE_DECODE; 
+   					end if;	
+   				else
+   					StateMachine <= c_DCF_DETECT;
+   				end if;
    											
    			when c_STATE_DECODE => -- Décodage de l'état du bit actuel de la trame
+   			        start <= '0';
+   					if (high_ms_count = x"63" or high_ms_count = x"64") then     -- vaut 99 lors du premier bit à l'enclenchement !
+   						state_bit <= '1';
+   						StateMachine <= c_DCF_DETECT;		
+   					elsif(high_ms_count = x"C7" or high_ms_count = x"C8") then   -- vaut 199 lors du premier bit à l'enclenchement !
+   						state_bit <= '0';
+   						StateMachine <= c_DCF_DETECT;   		
+   					else   
+   						StateMachine <= c_STATE_DECODE;
+   					end if;
    			
-   				if high_ms_count = x"63" then
-   					state_bit <= '1';
-   					StateMachine <= c_DCF_DETECT;		
-   				elsif high_ms_count = x"C7" then  
-   					state_bit <= '0';
-   					StateMachine <= c_DCF_DETECT;   		
-   				else   
-   					StateMachine <= c_STATE_DECODE;
-   				end if;
-   				
    			when others =>
    			    StateMachine <= c_DCF_DETECT;     
    			    

@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/counter_nbbits.vhd";
+static const char *ng0 = "C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/counter_nbbits.vhd";
 extern char *IEEE_P_1242562249;
 
 char *ieee_p_1242562249_sub_1919365254_1035706684(char *, char *, char *, char *, int );
@@ -130,12 +130,24 @@ LAB10:    xsi_set_current_line(58, ng0);
     t16 = *((char **)t15);
     memcpy(t16, t2, 6U);
     xsi_driver_first_trans_fast(t8);
+    xsi_set_current_line(59, ng0);
+    t1 = (t0 + 1992U);
+    t2 = *((char **)t1);
+    t1 = (t0 + 6276U);
+    t5 = ieee_p_1242562249_sub_1919365254_1035706684(IEEE_P_1242562249, t17, t2, t1, 1);
+    t6 = (t0 + 3816);
+    t7 = (t6 + 56U);
+    t8 = *((char **)t7);
+    t9 = (t8 + 56U);
+    t10 = *((char **)t9);
+    memcpy(t10, t5, 6U);
+    xsi_driver_first_trans_fast(t6);
     goto LAB11;
 
-LAB13:    xsi_set_current_line(60, ng0);
+LAB13:    xsi_set_current_line(61, ng0);
     t1 = (t0 + 1992U);
     t6 = *((char **)t1);
-    t1 = (t0 + 6316U);
+    t1 = (t0 + 6276U);
     t7 = ieee_p_1242562249_sub_1919365254_1035706684(IEEE_P_1242562249, t17, t6, t1, 1);
     t8 = (t0 + 3816);
     t9 = (t8 + 56U);
@@ -161,7 +173,7 @@ static void design_a_1373089465_2372691052_p_1(char *t0)
     char *t6;
     char *t7;
 
-LAB0:    xsi_set_current_line(65, ng0);
+LAB0:    xsi_set_current_line(66, ng0);
 
 LAB3:    t1 = (t0 + 1992U);
     t2 = *((char **)t1);
