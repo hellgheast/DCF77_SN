@@ -53,6 +53,7 @@ P1:process (clk, reset_n)
    			when c_DCF_DETECT =>  -- Détection d'un '0' de la trame DCF77  
    			     
    			    stop <= '0';
+   			    start <= '0';
    			    
    			    if stop_temp_intern = '1' and dcf_77_s = '0' then -- Stop
    			    	StateMachine <= c_DCF_DETECT; 
@@ -74,7 +75,7 @@ P1:process (clk, reset_n)
    			when c_BIT_DECODE =>  -- Décodage du numéro de bit (59e ou autre)
    			       
    			    if dcf_77_s = '0' then
-   		   			start <= '0'; -- Start passe à '0', ce qui en fait une pulse.
+   		   			start <= '0';
    					if sec_overflow = '1' then   -- 59e bit -> stop
    						stop_temp_intern  <= '1';  
    						stop  <= '1';  
@@ -87,12 +88,12 @@ P1:process (clk, reset_n)
    				end if;
    											
    			when c_STATE_DECODE => -- Décodage de l'état du bit actuel de la trame
-   			    
+   			    start <= '0';
    			    if dcf_77_s = '0' then
-   					if (high_ms_count = x"63") then  
+   					if (high_ms_count = x"64") then  
    						state_bit <= '1';
    						StateMachine <= c_DCF_DETECT;		
-   					elsif(high_ms_count = x"C7") then  
+   					elsif(high_ms_count = x"C8") then  
    						state_bit <= '0';
    						StateMachine <= c_DCF_DETECT;   		
    					else   

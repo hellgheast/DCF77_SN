@@ -38,7 +38,7 @@ P1:process (clk, reset_n)
 	     elsif stop_temp = '1' then	 
 	         	
 	     counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);   
-	       IF counter > x"3FF" then
+	       IF counter > x"3E8" then
 	         counter  <= (OTHERS => '0');
 	         getNothing <= '1';
 	       END IF;      
