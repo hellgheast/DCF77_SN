@@ -53,13 +53,13 @@ P1:process (clk, reset_n)
    			when c_DCF_DETECT =>  -- Détection d'un '0' de la trame DCF77  
    			     
    			    stop <= '0';
-   			    start <= '0';
+   			    --start <= '0';
    			    
    			    if stop_temp_intern = '1' and dcf_77_s = '0' then -- Stop
    			    	StateMachine <= c_DCF_DETECT; 
    			    	
    			    else  
-   			    	if stop_temp_intern = '1' then -- Un stop vient d'être activé
+   			    	if stop_temp_intern = '1' then -- Un stop a été activé précédemment
    			    		start <= '1';
    			    		stop_temp_intern  <= '0';
    			    	end if;
@@ -88,7 +88,7 @@ P1:process (clk, reset_n)
    				end if;
    											
    			when c_STATE_DECODE => -- Décodage de l'état du bit actuel de la trame
-   			    start <= '0';
+   			    --start <= '0';
    			    if dcf_77_s = '0' then
    					if (high_ms_count = x"64") then  
    						state_bit <= '1';

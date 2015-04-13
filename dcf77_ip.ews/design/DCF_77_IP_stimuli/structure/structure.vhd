@@ -63,7 +63,8 @@ run: PROCESS
    	chip_select	<= '1'; 
  	read 		<= '0';
 	write 		<= '0';
-	dcf_77_in   <= '0';    
+	dcf_77_in   <= '0';
+	data_in     <= (OTHERS => 'Z');    
 
   END init;
 
@@ -129,13 +130,13 @@ run: PROCESS
    BEGIN
    
      chip_select	<= '0';
-     read 		<= '1'
+     read 		<= '1';
    
      Adress <= adr;
    
      sim_cycle(1);
    
-     IF data_await/= data THEN
+     IF data_await /= data_out THEN
        mark_error <= '1', '0' AFTER 1 ns;
        error_number <= erreur;
        ASSERT FALSE REPORT "Etat du signal non correct" SEVERITY WARNING;
@@ -143,7 +144,7 @@ run: PROCESS
    
      sim_cycle(1);
    
-   END acc_read;
+   END READ_BYTE;
  
   
 
@@ -162,18 +163,18 @@ BEGIN --debut de la simulation temps t=0ns
 	 -- T = 25ns
 	 -- F = 40 MHz
 	 -- Prescaler = F/10'000 = 4000 = 0000 1111 1010 0000
-	 
+	  	 
 	 Adress <= x"3"; -- Low Address of Prescaler  
 	 
 	 write <= '1'; 
- 	 data_in <= "01000000";  --"10100000"; -- Low Value of Prescaler 
+ 	 data_in <=  --"01000000";  -- Low Value of Prescaler 
 	 sim_cycle(1);
 	 write <= '0';	 
 	    	  	  	  
 	 Adress <= x"4"; -- High Address of Prescaler 
 	 
 	 write <= '1';	 
-	 data_in <= "10011100";-- "00001111"; -- High Value of Prescaler 
+	 data_in <=  -- High Value of Prescaler 
 	 sim_cycle(1); 
      write <= '0';                                                
 
