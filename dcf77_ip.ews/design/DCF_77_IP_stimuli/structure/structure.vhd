@@ -109,7 +109,7 @@ run: PROCESS
   END DCF_end;      
   
    --********** PROCEDURE "WRITE_BYTE" **********
-   PROCEDURE WRITE_BYTE (data_write: IN STD_LOGIC_VECTOR(15 downto 0); adr: IN STD_LOGIC_VECTOR(3 downto 0)) IS
+   PROCEDURE WRITE_BYTE (data_write: IN STD_LOGIC_VECTOR(7 downto 0); adr: IN STD_LOGIC_VECTOR(3 downto 0)) IS
      BEGIN
      chip_select <= '1';
      write <= '1';
@@ -129,7 +129,7 @@ run: PROCESS
    
    BEGIN
    
-     chip_select	<= '0';
+     chip_select	<= '1';
      read 		<= '1';
    
      Adress <= adr;
@@ -141,9 +141,12 @@ run: PROCESS
        error_number <= erreur;
        ASSERT FALSE REPORT "Etat du signal non correct" SEVERITY WARNING;
 	  END IF;   
-   
+     
+  	 chip_select	<= '0';
+     read 		<= '0';
+     
      sim_cycle(1);
-   
+     
    END READ_BYTE;
  
   
@@ -163,8 +166,8 @@ BEGIN --debut de la simulation temps t=0ns
 	 -- T = 25ns
 	 -- F = 40 MHz
 	 -- Prescaler = F/10'000 = 4000 = 0000 1111 1010 0000
-	 WRITE_BYTE("10000000",x"3");
-	 WRITE_BYTE("00011010",x"4");
+	 WRITE_BYTE("01000000",x"3");
+	 WRITE_BYTE("10011100",x"4");
 	 
                                                      
 
