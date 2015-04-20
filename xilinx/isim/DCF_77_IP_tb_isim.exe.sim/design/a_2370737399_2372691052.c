@@ -104,9 +104,14 @@ LAB5:    xsi_set_current_line(59, ng0);
 
 LAB12:    t1 = (t0 + 1672U);
     t2 = *((char **)t1);
-    t3 = *((unsigned char *)t2);
-    t4 = (t3 == (unsigned char)3);
-    if (t4 != 0)
+    t4 = *((unsigned char *)t2);
+    t10 = (t4 == (unsigned char)3);
+    if (t10 == 1)
+        goto LAB15;
+
+LAB16:    t3 = (unsigned char)0;
+
+LAB17:    if (t3 != 0)
         goto LAB13;
 
 LAB14:
@@ -143,29 +148,36 @@ LAB10:    xsi_set_current_line(60, ng0);
 
 LAB13:    xsi_set_current_line(65, ng0);
     t1 = (t0 + 1832U);
-    t5 = *((char **)t1);
+    t6 = *((char **)t1);
     t1 = (t0 + 5656U);
-    t6 = ieee_p_1242562249_sub_1919365254_1035706684(IEEE_P_1242562249, t15, t5, t1, 1);
-    t7 = (t0 + 3456);
-    t8 = (t7 + 56U);
-    t9 = *((char **)t8);
-    t14 = (t9 + 56U);
-    t16 = *((char **)t14);
-    memcpy(t16, t6, 10U);
-    xsi_driver_first_trans_fast(t7);
+    t7 = ieee_p_1242562249_sub_1919365254_1035706684(IEEE_P_1242562249, t15, t6, t1, 1);
+    t8 = (t0 + 3456);
+    t9 = (t8 + 56U);
+    t14 = *((char **)t9);
+    t16 = (t14 + 56U);
+    t17 = *((char **)t16);
+    memcpy(t17, t7, 10U);
+    xsi_driver_first_trans_fast(t8);
     xsi_set_current_line(66, ng0);
     t1 = (t0 + 1832U);
     t2 = *((char **)t1);
     t1 = (t0 + 5694);
     t6 = ((IEEE_P_2592010699) + 4024);
-    t3 = xsi_vhdl_greater(t6, t2, 10U, t1, 12U);
+    t3 = xsi_vhdl_greaterEqual(t6, t2, 10U, t1, 12U);
     if (t3 != 0)
-        goto LAB15;
+        goto LAB18;
 
-LAB17:
-LAB16:    goto LAB11;
+LAB20:
+LAB19:    goto LAB11;
 
-LAB15:    xsi_set_current_line(67, ng0);
+LAB15:    t1 = (t0 + 1192U);
+    t5 = *((char **)t1);
+    t11 = *((unsigned char *)t5);
+    t12 = (t11 == (unsigned char)3);
+    t3 = t12;
+    goto LAB17;
+
+LAB18:    xsi_set_current_line(67, ng0);
     t7 = xsi_get_transient_memory(10U);
     memset(t7, 0, 10U);
     t8 = t7;
@@ -185,7 +197,7 @@ LAB15:    xsi_set_current_line(67, ng0);
     t7 = *((char **)t6);
     *((unsigned char *)t7) = (unsigned char)3;
     xsi_driver_first_trans_fast_port(t1);
-    goto LAB16;
+    goto LAB19;
 
 }
 

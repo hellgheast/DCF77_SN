@@ -6,7 +6,7 @@
 -- HDL library   : design
 -- Host name     : INF13-MEIERV
 -- User name     : vincent.meier
--- Time stamp    : Mon Apr 13 14:34:32 2015
+-- Time stamp    : Mon Apr 20 17:08:55 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design.counter_ms_oveflow
--- Last modified : Mon Apr 13 14:31:37 2015.
+-- Last modified : Mon Apr 20 16:52:04 2015.
 --------------------------------------------------------------------------------
 
 
@@ -36,7 +36,7 @@ end entity counter_ms_oveflow;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design.counter_ms_oveflow.behavioral
--- Last modified : Mon Apr 13 14:31:37 2015.
+-- Last modified : Mon Apr 20 16:52:04 2015.
 --------------------------------------------------------------------------------
 
 
@@ -57,9 +57,7 @@ P1:process (clk, reset_n)
 		if rising_edge_dcf_77 = '1' then 
 			en_count <= '1';
 			counter <= (OTHERS => '0');
-		end if;
-		
-		if counter > x"3E8" then        
+		elsif counter >= x"3E9" then        
 			sec_overflow <= '1';
 			counter <= (OTHERS => '0');
 			en_count <= '0';

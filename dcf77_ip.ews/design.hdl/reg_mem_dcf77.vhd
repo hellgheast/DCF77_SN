@@ -6,7 +6,7 @@
 -- HDL library   : design
 -- Host name     : INF13-MEIERV
 -- User name     : vincent.meier
--- Time stamp    : Mon Apr 13 14:34:31 2015
+-- Time stamp    : Mon Apr 20 17:08:55 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design.reg_mem_dcf77
--- Last modified : Mon Apr 13 14:33:55 2015.
+-- Last modified : Mon Apr 20 15:27:20 2015.
 --------------------------------------------------------------------------------
 
 
@@ -53,7 +53,7 @@ end entity reg_mem_dcf77;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design.reg_mem_dcf77.behavior
--- Last modified : Mon Apr 13 14:33:55 2015.
+-- Last modified : Mon Apr 20 15:27:20 2015.
 --------------------------------------------------------------------------------
 
 
@@ -88,8 +88,8 @@ P1:PROCESS (clk,reset_n)
 BEGIN
   IF(reset_n = '0') THEN
     reg_prescaler 	<= (OTHERS => '0');
-    en1 <= '1';
-    en2 <= '1'; 
+    en1 <= '0';
+    en2 <= '0'; 
     ELSIF (clk'event and clk = '1')THEN
     IF (wr_acc = '1') THEN
       CASE Adress IS

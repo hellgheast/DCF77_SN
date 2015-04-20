@@ -6,7 +6,7 @@
 -- HDL library   : design
 -- Host name     : INF13-MEIERV
 -- User name     : vincent.meier
--- Time stamp    : Mon Apr 13 14:34:32 2015
+-- Time stamp    : Mon Apr 20 17:08:55 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design.counter_nbbits
--- Last modified : Mon Apr 13 14:31:37 2015.
+-- Last modified : Mon Apr 20 17:08:51 2015.
 --------------------------------------------------------------------------------
 
 
@@ -37,7 +37,7 @@ end entity counter_nbbits;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design.counter_nbbits.behavior
--- Last modified : Mon Apr 13 14:31:37 2015.
+-- Last modified : Mon Apr 20 17:08:51 2015.
 --------------------------------------------------------------------------------
 
    
@@ -55,8 +55,7 @@ P1:process (clk, reset_n)
 	elsif(clk'EVENT and clk = '1') then 
 		 
 		if start = '1' then
-				counter <= (OTHERS => '0');
-				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);	
+				counter <= "000001"; -- Compteur mis à 1, car le bit 0 est le premier bit, donc 1
 		elsif (rising_edge_dcf_77 = '1') or (stop = '1') then  
 				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);
 		end if;		

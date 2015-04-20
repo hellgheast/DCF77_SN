@@ -91,7 +91,7 @@ LAB2:    xsi_set_current_line(90, ng0);
     t5 = *((char **)t2);
     t6 = (t5 + 56U);
     t7 = *((char **)t6);
-    *((unsigned char *)t7) = (unsigned char)3;
+    *((unsigned char *)t7) = (unsigned char)2;
     xsi_driver_first_trans_fast(t1);
     xsi_set_current_line(92, ng0);
     t1 = (t0 + 9520);
@@ -99,7 +99,7 @@ LAB2:    xsi_set_current_line(90, ng0);
     t5 = *((char **)t2);
     t6 = (t5 + 56U);
     t7 = *((char **)t6);
-    *((unsigned char *)t7) = (unsigned char)3;
+    *((unsigned char *)t7) = (unsigned char)2;
     xsi_driver_first_trans_fast(t1);
     goto LAB3;
 

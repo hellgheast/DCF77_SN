@@ -6,7 +6,7 @@
 -- HDL library   : design
 -- Host name     : INF13-MEIERV
 -- User name     : vincent.meier
--- Time stamp    : Mon Apr 13 14:34:31 2015
+-- Time stamp    : Mon Apr 20 17:08:55 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design.CheckParity
--- Last modified : Sun Apr 12 18:17:35 2015.
+-- Last modified : Mon Apr 13 15:01:19 2015.
 --------------------------------------------------------------------------------
 
 
@@ -40,7 +40,7 @@ end entity CheckParity;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design.CheckParity.behavior
--- Last modified : Sun Apr 12 18:17:35 2015.
+-- Last modified : Mon Apr 13 15:01:19 2015.
 --------------------------------------------------------------------------------
 
 

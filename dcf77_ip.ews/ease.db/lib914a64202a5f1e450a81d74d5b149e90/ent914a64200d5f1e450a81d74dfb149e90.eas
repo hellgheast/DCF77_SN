@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Apr 13 14:34:26 2015")
+      (PROPERTY "STAMP_TIME" "Mon Apr 13 15:01:21 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1424094672 "Mon Feb 16 14:51:12 2015")
-      (MODIFIED 1428928462 "Mon Apr 13 14:34:22 2015")
+      (MODIFIED 1428930079 "Mon Apr 13 15:01:19 2015")
     )
     (PORT
       (OBID "eprt914a64208e5f1e450a81d74d4c149e90")
@@ -3498,7 +3498,7 @@
           (NAME "u6")
           (USERNAME 1)
         )
-        (GEOMETRY 5696 4352 6720 5376)
+        (GEOMETRY 5696 4352 6720 5248)
         (SIDE 0)
         (LABEL
           (POSITION 5696 4288)

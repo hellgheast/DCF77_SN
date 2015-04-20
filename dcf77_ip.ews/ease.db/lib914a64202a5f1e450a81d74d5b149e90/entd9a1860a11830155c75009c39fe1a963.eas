@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Sun Apr 12 18:17:36 2015")
+      (PROPERTY "STAMP_TIME" "Mon Apr 13 15:01:21 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -13,14 +13,14 @@
       (NAME "CheckParity")
       (USERNAME 1)
     )
-    (GEOMETRY 0 0 1024 1024)
+    (GEOMETRY 0 0 1024 896)
     (SIDE 0)
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1427126289 "Mon Mar 23 16:58:09 2015")
-      (MODIFIED 1428855455 "Sun Apr 12 18:17:35 2015")
+      (MODIFIED 1428930079 "Mon Apr 13 15:01:19 2015")
     )
     (PORT
       (OBID "eprtd9a1860af3830155c75009c340f1a963")
