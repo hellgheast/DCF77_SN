@@ -3,13 +3,20 @@ Running: C:\Users\vincent.meier\Documents\GitHub\DCF77_SN\xilinx\DCF_77_IP_tb_is
 ISim P.49d (signature 0x7708f090)
 This is a Full version of ISim.
 Time resolution is 1 ps
-# run 1.00s
+# run 1s
 Simulator is doing circuit initialization process.
 at 0 ps: Note: la simulation est en cour (/dcf_77_ip_tb/stimuli/).
 Finished circuit initialization process.
-at 63000075 ns(1), Instance /dcf_77_ip_tb/stimuli/ : Warning: Etat du signal non correct
-at 63000125 ns(1), Instance /dcf_77_ip_tb/stimuli/ : Warning: Etat du signal non correct
-at 63000175 ns(1), Instance /dcf_77_ip_tb/stimuli/ : Warning: Etat du signal non correct
-at 63000225 ns(1), Instance /dcf_77_ip_tb/stimuli/ : Warning: Etat du signal non correct
-at 63000275 ns(1), Instance /dcf_77_ip_tb/stimuli/ : Warning: Etat du signal non correct
-at 63000325 ns(1), Instance /dcf_77_ip_tb/stimuli/ : Warning: Etat du signal non correct
+Stopped at time : 148565517 ns : File "C:/Users/vincent.meier/Documents/GitHub/DCF77_SN/dcf77_ip.ews/design.hdl/frame_register.vhd" Line 217
+ISim P.49d (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1s
+Simulator is doing circuit initialization process.
+at 0 ps: Note: la simulation est en cour (/dcf_77_ip_tb/stimuli/).
+Finished circuit initialization process.
+at 620000075 ns(1), Instance /dcf_77_ip_tb/stimuli/ : Warning: Etat du signal non correct
+at 620000125 ns(1), Instance /dcf_77_ip_tb/stimuli/ : Warning: Etat du signal non correct
+at 620000175 ns(1), Instance /dcf_77_ip_tb/stimuli/ : Warning: Etat du signal non correct
+at 620000225 ns(1), Instance /dcf_77_ip_tb/stimuli/ : Warning: Etat du signal non correct
+at 620000275 ns(1), Instance /dcf_77_ip_tb/stimuli/ : Warning: Etat du signal non correct
+at 620000325 ns(1), Instance /dcf_77_ip_tb/stimuli/ : Warning: Etat du signal non correct

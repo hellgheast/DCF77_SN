@@ -92,14 +92,14 @@ run: PROCESS
   PROCEDURE DCF_bit(state_bit: IN std_logic) IS 
 	BEGIN
 	   IF state_bit = '0' THEN
-           	DCF_77_in <= '1', '0' AFTER 200 us;
+           	DCF_77_in <= '1', '0' AFTER 2000 us;
      
        ELSIF state_bit = '1' THEN
-            DCF_77_in <= '1', '0' AFTER 100 us;
+            DCF_77_in <= '1', '0' AFTER 1000 us;
  
                        
 	   END IF;
-	   wait for 1000 us;
+	   wait for 10000 us;
 	   
   END DCF_bit;  
   
@@ -107,7 +107,7 @@ run: PROCESS
   PROCEDURE DCF_end IS 
 	BEGIN
         DCF_77_in <= '0';
-      	wait for 1000 us;
+      	wait for 10000 us;
    	
   END DCF_end;      
   
@@ -170,18 +170,17 @@ BEGIN --debut de la simulation temps t=0ns
 	 -- F = 40 MHz
 	 -- Prescaler = F/1'000 = 40'000 
 
-   	--	Prescaler => 1ms => faire 1000 fois plus petit pour 1us  = 40
+   	--	Prescaler => 1ms => faire 100 fois plus petit pour 10us  = 400
 	 
 	 
-	 WRITE_BYTE("00101000",x"3");
-	 WRITE_BYTE("00000000",x"4");
+	 WRITE_BYTE("10010000",x"3");
+	 WRITE_BYTE("00000001",x"4");
                                                      
 
 -- DCF FRAME ----------------------------------------- 
  
  DCF_bit('1');    
- DCF_end; 
- DCF_bit('1');    
+ DCF_end;     
 
 	 -- bits 0-14 (témoins d'alertes civiles)
 	 DCF_bit('1');  -- bit 0
