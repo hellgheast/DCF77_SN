@@ -6,7 +6,7 @@
 -- HDL library   : design
 -- Host name     : INF13-MEIERV
 -- User name     : vincent.meier
--- Time stamp    : Wed Apr 22 12:15:41 2015
+-- Time stamp    : Sat Jun 06 14:32:37 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design.decode_RBG
--- Last modified : Wed Apr 22 12:15:34 2015.
+-- Last modified : Thu Apr 23 20:01:46 2015.
 --------------------------------------------------------------------------------
 
 
@@ -38,58 +38,68 @@ end entity decode_RBG;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design.decode_RBG.behavior
--- Last modified : Wed Apr 22 12:15:34 2015.
+-- Last modified : Thu Apr 23 20:01:46 2015.
 --------------------------------------------------------------------------------
 
 
 architecture behavior of decode_RBG is
        
-signal getNot    : std_logic := '0';
-signal busyTemp  : std_logic := '0';
-signal readyTemp : std_logic := '0';
+--signal getNot    : std_logic := '0';
+--signal busyTemp  : std_logic := '0';
+--signal readyTemp : std_logic := '0';
+
+signal state_bits : std_logic_vector(1 downto 0);
 
 begin     
 
 P1 : process(clk,reset_n) IS
 begin
 	if reset_n = '0' then
- 		RBG <= (others => '0');
- 		busyTemp <= '0';
- 		readyTemp <= '0'; 
- 		getNot <= '0';
- 		
+ 		state_bits <= (others => '0');
+ 		--getNot <= '0';
+ 		--busyTemp <= '0';
+ 		--readyTemp <= '0'; 
+ 		 		
 	elsif(clk'EVENT and clk = '1')then 
 		if start = '0' then 
 			if getNothing = '1' then
-				getNot <= '1';
-				readyTemp <= '0';
-				busyTemp <= '0';
+				state_bits <= "00"; -- GetNothing
+				--readyTemp <= '0';
+				--busyTemp <= '0';
+				--getNot <= '1';
 				
 			elsif stop = '1' then 
-				busyTemp <= '0';
+				--busyTemp <= '0';
 				if bit_count >= "111011" then
-  	   				readyTemp <= '1'; 
-  	   			else   
-  	   				readyTemp <= '0';
+					state_bits <= "10"; -- Ready
+  	   				--readyTemp <= '1'; 
+  	   			else
+  	   				state_bits <= "11"; -- Etat "indéterminé"	   			   
+  	   				--readyTemp <= '0';
   	   			end if;   
   	   			
   	   		end if;
   	   		 	
 		else
-			getNot <= '0';
-  	   	 	busyTemp <= '1';
-  	   		readyTemp <= '0';
+			state_bits <= "01"; -- Busy
+			--getNot <= '0';
+  	   	 	--busyTemp <= '1';
+  	   		--readyTemp <= '0';
   	   	
   	   	end if;
 		       
 	end if;
 	
-end process; 
+end process;
 
-RBG <= "00" when getNot = '1' 	 else
-	   "01" when busyTemp = '1'  else 
-	   "10" when readyTemp = '1' else 
-	   "11";
+RBG <= state_bits;
+
+	   --"00" when getNot = '1' and busyTemp = '0' and readyTemp = '0'	else
+	   --"01" when busyTemp = '1'	and getNot = '0' and readyTemp = '0' 	else 
+	   --"10" when readyTemp = '1' and busyTemp = '0' and getNot = '0' 	else 
+	   --"11";
+
+
 
 end architecture behavior ; -- of decode_RBG
 

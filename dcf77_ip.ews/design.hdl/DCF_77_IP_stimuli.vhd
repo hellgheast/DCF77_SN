@@ -6,7 +6,7 @@
 -- HDL library   : design
 -- Host name     : INF13-MEIERV
 -- User name     : vincent.meier
--- Time stamp    : Wed Apr 22 12:15:41 2015
+-- Time stamp    : Sat Jun 06 14:32:37 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design.DCF_77_IP_stimuli
--- Last modified : Wed Apr 22 12:15:34 2015.
+-- Last modified : Sat Jun 06 11:50:41 2015.
 --------------------------------------------------------------------------------
 
 
@@ -42,7 +42,7 @@ end entity DCF_77_IP_stimuli;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design.DCF_77_IP_stimuli.structure
--- Last modified : Wed Apr 22 12:15:34 2015.
+-- Last modified : Sat Jun 06 11:50:41 2015.
 --------------------------------------------------------------------------------
 
 
@@ -198,9 +198,8 @@ BEGIN --debut de la simulation temps t=0ns
    	--	Prescaler => 1ms => faire 100 fois plus petit pour 10us  = 400
 	 
 	 
-	 WRITE_BYTE("10010000",x"3");
-	 WRITE_BYTE("00000001",x"4");
-                                                     
+	WRITE_BYTE("10010000",x"3");
+	WRITE_BYTE("00000001",x"4");                                             
 
 -- DCF FRAME ----------------------------------------- 
  

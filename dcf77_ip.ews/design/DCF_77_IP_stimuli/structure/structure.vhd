@@ -173,9 +173,8 @@ BEGIN --debut de la simulation temps t=0ns
    	--	Prescaler => 1ms => faire 100 fois plus petit pour 10us  = 400
 	 
 	 
-	 WRITE_BYTE("10010000",x"3");
-	 WRITE_BYTE("00000001",x"4");
-                                                     
+	WRITE_BYTE("10010000",x"3");
+	WRITE_BYTE("00000001",x"4");                                             
 
 -- DCF FRAME ----------------------------------------- 
  

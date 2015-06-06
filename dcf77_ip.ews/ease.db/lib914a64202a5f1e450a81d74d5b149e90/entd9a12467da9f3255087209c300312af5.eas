@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Wed Apr 22 12:15:34 2015")
+      (PROPERTY "STAMP_TIME" "Sat Jun 06 11:50:41 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1428421037 "Tue Apr 07 17:37:17 2015")
-      (MODIFIED 1429697734 "Wed Apr 22 12:15:34 2015")
+      (MODIFIED 1433584241 "Sat Jun 06 11:50:41 2015")
     )
     (PORT
       (OBID "eprtd9a12467da9f3255087209c310312af5")
@@ -480,9 +480,8 @@
                "   	--	Prescaler => 1ms => faire 100 fois plus petit pour 10us  = 400"
                "	 "
                "	 "
-               "	 WRITE_BYTE(\"10010000\",x\"3\");"
-               "	 WRITE_BYTE(\"00000001\",x\"4\");"
-               "                                                     "
+               "	WRITE_BYTE(\"10010000\",x\"3\");"
+               "	WRITE_BYTE(\"00000001\",x\"4\");                                             "
                ""
                "-- DCF FRAME ----------------------------------------- "
                " "
